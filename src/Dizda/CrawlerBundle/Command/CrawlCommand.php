@@ -126,6 +126,7 @@ class CrawlCommand extends ContainerAwareCommand
         foreach ($entities as $annonceLight) {
             var_dump($annonceLight->getRemoteId());
 
+            $query->replace(array());
             $query->add('id', $annonceLight->getRemoteId());
 
             $response = $request->send();
@@ -134,7 +135,7 @@ class CrawlCommand extends ContainerAwareCommand
             var_dump($xml);
 
             $entite = $this->getContainer()->get('jms_serializer')->deserialize($xml, 'Dizda\CrawlerBundle\Document\Explorimmo', 'xml');
-            //$entite->set
+            //$entite->setFullDetail(true);
             $dm->persist($entite);
 
             break;
