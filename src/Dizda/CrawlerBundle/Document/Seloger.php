@@ -8,14 +8,15 @@ use JMS\Serializer\Annotation as JMS;
 /**
  * Store every ads of Seloger.com into our MongoDB
  *
- * @package Dizda\CrawlerBundle\Model
- *
  * @MongoDB\Document
  *
  * @JMS\XmlRoot("annonce")
  */
 class Seloger extends Accommodation
 {
+    const HOST       = 'http://ws.seloger.com/';
+    const URL_SEARCH = 'search.xml';
+
     const USER_AGENT = 'Dalvik/1.6.0 (Linux; U; Android 4.2.1; GT-I9300 Build/JOP40D)';
 
     /**
@@ -40,8 +41,8 @@ class Seloger extends Accommodation
 
     /**
      *  @JMS\Type("string")
-     *  @JMS\SerializedName("proximite") */
-    protected $descriptif;
+     *  @JMS\SerializedName("descriptif") */
+    protected $description;
 
 
 
@@ -148,6 +149,13 @@ class Seloger extends Accommodation
      *  @JMS\SerializedName("dtFraicheur") */
     protected $remoteUpdatedAt;
 
+
+
+
+
+
+
+
     /**
      * @param bool $isChargesIncluded can be "€cc*"|"€+ch"
      *
@@ -182,6 +190,16 @@ class Seloger extends Accommodation
         $this->photos = $collection;
 
         return $this;
+    }
+
+    /**
+     * Get REST URL to search on
+     *
+     * @return string
+     */
+    final public static function getSearchUrl()
+    {
+        return static::HOST . static::URL_SEARCH;
     }
 
 }

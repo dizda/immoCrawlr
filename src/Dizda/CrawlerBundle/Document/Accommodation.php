@@ -11,7 +11,9 @@ use JMS\Serializer\Annotation as JMS;
  * @MongoDB\Document
  * @MongoDB\InheritanceType("SINGLE_COLLECTION")
  * @MongoDB\DiscriminatorField(fieldName="discriminatorType")
- * @MongoDB\DiscriminatorMap({"accommodation"="Accommodation", "seloger"="Seloger"})
+ * @MongoDB\DiscriminatorMap({"accommodation"="Accommodation",
+ *                            "seloger"="Seloger",
+ *                            "explorimmo"="Explorimmo"})
  */
 class Accommodation
 {
@@ -135,7 +137,7 @@ class Accommodation
     /**
      *  @JMS\Exclude
      *  @MongoDB\Boolean */
-    protected $isSurfaceCertificated = false;
+    protected $isSurfaceCertificated;
 
     /**
      *  @JMS\Exclude
@@ -145,12 +147,12 @@ class Accommodation
     /**
      *  @JMS\Exclude
      *  @MongoDB\Boolean */
-    protected $cave = false;
+    protected $cave;
 
     /**
      *  @JMS\Exclude
      *  @MongoDB\Boolean */
-    protected $isRefurbished = false;
+    protected $isRefurbished;
 
 
 
@@ -213,6 +215,11 @@ class Accommodation
     /**
      *  @JMS\Exclude
      *  @MongoDB\String */
+    protected $contactPhone2;
+
+    /**
+     *  @JMS\Exclude
+     *  @MongoDB\String */
     protected $contactEmail;
 
     /**
@@ -233,7 +240,10 @@ class Accommodation
 
 
 
-
+    /**
+     *  @JMS\Exclude
+     *  @MongoDB\Boolean */
+    protected $fullDetail = true;
 
     /**
      *  @JMS\Exclude
@@ -1020,6 +1030,28 @@ class Accommodation
     }
 
     /**
+     * Set contactPhone2
+     *
+     * @param string $contactPhone
+     * @return \Accommodation
+     */
+    public function setContactPhone2($contactPhone)
+    {
+        $this->contactPhone2 = $contactPhone;
+        return $this;
+    }
+
+    /**
+     * Get contactPhone2
+     *
+     * @return string $contactPhone
+     */
+    public function getContactPhone2()
+    {
+        return $this->contactPhone2;
+    }
+
+    /**
      * Set contactEmail
      *
      * @param string $contactEmail
@@ -1215,5 +1247,27 @@ class Accommodation
     public function getRemoteId()
     {
         return $this->remoteId;
+    }
+
+    /**
+     * Set fullDetail
+     *
+     * @param boolean $fullDetail
+     * @return \Accommodation
+     */
+    public function setFullDetail($fullDetail)
+    {
+        $this->fullDetail = $fullDetail;
+        return $this;
+    }
+
+    /**
+     * Get fullDetail
+     *
+     * @return boolean $fullDetail
+     */
+    public function getFullDetail()
+    {
+        return $this->fullDetail;
     }
 }
