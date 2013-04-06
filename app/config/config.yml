@@ -93,3 +93,9 @@ mopa_bootstrap:
     initializr:
         google:
             analytics: UA-17161773-2
+
+jms_di_extra:
+    locations:
+        all_bundles: false
+        bundles: [ CrawlerBundle ]
+        directories: ["%kernel.root_dir%/../src"]

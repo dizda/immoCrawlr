@@ -23,14 +23,14 @@ class Explorimmo extends Accommodation
     /**
      * @JMS\Exclude
      */
-    public static $xmlSearch = array('<annonce>', '</annonce>', '<summary>', '</summary>', '<photos>', '</photos>', '<characteristics>',
+    public static $xmlSearch = array('<annonce>', '</annonce>', '<summary>', '</summary>', '<characteristics>',
                                      '</characteristics>', '<budget>', '</budget>', '<proximity>', '</proximity>', '<localisation>',
                                      '</localisation>', '<contact>', '</contact>');
 
     /**
      * @JMS\Exclude
      */
-    public static $xmlReplace = array('<classified>', '</classified>', '', '', '', '', '', '', '', '', '', '', '', '', '', '');
+    public static $xmlReplace = array('<classified>', '</classified>', '', '', '', '', '', '', '', '', '', '', '', '');
 
     /**
      *  @JMS\Type("string")
@@ -128,11 +128,6 @@ class Explorimmo extends Accommodation
     protected $city;
 
     /**
-     *  @JMS\Type("array")
-     *  @JMS\SerializedName("photo") */
-    protected $photos;
-
-    /**
      *  @JMS\Type("string")
      *  @JMS\SerializedName("permaLien") */
     protected $permalink;
@@ -190,13 +185,35 @@ class Explorimmo extends Accommodation
     protected $remoteUpdatedAt;
 
     /**
+     * Push every photos in collections
+     *
+     * @param collection $photos
+     *
+     * @return $this|\Accommodation
+     */
+    public function setPhotos($photos)
+    {
+        $collection = array();
+        foreach ($photos->photo as $photo) {
+
+            if (strlen((string) $photo['url']) > 0) {
+                $collection[] = (string) $photo['url'];
+            }
+
+        }
+        $this->photos = $collection;
+
+        return $this;
+    }
+
+    /**
      * @param \DateTime $remoteCreatedAt
      *
      * @return $this|\Accommodation
      */
     public function setRemoteCreatedAt($remoteCreatedAt)
     {
-        $remoteCreatedAt->setTime(0,0,0);
+        $remoteCreatedAt->setTime(0, 0, 0);
         $this->remoteCreatedAt = $remoteCreatedAt;
 
         return $this;
@@ -209,7 +226,7 @@ class Explorimmo extends Accommodation
      */
     public function setRemoteUpdatedAt($remoteUpdatedAt)
     {
-        $remoteUpdatedAt->setTime(0,0,0);
+        $remoteUpdatedAt->setTime(0, 0, 0);
         $this->remoteUpdatedAt = $remoteUpdatedAt;
 
         return $this;

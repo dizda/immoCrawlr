@@ -1,6 +1,7 @@
 <?php
 namespace Dizda\CrawlerBundle\Command;
 
+use Dizda\CrawlerBundle\Crawler\SelogerCrawler;
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -12,6 +13,7 @@ use Guzzle\Http\Message\Request;
 
 use Dizda\CrawlerBundle\Document\Seloger;
 use Dizda\CrawlerBundle\Document\Explorimmo;
+use Symfony\Component\DependencyInjection\SimpleXMLElement;
 
 class CrawlCommand extends ContainerAwareCommand
 {
@@ -20,8 +22,7 @@ class CrawlCommand extends ContainerAwareCommand
     {
         $this
             ->setName('dizda:crawl:go')
-            ->setDescription('Crawling a gogo')
-        ;
+            ->setDescription('Crawling a gogo');
     }
 
     protected function execute(InputInterface $input, OutputInterface $output)
@@ -29,8 +30,9 @@ class CrawlCommand extends ContainerAwareCommand
         $output->writeln('Hello');
 
         //$this->crawlSeloger();
-        $this->crawlExplorimmo();
+        //$this->crawlExplorimmo();
 
+        $seloger = new SelogerCrawler();
     }
 
     public function crawlSeloger()
@@ -80,7 +82,6 @@ class CrawlCommand extends ContainerAwareCommand
         $dm = $this->getContainer()->get('doctrine.odm.mongodb.document_manager');
 
         $client  = new Client();
-        $client->setUserAgent(Explorimmo::USER_AGENT);
 
         $request = new Request('GET', Explorimmo::getSearchUrl());
         $request->setClient($client);
@@ -90,6 +91,7 @@ class CrawlCommand extends ContainerAwareCommand
         $request->getCurlOptions()->set(CURLOPT_PROXYTYPE, CURLPROXY_HTTP);
         $request->getCurlOptions()->set(CURLOPT_USERAGENT, Seloger::USER_AGENT);*/ // override UA when use Request()
 
+        // Search accomodations
         $query = $request->getQuery();
         /*$query->add('resultNumber', 50);
         $query->add('orderBy', 'dateDesc');
@@ -116,6 +118,7 @@ class CrawlCommand extends ContainerAwareCommand
         }
         $dm->flush();*/
 
+        // And get more details about each accomodations
         $request = new Request('GET', Explorimmo::getDetailUrl());
         $request->setClient($client);
         $request->getCurlOptions()->set(CURLOPT_USERAGENT, Explorimmo::USER_AGENT);
@@ -130,15 +133,16 @@ class CrawlCommand extends ContainerAwareCommand
             $query->add('id', $annonceLight->getRemoteId());
 
             $response = $request->send();
-            $xml = $response->xml();
-            $xml = str_replace(Explorimmo::$xmlSearch, Explorimmo::$xmlReplace, $xml->asXML());
+            $xml      = $response->xml();
+            $photos   = $xml;
+            $xml      = str_replace(Explorimmo::$xmlSearch, Explorimmo::$xmlReplace, $xml->asXML());
             var_dump($xml);
 
             $entite = $this->getContainer()->get('jms_serializer')->deserialize($xml, 'Dizda\CrawlerBundle\Document\Explorimmo', 'xml');
-            //$entite->setFullDetail(true);
+            $entite->setPhotos($photos->photos);
+            $entite->setFullDetail(true);
             $dm->persist($entite);
 
-            break;
         }
         $dm->flush();
 
