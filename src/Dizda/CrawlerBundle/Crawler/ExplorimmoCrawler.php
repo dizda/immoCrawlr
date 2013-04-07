@@ -15,6 +15,8 @@ class ExplorimmoCrawler extends AbstractCrawler
 {
     static protected $documentClass = 'Dizda\CrawlerBundle\Document\Explorimmo';
 
+    protected $annoncesNode     = '//classified'; // XPath
+
     protected $params = ['resultNumber'     => '50',
                          'orderBy'          => 'dateDesc',
                          'page'             => '1',
@@ -35,9 +37,7 @@ class ExplorimmoCrawler extends AbstractCrawler
     public function execute($progress)
     {
         $this->progress = $progress;
-        $xml = parent::getAccommodationsList();
-
-        parent::saveAccomodationsList($xml->classified);
+        parent::getAccommodationsList();
     }
 
 }

@@ -23,9 +23,11 @@ class CrawlCommand extends ContainerAwareCommand
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        //$this->getContainer()->get('crawler.seloger')->execute($this->getHelperSet()->get('progress'));
-        //$this->getContainer()->get('crawler.explorimmo')->execute($this->getHelperSet()->get('progress'));
-        $dm = $this->getContainer()->get('doctrine.odm.mongodb.document_manager');
+        $this->getContainer()->get('crawler.seloger')->execute($this->getHelperSet()->get('progress'));
+        $this->getContainer()->get('crawler.explorimmo')->execute($this->getHelperSet()->get('progress'));
+        /*$dm = $this->getContainer()->get('doctrine.odm.mongodb.document_manager');
+        $e = $dm->getRepository('CrawlerBundle:Accommodation')->findAll();
+        var_dump(count($e));*/
     }
 
 }

@@ -32,6 +32,9 @@ abstract class AbstractCrawler
     /** @DI\Inject("jms_serializer") */
     public $serializer;
     protected $progress;
+    protected $followPagination = false;
+    protected $annoncesNode; // XPath
+    protected $nextPageNode; // XPath
 
     /**
      * Constructor
@@ -46,23 +49,31 @@ abstract class AbstractCrawler
     /**
      * Reset request to perform new one
      *
-     * @param string $url
-     * @param array  $params
-     * @param bool   $proxy
+     * If there ain't $params, we follow the next page full url received by WS
+     * or we takin base url from Document class and add referenced parameters.
+     *
+     * @param string      $url
+     * @param array|bool  $params
+     * @param bool        $proxy
      */
-    private function addRequest($url, $params, $proxy = false)
+    private function addRequest($url, $params = false, $proxy = false)
     {
-        $this->request = new Request(static::HTTP_METHOD, call_user_func(array(static::$documentClass, $url)));
+        if ($params) {
+            $url = call_user_func(array(static::$documentClass, $url));
+        }
+        $this->request = new Request(static::HTTP_METHOD, $url);
         $this->request->setClient($this->client);
         $this->request->getCurlOptions()->set(CURLOPT_USERAGENT, $this->class->getConstant('USER_AGENT'));
+
+        if ($params) {
+            $this->query = $this->request->getQuery();
+            $this->query->replace($params);
+        }
 
         if ($proxy) {
             $this->request->getCurlOptions()->set(CURLOPT_PROXY, 'localhost:8888');
             $this->request->getCurlOptions()->set(CURLOPT_PROXYTYPE, CURLPROXY_HTTP);
         }
-
-        $this->query = $this->request->getQuery();
-        $this->query->replace($params);
     }
 
     /**
@@ -74,17 +85,23 @@ abstract class AbstractCrawler
 
     /**
      * Perform list of accommodations
+     * or next page
      *
-     * @return mixed
+     * @param string|bool $nextPage Next page is false by default, but can contain the URL to follow if needed
      */
-    public function getAccommodationsList()
+    public function getAccommodationsList($nextPage = false)
     {
-        $this->addRequest('getSearchUrl', $this->params);
+        if ($nextPage) {
+            $this->addRequest($nextPage);
+        } else {
+            $this->addRequest('getSearchUrl', $this->params);
+        }
 
         $response = $this->request->send();
         $xml      = $response->xml();
 
-        return $xml;
+
+        $this->saveAccomodationsList($xml);
     }
 
     /**
@@ -97,14 +114,15 @@ abstract class AbstractCrawler
     public function saveAccomodationsList($xml)
     {
         $cpt = 0;
+        $announces = $xml->xpath($this->annoncesNode);
 
-        foreach ($xml as $annonce) {
-            $entite = $this->serializer->deserialize($annonce->asXML(), static::$documentClass, 'xml');
+        foreach ($announces as $announce) {
+            $entite = $this->serializer->deserialize($announce->asXML(), static::$documentClass, 'xml');
 
             if (!$this->dm->find(static::$documentClass, $entite->generateId())) {
                 /* If we dont have to fetch detail for each announce, we can save photos now */
                 if (!$this->class->hasConstant('URL_DETAIL')) {
-                    $entite->setPhotos($annonce->photos);
+                    $entite->setPhotos($announce->photos);
                 }
                 $this->dm->persist($entite);
                 $cpt++;
@@ -112,18 +130,21 @@ abstract class AbstractCrawler
         }
         $this->dm->flush();
 
-        $this->output->writeln('[<info>'.$this->class->getShortName().'</info>] ('.$cpt.'/'.count($xml).') accommodations added.');
+        $this->output->writeln('[<info>'.$this->class->getShortName().'</info>] ('.$cpt.'/'.count($announces).') accommodations added.');
 
-        // if new announces and if url is setted in the document concerned
+
+        /* If following pagination is activated and if 'nextPage' link exist, we follow the link */
+        if ($this->followPagination && count($xml->xpath($this->nextPageNode)) > 0) {
+            $this->getAccommodationsList((string) $xml->xpath($this->nextPageNode)[0]);
+
+            return;
+        }
+
+
+        // Once each pages are scrapped, if we need additional datas, we fetch every detailed pages
         if ($cpt && $this->class->hasConstant('URL_DETAIL')) {
             $this->saveAccomodationsDetails();
         }
-
-        /* For the pagination :
-
-         * echo $xml->resume . PHP_EOL;
-         * var_dump('nb trouvees '.$xml->nbTrouvees.' nbAffichables '.$xml->nbAffichables. ' count '.count($xml->annonces->annonce));
-         */
     }
 
     /**
