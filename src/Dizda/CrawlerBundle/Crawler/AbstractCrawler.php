@@ -126,7 +126,7 @@ abstract class AbstractCrawler
                 }
                 $this->dm->persist($entite);
                 $cpt++;
-            }
+            } // we can check here if the announce was updated comparing $remoteUpdatedAt fields of both
         }
         $this->dm->flush();
 
