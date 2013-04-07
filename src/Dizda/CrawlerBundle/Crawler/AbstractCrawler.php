@@ -31,7 +31,11 @@ abstract class AbstractCrawler
     protected $query;
     /** @DI\Inject("jms_serializer") */
     public $serializer;
+    protected $progress;
 
+    /**
+     * Constructor
+     */
     public function __construct()
     {
         $this->output     = new ConsoleOutput;
@@ -39,6 +43,13 @@ abstract class AbstractCrawler
         $this->class      = new \ReflectionClass(static::$documentClass);
     }
 
+    /**
+     * Reset request to perform new one
+     *
+     * @param string $url
+     * @param array  $params
+     * @param bool   $proxy
+     */
     private function addRequest($url, $params, $proxy = false)
     {
         $this->request = new Request(static::HTTP_METHOD, call_user_func(array(static::$documentClass, $url)));
@@ -54,8 +65,18 @@ abstract class AbstractCrawler
         $this->query->replace($params);
     }
 
-    abstract public function execute();
+    /**
+     * @param Object $progress The progressbar
+     *
+     * @return mixed
+     */
+    abstract public function execute($progress);
 
+    /**
+     * Perform list of accommodations
+     *
+     * @return mixed
+     */
     public function getAccommodationsList()
     {
         $this->addRequest('getSearchUrl', $this->params);
@@ -66,6 +87,13 @@ abstract class AbstractCrawler
         return $xml;
     }
 
+    /**
+     * Saving list of accommodations w/ or w/o details, it's depends which website showing enougth
+     * informations or not.
+     * Ex. Seloger don't need to fetch detail, but Explorimmo yes
+     *
+     * @param \XMLSimpleElement $xml
+     */
     public function saveAccomodationsList($xml)
     {
         $cpt = 0;
@@ -87,9 +115,15 @@ abstract class AbstractCrawler
         $this->output->writeln('[<info>'.$this->class->getShortName().'</info>] ('.$cpt.'/'.count($xml).') accommodations added.');
 
         // if new announces and if url is setted in the document concerned
-        if (/*$cpt && */$this->class->hasConstant('URL_DETAIL')) {
+        if ($cpt && $this->class->hasConstant('URL_DETAIL')) {
             $this->saveAccomodationsDetails();
         }
+
+        /* For the pagination :
+
+         * echo $xml->resume . PHP_EOL;
+         * var_dump('nb trouvees '.$xml->nbTrouvees.' nbAffichables '.$xml->nbAffichables. ' count '.count($xml->annonces->annonce));
+         */
     }
 
     /**
@@ -99,12 +133,13 @@ abstract class AbstractCrawler
     public function saveAccomodationsDetails()
     {
         $entities = $this->dm->getRepository(static::$documentClass)->findBy(array('fullDetail' => false));
+        $total = count($entities);
 
         $this->output->writeln('[<info>'.$this->class->getShortName().'</info>] Fetching '.count($entities).' announces details...');
 
-        // progress bar
+
+        $this->progress->start($this->output, $total);
         foreach ($entities as $annonceLight) {
-            var_dump($annonceLight->getRemoteId());
 
             $this->addRequest('getDetailUrl', array('id' => $annonceLight->getRemoteId())); // setting detail Url
 
@@ -115,13 +150,16 @@ abstract class AbstractCrawler
                                     $this->class->getStaticPropertyValue('xmlReplace'),
                                     $xml->asXML()); // clean XML..
 
-            $entite = $this->serializer->deserialize($xml, static::$documentClass, 'xml');
-            $entite->setPhotos($photos->photos->photo);
-            $entite->setFullDetail(true);
-            $this->dm->persist($entite);
-
+            $announce = $this->serializer->deserialize($xml, static::$documentClass, 'xml');
+            $announce->setPhotos($photos->photos->photo);
+            $announce->setFullDetail(true);
+            $this->dm->persist($announce);
+            $this->progress->advance();
         }
         $this->dm->flush();
+        $this->progress->finish();
+
+        $this->output->writeln('[<info>'.$this->class->getShortName().'</info>] <comment>'.$total.' announces added.</comment>');
     }
 
 }

@@ -27,9 +27,12 @@ class SelogerCrawler extends AbstractCrawler
                          'getDtCreationMax' => '1' ];
     //$query->add('pg', '22'); // pas bonne pagination..
 
-
-    public function execute()
+    /**
+     * {@inheritdoc}
+     */
+    public function execute($progress)
     {
+        $this->progress = $progress;
         $xml = parent::getAccommodationsList();
 
         var_dump($xml);
