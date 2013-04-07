@@ -194,7 +194,7 @@ class Explorimmo extends Accommodation
     public function setPhotos($photos)
     {
         $collection = array();
-        foreach ($photos->photo as $photo) {
+        foreach ($photos as $photo) {
 
             if (strlen((string) $photo['url']) > 0) {
                 $collection[] = (string) $photo['url'];

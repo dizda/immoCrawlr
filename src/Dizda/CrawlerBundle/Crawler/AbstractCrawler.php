@@ -25,7 +25,7 @@ abstract class AbstractCrawler
     protected $output;
     /** @DI\Inject("doctrine.odm.mongodb.document_manager") */
     public $dm;
-    protected $client;
+    private $client;
     protected $request;
     protected $params;
     protected $query;
@@ -37,19 +37,29 @@ abstract class AbstractCrawler
         $this->output     = new ConsoleOutput;
         $this->client     = new Client();
         $this->class      = new \ReflectionClass(static::$documentClass);
+    }
 
-        $this->request = new Request(static::HTTP_METHOD, call_user_func(array(static::$documentClass, 'getSearchUrl')));
+    private function addRequest($url, $params, $proxy = false)
+    {
+        $this->request = new Request(static::HTTP_METHOD, call_user_func(array(static::$documentClass, $url)));
         $this->request->setClient($this->client);
         $this->request->getCurlOptions()->set(CURLOPT_USERAGENT, $this->class->getConstant('USER_AGENT'));
 
+        if ($proxy) {
+            $this->request->getCurlOptions()->set(CURLOPT_PROXY, 'localhost:8888');
+            $this->request->getCurlOptions()->set(CURLOPT_PROXYTYPE, CURLPROXY_HTTP);
+        }
+
         $this->query = $this->request->getQuery();
+        $this->query->replace($params);
     }
 
     abstract public function execute();
 
     public function getAccommodationsList()
     {
-        $this->query->replace($this->params);
+        $this->addRequest('getSearchUrl', $this->params);
+
         $response = $this->request->send();
         $xml      = $response->xml();
 
@@ -74,10 +84,10 @@ abstract class AbstractCrawler
         }
         $this->dm->flush();
 
-        $this->output->writeln('[<info>'.$this->class->getShortName().'</info>] ('.$cpt.'/'.count($xml).') accomodations added.');
+        $this->output->writeln('[<info>'.$this->class->getShortName().'</info>] ('.$cpt.'/'.count($xml).') accommodations added.');
 
         // if new announces and if url is setted in the document concerned
-        if ($cpt && $this->class->hasConstant('URL_DETAIL')) {
+        if (/*$cpt && */$this->class->hasConstant('URL_DETAIL')) {
             $this->saveAccomodationsDetails();
         }
     }
@@ -90,12 +100,13 @@ abstract class AbstractCrawler
     {
         $entities = $this->dm->getRepository(static::$documentClass)->findBy(array('fullDetail' => false));
 
-        $this->output->writeln('[<info>'.$this->class->getShortName().'</info>] Fetching '.count($entities).' announces...');
+        $this->output->writeln('[<info>'.$this->class->getShortName().'</info>] Fetching '.count($entities).' announces details...');
 
+        // progress bar
         foreach ($entities as $annonceLight) {
             var_dump($annonceLight->getRemoteId());
 
-            $this->query->replace(array('id', $annonceLight->getRemoteId()));
+            $this->addRequest('getDetailUrl', array('id' => $annonceLight->getRemoteId())); // setting detail Url
 
             $response = $this->request->send();
             $xml      = $response->xml();
@@ -103,10 +114,9 @@ abstract class AbstractCrawler
             $xml      = str_replace($this->class->getStaticPropertyValue('xmlSearch'),
                                     $this->class->getStaticPropertyValue('xmlReplace'),
                                     $xml->asXML()); // clean XML..
-            var_dump($xml);
 
             $entite = $this->serializer->deserialize($xml, static::$documentClass, 'xml');
-            $entite->setPhotos($photos->photos);
+            $entite->setPhotos($photos->photos->photo);
             $entite->setFullDetail(true);
             $this->dm->persist($entite);
 
