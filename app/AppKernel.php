@@ -26,6 +26,7 @@ class AppKernel extends Kernel
             new Dizda\CrawlerBundle\CrawlerBundle(),
 
             new JMS\SerializerBundle\JMSSerializerBundle(),
+            new Dizda\SiteBundle\SiteBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
