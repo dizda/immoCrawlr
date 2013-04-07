@@ -1,0 +1,26 @@
+.thumbnails .first {
+    margin-left: 0;
+    clear:both;
+}
+
+.thumbnail h3 {
+    margin:0;
+}
+
+/*
+.thumbnail p.description {
+    height: 240px;
+    overflow: hidden;
+}*/
+
+/*.thumbnail .price {
+    position: relative;
+    top:10px;
+    right: 10px;
+}*/
+
+/*
+.content .accommodation {
+    border:1px solid #ddd;
+    margin-bottom: 20px;
+}*/
