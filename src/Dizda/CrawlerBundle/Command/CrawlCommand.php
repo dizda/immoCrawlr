@@ -35,7 +35,8 @@ class CrawlCommand extends ContainerAwareCommand
         /*$seloger = new SelogerCrawler();
         $seloger->execute();*/
 
-        $this->getContainer()->get('crawler.seloger')->execute();
+        //$this->getContainer()->get('crawler.seloger')->execute();
+        $this->getContainer()->get('crawler.explorimmo')->execute();
     }
 
     public function crawlSeloger()

@@ -2,12 +2,11 @@
 namespace Dizda\CrawlerBundle\Crawler;
 
 use Dizda\CrawlerBundle\Crawler\AbstractCrawler;
-use Symfony\Component\Console\Output\ConsoleOutput;
 use JMS\DiExtraBundle\Annotation as DI;
 
 
 /**
- * Class SelogerAbstract
+ * Class SelogerCrawler
  *
  * @package Dizda\CrawlerBundle\Crawler
  * @DI\Service("crawler.seloger")
@@ -35,10 +34,7 @@ class SelogerCrawler extends AbstractCrawler
 
         var_dump($xml);
 
-        if (parent::saveAccomodationsList($xml->annonces->annonce))
-        {
-
-        }
+        parent::saveAccomodationsList($xml->annonces->annonce);
     }
 
 }

@@ -64,8 +64,11 @@ abstract class AbstractCrawler
             $entite = $this->serializer->deserialize($annonce->asXML(), static::$documentClass, 'xml');
 
             if (!$this->dm->find(static::$documentClass, $entite->generateId())) {
+                /* If we dont have to fetch detail for each announce, we can save photos now */
+                if (!$this->class->hasConstant('URL_DETAIL')) {
+                    $entite->setPhotos($annonce->photos);
+                }
                 $this->dm->persist($entite);
-                $entite->setPhotos($annonce->photos);
                 $cpt++;
             }
         }
@@ -73,13 +76,21 @@ abstract class AbstractCrawler
 
         $this->output->writeln('[<info>'.$this->class->getShortName().'</info>] ('.$cpt.'/'.count($xml).') accomodations added.');
 
-        return $cpt;
+        // if new announces and if url is setted in the document concerned
+        if ($cpt && $this->class->hasConstant('URL_DETAIL')) {
+            $this->saveAccomodationsDetails();
+        }
     }
 
-
+    /**
+     * If there is new announces,
+     * and if announce have to reach Detail url to get more informations
+     */
     public function saveAccomodationsDetails()
     {
         $entities = $this->dm->getRepository(static::$documentClass)->findBy(array('fullDetail' => false));
+
+        $this->output->writeln('[<info>'.$this->class->getShortName().'</info>] Fetching '.count($entities).' announces...');
 
         foreach ($entities as $annonceLight) {
             var_dump($annonceLight->getRemoteId());
@@ -89,7 +100,9 @@ abstract class AbstractCrawler
             $response = $this->request->send();
             $xml      = $response->xml();
             $photos   = $xml;
-            $xml      = str_replace(Explorimmo::$xmlSearch, Explorimmo::$xmlReplace, $xml->asXML()); // clean XML..
+            $xml      = str_replace($this->class->getStaticPropertyValue('xmlSearch'),
+                                    $this->class->getStaticPropertyValue('xmlReplace'),
+                                    $xml->asXML()); // clean XML..
             var_dump($xml);
 
             $entite = $this->serializer->deserialize($xml, static::$documentClass, 'xml');
