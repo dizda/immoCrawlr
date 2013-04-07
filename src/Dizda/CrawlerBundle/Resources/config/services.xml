@@ -8,13 +8,13 @@
     <parameters>
         <parameter key="crawler.example.class">Dizda\CrawlerBundle\Example</parameter>
     </parameters>
-
-    <services>
-        <service id="crawler.example" class="%crawler.example.class%">
-            <argument type="service" id="service_id" />
-            <argument>plain_value</argument>
-            <argument>%parameter_name%</argument>
-        </service>
-    </services>
     -->
+    <!--<services>
+        <service id="dizda.crawler.crawler.seloger" class="Dizda\CrawlerBundle\Crawler\SelogerCrawler">
+            <call method="setSerializer">
+                <argument type="service" id="jms_serializer" />
+            </call>
+        </service>
+    </services>-->
+
 </container>

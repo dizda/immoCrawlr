@@ -741,12 +741,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "66b6b7169e523547fb17856060cea1b350833d51"
+                "reference": "86e40a692b5b052942bd655961fed0dd696ef24e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/66b6b7169e523547fb17856060cea1b350833d51",
-                "reference": "66b6b7169e523547fb17856060cea1b350833d51",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/86e40a692b5b052942bd655961fed0dd696ef24e",
+                "reference": "86e40a692b5b052942bd655961fed0dd696ef24e",
                 "shasum": ""
             },
             "require": {
@@ -803,7 +803,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2013-04-04 18:35:01"
+            "time": "2013-04-06 17:56:15"
         },
         {
             "name": "fabpot/goutte",
@@ -863,12 +863,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "c19e0d56ad81b867691d328863003a92bf20d4b6"
+                "reference": "6f044c5c7ed61d547f021bf5ac7a024ca42ef5a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/c19e0d56ad81b867691d328863003a92bf20d4b6",
-                "reference": "c19e0d56ad81b867691d328863003a92bf20d4b6",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/6f044c5c7ed61d547f021bf5ac7a024ca42ef5a7",
+                "reference": "6f044c5c7ed61d547f021bf5ac7a024ca42ef5a7",
                 "shasum": ""
             },
             "require": {
@@ -949,7 +949,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2013-04-05 23:12:55"
+            "time": "2013-04-07 00:50:51"
         },
         {
             "name": "jdorn/sql-formatter",
@@ -2211,12 +2211,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "v2.2.1"
+                "reference": "6c114ca8c4780bbb1f0863df61e35ad93138b861"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/v2.2.1",
-                "reference": "v2.2.1",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/6c114ca8c4780bbb1f0863df61e35ad93138b861",
+                "reference": "6c114ca8c4780bbb1f0863df61e35ad93138b861",
                 "shasum": ""
             },
             "require": {
@@ -2302,7 +2302,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2013-04-06 10:16:33"
+            "time": "2013-04-06 13:17:40"
         },
         {
             "name": "twig/extensions",
