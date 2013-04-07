@@ -2,18 +2,25 @@
 
 namespace Dizda\SiteBundle\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Dizda\CoreBundle\Controller\CoreController;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
-class DefaultController extends Controller
+/**
+ * Class DefaultController
+ *
+ * @package Dizda\SiteBundle\Controller
+ */
+class DefaultController extends CoreController
 {
     /**
-     * @Route("/hello/{name}")
+     * @Route("/")
      * @Template()
      */
-    public function indexAction($name)
+    public function indexAction()
     {
-        return array('name' => $name);
+        $accommodations = $this->getRepo('CrawlerBundle:Accommodation')->findBy([], ['remoteUpdatedAt' => 'DESC']);
+
+        return array('accommodations' => $accommodations);
     }
 }
