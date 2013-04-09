@@ -17,6 +17,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class Accommodation
 {
+    const WS_TYPE             = null;
     const USER_AGENT          = null;
 
     const TYPE_TRANS_SELL     = 1;
@@ -25,6 +26,8 @@ class Accommodation
     const TYPE_GOOD_HOUSE     = 1;
     const TYPE_GOOD_FLAT      = 2;
     const TYPE_GOOD_LOFT      = 3;
+
+    static protected $headers        = [];
 
     /**
      *  @JMS\Exclude
@@ -1269,5 +1272,10 @@ class Accommodation
     public function getFullDetail()
     {
         return $this->fullDetail;
+    }
+
+    static public function getHeaders()
+    {
+        return static::$headers;
     }
 }

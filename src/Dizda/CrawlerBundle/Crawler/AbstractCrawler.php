@@ -56,7 +56,7 @@ abstract class AbstractCrawler
      * @param array|bool  $params
      * @param bool        $proxy
      */
-    private function addRequest($url, $params = false, $proxy = false)
+    private function addRequest($url, $params = false, $proxy = true)
     {
         if ($params) {
             $url = call_user_func(array(static::$documentClass, $url));
@@ -64,6 +64,7 @@ abstract class AbstractCrawler
         $this->request = new Request(static::HTTP_METHOD, $url);
         $this->request->setClient($this->client);
         $this->request->getCurlOptions()->set(CURLOPT_USERAGENT, $this->class->getConstant('USER_AGENT'));
+        $this->addHeaders(call_user_func(array(static::$documentClass, 'getHeaders')));
 
         if ($params) {
             $this->query = $this->request->getQuery();
@@ -73,6 +74,20 @@ abstract class AbstractCrawler
         if ($proxy) {
             $this->request->getCurlOptions()->set(CURLOPT_PROXY, 'localhost:8888');
             $this->request->getCurlOptions()->set(CURLOPT_PROXYTYPE, CURLPROXY_HTTP);
+        }
+    }
+
+    /**
+     * Add some headers to avoid being detected
+     *
+     * @param array $headers Associative array
+     */
+    private function addHeaders(array $headers)
+    {
+        if (count($headers) > 0) {
+            foreach ($headers as $key => $value) {
+                $this->request->getHeaders()->add($key, $value);
+            }
         }
     }
 
@@ -97,7 +112,7 @@ abstract class AbstractCrawler
             $this->addRequest('getSearchUrl', $this->params);
         }
 
-        $response = $this->request->send();
+        $response = $this->request->send();var_dump($response->json());die();
         $xml      = $response->xml();
 
 
@@ -117,7 +132,7 @@ abstract class AbstractCrawler
         $announces = $xml->xpath($this->annoncesNode);
 
         foreach ($announces as $announce) {
-            $entite = $this->serializer->deserialize($announce->asXML(), static::$documentClass, 'xml');
+            $entite = $this->serializer->deserialize($announce->asXML(), static::$documentClass, $this->class->getConstant('WS_TYPE'));
 
             if (!$this->dm->find(static::$documentClass, $entite->generateId())) {
                 /* If we dont have to fetch detail for each announce, we can save photos now */

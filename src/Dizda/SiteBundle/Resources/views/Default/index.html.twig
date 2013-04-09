@@ -16,7 +16,7 @@
                             <div class="caption">
                                 <span class="badge clearfix">{{ a.city }}</span>
                                 <span class="badge clearfix">{{ a.district }}</span>
-                                <span class="badge badge-info pull-right clearfix">{{ a.price }} €</span>
+                                <span class="badge badge-info pull-right clearfix">{{ a.price|number_format(0, '.', ' ') }} €</span>
 
                                 <h3>{{ a.title }}</h3>
                                 <p class="description">{{ a.description }}</p>

@@ -14,6 +14,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class Seloger extends Accommodation
 {
+    const WS_TYPE    = 'xml';
     const HOST       = 'http://ws.seloger.com/';
     const URL_SEARCH = 'search.xml';
 

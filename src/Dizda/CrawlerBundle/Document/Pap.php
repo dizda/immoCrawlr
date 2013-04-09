@@ -6,32 +6,21 @@ use Dizda\CrawlerBundle\Document\Accommodation;
 use JMS\Serializer\Annotation as JMS;
 
 /**
- * Store every ads of Seloger.com into our MongoDB
+ * Store every ads of Pap into our MongoDB
  *
  * @MongoDB\Document
  *
- * @JMS\XmlRoot("classified")
+ * @JMS\XmlRoot("annonces")
  */
-class Explorimmo extends Accommodation
+class Pap extends Accommodation
 {
-    const WS_TYPE    = 'xml';
-    const HOST       = 'http://www.explorimmo.com/';
-    const URL_SEARCH = 'rest/iClassifieds';
-    const URL_DETAIL = 'rest/iClassified';
+    const WS_TYPE    = 'json';
+    const HOST       = 'http://www.pap.fr/';
+    const URL_SEARCH = 'iphone/v1/recherche.php';
+    const URL_DETAIL = 'iphone/v1/detail.php';
 
-    const USER_AGENT = 'Apache-HttpClient/UNAVAILABLE (java 1.4)';
+    const USER_AGENT = 'Apache-HttpClient/Android';
 
-    /**
-     * @JMS\Exclude
-     */
-    public static $xmlSearch = array('<annonce>', '</annonce>', '<summary>', '</summary>', '<characteristics>',
-                                     '</characteristics>', '<budget>', '</budget>', '<proximity>', '</proximity>', '<localisation>',
-                                     '</localisation>', '<contact>', '</contact>');
-
-    /**
-     * @JMS\Exclude
-     */
-    public static $xmlReplace = array('<classified>', '</classified>', '', '', '', '', '', '', '', '', '', '', '', '');
 
     /**
      *  @JMS\Type("string")
@@ -40,8 +29,13 @@ class Explorimmo extends Accommodation
 
     /**
      *  @JMS\Type("string")
-     *  @JMS\SerializedName("misc") */
+     *  @JMS\SerializedName("soustitre") */
     protected $title;
+
+    /**
+     *  @JMS\Type("string")
+     *  @JMS\SerializedName("detail2") */
+    protected $title2;
 
     /**
      *  @JMS\Type("string")
@@ -50,7 +44,7 @@ class Explorimmo extends Accommodation
 
     /**
      *  @JMS\Type("string")
-     *  @JMS\SerializedName("description") */
+     *  @JMS\SerializedName("texte") */
     protected $description;
 
 
@@ -59,7 +53,7 @@ class Explorimmo extends Accommodation
 
     /**
      *  @JMS\Type("double")
-     *  @JMS\SerializedName("amount") */
+     *  @JMS\SerializedName("titre") */
     protected $price;
 
     /**
@@ -125,7 +119,7 @@ class Explorimmo extends Accommodation
 
     /**
      *  @JMS\Type("string")
-     *  @JMS\SerializedName("cityLabel") */
+     *  @JMS\SerializedName("soustitre") */
     protected $city;
 
     /**
@@ -135,12 +129,12 @@ class Explorimmo extends Accommodation
 
     /**
      *  @JMS\Type("double")
-     *  @JMS\SerializedName("latitudeCity") */
+     *  @JMS\SerializedName("geo_lat") */
     protected $geoLat;
 
     /**
      *  @JMS\Type("double")
-     *  @JMS\SerializedName("longitudeCity") */
+     *  @JMS\SerializedName("geo_lng") */
     protected $geoLong;
 
 
@@ -252,6 +246,14 @@ class Explorimmo extends Accommodation
     final public static function getDetailUrl()
     {
         return static::HOST . static::URL_DETAIL;
+    }
+
+    static public function getHeaders()
+    {
+        return array(
+            'MDATA'   => '{"device":{"os":"android","model":"m0","udid":"'.uniqid(rand(100, 999)).'","language":"FR","version":"4.'.rand(0, 2).'.'.rand(0, 3).'","name":""},"bundle":{"identifier":"com.mobistep.pap","distribution":"com.mobistep.pap","version":"1.3"}}',
+            'Cookie2' => '$Version=1'
+        );
     }
 
 }
