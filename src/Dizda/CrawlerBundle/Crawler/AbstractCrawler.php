@@ -21,16 +21,16 @@ abstract class AbstractCrawler
 
     static protected $documentClass;
 
-    protected $class;
-    protected $output;
     /** @DI\Inject("doctrine.odm.mongodb.document_manager") */
     public $dm;
+    /** @DI\Inject("jms_serializer") */
+    public $serializer;
     private $client;
+    protected $class;
+    protected $output;
     protected $request;
     protected $params;
     protected $query;
-    /** @DI\Inject("jms_serializer") */
-    public $serializer;
     protected $progress;
     protected $followPagination = false;
     protected $annoncesNode; // XPath

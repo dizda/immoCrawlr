@@ -1278,4 +1278,17 @@ class Accommodation
     {
         return static::$headers;
     }
+
+    /**
+     * Get discriminator string and escape namespace name
+     * obtain something like : "Seloger" or "Explorimmo", etc.
+     *
+     * @return mixed
+     */
+    public function getType()
+    {
+        $type = explode('\\', get_class($this));
+
+        return end($type);
+    }
 }

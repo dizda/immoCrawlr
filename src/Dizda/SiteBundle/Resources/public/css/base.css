@@ -7,6 +7,18 @@
     margin:0;
 }
 
+.thumbnail .photos {
+    position: relative;
+    width:400px;
+    height:300px;
+}
+
+.thumbnail .photos img {
+    position: absolute;
+    top:0;
+    left:0;
+}
+
 /*
 .thumbnail p.description {
     height: 240px;

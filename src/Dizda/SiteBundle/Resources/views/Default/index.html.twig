@@ -4,15 +4,23 @@
 {% block page_header %}{% endblock page_header %}
 
 {% block content %}
-    <div class="span12 content">
+    <div class="span12 content" ng-app="indexApp">
 
-        <div class="row-fluid">
+        <div class="row-fluid" ng-controller="GridCtrl">
             <ul class="thumbnails">
                 {% for a in accommodations %}
 
                     <li class="span4 {% if loop.index0 is divisibleby(3) %}first{% endif %}{% if loop.index is divisibleby(3) %} last{% endif %}">
                         <div class="thumbnail">
-                            <img data-src="holder.js/400x300" alt="400x300" style="width: 400px; height: 300px;" src="{{ a.photos[0]|default(noThumb) }}">
+                            <div class="photos">
+                                {% for photo in a.photos %}
+                                    {#<img data-src="holder.js/400x300" alt="400x300" style="width: 400px; height: 300px;" src="{{ photo }}">#}
+                                    <img data-original="{{ photo }}" alt="400x300" style="width: 400px; height: 300px;">
+                                {% else %}
+                                    {#<img data-src="holder.js/400x300" alt="400x300" style="width: 400px; height: 300px;" src="{{ a.photos[0]|default(noThumb) }}">#}
+                                    <img data-src="holder.js/400x300" alt="400x300" style="width: 400px; height: 300px;">
+                                {% endfor %}
+                            </div>
                             <div class="caption">
                                 <span class="badge clearfix">{{ a.city }}</span>
                                 <span class="badge clearfix">{{ a.district }}</span>
@@ -28,6 +36,8 @@
                                         {% endif %}
                                         <button class="btn"><i class="icon-envelope"></i> {{ a.contactEmail }}</button>
                                     </div>
+                                    {{ a.remoteId }} {{ a.type }}
+                                    <i class="icon-camera"></i>{{ a.photos|length }}<button type="button" class="btn btn-danger pull-right">{#{{ a.getDiscriminatorType() }}#}</button>
                                 </p>
 
                             </div>
