@@ -18,11 +18,13 @@ class PapCrawler extends AbstractCrawler
 
     protected $params = ['produit'               => 'location',
                          'typesbien[0]'          => 'appartement',
-                         'prix[max]'             => '2800',
-                         'surface[min]'          => '30',
+                         'prix[max]'             => '3000',
+                         'surface[min]'          => '50',
                          'nb_pieces[min]'        => '3',
                          'nb_chambres[min]'      => '2',
                          'geoobjets[0]'          => '37770;0',
+                         'geoobjets[1]'          => '37776;0', // Paris
+                         'geoobjets[2]'          => '37778;0', // Paris 11e
                          'plateforme'            => 'android',
                          'type'                  => 'create',
                          'nb_resultats_par_page' => '40',
@@ -39,6 +41,11 @@ class PapCrawler extends AbstractCrawler
     {
         $this->progress = $progress;
         parent::getAccommodationsList();
+    }
+
+    protected function getNode($response)
+    {
+        return $response['annonces'];
     }
 
 }

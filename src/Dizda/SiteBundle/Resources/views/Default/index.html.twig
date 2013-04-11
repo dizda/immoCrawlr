@@ -24,6 +24,7 @@
                             <div class="caption">
                                 <span class="badge clearfix">{{ a.city }}</span>
                                 <span class="badge clearfix">{{ a.district }}</span>
+                                <span class="badge badge-important">{{ a.type }}</span>
                                 <span class="badge badge-info pull-right clearfix">{{ a.price|number_format(0, '.', ' ') }} €</span>
 
                                 <h3>{{ a.title }}</h3>
@@ -36,7 +37,7 @@
                                         {% endif %}
                                         <button class="btn"><i class="icon-envelope"></i> {{ a.contactEmail }}</button>
                                     </div>
-                                    {{ a.remoteId }} {{ a.type }}
+                                    {{ a.remoteId }}
                                     <i class="icon-camera"></i>{{ a.photos|length }}<button type="button" class="btn btn-danger pull-right">{#{{ a.getDiscriminatorType() }}#}</button>
                                 </p>
 

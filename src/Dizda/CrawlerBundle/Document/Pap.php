@@ -14,7 +14,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class Pap extends Accommodation
 {
-    const WS_TYPE    = 'json';
+    const WS_FORMAT  = 'json';
     const HOST       = 'http://www.pap.fr/';
     const URL_SEARCH = 'iphone/v1/recherche.php';
     const URL_DETAIL = 'iphone/v1/detail.php';
@@ -52,8 +52,9 @@ class Pap extends Accommodation
 
 
     /**
-     *  @JMS\Type("double")
-     *  @JMS\SerializedName("titre") */
+     *  @JMS\Type("string")
+     *  @JMS\SerializedName("titre")
+     *  @JMS\Accessor(setter="setPrice") */
     protected $price;
 
     /**
@@ -252,8 +253,16 @@ class Pap extends Accommodation
     {
         return array(
             'MDATA'   => '{"device":{"os":"android","model":"m0","udid":"'.uniqid(rand(100, 999)).'","language":"FR","version":"4.'.rand(0, 2).'.'.rand(0, 3).'","name":""},"bundle":{"identifier":"com.mobistep.pap","distribution":"com.mobistep.pap","version":"1.3"}}',
-            'Cookie2' => '$Version=1'
+            'Cookie2' => '$Version=1',
+            'Accept-Encoding'=>'gzip'
         );
+    }
+
+    public function setPrice($price)
+    {
+        $this->price = (double) str_replace(array(' ', '€'), array('', ''), $price);
+
+        return $this;
     }
 
 }

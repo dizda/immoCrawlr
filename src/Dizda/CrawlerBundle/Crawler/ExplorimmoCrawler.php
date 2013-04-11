@@ -40,4 +40,8 @@ class ExplorimmoCrawler extends AbstractCrawler
         parent::getAccommodationsList();
     }
 
+    protected function getNode($response)
+    {
+        return $response['annonces'];
+    }
 }

@@ -17,7 +17,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class Accommodation
 {
-    const WS_TYPE             = null;
+    const WS_FORMAT           = null;
     const USER_AGENT          = null;
 
     const TYPE_TRANS_SELL     = 1;

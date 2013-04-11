@@ -56,20 +56,20 @@ abstract class AbstractCrawler
      * @param array|bool  $params
      * @param bool        $proxy
      */
-    private function addRequest($url, $params = false, $proxy = true)
+    private function addRequest($url, $params = false, $proxy = false)
     {
+        $method = strtolower(static::HTTP_METHOD);
         if ($params) {
             $url = call_user_func(array(static::$documentClass, $url));
         }
-        $this->request = new Request(static::HTTP_METHOD, $url);
-        $this->request->setClient($this->client);
-        $this->request->getCurlOptions()->set(CURLOPT_USERAGENT, $this->class->getConstant('USER_AGENT'));
-        $this->addHeaders(call_user_func(array(static::$documentClass, 'getHeaders')));
 
-        if ($params) {
+        $this->client->setUserAgent($this->class->getConstant('USER_AGENT'));
+        $this->request = $this->client->$method($url, call_user_func(array(static::$documentClass, 'getHeaders')), $params);
+
+        /*if ($params) {
             $this->query = $this->request->getQuery();
             $this->query->replace($params);
-        }
+        }*/
 
         if ($proxy) {
             $this->request->getCurlOptions()->set(CURLOPT_PROXY, 'localhost:8888');
@@ -106,18 +106,20 @@ abstract class AbstractCrawler
      */
     public function getAccommodationsList($nextPage = false)
     {
+        $format = $this->class->getConstant('WS_FORMAT');
+
         if ($nextPage) {
             $this->addRequest($nextPage);
         } else {
             $this->addRequest('getSearchUrl', $this->params);
         }
 
-        $response = $this->request->send();var_dump($response->json());die();
-        $xml      = $response->xml();
+        $response = $this->request->send()->$format();
 
-
-        $this->saveAccomodationsList($xml);
+        $this->saveAccomodationsList($response);
     }
+
+    abstract protected function getNode($response);
 
     /**
      * Saving list of accommodations w/ or w/o details, it's depends which website showing enougth
@@ -126,14 +128,16 @@ abstract class AbstractCrawler
      *
      * @param \XMLSimpleElement $xml
      */
-    public function saveAccomodationsList($xml)
+    public function saveAccomodationsList($response)
     {
         $cpt = 0;
-        $announces = $xml->xpath($this->annoncesNode);
+        //$announces = $xml->xpath($this->annoncesNode);
+        $announces = $this->getNode($response);
 
         foreach ($announces as $announce) {
-            $entite = $this->serializer->deserialize($announce->asXML(), static::$documentClass, $this->class->getConstant('WS_TYPE'));
-
+            //$entite = $this->serializer->deserialize($announce->asXML(), static::$documentClass, $this->class->getConstant('WS_TYPE'));
+            $entite = $this->serializer->deserialize(json_encode($announce), static::$documentClass, $this->class->getConstant('WS_FORMAT'));
+var_dump($entite);die();
             if (!$this->dm->find(static::$documentClass, $entite->generateId())) {
                 /* If we dont have to fetch detail for each announce, we can save photos now */
                 if (!$this->class->hasConstant('URL_DETAIL')) {
