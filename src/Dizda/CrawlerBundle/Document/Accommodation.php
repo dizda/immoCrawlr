@@ -11,9 +11,10 @@ use JMS\Serializer\Annotation as JMS;
  * @MongoDB\Document
  * @MongoDB\InheritanceType("SINGLE_COLLECTION")
  * @MongoDB\DiscriminatorField(fieldName="discriminatorType")
- * @MongoDB\DiscriminatorMap({"accommodation"="Accommodation",
- *                            "seloger"="Seloger",
- *                            "explorimmo"="Explorimmo"})
+ * @MongoDB\DiscriminatorMap({"accommodation"= "Accommodation",
+ *                            "seloger"      = "Seloger",
+ *                            "explorimmo"   = "Explorimmo",
+ *                            "pap"          = "Pap"})
  */
 class Accommodation
 {
@@ -27,7 +28,10 @@ class Accommodation
     const TYPE_GOOD_FLAT      = 2;
     const TYPE_GOOD_LOFT      = 3;
 
-    static protected $headers        = [];
+    /**
+     * @JMS\Exclude
+     */
+    static protected $headers  = [];
 
     /**
      *  @JMS\Exclude
@@ -1013,12 +1017,19 @@ class Accommodation
     /**
      * Set contactPhone
      *
-     * @param string $contactPhone
+     * @param string|array $contactPhone
+     *
      * @return \Accommodation
      */
     public function setContactPhone($contactPhone)
     {
+        if (is_array($contactPhone)) {
+            $this->contactPhone = implode(',', $contactPhone);
+
+            return $this;
+        }
         $this->contactPhone = $contactPhone;
+
         return $this;
     }
 

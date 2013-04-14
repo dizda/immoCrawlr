@@ -42,6 +42,18 @@ class ExplorimmoCrawler extends AbstractCrawler
 
     protected function getNode($response)
     {
-        return $response['annonces'];
+        return $response->xpath($this->annoncesNode);
+    }
+
+    protected function getDetailNode($response)
+    {
+        return str_replace($this->class->getStaticPropertyValue('xmlSearch'),
+            $this->class->getStaticPropertyValue('xmlReplace'),
+            $response->asXML());
+    }
+
+    protected function getPhotoNode($response)
+    {
+        return $response->photos->photo;
     }
 }

@@ -14,7 +14,7 @@ use JMS\Serializer\Annotation as JMS;
  */
 class Explorimmo extends Accommodation
 {
-    const WS_TYPE    = 'xml';
+    const WS_FORMAT  = 'xml';
     const HOST       = 'http://www.explorimmo.com/';
     const URL_SEARCH = 'rest/iClassifieds';
     const URL_DETAIL = 'rest/iClassified';

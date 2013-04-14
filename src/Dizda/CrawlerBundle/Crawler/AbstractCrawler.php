@@ -135,9 +135,10 @@ abstract class AbstractCrawler
         $announces = $this->getNode($response);
 
         foreach ($announces as $announce) {
-            //$entite = $this->serializer->deserialize($announce->asXML(), static::$documentClass, $this->class->getConstant('WS_TYPE'));
-            $entite = $this->serializer->deserialize(json_encode($announce), static::$documentClass, $this->class->getConstant('WS_FORMAT'));
-var_dump($entite);die();
+
+            $announce = ($announce instanceof \SimpleXMLElement) ? $announce->asXML() : json_encode($announce);
+            $entite   = $this->serializer->deserialize($announce, static::$documentClass, $this->class->getConstant('WS_FORMAT'));
+
             if (!$this->dm->find(static::$documentClass, $entite->generateId())) {
                 /* If we dont have to fetch detail for each announce, we can save photos now */
                 if (!$this->class->hasConstant('URL_DETAIL')) {
@@ -172,8 +173,9 @@ var_dump($entite);die();
      */
     public function saveAccomodationsDetails()
     {
+        $format   = $this->class->getConstant('WS_FORMAT');
         $entities = $this->dm->getRepository(static::$documentClass)->findBy(array('fullDetail' => false));
-        $total = count($entities);
+        $total    = count($entities);
 
         $this->output->writeln('[<info>'.$this->class->getShortName().'</info>] Fetching '.count($entities).' announces details...');
 
@@ -181,10 +183,9 @@ var_dump($entite);die();
         $this->progress->start($this->output, $total);
         foreach ($entities as $annonceLight) {
 
-            $this->addRequest('getDetailUrl', array('id' => $annonceLight->getRemoteId())); // setting detail Url
+            /*$this->addRequest('getDetailUrl', array('id' => $annonceLight->getRemoteId()));
 
-            $response = $this->request->send();
-            $xml      = $response->xml();
+            $response = $this->request->send()->$format();
             $photos   = $xml;
             $xml      = str_replace($this->class->getStaticPropertyValue('xmlSearch'),
                                     $this->class->getStaticPropertyValue('xmlReplace'),
@@ -192,7 +193,19 @@ var_dump($entite);die();
 
             $announce = $this->serializer->deserialize($xml, static::$documentClass, 'xml');
             $announce->setPhotos($photos->photos->photo);
+            $announce->setFullDetail(true);*/
+
+            $this->addRequest('getDetailUrl', array('id' => $annonceLight->getRemoteId()));
+            $announce = $this->request->send()->$format();
+            $photos   = $this->getPhotoNode($announce);
+
+            $announce = $this->serializer->deserialize($this->getDetailNode($announce), static::$documentClass, $this->class->getConstant('WS_FORMAT'));
+
+            if ($photos) {
+                $announce->setPhotos($photos->photos->photo);
+            }
             $announce->setFullDetail(true);
+
             $this->dm->persist($announce);
             $this->progress->advance();
         }
@@ -201,5 +214,9 @@ var_dump($entite);die();
 
         $this->output->writeln('[<info>'.$this->class->getShortName().'</info>] <comment>'.$total.' announces added.</comment>');
     }
+
+
+    abstract protected function getDetailNode($response);
+    abstract protected function getPhotoNode($response);
 
 }

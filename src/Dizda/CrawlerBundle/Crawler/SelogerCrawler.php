@@ -48,4 +48,14 @@ class SelogerCrawler extends AbstractCrawler
         return $response['annonces'];
     }
 
+    protected function getDetailNode($response)
+    {
+        //return json_encode($response);
+    }
+
+    protected function getPhotoNode($response)
+    {
+        return null;
+    }
+
 }

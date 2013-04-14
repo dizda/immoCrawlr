@@ -89,44 +89,37 @@ class Pap extends Accommodation
 
 
     /**
-     *  @JMS\Type("integer")
-     *  @JMS\SerializedName("nbRooms") */
+     *  @JMS\Type("string")
+     *  @JMS\SerializedName("detail2")
+     *  @JMS\Accessor(setter="setRooms") */
     protected $rooms;
 
     /**
-     *  @JMS\Type("integer")
-     *  @JMS\SerializedName("nbBedrooms") */
+     *  @JMS\Type("string")
+     *  @JMS\SerializedName("detail2")
+     *  @JMS\Accessor(setter="setBedrooms") */
     protected $bedrooms;
 
     /**
-     *  @JMS\Type("double")
-     *  @JMS\SerializedName("surface") */
+     *  @JMS\Type("string")
+     *  @JMS\SerializedName("detail1")
+     *  @JMS\Accessor(setter="setSurface") */
     protected $surface;
 
-    /**
-     *  @JMS\Type("boolean")
-     *  @JMS\SerializedName("surfaceCertification") */
-    protected $isSurfaceCertificated;
+
+
+
 
     /**
      *  @JMS\Type("string")
-     *  @JMS\SerializedName("postalCode") */
-    protected $postalcode;
-
-    /**
-     *  @JMS\Type("string")
-     *  @JMS\SerializedName("codeInsee") */
-    protected $inseecode;
+     *  @JMS\SerializedName("metros")
+     *  @JMS\Accessor(setter="setMetros") */
+    protected $metros = array();
 
     /**
      *  @JMS\Type("string")
      *  @JMS\SerializedName("soustitre") */
     protected $city;
-
-    /**
-     *  @JMS\Type("string")
-     *  @JMS\SerializedName("permaLien") */
-    protected $permalink;
 
     /**
      *  @JMS\Type("double")
@@ -138,29 +131,21 @@ class Pap extends Accommodation
      *  @JMS\SerializedName("geo_lng") */
     protected $geoLong;
 
+    /**
+     *  @JMS\Type("array")
+     *  @JMS\SerializedName("photo_urls") */
+    protected $photos = array();
+
+
 
 
 
 
     /**
-     *  @JMS\Type("string")
-     *  @JMS\SerializedName("name") */
-    protected $contactName;
-
-    /**
-     *  @JMS\Type("string")
-     *  @JMS\SerializedName("tel") */
+     *  @JMS\Type("array")
+     *  @JMS\SerializedName("telephones")
+     *  @JMS\Accessor(setter="setContactPhone") */
     protected $contactPhone;
-
-    /**
-     *  @JMS\Type("string")
-     *  @JMS\SerializedName("mobile") */
-    protected $contactPhone2;
-
-    /**
-     *  @JMS\Type("string")
-     *  @JMS\SerializedName("email") */
-    protected $contactEmail;
 
 
 
@@ -180,24 +165,43 @@ class Pap extends Accommodation
      *  @JMS\Accessor(setter="setRemoteUpdatedAt") */
     protected $remoteUpdatedAt;
 
+
     /**
-     * Push every photos in collections
+     * {@inheritdoc}
+     */
+    public function generateId()
+    {
+        return sha1('pap_' . $this->remoteId);
+    }
+
+    /**
+     * In (string) : 'Appartement, 66 m²'
+     * Out         : 66
      *
-     * @param collection $photos
+     * {@inheritdoc}
+     */
+    public function setSurface($surface)
+    {
+        preg_match('/ (\d+) m²/', $surface, $matches);
+
+        if (count($matches) > 0) {
+            $this->surface = (float) $matches[1];
+
+            return $this;
+        }
+        $this->surface = null;
+
+        return $this;
+    }
+
+    /**
+     * @param string $metros
      *
      * @return $this|\Accommodation
      */
-    public function setPhotos($photos)
+    public function setMetros($metros)
     {
-        $collection = array();
-        foreach ($photos as $photo) {
-
-            if (strlen((string) $photo['url']) > 0) {
-                $collection[] = (string) $photo['url'];
-            }
-
-        }
-        $this->photos = $collection;
+        $this->metros = explode(', ', $metros);
 
         return $this;
     }
@@ -227,6 +231,50 @@ class Pap extends Accommodation
 
         return $this;
     }
+
+    /**
+     * IN : string(23) "5 pièces, 3 chambres"
+     *      string(31) "3 pièces, de 1 à 2 chambres"
+     *
+     * out : 5
+     *
+     * @param string $rooms
+     *
+     * @return $this|\Accommodation
+     */
+    public function setRooms($rooms)
+    {
+        preg_match('/^(\d+) pièces,/', $rooms, $matches);
+
+        if (count($matches) > 0) {
+            $this->rooms = (int) $matches[1];
+
+            return $this;
+        }
+        $this->rooms = null;
+
+        return $this;
+    }
+
+    /**
+     * Lookup setRooms
+     *
+     * {@inheritdoc}
+     */
+    public function setBedrooms($rooms)
+    {
+        preg_match('/, (\d+) chambres/', $rooms, $matches);
+
+        if (count($matches) > 0) {
+            $this->bedrooms = (int) $matches[1];
+
+            return $this;
+        }
+        $this->bedrooms = null;
+
+        return $this;
+    }
+
 
 
     /**
