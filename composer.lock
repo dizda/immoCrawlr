@@ -280,12 +280,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "dd69835e0dcc44f7f0726b105e83ae5013622f5c"
+                "reference": "c75da707518488506efa93e29fb67cf278353f85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/dd69835e0dcc44f7f0726b105e83ae5013622f5c",
-                "reference": "dd69835e0dcc44f7f0726b105e83ae5013622f5c",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/c75da707518488506efa93e29fb67cf278353f85",
+                "reference": "c75da707518488506efa93e29fb67cf278353f85",
                 "shasum": ""
             },
             "require": {
@@ -335,7 +335,7 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2013-03-24 19:16:29"
+            "time": "2013-04-14 12:36:49"
         },
         {
             "name": "doctrine/doctrine-bundle",
@@ -741,12 +741,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "86e40a692b5b052942bd655961fed0dd696ef24e"
+                "reference": "803f2740c9073fdf94e327c555d496078f82d8ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/86e40a692b5b052942bd655961fed0dd696ef24e",
-                "reference": "86e40a692b5b052942bd655961fed0dd696ef24e",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/803f2740c9073fdf94e327c555d496078f82d8ce",
+                "reference": "803f2740c9073fdf94e327c555d496078f82d8ce",
                 "shasum": ""
             },
             "require": {
@@ -803,7 +803,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2013-04-06 17:56:15"
+            "time": "2013-04-14 07:52:39"
         },
         {
             "name": "fabpot/goutte",
@@ -863,12 +863,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "6664d8a1f68b3c02036d34b615e27834cb80f67b"
+                "reference": "e64ff8e8bcad6e016ff03cf04f84870fe80030ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/6664d8a1f68b3c02036d34b615e27834cb80f67b",
-                "reference": "6664d8a1f68b3c02036d34b615e27834cb80f67b",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/e64ff8e8bcad6e016ff03cf04f84870fe80030ea",
+                "reference": "e64ff8e8bcad6e016ff03cf04f84870fe80030ea",
                 "shasum": ""
             },
             "require": {
@@ -949,7 +949,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2013-04-11 20:03:03"
+            "time": "2013-04-14 02:52:36"
         },
         {
             "name": "jdorn/sql-formatter",
@@ -1596,12 +1596,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phiamo/MopaBootstrapBundle.git",
-                "reference": "587ac8cc21a1bdeedcc7966f01ade0be897d4d6c"
+                "reference": "63b9e27671bddb59e55131c55587331920141430"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phiamo/MopaBootstrapBundle/zipball/587ac8cc21a1bdeedcc7966f01ade0be897d4d6c",
-                "reference": "587ac8cc21a1bdeedcc7966f01ade0be897d4d6c",
+                "url": "https://api.github.com/repos/phiamo/MopaBootstrapBundle/zipball/63b9e27671bddb59e55131c55587331920141430",
+                "reference": "63b9e27671bddb59e55131c55587331920141430",
                 "shasum": ""
             },
             "require": {
@@ -1649,7 +1649,7 @@
                 "form",
                 "template"
             ],
-            "time": "2013-04-11 14:44:14"
+            "time": "2013-04-13 12:58:51"
         },
         {
             "name": "mopa/composer-bridge",
@@ -2211,12 +2211,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "3c44d487f2ca7c7237b7a5bb2fa98922d96d7478"
+                "reference": "4b967b1fcbe3d54efff0f65ee373f004e414face"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/3c44d487f2ca7c7237b7a5bb2fa98922d96d7478",
-                "reference": "3c44d487f2ca7c7237b7a5bb2fa98922d96d7478",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/4b967b1fcbe3d54efff0f65ee373f004e414face",
+                "reference": "4b967b1fcbe3d54efff0f65ee373f004e414face",
                 "shasum": ""
             },
             "require": {
@@ -2302,7 +2302,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2013-04-11 10:20:28"
+            "time": "2013-04-12 14:22:22"
         },
         {
             "name": "twig/extensions",
@@ -2357,12 +2357,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "1819d97520079ade78abac7255e5b1e115bc7789"
+                "reference": "887b6ee797dc338c5ef5669c98252db6bde7042d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/1819d97520079ade78abac7255e5b1e115bc7789",
-                "reference": "1819d97520079ade78abac7255e5b1e115bc7789",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/887b6ee797dc338c5ef5669c98252db6bde7042d",
+                "reference": "887b6ee797dc338c5ef5669c98252db6bde7042d",
                 "shasum": ""
             },
             "require": {
@@ -2398,7 +2398,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-04-09 16:55:44"
+            "time": "2013-04-15 09:43:17"
         },
         {
             "name": "twitter/bootstrap",
@@ -2419,12 +2419,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/KnpMenu.git",
-                "reference": "730bc37232f5f813822acf80edfbd89381ea5971"
+                "reference": "5cf5ab4948d8c573f260e2b612bfc9721da1c892"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/KnpMenu/zipball/730bc37232f5f813822acf80edfbd89381ea5971",
-                "reference": "730bc37232f5f813822acf80edfbd89381ea5971",
+                "url": "https://api.github.com/repos/KnpLabs/KnpMenu/zipball/5cf5ab4948d8c573f260e2b612bfc9721da1c892",
+                "reference": "5cf5ab4948d8c573f260e2b612bfc9721da1c892",
                 "shasum": ""
             },
             "require": {
@@ -2475,7 +2475,7 @@
                 "menu",
                 "tree"
             ],
-            "time": "2012-12-27 13:04:16"
+            "time": "2013-04-15 14:10:52"
         },
         {
             "name": "knplabs/knp-menu-bundle",
