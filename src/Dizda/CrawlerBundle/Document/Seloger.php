@@ -179,7 +179,7 @@ class Seloger extends Accommodation
     public function setPhotos($photos)
     {
         $collection = array();
-        foreach ($photos->photo as $photo) {
+        foreach ($photos as $photo) {
 
             if (strlen((string) $photo->bigUrl) > 0) {
                 $collection[] = (string) $photo->bigUrl;

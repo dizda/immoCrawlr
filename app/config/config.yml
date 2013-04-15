@@ -4,7 +4,7 @@ imports:
 
 framework:
     #esi:             ~
-    #translator:      { fallback: %locale% }
+    translator:      { fallback: %locale% }
     secret:          %secret%
     router:
         resource: "%kernel.root_dir%/config/routing.yml"
@@ -99,3 +99,5 @@ jms_di_extra:
         all_bundles: false
         bundles: [ CrawlerBundle ]
         directories: ["%kernel.root_dir%/../src"]
+
+knp_time: ~

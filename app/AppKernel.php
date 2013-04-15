@@ -27,6 +27,9 @@ class AppKernel extends Kernel
 
             new JMS\SerializerBundle\JMSSerializerBundle(),
             new Dizda\SiteBundle\SiteBundle(),
+
+            //new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
+            new Knp\Bundle\TimeBundle\KnpTimeBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

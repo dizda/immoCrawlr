@@ -1,5 +1,5 @@
 {
-    "hash": "2946b93e047046f4e281566db4e38492",
+    "hash": "e0b64c4d141146b74e76ad0537a2faa3",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -863,12 +863,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "e64ff8e8bcad6e016ff03cf04f84870fe80030ea"
+                "reference": "69e3f83717405f16f8dbfce3ffbb0e5d92212a46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/e64ff8e8bcad6e016ff03cf04f84870fe80030ea",
-                "reference": "e64ff8e8bcad6e016ff03cf04f84870fe80030ea",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/69e3f83717405f16f8dbfce3ffbb0e5d92212a46",
+                "reference": "69e3f83717405f16f8dbfce3ffbb0e5d92212a46",
                 "shasum": ""
             },
             "require": {
@@ -949,7 +949,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2013-04-14 02:52:36"
+            "time": "2013-04-15 20:42:27"
         },
         {
             "name": "jdorn/sql-formatter",
@@ -1455,6 +1455,185 @@
                 "xml"
             ],
             "time": "2013-03-14 09:30:30"
+        },
+        {
+            "name": "knplabs/knp-components",
+            "version": "1.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KnpLabs/knp-components.git",
+                "reference": "1.2.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KnpLabs/knp-components/zipball/1.2.2",
+                "reference": "1.2.2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "suggest": {
+                "doctrine/common": "to allow usage pagination with Doctrine ArrayCollection",
+                "doctrine/mongodb-odm": "to allow usage pagination with Doctrine ODM MongoDB",
+                "doctrine/orm": "to allow usage pagination with Doctrine ORM",
+                "propel/propel1": "to allow usage pagination with Propel ORM",
+                "ruflin/Elastica": "to allow usage pagination with ElasticSearch Client",
+                "solarium/solarium": "to allow usage pagination with Solarium Client"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Knp\\Component": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "KnpLabs Team",
+                    "homepage": "http://knplabs.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://github.com/KnpLabs/knp-components/contributors"
+                }
+            ],
+            "description": "Knplabs component library",
+            "homepage": "http://github.com/KnpLabs/knp-components",
+            "keywords": [
+                "components",
+                "knp",
+                "knplabs",
+                "pager",
+                "paginator"
+            ],
+            "time": "2013-02-20 12:05:07"
+        },
+        {
+            "name": "knplabs/knp-paginator-bundle",
+            "version": "dev-master",
+            "target-dir": "Knp/Bundle/PaginatorBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KnpLabs/KnpPaginatorBundle.git",
+                "reference": "6d93d89a3c913155d9d1778db4232db0e4d6f3e3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KnpLabs/KnpPaginatorBundle/zipball/6d93d89a3c913155d9d1778db4232db0e4d6f3e3",
+                "reference": "6d93d89a3c913155d9d1778db4232db0e4d6f3e3",
+                "shasum": ""
+            },
+            "require": {
+                "knplabs/knp-components": ">=1.1,<2.0",
+                "php": ">=5.3.3",
+                "symfony/framework-bundle": ">=2.0,<3.0",
+                "twig/twig": ">=1.5,<2.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Knp\\Bundle\\PaginatorBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "KnpLabs Team",
+                    "homepage": "http://knplabs.com"
+                },
+                {
+                    "name": "Symfony2 Community",
+                    "homepage": "http://github.com/KnpLabs/KnpPaginatorBundle/contributors"
+                }
+            ],
+            "description": "Paginator bundle for Symfony2 to automate pagination and simplify sorting and other features",
+            "homepage": "http://github.com/KnpLabs/KnpPaginatorBundle",
+            "keywords": [
+                "Symfony2",
+                "bundle",
+                "knp",
+                "knplabs",
+                "pager",
+                "pagination",
+                "paginator"
+            ],
+            "time": "2013-04-08 18:28:56"
+        },
+        {
+            "name": "knplabs/knp-time-bundle",
+            "version": "dev-master",
+            "target-dir": "Knp/Bundle/TimeBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KnpLabs/KnpTimeBundle.git",
+                "reference": "1971aeb643907cb6d94c04eb4c36f3e31c918525"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KnpLabs/KnpTimeBundle/zipball/1971aeb643907cb6d94c04eb4c36f3e31c918525",
+                "reference": "1971aeb643907cb6d94c04eb4c36f3e31c918525",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "symfony/framework-bundle": ">=2.0,<3.0"
+            },
+            "suggest": {
+                "symfony/twig-bundle": "to use the Twig time_diff function"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Knp\\Bundle\\TimeBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "KnpLabs Team",
+                    "homepage": "http://knplabs.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://github.com/KnpLabs/KnpTimeBundle/contributors"
+                }
+            ],
+            "description": "Knplabs time bundle makes your dates look sensible and descriptive",
+            "homepage": "http://github.com/KnpLabs/KnpTimeBundle",
+            "keywords": [
+                "bundle",
+                "date",
+                "descriptive time",
+                "knp",
+                "knplabs",
+                "time"
+            ],
+            "time": "2013-02-16 19:50:38"
         },
         {
             "name": "kriswallsmith/assetic",
@@ -2643,6 +2822,8 @@
         "fabpot/goutte": 20,
         "jms/serializer-bundle": 20,
         "doctrine/mongodb-odm-bundle": 20,
+        "knplabs/knp-paginator-bundle": 20,
+        "knplabs/knp-time-bundle": 20,
         "mopa/bootstrap-sandbox-bundle": 20
     },
     "platform": {

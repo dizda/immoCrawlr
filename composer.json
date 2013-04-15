@@ -25,7 +25,10 @@
         "twitter/bootstrap": "master",
         "fabpot/goutte": "dev-master",
         "jms/serializer-bundle": "dev-master",
-        "doctrine/mongodb-odm-bundle": "dev-master"
+        "doctrine/mongodb-odm-bundle": "dev-master",
+
+        "knplabs/knp-paginator-bundle": "dev-master",
+        "knplabs/knp-time-bundle": "dev-master"
     },
     "require-dev": {
         "mopa/bootstrap-sandbox-bundle": "dev-master"

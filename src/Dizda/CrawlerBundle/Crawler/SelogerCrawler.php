@@ -21,7 +21,7 @@ class SelogerCrawler extends AbstractCrawler
     protected $currentPageNode  = '/recherche/pageCourante'; // XPath
 
     protected $params = ['idtt'             => '1',
-                         'ci'               => '750101,750102,750103,750104,750105,750109,750109,750111',
+                         'ci'               => '750101,750102,750103,750104,750105,750109,750110,750111',
                          'idtypebien'       => '1,2',
                          'nb_pieces'        => '3',
                          'nb_chambres'      => '2',
@@ -45,17 +45,17 @@ class SelogerCrawler extends AbstractCrawler
 
     protected function getNode($response)
     {
-        return $response['annonces'];
+        return $response->xpath($this->annoncesNode);
     }
 
     protected function getDetailNode($response)
     {
-        //return json_encode($response);
+        return null;
     }
 
     protected function getPhotoNode($response)
     {
-        return null;
+        return $response->photos->photo;
     }
 
 }

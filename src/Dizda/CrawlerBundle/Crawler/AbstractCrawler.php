@@ -56,7 +56,7 @@ abstract class AbstractCrawler
      * @param array|bool  $params
      * @param bool        $proxy
      */
-    private function addRequest($url, $params = false, $proxy = true)
+    private function addRequest($url, $params = false, $proxy = false)
     {
         $method = strtolower(static::HTTP_METHOD);
         if ($params) {
@@ -66,6 +66,7 @@ abstract class AbstractCrawler
         $this->client->setUserAgent($this->class->getConstant('USER_AGENT'));
         $this->request = $this->client->$method($url, call_user_func(array(static::$documentClass, 'getHeaders')), $params);
 
+        // TODO: ADD FACTORY ONLY SUR GET METHOD ?!
         if ($params) {
             $this->query = $this->request->getQuery();
             $this->query->replace($params);
@@ -131,20 +132,20 @@ abstract class AbstractCrawler
     public function saveAccomodationsList($response)
     {
         $cpt = 0;
-        //$announces = $xml->xpath($this->annoncesNode);
         $announces = $this->getNode($response);
 
         foreach ($announces as $announce) {
 
+            $photos   = $announce;
             $announce = ($announce instanceof \SimpleXMLElement) ? $announce->asXML() : json_encode($announce);
-            $entite   = $this->serializer->deserialize($announce, static::$documentClass, $this->class->getConstant('WS_FORMAT'));
+            $entity   = $this->serializer->deserialize($announce, static::$documentClass, $this->class->getConstant('WS_FORMAT'));
 
-            if (!$this->dm->find(static::$documentClass, $entite->generateId())) {
+            if (!$this->dm->find(static::$documentClass, $entity->generateId())) {
                 /* If we dont have to fetch detail for each announce, we can save photos now */
                 if (!$this->class->hasConstant('URL_DETAIL')) {
-                    $entite->setPhotos($announce->photos);
+                    $entity->setPhotos($this->getPhotoNode($photos));
                 }
-                $this->dm->persist($entite);
+                $this->dm->persist($entity);
                 $cpt++;
             } // we can check here if the announce was updated comparing $remoteUpdatedAt fields of both
         }
@@ -154,11 +155,11 @@ abstract class AbstractCrawler
 
 
         /* If following pagination is activated and if 'nextPage' link exist, we follow the link */
-        if ($this->followPagination && count($xml->xpath($this->nextPageNode)) > 0) {
+        /*if ($this->followPagination && count($xml->xpath($this->nextPageNode)) > 0) {
             $this->getAccommodationsList((string) $xml->xpath($this->nextPageNode)[0]);
 
             return;
-        }
+        }*/
 
 
         // Once each pages are scrapped, if we need additional datas, we fetch every detailed pages

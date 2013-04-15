@@ -19,8 +19,27 @@ class DefaultController extends CoreController
      */
     public function indexAction()
     {
-        $accommodations = $this->getRepo('CrawlerBundle:Accommodation')->findBy([], ['remoteUpdatedAt' => 'DESC']);
+        $accommodations = $this->getRepo('CrawlerBundle:Accommodation')->findBy([], ['priority'        => 'DESC',
+                                                                                     'remoteUpdatedAt' => 'DESC']);
 
-        return array('accommodations' => $accommodations);
+        /*$pagination = $this->get('knp_paginator')->paginate(
+            $accommodations,
+            $this->getRequest()->query->get('page', 1),
+            10
+        );*/
+
+        $count = function($name)
+        {
+            $result = $this->getRepo('CrawlerBundle:Accommodation')->countDiscriminator($name);
+
+            return $result;
+
+        };
+
+
+        return ['accommodations' => $accommodations,
+                'sites'          => ['pap'        => $count('pap'),
+                                     'seloger'    => $count('seloger'),
+                                     'explorimmo' => $count('explorimmo')]];
     }
 }

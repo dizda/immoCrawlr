@@ -21,7 +21,7 @@ class ExplorimmoCrawler extends AbstractCrawler
                          'orderBy'          => 'dateDesc',
                          'page'             => '1',
                          'transaction'      => 'LOCATION',
-                         'localisation'     => 'PARIS 1ER (75001),PARIS 2EME (75002),PARIS 3EME (75003),PARIS 4EME (75004),PARIS 9EME (75009),PARIS 10EME (75010),PARIS 11EME (75011)',
+                         'localisation'     => 'PARIS 1ER (75001),PARIS 2EME (75002),PARIS 3EME (75003),PARIS 4EME (75004),PARIS 5EME (75005),PARIS 9EME (75009),PARIS 10EME (75010),PARIS 11EME (75011)',
                          'roomMin'          => '3',
                          'priceMin'         => '1000',
                          'priceMax'         => '1800',

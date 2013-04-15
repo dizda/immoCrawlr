@@ -21,6 +21,7 @@ class Pap extends Accommodation
 
     const USER_AGENT = 'Apache-HttpClient/Android';
 
+    // TODO: Parser la date de création
 
     /**
      *  @JMS\Type("string")
@@ -148,22 +149,14 @@ class Pap extends Accommodation
     protected $contactPhone;
 
 
-
+    /**
+     *  @JMS\Exclude */
+    protected $priority = 9;
 
     /**
      * @JMS\Exclude
      */
     protected $fullDetail = false;
-
-    /** @JMS\Type("DateTime<'d/m/Y'>")
-     *  @JMS\SerializedName("creationDate")
-     *  @JMS\Accessor(setter="setRemoteCreatedAt") */
-    protected $remoteCreatedAt;
-
-    /** @JMS\Type("DateTime<'d/m/Y'>")
-     *  @JMS\SerializedName("modificationDate")
-     *  @JMS\Accessor(setter="setRemoteUpdatedAt") */
-    protected $remoteUpdatedAt;
 
 
     /**

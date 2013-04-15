@@ -4,6 +4,12 @@
 {% block page_header %}{% endblock page_header %}
 
 {% block content %}
+    <div class="span12">
+        {% for site, nb in sites %}
+            <span class="badge badge-important">{{ site }} ({{ nb }})</span>
+        {% endfor %}
+    </div>
+
     <div class="span12 content" ng-app="indexApp">
 
         <div class="row-fluid" ng-controller="GridCtrl">
@@ -27,7 +33,7 @@
                                 <span class="badge badge-important">{{ a.type }}</span>
                                 <span class="badge badge-info pull-right clearfix">{{ a.price|number_format(0, '.', ' ') }} €</span>
 
-                                <h3>{{ a.title }}</h3>
+                                <h3>{{ a.title }} {{ a.surface }}m²</h3>
                                 <p class="description">{{ a.description }}</p>
                                 <p>
                                     <div class="btn-group">
@@ -37,9 +43,12 @@
                                         {% endif %}
                                         <button class="btn"><i class="icon-envelope"></i> {{ a.contactEmail }}</button>
                                     </div>
-                                    {{ a.remoteId }}
+
                                     <i class="icon-camera"></i>{{ a.photos|length }}<button type="button" class="btn btn-danger pull-right">{#{{ a.getDiscriminatorType() }}#}</button>
                                 </p>
+                                <div>
+                                    <strong>{{ time_diff(a.remoteUpdatedAt) }} (id : {{ a.remoteId }})</strong>
+                                </div>
 
                             </div>
                         </div>
@@ -50,6 +59,8 @@
             </ul>
         </div>
 
+
+        {#{{ knp_pagination_render(accommodations) }}#}
 
         {#{% for a in accommodations %}
 

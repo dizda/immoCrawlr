@@ -11,6 +11,7 @@
     position: relative;
     width:400px;
     height:300px;
+    left: 5px;
 }
 
 .thumbnail .photos img {

@@ -8,7 +8,7 @@ use JMS\Serializer\Annotation as JMS;
 /**
  * Flat, house, loft, ...
  *
- * @MongoDB\Document
+ * @MongoDB\Document(repositoryClass="Dizda\CrawlerBundle\Document\Repository\AccommodationRepository")
  * @MongoDB\InheritanceType("SINGLE_COLLECTION")
  * @MongoDB\DiscriminatorField(fieldName="discriminatorType")
  * @MongoDB\DiscriminatorMap({"accommodation"= "Accommodation",
@@ -245,7 +245,10 @@ class Accommodation
     protected $contactGeoLong;
 
 
-
+    /**
+     *  @JMS\Exclude
+     *  @MongoDB\Int */
+    protected $priority = 0;
 
     /**
      *  @JMS\Exclude
@@ -1301,5 +1304,27 @@ class Accommodation
         $type = explode('\\', get_class($this));
 
         return end($type);
+    }
+
+    /**
+     * Set priority
+     *
+     * @param int $priority
+     * @return \Accommodation
+     */
+    public function setPriority($priority)
+    {
+        $this->priority = $priority;
+        return $this;
+    }
+
+    /**
+     * Get priority
+     *
+     * @return int $priority
+     */
+    public function getPriority()
+    {
+        return $this->priority;
     }
 }

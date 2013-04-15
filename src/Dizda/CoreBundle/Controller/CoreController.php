@@ -11,13 +11,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
  */
 class CoreController extends Controller
 {
-    protected function getEm()
+    protected function getDm()
     {
         return $this->get('doctrine.odm.mongodb.document_manager');
     }
 
     protected function getRepo($repository)
     {
-        return $this->getEm()->getRepository($repository);
+        return $this->getDm()->getRepository($repository);
     }
 }
