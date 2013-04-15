@@ -56,7 +56,7 @@ abstract class AbstractCrawler
      * @param array|bool  $params
      * @param bool        $proxy
      */
-    private function addRequest($url, $params = false, $proxy = false)
+    private function addRequest($url, $params = false, $proxy = true)
     {
         $method = strtolower(static::HTTP_METHOD);
         if ($params) {
@@ -66,10 +66,10 @@ abstract class AbstractCrawler
         $this->client->setUserAgent($this->class->getConstant('USER_AGENT'));
         $this->request = $this->client->$method($url, call_user_func(array(static::$documentClass, 'getHeaders')), $params);
 
-        /*if ($params) {
+        if ($params) {
             $this->query = $this->request->getQuery();
             $this->query->replace($params);
-        }*/
+        }
 
         if ($proxy) {
             $this->request->getCurlOptions()->set(CURLOPT_PROXY, 'localhost:8888');
@@ -183,18 +183,6 @@ abstract class AbstractCrawler
         $this->progress->start($this->output, $total);
         foreach ($entities as $annonceLight) {
 
-            /*$this->addRequest('getDetailUrl', array('id' => $annonceLight->getRemoteId()));
-
-            $response = $this->request->send()->$format();
-            $photos   = $xml;
-            $xml      = str_replace($this->class->getStaticPropertyValue('xmlSearch'),
-                                    $this->class->getStaticPropertyValue('xmlReplace'),
-                                    $xml->asXML()); // clean XML..
-
-            $announce = $this->serializer->deserialize($xml, static::$documentClass, 'xml');
-            $announce->setPhotos($photos->photos->photo);
-            $announce->setFullDetail(true);*/
-
             $this->addRequest('getDetailUrl', array('id' => $annonceLight->getRemoteId()));
             $announce = $this->request->send()->$format();
             $photos   = $this->getPhotoNode($announce);
@@ -202,7 +190,7 @@ abstract class AbstractCrawler
             $announce = $this->serializer->deserialize($this->getDetailNode($announce), static::$documentClass, $this->class->getConstant('WS_FORMAT'));
 
             if ($photos) {
-                $announce->setPhotos($photos->photos->photo);
+                $announce->setPhotos($photos);
             }
             $announce->setFullDetail(true);
 
@@ -215,8 +203,23 @@ abstract class AbstractCrawler
         $this->output->writeln('[<info>'.$this->class->getShortName().'</info>] <comment>'.$total.' announces added.</comment>');
     }
 
-
+    /**
+     * Get target node to get more details, and cleaning flux if needed
+     *
+     * @param \SimpleXMLElement|JSON $response
+     *
+     * @return mixed
+     */
     abstract protected function getDetailNode($response);
+
+    /**
+     * If photos cannot be fetch automatically with JMS, we indicate the node
+     * to help photos to be pushed in DB
+     *
+     * @param \SimpleXMLElement|JSON $response
+     *
+     * @return mixed
+     */
     abstract protected function getPhotoNode($response);
 
 }
