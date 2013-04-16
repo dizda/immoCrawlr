@@ -47,7 +47,7 @@
                                     <i class="icon-camera"></i>{{ a.photos|length }}<button type="button" class="btn btn-danger pull-right">{#{{ a.getDiscriminatorType() }}#}</button>
                                 </p>
                                 <div>
-                                    <strong>{{ time_diff(a.remoteUpdatedAt) }} (id : {{ a.remoteId }})</strong>
+                                    <strong>{% if a.remoteUpdatedAt %}{{ time_diff(a.remoteUpdatedAt) }}{% else %}{{ time_diff(a.localUpdatedAt) }}{% endif %} (id : {{ a.remoteId }})</strong>
                                 </div>
 
                             </div>
