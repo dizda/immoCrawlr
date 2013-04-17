@@ -32,6 +32,7 @@ set :writable_dirs,       ["app/cache", "app/logs"]
 set :webserver_user,      "www-data"
 set :permission_method,   :chown
 set :use_set_permissions, true
+set :dump_assetic_assets, true
 
 
 # Be more verbose by uncommenting the following line
