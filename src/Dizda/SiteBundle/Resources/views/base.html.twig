@@ -113,12 +113,14 @@
         '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-typeahead.js'
         '@MopaBootstrapBundle/Resources/public/js/mopabootstrap-collection.js'
         '@MopaBootstrapBundle/Resources/public/js/mopabootstrap-subnav.js'
-        '@MopaBootstrapBundle/Resources/public/js/eyecon-bootstrap-datepicker.js'
+
 
         '@SiteBundle/Resources/public/js/jquery.lazyload.min.js'
         '@SiteBundle/Resources/public/js/base.js'
     %}
-    {#'@SiteBundle/Resources/public/js/angularjs.js'
+    {#
+    '@MopaBootstrapBundle/Resources/public/js/eyecon-bootstrap-datepicker.js' -- provoque une erreur JS
+    '@SiteBundle/Resources/public/js/angularjs.js'
     '@SiteBundle/Resources/public/js/controller/GridCtrl.js'#}
     <script type="text/javascript" src="{{ asset_url }}"></script>
 {% endjavascripts %}
