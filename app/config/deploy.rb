@@ -1,8 +1,8 @@
 set :application, "immoCrawlr"
-set :domain,      "immo.dizda.fr"
-set :deploy_to,   "/opt/www/#{domain}"
+set :domain,      "root@immo.dizda.fr"
+set :deploy_to,   "/opt/www/immo.dizda.fr"
 set :app_path,    "app"
-set :user,        "root"
+set :user,        "www-data"
 
 set :scm,         :git
 set :repository,  "file:///Users/high/Sites/immoCrawler"
@@ -26,6 +26,7 @@ set :shared_files,        ["app/config/parameters.yml"]
 set :shared_children,     [app_path + "/logs", web_path + "/uploads", "vendor"]
 set :update_vendors,      true
 set :use_composer,        true
+#set :composer_options,    "--verbose --prefer-dist"     #install script
 set :update_vendors,      false
 set :writable_dirs,       ["app/cache", "app/logs"]
 set :webserver_user,      "www-data"
