@@ -19,7 +19,7 @@ class DefaultController extends CoreController
      */
     public function indexAction()
     {
-        $accommodations = $this->getRepo('CrawlerBundle:Accommodation')->findBy([], ['priority'        => 'DESC',
+        $accommodations = $this->getRepo('CrawlerBundle:Accommodation')->findBy([], [//'priority'        => 'DESC',
                                                                                      'remoteUpdatedAt' => 'DESC',
                                                                                      'localUpdatedAt'  => 'DESC']);
 

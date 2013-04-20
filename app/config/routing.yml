@@ -1,3 +1,8 @@
+user:
+    resource: "@UserBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 site:
     resource: "@SiteBundle/Controller/"
     type:     annotation

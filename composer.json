@@ -28,7 +28,8 @@
         "doctrine/mongodb-odm-bundle": "dev-master",
 
         "knplabs/knp-paginator-bundle": "dev-master",
-        "knplabs/knp-time-bundle": "dev-master"
+        "knplabs/knp-time-bundle": "dev-master",
+        "friendsofsymfony/user-bundle": "*"
     },
     "require-dev": {
         "mopa/bootstrap-sandbox-bundle": "dev-master"

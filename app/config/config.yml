@@ -101,3 +101,8 @@ jms_di_extra:
         directories: ["%kernel.root_dir%/../src"]
 
 knp_time: ~
+
+fos_user:
+    db_driver: mongodb # other valid values are 'mongodb', 'couchdb' and 'propel'
+    firewall_name: main
+    user_class: Dizda\UserBundle\Document\User

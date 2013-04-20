@@ -30,6 +30,8 @@ class AppKernel extends Kernel
 
             //new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
             new Knp\Bundle\TimeBundle\KnpTimeBundle(),
+            new FOS\UserBundle\FOSUserBundle(),
+            new Dizda\UserBundle\UserBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
