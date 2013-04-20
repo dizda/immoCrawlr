@@ -20,11 +20,10 @@
                         <div class="thumbnail">
                             <div class="photos">
                                 {% for photo in a.photos %}
-                                    {#<img data-src="holder.js/400x300" alt="400x300" style="width: 400px; height: 300px;" src="{{ photo }}">#}
-                                    <img data-original="{{ photo }}" alt="400x300" style="width: 400px; height: 300px;">
+                                    <img data-original="{{ photo }}" alt="400x300">
                                 {% else %}
                                     {#<img data-src="holder.js/400x300" alt="400x300" style="width: 400px; height: 300px;" src="{{ a.photos[0]|default(noThumb) }}">#}
-                                    <img data-original="{{ asset('bundles/site/images/nothumb.png') }}" alt="400x300" style="width: 400px; height: 300px;">
+                                    <img data-original="{{ asset('bundles/site/images/nothumb.png') }}" alt="400x300">
                                 {% endfor %}
                             </div>
                             <div class="caption">
@@ -49,10 +48,10 @@
                                 </p>
                                 <div>
                                     <strong>
-                                        {% if a.remoteUpdatedAt %}<span class="label label-info"><i class="icon-refresh"></i> Remote updated {{ time_diff(a.remoteUpdatedAt) }}</span><br />{% endif %}
-                                        <span class="label label-inverse"><i class="icon-hdd icon-white"></i> Local updated {{ time_diff(a.localUpdatedAt) }}</span>
+                                        {% if a.remoteUpdatedAt %}<span class="label label-info" rel="tooltip" data-placement="right" title="Remote id : {{ a.remoteId }} created at : {{ time_diff(a.remoteCreatedAt) }}"><i class="icon-refresh"></i> Remote updated {{ time_diff(a.remoteUpdatedAt) }}</span><br />{% endif %}
+                                        <span class="label label-inverse" rel="tooltip" data-placement="right" title="Created at {{ time_diff(a.localCreatedAt) }}"><i class="icon-hdd icon-white"></i> Local updated {{ time_diff(a.localUpdatedAt) }}</span>
                                     </strong>
-                                    <br />(id : {{ a.remoteId }})
+                                    <br />
                                 </div>
 
                             </div>

@@ -2,6 +2,8 @@ $(function() {
 
     $('img', '.photos').lazyload();
 
+    $('[rel=tooltip]').tooltip();
+
     $('.photos', '.thumbnail').on('mousemove', function(e) {
         var elem = $(this);
         var x    = e.pageX - elem.offset().left;
