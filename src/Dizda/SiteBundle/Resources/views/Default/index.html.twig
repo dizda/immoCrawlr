@@ -44,12 +44,13 @@
                                         <button class="btn"><i class="icon-envelope"></i> {{ a.contactEmail }}</button>
                                     </div>
 
-                                    <i class="icon-camera"></i>{{ a.photos|length }}<button type="button" class="btn btn-danger pull-right">{#{{ a.getDiscriminatorType() }}#}</button>
+                                    <i class="icon-camera"></i>{{ a.photos|length }}
+                                    <a href="http://blankreferrer.com/u/{{ a.permalink|replace({'http://':''}) }}" class="btn pull-right" target="_blank"><i class="icon-globe"></i> Visit {{ a.type }}</a>
                                 </p>
                                 <div>
                                     <strong>
                                         {% if a.remoteUpdatedAt %}<span class="label label-info"><i class="icon-refresh"></i> Remote updated {{ time_diff(a.remoteUpdatedAt) }}</span><br />{% endif %}
-                                        <span class="label label-inverse"><i class="icon-download icon-white"></i> Local updated {{ time_diff(a.localUpdatedAt) }}</span>
+                                        <span class="label label-inverse"><i class="icon-hdd icon-white"></i> Local updated {{ time_diff(a.localUpdatedAt) }}</span>
                                     </strong>
                                     <br />(id : {{ a.remoteId }})
                                 </div>
