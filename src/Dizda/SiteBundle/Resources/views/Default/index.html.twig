@@ -24,7 +24,7 @@
                                     <img data-original="{{ photo }}" alt="400x300" style="width: 400px; height: 300px;">
                                 {% else %}
                                     {#<img data-src="holder.js/400x300" alt="400x300" style="width: 400px; height: 300px;" src="{{ a.photos[0]|default(noThumb) }}">#}
-                                    <img data-src="holder.js/400x300" alt="400x300" style="width: 400px; height: 300px;">
+                                    <img data-original="{{ asset('bundles/site/images/nothumb.png') }}" alt="400x300" style="width: 400px; height: 300px;">
                                 {% endfor %}
                             </div>
                             <div class="caption">
@@ -47,7 +47,11 @@
                                     <i class="icon-camera"></i>{{ a.photos|length }}<button type="button" class="btn btn-danger pull-right">{#{{ a.getDiscriminatorType() }}#}</button>
                                 </p>
                                 <div>
-                                    <strong>{% if a.remoteUpdatedAt %}{{ time_diff(a.remoteUpdatedAt) }}{% else %}{{ time_diff(a.localUpdatedAt) }}{% endif %} (id : {{ a.remoteId }})</strong>
+                                    <strong>
+                                        {% if a.remoteUpdatedAt %}<span class="label label-info"><i class="icon-refresh"></i> Remote updated {{ time_diff(a.remoteUpdatedAt) }}</span><br />{% endif %}
+                                        <span class="label label-inverse"><i class="icon-download icon-white"></i> Local updated {{ time_diff(a.localUpdatedAt) }}</span>
+                                    </strong>
+                                    <br />(id : {{ a.remoteId }})
                                 </div>
 
                             </div>

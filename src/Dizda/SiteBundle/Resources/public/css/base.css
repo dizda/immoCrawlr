@@ -7,6 +7,10 @@
     margin:0;
 }
 
+.thumbnail {
+    width: 409px;
+}
+
 .thumbnail .photos {
     position: relative;
     width:400px;
