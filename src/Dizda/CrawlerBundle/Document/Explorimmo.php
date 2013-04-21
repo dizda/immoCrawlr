@@ -254,4 +254,8 @@ class Explorimmo extends Accommodation
         return static::HOST . static::URL_DETAIL;
     }
 
+    public function getPermalink()
+    {
+        return 'http://www.explorimmo.com/annonce-'.$this->remoteId.'.html';
+    }
 }

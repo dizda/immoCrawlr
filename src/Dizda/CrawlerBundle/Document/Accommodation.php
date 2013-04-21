@@ -275,7 +275,9 @@ class Accommodation
      *  @MongoDB\Date */
     protected $localUpdatedAt;
 
-    /** @MongoDB\ReferenceMany(targetDocument="Dizda\UserBundle\Document\User") */
+    /**
+     * @JMS\Exclude
+     * @MongoDB\ReferenceMany(targetDocument="Dizda\UserBundle\Document\User") */
     protected $viewed;
 
 
