@@ -10,6 +10,10 @@ var app = angular.module('indexApp', ['ADE']).
     });*/
 
 
+app.controller('RootCtrl', function($rootScope) {
+
+});
+
 app.controller('ThumbnailCtrl', function($scope, $http) {
 
 
@@ -41,13 +45,20 @@ app.controller('ThumbnailCtrl', function($scope, $http) {
                 $scope.starState = '';
             }
         });
+
     }
 
 
-    $scope.$root.$on('ADE-finish', function(e,data) {
-        alert('lol');
-    });
+    $scope.$on('ADE-finish', function(e, data) {
 
+        if (data.oldVal == data.newVal) {
+            return;
+        }
+
+        $http.post()
+
+    });
+    //console.log($rootScope);
 
 });
 

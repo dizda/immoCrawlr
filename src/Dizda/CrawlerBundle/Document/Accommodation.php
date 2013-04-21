@@ -285,6 +285,9 @@ class Accommodation
      * @MongoDB\ReferenceMany(targetDocument="Dizda\UserBundle\Document\User") */
     protected $favorites;
 
+    /** @Exclude
+     *  @MongoDB\EmbedMany(targetDocument="Dizda\SiteBundle\Document\Note") */
+    protected $notes = array();
 
     /*
      * DON'T FORGET THE FOREIGN KEY TO WEBSITE AGENCY :-)

@@ -12,7 +12,7 @@
 
     <div class="span12 content" ng-app="indexApp">
 
-        <div class="row-fluid">
+        <div class="row-fluid" ng-controller="RootCtrl">
             <ul class="thumbnails">
                 {% for a in accommodations %}
 
@@ -51,7 +51,7 @@
 
                                     <i class="icon-camera"></i>{{ a.photos|length }}
 
-                                    <div class="btn-group pull-right" ade-rich='{"className":"input-xlarge"}' ng-model="notes">
+                                    <div class="btn-group pull-right" ade-rich='{"className":"input-xlarge","id":"{{ a.id }}"}' ng-model="notes">
                                         <a class="btn"><i class="icon-pencil"></i></a>
                                         <button class="btn btn-warning" ng-class="starState" ng-click="favorite('{{ a.id }}')" ng-init="starState = '{% if app.user in a.favorites %}disabled{% endif %}'"><i class="icon-star"></i></button>
                                         <a href="http://blankreferrer.com/u/{{ a.permalink|replace({'http://':''}) }}" class="btn" target="_blank"><i class="icon-globe"></i> Visit {{ a.type }}</a>
@@ -82,22 +82,6 @@
 
         {#{{ knp_pagination_render(accommodations) }}#}
 
-        {#{% for a in accommodations %}
-
-            <div class="row-fluid">
-                <div class="accommodation span8">
-
-                    <img class="span3" data-src="holder.js/300x200" alt="300x200" style="width: 300px; height: 200px;" src="{{ a.photos[0]|default(noThumb) }}">
-                    <div class="caption span5">
-                        <h3>{{ a.title }}</h3>
-                        <p class="description">{{ a.description }}</p>
-                        <p><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn">Action</a></p>
-                        <div class="price">price</div>
-                    </div>
-                </div>
-            </div>
-
-        {% endfor %}#}
 
     </div>
 {% endblock content %}
