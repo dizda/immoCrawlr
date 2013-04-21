@@ -51,9 +51,9 @@
 
                                     <i class="icon-camera"></i>{{ a.photos|length }}
 
-                                    <div class="btn-group pull-right">
+                                    <div class="btn-group pull-right" ade-rich='{"className":"input-xlarge"}' ng-model="notes">
+                                        <a class="btn"><i class="icon-pencil"></i></a>
                                         <button class="btn btn-warning" ng-class="starState" ng-click="favorite('{{ a.id }}')" ng-init="starState = '{% if app.user in a.favorites %}disabled{% endif %}'"><i class="icon-star"></i></button>
-                                        <a class="btn" ade-rich='{"className":"input-xlarge"}' ng-model="notes"><i class="icon-pencil"></i></a>
                                         <a href="http://blankreferrer.com/u/{{ a.permalink|replace({'http://':''}) }}" class="btn" target="_blank"><i class="icon-globe"></i> Visit {{ a.type }}</a>
                                     </div>
 

@@ -43,4 +43,12 @@ app.controller('ThumbnailCtrl', function($scope, $http) {
         });
     }
 
+
+    $scope.$root.$on('ADE-finish', function(e,data) {
+        alert('lol');
+    });
+
+
 });
+
+
