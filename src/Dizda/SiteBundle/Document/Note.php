@@ -6,7 +6,7 @@ use Doctrine\ODM\MongoDB\Mapping\Annotations as MongoDB;
 
 /**
  * @MongoDB\EmbeddedDocument */
-class BalanceHistory
+class Note
 {
     /** @MongoDB\Id(strategy="auto") */
     private $id;
@@ -38,6 +38,7 @@ class BalanceHistory
         $this->updatedAt = new \DateTime();
     }
 
+
     /**
      * Get id
      *
@@ -49,51 +50,90 @@ class BalanceHistory
     }
 
     /**
-     * Set balance
+     * Set text
      *
-     * @param float $balance
-     * @return BalanceHistory
+     * @param string $text
+     * @return \Note
      */
-    public function setBalance($balance)
+    public function setText($text)
     {
-        $this->balance = $balance;
+        $this->text = $text;
         return $this;
     }
 
     /**
-     * Get balance
+     * Get text
      *
-     * @return float $balance
+     * @return string $text
      */
-    public function getBalance()
+    public function getText()
     {
-        return $this->balance;
+        return $this->text;
     }
 
     /**
-     * Set date_fetched
+     * Set createdAt
      *
-     * @param date $dateFetched
-     * @return BalanceHistory
+     * @param date $createdAt
+     * @return \Note
      */
-    public function setDateFetched($dateFetched)
+    public function setCreatedAt($createdAt)
     {
-        $this->date_fetched = $dateFetched;
+        $this->createdAt = $createdAt;
         return $this;
     }
 
     /**
-     * Get date_fetched
+     * Get createdAt
      *
-     * @return date $dateFetched
+     * @return date $createdAt
      */
-    public function getDateFetched()
+    public function getCreatedAt()
     {
-        return $this->date_fetched;
+        return $this->createdAt;
     }
 
-    public function __toString()
+    /**
+     * Set updatedAt
+     *
+     * @param date $updatedAt
+     * @return \Note
+     */
+    public function setUpdatedAt($updatedAt)
     {
-        return $this->date_fetched->format('d/m/Y') . '       ' . $this->balance;
+        $this->updatedAt = $updatedAt;
+        return $this;
+    }
+
+    /**
+     * Get updatedAt
+     *
+     * @return date $updatedAt
+     */
+    public function getUpdatedAt()
+    {
+        return $this->updatedAt;
+    }
+
+    /**
+     * Set user
+     *
+     * @param Dizda\UserBundle\Document\User $user
+     * @return \Note
+     */
+    public function setUser(\Dizda\UserBundle\Document\User $user)
+    {
+        $this->user = $user;
+        return $this;
+    }
+
+    /**
+     * Get user
+     *
+     * @return Dizda\UserBundle\Document\User $user
+     */
+    public function getUser()
+    {
+        return $this->user;
     }
 }

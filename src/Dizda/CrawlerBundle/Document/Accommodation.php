@@ -285,7 +285,7 @@ class Accommodation
      * @MongoDB\ReferenceMany(targetDocument="Dizda\UserBundle\Document\User") */
     protected $favorites;
 
-    /** @Exclude
+    /** @JMS\Exclude
      *  @MongoDB\EmbedMany(targetDocument="Dizda\SiteBundle\Document\Note") */
     protected $notes = array();
 
@@ -1405,5 +1405,35 @@ class Accommodation
     public function getFavorites()
     {
         return $this->favorites;
+    }
+
+    /**
+     * Add notes
+     *
+     * @param Dizda\SiteBundle\Document\Note $notes
+     */
+    public function addNote(\Dizda\SiteBundle\Document\Note $notes)
+    {
+        $this->notes[] = $notes;
+    }
+
+    /**
+    * Remove notes
+    *
+    * @param <variableType$notes
+    */
+    public function removeNote(\Dizda\SiteBundle\Document\Note $notes)
+    {
+        $this->notes->removeElement($notes);
+    }
+
+    /**
+     * Get notes
+     *
+     * @return Doctrine\Common\Collections\Collection $notes
+     */
+    public function getNotes()
+    {
+        return $this->notes;
     }
 }

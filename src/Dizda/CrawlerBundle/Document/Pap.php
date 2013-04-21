@@ -306,4 +306,8 @@ class Pap extends Accommodation
         return $this;
     }
 
+    public function getPermalink()
+    {
+        return 'http://www.pap.fr/annonce/locations-r'.$this->remoteId;
+    }
 }

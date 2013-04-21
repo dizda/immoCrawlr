@@ -8,6 +8,9 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
+use Dizda\SiteBundle\Document\Note;
+use Doctrine\Common\Collections\Criteria;
 
 /**
  * Class DefaultController
@@ -24,7 +27,7 @@ class DefaultController extends CoreController
     {
         $accommodations = $this->getRepo('CrawlerBundle:Accommodation')->findBy([], [//'priority'        => 'DESC',
                                                                                      'remoteUpdatedAt' => 'DESC',
-                                                                                     'localUpdatedAt'  => 'DESC'], 1);
+                                                                                     'localUpdatedAt'  => 'DESC']);
 
         /*$pagination = $this->get('knp_paginator')->paginate(
             $accommodations,
@@ -95,5 +98,46 @@ class DefaultController extends CoreController
         $this->getDm()->flush();
 
         return new JsonResponse($result);
+    }
+
+    /**
+     * @Route("/accommodation/note.{_format}", defaults={"_format"="json"}, options={"expose"=true})
+     * @Method({"POST"})
+     *
+     * @return JsonResponse
+     */
+    public function setNote()
+    {
+        $request = json_decode(file_get_contents('php://input')); // handle json request
+        $accoId  = $request->id;
+        $noteTxt = $request->text;
+
+
+        $acco = $this->getRepo('CrawlerBundle:Accommodation')->find($accoId);
+
+        // If current user already created a note, we just update it
+        foreach ($acco->getNotes() as $note) {
+            if ($note->getUser() == $this->getUser()) {
+                //$acco->getNotes()->removeElement($note);
+                $note->setText($noteTxt);
+
+
+                $this->getDm()->persist($note);
+                $this->getDm()->flush();
+
+                return new JsonResponse(['updated' => true]);
+            }
+        }
+
+        // Then is a new note
+        $note = new Note();
+        $note->setUser($this->getUser());
+        $note->setText($noteTxt);
+        $acco->addNote($note);
+
+        $this->getDm()->persist($acco);
+        $this->getDm()->flush();
+
+        return new JsonResponse(['updated' => false]);
     }
 }
