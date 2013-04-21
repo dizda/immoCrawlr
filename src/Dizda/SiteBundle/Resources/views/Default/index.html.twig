@@ -12,12 +12,13 @@
 
     <div class="span12 content" ng-app="indexApp">
 
-        <div class="row-fluid" ng-controller="GridCtrl">
+        <div class="row-fluid">
             <ul class="thumbnails">
                 {% for a in accommodations %}
 
                     <li class="span4 {% if loop.index0 is divisibleby(3) %}first{% endif %}{% if loop.index is divisibleby(3) %} last{% endif %}">
-                        <div class="thumbnail">
+
+                        <div class="thumbnail" ng-class="isReaded" ng-controller="ThumbnailCtrl" {% if app.user not in a.viewed %}ng-click="viewed('{{ a.id }}')"{% endif %} {% if app.user not in a.viewed %}ng-init="isReaded = 'unreaded'"{% endif %}>
                             <div class="photos">
                                 {% for photo in a.photos %}
                                     <img data-original="{{ photo }}" alt="400x300">

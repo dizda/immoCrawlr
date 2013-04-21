@@ -1,5 +1,5 @@
 {
-    "hash": "587b0ec88cf9aecb6289eb492910cf97",
+    "hash": "fc82b29d1d9d1ae82f97b52f69b1fd13",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -861,6 +861,60 @@
                 "scraper"
             ],
             "time": "2013-03-15 10:18:26"
+        },
+        {
+            "name": "friendsofsymfony/jsrouting-bundle",
+            "version": "dev-master",
+            "target-dir": "FOS/JsRoutingBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfSymfony/FOSJsRoutingBundle.git",
+                "reference": "1.1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSJsRoutingBundle/zipball/1.1.5",
+                "reference": "1.1.5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "symfony/console": ">=2.0,<3.0",
+                "symfony/framework-bundle": ">=2.0,<3.0",
+                "symfony/serializer": ">=2.0,<3.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "FOS\\JsRoutingBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "William Durand",
+                    "email": "william.durand1@gmail.com",
+                    "homepage": "http://www.willdurand.fr"
+                },
+                {
+                    "name": "FriendsOfSymfony Community",
+                    "homepage": "https://github.com/friendsofsymfony/FOSJsRoutingBundle/contributors"
+                }
+            ],
+            "description": "Symfony FOSJsRoutingBundle",
+            "homepage": "http://friendsofsymfony.github.com",
+            "keywords": [
+                "Js Routing"
+            ],
+            "time": "2013-04-05 20:13:12"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -2461,12 +2515,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "ce7bcddba1bf59cd9e3c1926b830099113b485a8"
+                "reference": "33d659047c03d2b4cdff17ba742d1845edd38268"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/ce7bcddba1bf59cd9e3c1926b830099113b485a8",
-                "reference": "ce7bcddba1bf59cd9e3c1926b830099113b485a8",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/33d659047c03d2b4cdff17ba742d1845edd38268",
+                "reference": "33d659047c03d2b4cdff17ba742d1845edd38268",
                 "shasum": ""
             },
             "require": {
@@ -2552,7 +2606,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2013-04-20 13:53:43"
+            "time": "2013-04-20 20:30:24"
         },
         {
             "name": "twig/extensions",

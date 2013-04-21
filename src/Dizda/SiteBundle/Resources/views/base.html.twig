@@ -28,6 +28,8 @@
 
     {% block head_script %}
     {# Overwrite this block to add your own js here, to get them generated into final files #}
+        <script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
+        <script src="{{ path('fos_js_routing_js', {"callback": "fos.Router.setData"}) }}"></script>
     {% endblock head_script %}
 
     <title>{% block title %}immoCrawlr{% endblock title %}</title>
@@ -117,6 +119,8 @@
 
         '@SiteBundle/Resources/public/js/jquery.lazyload.min.js'
         '@SiteBundle/Resources/public/js/base.js'
+        '@SiteBundle/Resources/public/js/angularjs.js'
+        '@SiteBundle/Resources/public/js/controller/ThumbnailCtrl.js'
     %}
     {#
     '@MopaBootstrapBundle/Resources/public/js/eyecon-bootstrap-datepicker.js' -- provoque une erreur JS

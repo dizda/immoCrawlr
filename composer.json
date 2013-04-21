@@ -29,7 +29,8 @@
 
         "knplabs/knp-paginator-bundle": "dev-master",
         "knplabs/knp-time-bundle": "dev-master",
-        "friendsofsymfony/user-bundle": "*"
+        "friendsofsymfony/user-bundle": "*",
+        "friendsofsymfony/jsrouting-bundle": "~1.1"
     },
     "require-dev": {
         "mopa/bootstrap-sandbox-bundle": "dev-master"

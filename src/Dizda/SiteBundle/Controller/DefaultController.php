@@ -3,8 +3,11 @@
 namespace Dizda\SiteBundle\Controller;
 
 use Dizda\CoreBundle\Controller\CoreController;
+use Dizda\CrawlerBundle\Document\Accommodation;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+use Symfony\Component\HttpFoundation\JsonResponse;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 
 /**
  * Class DefaultController
@@ -42,5 +45,28 @@ class DefaultController extends CoreController
                 'sites'          => ['pap'        => $count('pap'),
                                      'seloger'    => $count('seloger'),
                                      'explorimmo' => $count('explorimmo')]];
+    }
+
+    /**
+     * AJAX: Setting a thumbnail viewed at 'onClick' event
+     *
+     * @param string $id
+     *
+     * @Route("/accommodation/viewed/{id}", options={"expose"=true})
+     *
+     * @return JsonResponse
+     */
+    public function setViewed($id)
+    {
+        $acco = $this->getRepo('CrawlerBundle:Accommodation')->find($id);
+
+        if (!$acco->getViewed()->contains($this->getUser())) {
+            $acco->addViewed($this->getUser());
+
+            $this->getDm()->persist($acco);
+            $this->getDm()->flush();
+        }
+
+        return new JsonResponse(['success' => true]);
     }
 }

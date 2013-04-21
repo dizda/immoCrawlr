@@ -11,6 +11,13 @@
     width: 409px;
 }
 
+.thumbnail.unreaded {
+    -webkit-box-shadow:0 0 9px 1px rgba(255,0,2,0.74);
+    -moz-box-shadow:0 0 9px 1px rgba(255,0,2,0.74);
+    /*box-shadow: 0 0 30px 3px rgba(255,255,190, .75);*/
+    box-shadow:0 0 9px 1px rgba(255,0,2,0.74);
+}
+
 .thumbnail .photos {
     position: relative;
     width:400px;

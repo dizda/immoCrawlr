@@ -275,6 +275,9 @@ class Accommodation
      *  @MongoDB\Date */
     protected $localUpdatedAt;
 
+    /** @MongoDB\ReferenceMany(targetDocument="Dizda\UserBundle\Document\User") */
+    protected $viewed;
+
 
     /*
      * DON'T FORGET THE FOREIGN KEY TO WEBSITE AGENCY :-)
@@ -1326,5 +1329,40 @@ class Accommodation
     public function getPriority()
     {
         return $this->priority;
+    }
+
+    public function __construct()
+    {
+        $this->viewed = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+    
+    /**
+     * Add viewed
+     *
+     * @param Dizda\UserBundle\Document\User $viewed
+     */
+    public function addViewed(\Dizda\UserBundle\Document\User $viewed)
+    {
+        $this->viewed[] = $viewed;
+    }
+
+    /**
+    * Remove viewed
+    *
+    * @param <variableType$viewed
+    */
+    public function removeViewed(\Dizda\UserBundle\Document\User $viewed)
+    {
+        $this->viewed->removeElement($viewed);
+    }
+
+    /**
+     * Get viewed
+     *
+     * @return Doctrine\Common\Collections\Collection $viewed
+     */
+    public function getViewed()
+    {
+        return $this->viewed;
     }
 }

@@ -29,6 +29,7 @@ class AppKernel extends Kernel
             new Dizda\SiteBundle\SiteBundle(),
 
             //new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
+            new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
             new Knp\Bundle\TimeBundle\KnpTimeBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new Dizda\UserBundle\UserBundle(),
