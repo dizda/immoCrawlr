@@ -37,7 +37,9 @@
                                 <span class="badge badge-info pull-right clearfix">{{ a.price|number_format(0, '.', ' ') }} €</span>
 
                                 <h3>{{ a.title }} {{ a.surface }}m²</h3>
+
                                 <p class="description">{{ a.description }}</p>
+
                                 <p>
                                     <div class="btn-group">
                                         <button class="btn"><i class="icon-user"></i> {{ a.contactPhone }}</button>
@@ -51,7 +53,7 @@
 
                                     <div class="btn-group pull-right">
                                         <button class="btn btn-warning" ng-class="starState" ng-click="favorite('{{ a.id }}')" ng-init="starState = '{% if app.user in a.favorites %}disabled{% endif %}'"><i class="icon-star"></i></button>
-                                        <button class="btn"><i class="icon-pencil"></i></button>
+                                        <a class="btn" ade-rich='{"className":"input-xlarge"}' ng-model="notes"><i class="icon-pencil"></i></a>
                                         <a href="http://blankreferrer.com/u/{{ a.permalink|replace({'http://':''}) }}" class="btn" target="_blank"><i class="icon-globe"></i> Visit {{ a.type }}</a>
                                     </div>
 
@@ -62,6 +64,10 @@
                                         <span class="label label-inverse" rel="tooltip" data-placement="right" title="Created at {{ time_diff(a.localCreatedAt) }}"><i class="icon-hdd icon-white"></i> Local updated {{ time_diff(a.localUpdatedAt) }}</span>
                                     </strong>
                                     <br />
+                                </div>
+
+                                <div class="notes">
+                                    <span class="label"><i class="icon-pencil"></i> <strong>dizda</strong> : <span ade-rich='{"className":"input-xlarge"}' ng-model="notes" ng-init="notes='No notes for the moment...'"><[notes></span></span>
                                 </div>
 
                             </div>

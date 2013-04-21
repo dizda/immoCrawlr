@@ -1,4 +1,8 @@
-var app = angular.module('indexApp', []);
+var app = angular.module('indexApp', ['ADE']).
+    config(function($interpolateProvider) {
+        $interpolateProvider.startSymbol('<[');
+        $interpolateProvider.endSymbol('>');
+    });
 /*var DemoAppModule = angular.module('DemoApp', ['models']).
     config(function($interpolateProvider) {
         $interpolateProvider.startSymbol('<[');
@@ -8,7 +12,6 @@ var app = angular.module('indexApp', []);
 
 app.controller('ThumbnailCtrl', function($scope, $http) {
 
-    console.log($scope.isReaded);
 
     /**
      * AJAX set thumb viewed on click

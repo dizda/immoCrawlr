@@ -24,7 +24,7 @@ class DefaultController extends CoreController
     {
         $accommodations = $this->getRepo('CrawlerBundle:Accommodation')->findBy([], [//'priority'        => 'DESC',
                                                                                      'remoteUpdatedAt' => 'DESC',
-                                                                                     'localUpdatedAt'  => 'DESC']);
+                                                                                     'localUpdatedAt'  => 'DESC'], 10);
 
         /*$pagination = $this->get('knp_paginator')->paginate(
             $accommodations,

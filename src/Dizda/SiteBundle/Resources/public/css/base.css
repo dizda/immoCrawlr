@@ -40,6 +40,14 @@
     height: 300px;
 }
 
+.notes .label strong {
+    color:#000;
+}
+
+.ade-rich.open {
+    color:#000;
+}
+
 /*
 .thumbnail p.description {
     height: 240px;
