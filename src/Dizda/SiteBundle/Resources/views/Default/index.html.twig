@@ -18,7 +18,10 @@
 
                     <li class="span4 {% if loop.index0 is divisibleby(3) %}first{% endif %}{% if loop.index is divisibleby(3) %} last{% endif %}">
 
-                        <div class="thumbnail" ng-class="isReaded" ng-controller="ThumbnailCtrl" {% if app.user not in a.viewed %}ng-click="viewed('{{ a.id }}')"{% endif %} {% if app.user not in a.viewed %}ng-init="isReaded = 'unreaded'"{% endif %}>
+                        <div class="thumbnail" ng-class="isReaded" ng-controller="ThumbnailCtrl"
+                             {% if app.user not in a.viewed %}ng-click="viewed('{{ a.id }}')"{% endif %}
+                             ng-init="isReaded = '{% if app.user not in a.viewed %}unreaded{% elseif app.user in a.favorites %}favorite{% endif %}'">
+
                             <div class="photos">
                                 {% for photo in a.photos %}
                                     <img data-original="{{ photo }}" alt="400x300">
@@ -45,7 +48,13 @@
                                     </div>
 
                                     <i class="icon-camera"></i>{{ a.photos|length }}
-                                    <a href="http://blankreferrer.com/u/{{ a.permalink|replace({'http://':''}) }}" class="btn pull-right" target="_blank"><i class="icon-globe"></i> Visit {{ a.type }}</a>
+
+                                    <div class="btn-group pull-right">
+                                        <button class="btn btn-warning" ng-class="starState" ng-click="favorite('{{ a.id }}')" ng-init="starState = '{% if app.user in a.favorites %}disabled{% endif %}'"><i class="icon-star"></i></button>
+                                        <button class="btn"><i class="icon-pencil"></i></button>
+                                        <a href="http://blankreferrer.com/u/{{ a.permalink|replace({'http://':''}) }}" class="btn" target="_blank"><i class="icon-globe"></i> Visit {{ a.type }}</a>
+                                    </div>
+
                                 </p>
                                 <div>
                                     <strong>

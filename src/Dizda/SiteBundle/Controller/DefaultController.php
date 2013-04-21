@@ -69,4 +69,31 @@ class DefaultController extends CoreController
 
         return new JsonResponse(['success' => true]);
     }
+
+    /**
+     * AJAX: Add or remove Favorite
+     *
+     * @param string $id
+     *
+     * @Route("/accommodation/favorite/{id}", options={"expose"=true})
+     *
+     * @return JsonResponse
+     */
+    public function setFavorite($id)
+    {
+        $acco = $this->getRepo('CrawlerBundle:Accommodation')->find($id);
+
+        if (!$acco->getFavorites()->contains($this->getUser())) {
+            $acco->addFavorite($this->getUser());
+            $result = ['favorite' => true];
+        } else {
+            $acco->removeFavorite($this->getUser());
+            $result = ['favorite' => false];
+        }
+
+        $this->getDm()->persist($acco);
+        $this->getDm()->flush();
+
+        return new JsonResponse($result);
+    }
 }

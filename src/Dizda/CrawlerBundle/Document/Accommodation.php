@@ -280,6 +280,11 @@ class Accommodation
      * @MongoDB\ReferenceMany(targetDocument="Dizda\UserBundle\Document\User") */
     protected $viewed;
 
+    /**
+     * @JMS\Exclude
+     * @MongoDB\ReferenceMany(targetDocument="Dizda\UserBundle\Document\User") */
+    protected $favorites;
+
 
     /*
      * DON'T FORGET THE FOREIGN KEY TO WEBSITE AGENCY :-)
@@ -1335,24 +1340,25 @@ class Accommodation
 
     public function __construct()
     {
-        $this->viewed = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->viewed  = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->starred = new \Doctrine\Common\Collections\ArrayCollection();
     }
     
     /**
-     * Add viewed
-     *
-     * @param Dizda\UserBundle\Document\User $viewed
-     */
+ * Add viewed
+ *
+ * @param Dizda\UserBundle\Document\User $viewed
+ */
     public function addViewed(\Dizda\UserBundle\Document\User $viewed)
     {
         $this->viewed[] = $viewed;
     }
 
     /**
-    * Remove viewed
-    *
-    * @param <variableType$viewed
-    */
+     * Remove viewed
+     *
+     * @param <variableType$viewed
+     */
     public function removeViewed(\Dizda\UserBundle\Document\User $viewed)
     {
         $this->viewed->removeElement($viewed);
@@ -1366,5 +1372,35 @@ class Accommodation
     public function getViewed()
     {
         return $this->viewed;
+    }
+
+    /**
+     * Add favorite
+     *
+     * @param Dizda\UserBundle\Document\User $starred
+     */
+    public function addFavorite(\Dizda\UserBundle\Document\User $favorite)
+    {
+        $this->favorites[] = $favorite;
+    }
+
+    /**
+     * Remove favorite
+     *
+     * @param <variableType$favorites
+     */
+    public function removeFavorite(\Dizda\UserBundle\Document\User $favorite)
+    {
+        $this->favorites->removeElement($favorite);
+    }
+
+    /**
+     * Get favorites
+     *
+     * @return Doctrine\Common\Collections\Collection $favorites
+     */
+    public function getFavorites()
+    {
+        return $this->favorites;
     }
 }

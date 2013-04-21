@@ -18,6 +18,13 @@
     box-shadow:0 0 9px 1px rgba(255,0,2,0.74);
 }
 
+.thumbnail.favorite {
+    -webkit-box-shadow:0 0 9px 1px rgba(255, 211, 17, 0.73);
+    -moz-box-shadow:0 0 9px 1px rgba(255, 211, 17, 0.73);
+    /*box-shadow: 0 0 30px 3px rgba(255,255,190, .75);*/
+    box-shadow:0 0 9px 1px rgba(255, 211, 17, 0.73);
+}
+
 .thumbnail .photos {
     position: relative;
     width:400px;
