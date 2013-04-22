@@ -11,6 +11,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Dizda\SiteBundle\Document\Note;
 use Doctrine\Common\Collections\Criteria;
+use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Class DefaultController
@@ -106,11 +107,13 @@ class DefaultController extends CoreController
      *
      * @return JsonResponse
      */
-    public function setNote()
+    public function setNote(Request $request)
     {
-        $request = json_decode(file_get_contents('php://input')); // handle json request
-        $accoId  = $request->id;
-        $noteTxt = $request->text;
+        //$request = json_decode(file_get_contents('php://input')); // handle json request
+        $content = json_decode($request->getContent()); // handle json request
+        $accoId  = $content->id;
+        $noteTxt = str_replace("'", "\\'", $content->text); // escaping ' (single quotes), because it wont be inserted into db
+        //var_dump(json_encode($noteTxt));die();
 
 
         $acco = $this->getRepo('CrawlerBundle:Accommodation')->find($accoId);

@@ -25,7 +25,9 @@ app.controller('ThumbnailCtrl', function($scope, $http) {
             if (data.success) {
                 $scope.isReaded = ''; // removing 'unreaded' css class
             }
+
         });
+
     }
 
     $scope.favorite = function(id) {
@@ -40,6 +42,7 @@ app.controller('ThumbnailCtrl', function($scope, $http) {
                 $scope.isReaded  = '';
                 $scope.starState = '';
             }
+
         });
 
     }
