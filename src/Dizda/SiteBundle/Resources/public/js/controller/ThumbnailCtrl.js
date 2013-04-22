@@ -3,11 +3,6 @@ var app = angular.module('indexApp', ['ADE']).
         $interpolateProvider.startSymbol('<[');
         $interpolateProvider.endSymbol('>');
     });
-/*var DemoAppModule = angular.module('DemoApp', ['models']).
-    config(function($interpolateProvider) {
-        $interpolateProvider.startSymbol('<[');
-        $interpolateProvider.endSymbol('>');
-    });*/
 
 
 app.controller('RootCtrl', function($rootScope) {
