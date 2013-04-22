@@ -1,0 +1,132 @@
+{
+    "nb_annonces": "11",
+    "nb_resultats": "11",
+    "taille_page": "40",
+    "lock": "0",
+    "lock_limit": "400",
+    "label": "Location appartement Paris 3e du studio au 7 pi\u00e8ces de 1 \u00e0 8\u00a0chambres de 400 \u00e0 2.800\u00a0\u20ac de 30 \u00e0 400\u00a0m\u00b2",
+    "annonces": [{
+        "id": "194810272",
+        "nb_photos": "3",
+        "photo_url": "http:\/\/static.pap.fr\/photos\/948\/948AA272.thumb.jpg",
+        "panier": "0",
+        "metro": "M\u00e9tro Rambuteau (Centre Georges Pompidou)",
+        "produit": "location",
+        "titre": "1 580 \u20ac",
+        "soustitre": "Paris 3e",
+        "detail1": "Appartement, 50 m\u00b2",
+        "detail2": "2\u00a0pi\u00e8ces, 1\u00a0chambre"
+    }, {
+        "id": "195110549",
+        "nb_photos": "0",
+        "photo_url": "http:\/\/static.pap.fr\/photos\/951\/951@A549.thumb.jpg",
+        "panier": "0",
+        "metro": "M\u00e9tro R\u00e9publique",
+        "produit": "location",
+        "titre": "1 200 \u20ac",
+        "soustitre": "Paris 3e",
+        "detail1": "Appartement, 32 m\u00b2",
+        "detail2": "2\u00a0pi\u00e8ces, 1\u00a0chambre"
+    }, {
+        "id": "195110264",
+        "nb_photos": "0",
+        "photo_url": "http:\/\/static.pap.fr\/photos\/951\/951@A264.thumb.jpg",
+        "panier": "0",
+        "metro": "M\u00e9tro Arts et M\u00e9tiers",
+        "produit": "location",
+        "titre": "870 \u20ac",
+        "soustitre": "Paris 3e",
+        "detail1": "Appartement, 30 m\u00b2",
+        "detail2": "2\u00a0pi\u00e8ces, 1\u00a0chambre"
+    }, {
+        "id": "195004024",
+        "nb_photos": "1",
+        "photo_url": "http:\/\/static.pap.fr\/photos\/950\/950A4024.thumb.jpg",
+        "panier": "0",
+        "metro": "M\u00e9tro Chemin Vert",
+        "produit": "location",
+        "titre": "990 \u20ac",
+        "soustitre": "Paris 3e",
+        "detail1": "Appartement, 35 m\u00b2",
+        "detail2": "1\u00a0chambre"
+    }, {
+        "id": "1950067",
+        "nb_photos": "0",
+        "photo_url": "http:\/\/static.pap.fr\/photos\/950\/950@67.thumb.jpg",
+        "panier": "0",
+        "produit": "location",
+        "titre": "1 730 \u20ac",
+        "soustitre": "Paris 3e",
+        "detail1": "Appartement, 62 m\u00b2",
+        "detail2": "4\u00a0pi\u00e8ces, 2\u00a0chambres"
+    }, {
+        "id": "185309817",
+        "nb_photos": "3",
+        "photo_url": "http:\/\/static.pap.fr\/photos\/853\/853A9817.thumb.jpg",
+        "panier": "0",
+        "metro": "M\u00e9tro Filles du Calvaire",
+        "produit": "location",
+        "titre": "1 600 \u20ac",
+        "soustitre": "Paris 3e",
+        "detail1": "Appartement, 38 m\u00b2",
+        "detail2": "2\u00a0pi\u00e8ces, 1\u00a0chambre"
+    }, {
+        "id": "194711355",
+        "nb_photos": "1",
+        "photo_url": "http:\/\/static.pap.fr\/photos\/947\/947AB355.thumb.jpg",
+        "panier": "0",
+        "metro": "M\u00e9tro Filles du Calvaire",
+        "produit": "location",
+        "titre": "1 250 \u20ac",
+        "soustitre": "Paris 3e",
+        "detail1": "Appartement, 32 m\u00b2",
+        "detail2": "2\u00a0pi\u00e8ces, 1\u00a0chambre"
+    }, {
+        "id": "195010196",
+        "nb_photos": "0",
+        "photo_url": "http:\/\/static.pap.fr\/photos\/950\/950@A196.thumb.jpg",
+        "panier": "0",
+        "metro": "M\u00e9tro Arts et M\u00e9tiers",
+        "produit": "location",
+        "titre": "2 175 \u20ac",
+        "soustitre": "Paris 3e",
+        "detail1": "Appartement, 65 m\u00b2",
+        "detail2": "4\u00a0pi\u00e8ces, 3\u00a0chambres"
+    }, {
+        "id": "1777066",
+        "nb_photos": "0",
+        "photo_url": "http:\/\/static.pap.fr\/photos\/777\/777@66.thumb.jpg",
+        "panier": "0",
+        "produit": "location",
+        "titre": "1 050 \u20ac",
+        "soustitre": "Paris 3e",
+        "detail1": "Appartement, 32 m\u00b2",
+        "detail2": "2\u00a0pi\u00e8ces, 1\u00a0chambre"
+    }, {
+        "id": "194410888",
+        "nb_photos": "1",
+        "photo_url": "http:\/\/static.pap.fr\/photos\/944\/944AA888.thumb.jpg",
+        "panier": "0",
+        "metro": "M\u00e9tro Arts et M\u00e9tiers",
+        "produit": "location",
+        "titre": "1 680 \u20ac",
+        "soustitre": "Paris 3e",
+        "detail1": "Appartement, 46 m\u00b2",
+        "detail2": "2\u00a0pi\u00e8ces, 1\u00a0chambre"
+    }, {
+        "id": "194004036",
+        "nb_photos": "0",
+        "photo_url": "http:\/\/static.pap.fr\/photos\/940\/940@4036.thumb.jpg",
+        "panier": "0",
+        "produit": "location",
+        "titre": "1 300 \u20ac",
+        "soustitre": "Paris 3e",
+        "detail1": "Appartement, 30 m\u00b2",
+        "detail2": "1\u00a0chambre"
+    }],
+    "pub": {
+        "top": "http:\/\/realmedia.pap.fr\/2\/PAP_ANDROID\/resultats_locations\/505038078@Top?produit=location&typebien=appartement&surface_min=30&surface_max=400&nb_pieces=1%2C2%2C3%2C4%2C5&nb_chambres=1%2C2%2C3%2C4%2C5%2C6%2C7%2C8&prix_min=400&prix_max=2800&departement=75&ville=paris-3e&numpage=1&page=resultats_locations&plateforme=android",
+        "middle": "http:\/\/realmedia.pap.fr\/2\/PAP_ANDROID\/resultats_locations\/768750310@Middle?produit=location&typebien=appartement&surface_min=30&surface_max=400&nb_pieces=1%2C2%2C3%2C4%2C5&nb_chambres=1%2C2%2C3%2C4%2C5%2C6%2C7%2C8&prix_min=400&prix_max=2800&departement=75&ville=paris-3e&numpage=1&page=resultats_locations&plateforme=android",
+        "bottom": "http:\/\/realmedia.pap.fr\/2\/PAP_ANDROID\/resultats_locations\/825525066@Bottom?produit=location&typebien=appartement&surface_min=30&surface_max=400&nb_pieces=1%2C2%2C3%2C4%2C5&nb_chambres=1%2C2%2C3%2C4%2C5%2C6%2C7%2C8&prix_min=400&prix_max=2800&departement=75&ville=paris-3e&numpage=1&page=resultats_locations&plateforme=android"
+    }
+}

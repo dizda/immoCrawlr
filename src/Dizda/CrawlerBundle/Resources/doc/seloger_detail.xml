@@ -1,0 +1,129 @@
+<detailAnnonce>
+    <codeOp>0</codeOp>
+    <idTiers>8530</idTiers>
+    <idAnnonce>76829503</idAnnonce>
+    <idTypeTransaction>1</idTypeTransaction>
+    <idTypeBien>1</idTypeBien>
+    <dtFraicheur>2013-04-01T20:16:00</dtFraicheur>
+    <titre>Appartement 3 pièces</titre>
+    <libelle>3 pièces</libelle>
+    <proximite>Voltaire-Léon Blum/Charonne</proximite>
+    <descriptif>Situé rue Godefroy Cavaignac, Métro Voltaire ou Charonne, ligne 9: au rez-de-chaussée sur rue et cour, 67m² ENTIÈREMENT REFAIT A NEUF, comprenant: entrée, séjour et 1 chambre sur rue, et 1 chambre sur cour, cuisine séparée aménagée, salle de bain avec WC. Plusieurs placards de rangements, eau chaude et chauffage individuel/gaz, digicode, porte blindée, double vitrage. Secteur recherché.
+        Garantie : 1699 €.</descriptif>
+    <prix>1699</prix>
+    <prixUnite>€+ch</prixUnite>
+    <prixMention />
+    <surface>67</surface>
+    <surfaceUnite>m²</surfaceUnite>
+    <nbPieces>3</nbPieces>
+    <nbChambres>2</nbChambres>
+    <idPays>250</idPays>
+    <pays>France</pays>
+    <cp>75011</cp>
+    <codeInsee>750111</codeInsee>
+    <ville>Paris 11ème</ville>
+    <adresse>rue Godefroy Cavaignac</adresse>
+    <quartier>Léon-Blum Folie-Regnault</quartier>
+    <latitude>48.85876</latitude>
+    <longitude>2.384003</longitude>
+    <llPrecision>qrt</llPrecision>
+    <siExclusif>True</siExclusif>
+    <siMandatExclusif> false</siMandatExclusif>
+    <siMandatStar> false</siMandatStar>
+    <reference>G.CAVAIGNAC</reference>
+    <permaLien>http://www.seloger.com/annonces/locations/appartement/paris-11eme-75/leon-blum-folie-regnault/76829503.htm?p=CBBPqSgYAANRqcSw</permaLien>
+    <typeDPE>hab</typeDPE>
+    <bilanConsoEnergie>D</bilanConsoEnergie>
+    <bilanEmissionGES>E</bilanEmissionGES>
+    <siLotNeuf>false</siLotNeuf>
+    <idAnnonceProgramme>false</idAnnonceProgramme>
+    <details>
+        <detail>
+            <libelle>Refait À Neuf</libelle>
+            <valeur />
+        </detail>
+        <detail>
+            <libelle>Surface</libelle>
+            <valeur>67 m²</valeur>
+        </detail>
+        <detail>
+            <libelle>Pièces</libelle>
+            <valeur>3</valeur>
+        </detail>
+        <detail>
+            <libelle>Chambres</libelle>
+            <valeur>2</valeur>
+        </detail>
+        <detail>
+            <libelle>Salle de bain</libelle>
+            <valeur>1</valeur>
+        </detail>
+        <detail>
+            <libelle>Toilettes</libelle>
+            <valeur>1</valeur>
+        </detail>
+        <detail>
+            <libelle>Rangements</libelle>
+            <valeur />
+        </detail>
+        <detail>
+            <libelle>Télévision Par Câble</libelle>
+            <valeur />
+        </detail>
+        <detail>
+            <libelle>Type de cuisine</libelle>
+            <valeur>séparée</valeur>
+        </detail>
+        <detail>
+            <libelle>Digicode</libelle>
+            <valeur />
+        </detail>
+        <detail>
+            <libelle>Entrée</libelle>
+            <valeur />
+        </detail>
+        <detail>
+            <libelle>Salle de Séjour</libelle>
+            <valeur />
+        </detail>
+    </details>
+    <contact>
+        <siAudiotel>false</siAudiotel>
+        <idPublication>171083</idPublication>
+        <nom>FLAT SHOP</nom>
+        <telephone>06 10 24 65 80</telephone>
+        <fax>01 43 21 26 75</fax>
+        <email>agence.flatshop@gmail.com</email>
+        <adresse>34 RUE DELAMBRE
+            75014 Paris 14ème</adresse>
+        <latitude>48.832634</latitude>
+        <longitude>2.325153</longitude>
+        <rcsSiren>452731201</rcsSiren>
+        <nbAnnoncesVente>10</nbAnnoncesVente>
+        <nbAnnoncesLocation>8</nbAnnoncesLocation>
+        <nbBiensVendus>0</nbBiensVendus>
+    </contact>
+    <nbPhotos>2</nbPhotos>
+    <photos>
+        <photo>
+            <ordre>1</ordre>
+            <thumbUrl>http://9.visuels.poliris.com/thumbnails/9/5/f/3/95f3e45c-2dc7.jpg</thumbUrl>
+            <thbUrl>http://9.visuels.poliris.com/carre/9/5/f/3/95f3e45c-2dc7.jpg</thbUrl>
+            <stdUrl>http://9.visuels.poliris.com/2d/9/5/f/3/95f3e45c-2dc7.jpg</stdUrl>
+            <bigUrl>http://9.visuels.poliris.com/bigs/9/5/f/3/95f3e45c-2dc7.jpg</bigUrl>
+        </photo>
+        <photo>
+            <ordre>2</ordre>
+            <thumbUrl>http://6.visuels.poliris.com/thumbnails/6/e/d/7/6ed7ac2d-36e5.jpg</thumbUrl>
+            <thbUrl>http://6.visuels.poliris.com/carre/6/e/d/7/6ed7ac2d-36e5.jpg</thbUrl>
+            <stdUrl>http://6.visuels.poliris.com/2d/6/e/d/7/6ed7ac2d-36e5.jpg</stdUrl>
+            <bigUrl>http://6.visuels.poliris.com/bigs/6/e/d/7/6ed7ac2d-36e5.jpg</bigUrl>
+        </photo>
+    </photos>
+    <acheterapartirde>
+        <mensualite />
+        <taux />
+        <duree />
+    </acheterapartirde>
+</detailAnnonce>
+<!-- ID3x v4.60 (491.9) - X19 - 00.067.684 - base - 4/1/2013 9:48:21 PM - annoncedetail.xml -->

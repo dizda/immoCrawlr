@@ -1,0 +1,63 @@
+{
+    "id": "194711355",
+    "produit": "location",
+    "date_publication": "Annonce nouvelle du  29 mars 2013",
+    "titre": "1 250 \u20ac",
+    "soustitre": "Paris 3e",
+    "detail1": "Appartement, 32 m\u00b2",
+    "detail2": "2\u00a0pi\u00e8ces, 1\u00a0chambre",
+    "texte": "Quartier du Marais. Proche m\u00e9tro Filles du Calvaire, R\u00e9publique et Oberkampf. Dans immeuble du XIXe si\u00e8cles, 2 pi\u00e8ces de 32\u00a0m\u00b2 environ, au 5e \u00e9tage sur 6, compos\u00e9 de : cuisine am\u00e9nag\u00e9e et s\u00e9par\u00e9e, s\u00e9jour, chambre, salle d'eau avec wc, rangements. Clair et calme. Porte blind\u00e9e, digicode, et gardien. Chauffage individuel. Proximit\u00e9 tous commerces. 1.250\u00a0\u20ac\/mois + 50\u00a0\u20ac provision charges. 06.47.86.96.05",
+    "telephones": ["06.47.86.96.05"],
+    "email": "1",
+    "metros": "Filles du Calvaire, R\u00e9publique, Oberkampf",
+    "nb_photos": "1",
+    "photo_urls": ["http:\/\/static.pap.fr\/photos\/947\/947AB355.jpg"],
+    "photo_thumbs": ["http:\/\/static.pap.fr\/photos\/947\/947AB355.thumb.jpg"],
+    "panier": "0",
+    "commentaire": "",
+    "rdv_date": "",
+    "rdv_adresse": "",
+    "geo_lat": "",
+    "geo_lng": "",
+    "geo_zoom": "",
+    "site_pap": "",
+    "site_perso": "",
+    "pub": {
+        "top": "http:\/\/realmedia.pap.fr\/2\/PAP_ANDROID\/details_locations\/317565038@Top?page=details_locations&typebien=appartement&departement=75&ville=paris-3e&prix=1250&surface=32&nb_pieces=2&options=vide%2Clongue-duree&plateforme=android",
+        "middle": "http:\/\/realmedia.pap.fr\/2\/PAP_ANDROID\/details_locations\/263649987@Middle?page=details_locations&typebien=appartement&departement=75&ville=paris-3e&prix=1250&surface=32&nb_pieces=2&options=vide%2Clongue-duree&plateforme=android",
+        "bottom": "http:\/\/realmedia.pap.fr\/2\/PAP_ANDROID\/details_locations\/133131730@Bottom?page=details_locations&typebien=appartement&departement=75&ville=paris-3e&prix=1250&surface=32&nb_pieces=2&options=vide%2Clongue-duree&plateforme=android"
+    },
+    "classe_energie": "E"
+}
+
+{
+    "id": "194810272",
+    "produit": "location",
+    "date_publication": "Annonce nouvelle du 	08 avril 2013",
+    "titre": "1 580 \u20ac",
+    "soustitre": "Paris 3e",
+    "detail1": "Appartement, 50 m\u00b2",
+    "detail2": "2\u00a0pi\u00e8ces, 1\u00a0chambre",
+    "texte": "Quartier Marais, Beaubourg, m\u00e9tro Rambuteau. Appartement vide de 50\u00a0m\u00b2, au 1er, calme, hauteur sous plafond 3 m, fen\u00eatres double vitrage : entr\u00e9e avec placard, s\u00e9jour lumineux avec parquet, chambre avec parquet, cuisine am\u00e9nag\u00e9e ind\u00e9pendante \u00e9quip\u00e9e (micro-ondes, r\u00e9frig\u00e9rateur, plaque cuisson, hotte, lave-vaisselle, lave-linge), salle de bains avec grande douche et mobilier salle de bains, wc ind\u00e9pendants. S\u00e9curis\u00e9. Digicode, interphone. Libre au 1er mai 2013. 1.580\u00a0\u20ac\/mois + 120\u00a0\u20ac provision charges. Pour visite : Mr Coll au 06.11.46.42.62 ou 06.51.25.55.13",
+    "telephones": ["06.11.46.42.62", "06.51.25.55.13"],
+    "email": "1",
+    "metros": "Rambuteau (Centre Georges Pompidou)",
+    "nb_photos": "3",
+    "photo_urls": ["http:\/\/static.pap.fr\/photos\/948\/948AA272.jpg", "http:\/\/static.pap.fr\/photos\/948\/948BA272.jpg", "http:\/\/static.pap.fr\/photos\/948\/948CA272.jpg"],
+    "photo_thumbs": ["http:\/\/static.pap.fr\/photos\/948\/948AA272.thumb.jpg", "http:\/\/static.pap.fr\/photos\/948\/948BA272.thumb.jpg", "http:\/\/static.pap.fr\/photos\/948\/948CA272.thumb.jpg"],
+    "panier": "0",
+    "commentaire": "",
+    "rdv_date": "",
+    "rdv_adresse": "",
+    "geo_lat": "",
+    "geo_lng": "",
+    "geo_zoom": "",
+    "site_pap": "",
+    "site_perso": "",
+    "pub": {
+        "top": "http:\/\/realmedia.pap.fr\/2\/PAP_ANDROID\/details_locations\/372580614@Top?page=details_locations&typebien=appartement&departement=75&ville=paris-3e&prix=1580&surface=50&nb_pieces=2&options=vide%2Clongue-duree&plateforme=android",
+        "middle": "http:\/\/realmedia.pap.fr\/2\/PAP_ANDROID\/details_locations\/864532057@Middle?page=details_locations&typebien=appartement&departement=75&ville=paris-3e&prix=1580&surface=50&nb_pieces=2&options=vide%2Clongue-duree&plateforme=android",
+        "bottom": "http:\/\/realmedia.pap.fr\/2\/PAP_ANDROID\/details_locations\/961852274@Bottom?page=details_locations&typebien=appartement&departement=75&ville=paris-3e&prix=1580&surface=50&nb_pieces=2&options=vide%2Clongue-duree&plateforme=android"
+    },
+    "classe_energie": ""
+}

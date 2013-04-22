@@ -1,0 +1,99 @@
+<annonce>
+    <summary>
+        <id>27049784-1</id>
+        <partnerId>I2SN/8437292</partnerId>
+        <creationDate>23/03/2013</creationDate>
+        <modificationDate>28/03/2013</modificationDate>
+        <description>11ème. 65 avenue Parmentier. SURPLACE SAMEDI 30/03/2013 DE 11H A 12H. VENIR SANS RDV. Appt 3p de 66m² au 5ème étage avec asc, une entrée, un séjour, deux chambres, une cuisine séparée, une salle de bains, wc séparés, un parking en sous-sol et une cave. Chauffage et eau collectifs. Appt dispo à partir du 02/04/2013. Locataires en CDI 3x le loyer avec garants.</description>
+        <transaction>LOCATION</transaction>
+        <localisation>
+            <address />
+            <postalCode>75011</postalCode>
+            <cityLabel>Paris 11ème</cityLabel>
+            <departmentCode>75</departmentCode>
+            <departmentLabel>Paris</departmentLabel>
+            <countryLabel>France</countryLabel>
+            <regionLabel>Île-de-France</regionLabel>
+            <longitudeCity>2.3795</longitudeCity>
+            <latitudeCity>48.8574</latitudeCity>
+        </localisation>
+        <contact>
+            <customerId>139441</customerId>
+            <corporateName>N  B INTERMEDIAIRES</corporateName>
+            <name>N ET B INTERMEDIAIRES</name>
+            <surname>N ET B INTERMEDIAIRES</surname>
+            <rcs>B420.467.342</rcs>
+            <address>16, rue Nicolo</address>
+            <postalCode>75016</postalCode>
+            <city>PARIS</city>
+            <tel>01.42.24.42.21</tel>
+            <mobile />
+            <email>n.b.i@wanadoo.fr</email>
+            <logo hasThumb="false" order="1" url="http://iphoneimages.explorimmo.com/img/xs/2/logo/I2S/Explorimmo17106.jpg" />
+        </contact>
+        <newClassified>false</newClassified>
+    </summary>
+    <photos>
+        <photo hasThumb="false" order="1" url="http://iphoneimages.explorimmo.com/img/l/0/external/http%3A%2F%2Fphoto3.pericles.fr%2Fphoto_get.php%3FS1%3D1317%26S2%3D01%26I0%3D8437292%26lettre%3Da%26format%3D1" />
+        <photo hasThumb="false" order="2" url="http://iphoneimages.explorimmo.com/img/l/0/external/http%3A%2F%2Fphoto3.pericles.fr%2Fphoto_get.php%3FS1%3D1317%26S2%3D01%26I0%3D8437292%26lettre%3Db%26format%3D1" />
+        <photo hasThumb="false" order="3" url="http://iphoneimages.explorimmo.com/img/l/0/external/http%3A%2F%2Fphoto3.pericles.fr%2Fphoto_get.php%3FS1%3D1317%26S2%3D01%26I0%3D8437292%26lettre%3Dc%26format%3D1" />
+        <photo hasThumb="false" order="4" url="http://iphoneimages.explorimmo.com/img/l/0/external/http%3A%2F%2Fphoto3.pericles.fr%2Fphoto_get.php%3FS1%3D1317%26S2%3D01%26I0%3D8437292%26lettre%3Dd%26format%3D1" />
+    </photos>
+    <characteristics>
+        <goodType>Appartement</goodType>
+        <surface>66.0</surface>
+        <surfaceCertification>false</surfaceCertification>
+        <exposition />
+        <kitchenSurface />
+        <livingRoomSurface />
+        <nbRooms>3</nbRooms>
+        <nbBedrooms>2</nbBedrooms>
+        <buildYear />
+        <landSurface />
+        <heating>gaz</heating>
+        <cellar>true</cellar>
+        <noiseIsolation />
+        <thermoIsolation />
+        <floor>5ème étage</floor>
+        <options>
+            <option name="WC" quantity="1" />
+            <option name="Ascenseur" quantity="1" />
+            <option name="Cave" quantity="1" />
+            <option name="Parking intérieur" quantity="1" />
+            <option name="Salle de bains" quantity="1" />
+        </options>
+        <DpeGesL />
+        <DpeConsoL />
+    </characteristics>
+    <proximity>
+        <metro />
+        <bus />
+        <rer />
+        <shops />
+        <schools />
+        <misc>Parmentier Saint-Ambroise Parmentier</misc>
+    </proximity>
+    <jointOwnership>
+        <lift>true</lift>
+        <jointOwnershipLoads />
+    </jointOwnership>
+    <works>
+        <embellishment />
+        <heavyWorks />
+        <plumbing />
+        <electricity />
+        <misc />
+    </works>
+    <budget>
+        <price>1760.0</price>
+        <chargesIncluded>true</chargesIncluded>
+        <charges>180.0</charges>
+        <fees>790.0</fees>
+        <deposit>1580.0</deposit>
+        <realEstateTax />
+        <dwellingTax />
+        <electricity />
+        <gaz />
+        <water />
+    </budget>
+</annonce>

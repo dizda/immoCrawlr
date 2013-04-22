@@ -1,0 +1,50 @@
+idannonce : id
+
+transactionType : location, sell
+goodType : int  (flat, house, loft)
+
+title : string
+title2 : string
+district : string
+description : text
+
+price : double
+chargesAmount : double
+isChargesIncluded : bool
+agencyFees : double
+deposit : double
+
+
+floor : int / String
+rooms : int  (number of rooms) [3]
+bedrooms : int 				   [2]
+bathroom : int
+wcroom : int
+terrasse : int
+surface : double 			   [60] meters2
+surface_certification : bool
+heating	: string				(gaz, electricity,..)
+cave
+isRefurbished : bool 		(refait à neuf ?)
+
+metros : array
+postalcode : string
+inseecode : string    (750111)
+city : Paris 11ème
+photos : array of url ?
+permalink : string
+geo_lat
+geo_long
+
+contact_name  : string
+contact_phone : string
+contact_email : string
+contact_address : string
+contact_geo_lat
+contact_geo_long
+
+remote_created_at : date
+remote_updated_at : date
+local_created_at : date
+local_updated_at : date
+agence : foreign_key

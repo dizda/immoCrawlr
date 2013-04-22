@@ -1,0 +1,3053 @@
+<!-- SELOGER.COM -->
+<recherche>
+    <resume>locations d&#39;appartements de 3 pièces ou de maisons situées à Paris 11ème ou à Paris 3ème, de 2 chambres, ayant une surface supérieure à 55 m², pour un loyer compris entre 1 000 et 1 850 €/mois, triées par date.</resume>
+    <resumeSansTri>locations d&#39;appartements  de 3 pièces ou de maisons situées à Paris 11ème ou à Paris 3ème, de 2 chambres, ayant une surface supérieure à 55 m², pour un loyer compris entre 1 000 et 1 850 €/mois</resumeSansTri>
+    <nbTrouvees>28</nbTrouvees>
+    <nbAffichables>28</nbAffichables>
+    <dtCreationMax>2013-04-01T18:53:00</dtCreationMax>
+    <annonces>
+        <annonce>
+            <idTiers>8530</idTiers>
+            <idAnnonce>76829503</idAnnonce>
+            <idPublication>171083</idPublication>
+            <idTypeTransaction>1</idTypeTransaction>
+            <idTypeBien>1</idTypeBien>
+            <dtFraicheur>2013-04-01T20:16:00</dtFraicheur>
+            <dtCreation>2013-04-01T18:53:00</dtCreation>
+            <titre>Appartement 3 pièces</titre>
+            <libelle>3 pièces</libelle>
+            <proximite>Voltaire-Léon Blum/Charonne</proximite>
+            <descriptif>Situé rue Godefroy Cavaignac, Métro Voltaire ou Charonne, ligne 9: au rez-de-chaussée sur rue et cour, 67m² ENTIÈREMENT REFAIT A NEUF, comprenant: entrée, séjour et 1 chambre sur rue, et 1 chambre sur cour, cuisine séparée aménagée, salle de bain avec WC. Plusieurs placards de rangements, eau chaude et chauffage individuel/gaz, digicode, porte blindée, double vitrage. Secteur recherché.</descriptif>
+            <prix>1699</prix>
+            <prixUnite>€+ch</prixUnite>
+            <prixMention />
+            <nbPiece>3</nbPiece>
+            <nbChambre>2</nbChambre>
+            <surface>67</surface>
+            <surfaceUnite>m²</surfaceUnite>
+            <idPays>250</idPays>
+            <pays>France</pays>
+            <cp>75011</cp>
+            <codeInsee>750111</codeInsee>
+            <ville>Paris 11ème</ville>
+            <nbPhotos>2</nbPhotos>
+            <firstThumb>http://9.visuels.poliris.com/carre/9/5/f/3/95f3e45c-2dc7.jpg</firstThumb>
+            <permaLien>http://www.seloger.com/annonces/locations/appartement/paris-11eme-75/leon-blum-folie-regnault/76829503.htm?p=CBBPqSgYAANRqcSw</permaLien>
+            <latitude>48.85876</latitude>
+            <longitude>2.384003</longitude>
+            <llPrecision>qrt</llPrecision>
+            <typeDPE>hab</typeDPE>
+            <bilanConsoEnergie>D</bilanConsoEnergie>
+            <bilanEmissionGES>E</bilanEmissionGES>
+            <siLotNeuf>false</siLotNeuf>
+            <siMandatExclusif> false</siMandatExclusif>
+            <siMandatStar> false</siMandatStar>
+            <contact>
+                <siAudiotel>false</siAudiotel>
+                <idPublication>171083</idPublication>
+                <nom>FLAT SHOP</nom>
+                <rcsSiren>452731201</rcsSiren>
+                <rcsNic>00029</rcsNic>
+            </contact>
+            <photos>
+                <photo>
+                    <titre />
+                    <ordre>0</ordre>
+                    <thbUrl>http://9.visuels.poliris.com/thumbnails/9/5/f/3/95f3e45c-2dc7.jpg</thbUrl>
+                    <carreurl>http://9.visuels.poliris.com/carre/9/5/f/3/95f3e45c-2dc7.jpg</carreurl>
+                    <bigUrl>http://9.visuels.poliris.com/bigs/9/5/f/3/95f3e45c-2dc7.jpg</bigUrl>
+                    <stdUrl>http://9.visuels.poliris.com/2d/9/5/f/3/95f3e45c-2dc7.jpg</stdUrl>
+                    <c175url>http://9.visuels.poliris.com/c175/9/5/f/3/95f3e45c-2dc7.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>600</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>1</ordre>
+                    <thbUrl>http://6.visuels.poliris.com/thumbnails/6/e/d/7/6ed7ac2d-36e5.jpg</thbUrl>
+                    <carreurl>http://6.visuels.poliris.com/carre/6/e/d/7/6ed7ac2d-36e5.jpg</carreurl>
+                    <bigUrl>http://6.visuels.poliris.com/bigs/6/e/d/7/6ed7ac2d-36e5.jpg</bigUrl>
+                    <stdUrl>http://6.visuels.poliris.com/2d/6/e/d/7/6ed7ac2d-36e5.jpg</stdUrl>
+                    <c175url>http://6.visuels.poliris.com/c175/6/e/d/7/6ed7ac2d-36e5.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>600</bigheight>
+                </photo>
+            </photos>
+            <nbsallesdebain>1</nbsallesdebain>
+            <nbsalleseau />
+            <nbtoilettes>1</nbtoilettes>
+            <sisejour>True</sisejour>
+            <surfsejour />
+            <anneeconstruct />
+            <nbparkings />
+            <nbboxes />
+            <siterrasse>False</siterrasse>
+            <nbterrasses />
+            <sipiscine>False</sipiscine>
+        </annonce>
+        <annonce>
+            <idTiers>10177</idTiers>
+            <idAnnonce>76776259</idAnnonce>
+            <idPublication>176643</idPublication>
+            <idTypeTransaction>1</idTypeTransaction>
+            <idTypeBien>1</idTypeBien>
+            <dtFraicheur>2013-03-30T08:39:00</dtFraicheur>
+            <dtCreation>2013-03-29T12:27:00</dtCreation>
+            <titre>Appartement 3 pièces</titre>
+            <libelle>3 pièces 72.00m²</libelle>
+            <proximite>Métro Saint-Ambroise</proximite>
+            <descriptif>Au pied du métro, un trois pièces situé au quatrième étage d&#39;un très bel immeuble parisien, en bon état général, composé d&#39;une entrée, d&#39;un séjour, d&#39;une cuisine séparée et aménagée, de deux chambres en enfilades et d&#39;une salle de bain. WC séparés. Chauffage individuel au gaz. Coup de coeur !!</descriptif>
+            <prix>1780</prix>
+            <prixUnite>€cc*</prixUnite>
+            <prixMention>* Loyer mensuel charges comprises</prixMention>
+            <nbPiece>3</nbPiece>
+            <nbChambre>2</nbChambre>
+            <surface>72</surface>
+            <surfaceUnite>m²</surfaceUnite>
+            <idPays>250</idPays>
+            <pays>France</pays>
+            <cp>75011</cp>
+            <codeInsee>750111</codeInsee>
+            <ville>Paris 11ème</ville>
+            <nbPhotos>7</nbPhotos>
+            <firstThumb>http://e.visuels.poliris.com/carre/e/4/a/c/e4ac44a2-328f.jpg</firstThumb>
+            <permaLien>http://www.seloger.com/annonces/locations/appartement/paris-11eme-75/republique-saint-ambroise/76776259.htm?p=CBBPqSgYAAN6KyAw</permaLien>
+            <latitude>48.863992</latitude>
+            <longitude>2.370834</longitude>
+            <llPrecision>qrt</llPrecision>
+            <typeDPE>hab</typeDPE>
+            <consoEnergie>237</consoEnergie>
+            <bilanConsoEnergie>F</bilanConsoEnergie>
+            <emissionGES>55</emissionGES>
+            <bilanEmissionGES>E</bilanEmissionGES>
+            <siLotNeuf>false</siLotNeuf>
+            <siMandatExclusif> false</siMandatExclusif>
+            <siMandatStar> false</siMandatStar>
+            <contact>
+                <siAudiotel>false</siAudiotel>
+                <idPublication>176643</idPublication>
+                <nom>CITYA ETOILE</nom>
+                <rcsSiren>324335561</rcsSiren>
+                <rcsNic>00035</rcsNic>
+            </contact>
+            <photos>
+                <photo>
+                    <titre />
+                    <ordre>0</ordre>
+                    <thbUrl>http://e.visuels.poliris.com/thumbnails/e/4/a/c/e4ac44a2-328f.jpg</thbUrl>
+                    <carreurl>http://e.visuels.poliris.com/carre/e/4/a/c/e4ac44a2-328f.jpg</carreurl>
+                    <bigUrl>http://e.visuels.poliris.com/bigs/e/4/a/c/e4ac44a2-328f.jpg</bigUrl>
+                    <stdUrl>http://e.visuels.poliris.com/2d/e/4/a/c/e4ac44a2-328f.jpg</stdUrl>
+                    <c175url>http://e.visuels.poliris.com/c175/e/4/a/c/e4ac44a2-328f.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>600</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>1</ordre>
+                    <thbUrl>http://b.visuels.poliris.com/thumbnails/b/7/0/2/b7025dc1-338c.jpg</thbUrl>
+                    <carreurl>http://b.visuels.poliris.com/carre/b/7/0/2/b7025dc1-338c.jpg</carreurl>
+                    <bigUrl>http://b.visuels.poliris.com/bigs/b/7/0/2/b7025dc1-338c.jpg</bigUrl>
+                    <stdUrl>http://b.visuels.poliris.com/2d/b/7/0/2/b7025dc1-338c.jpg</stdUrl>
+                    <c175url>http://b.visuels.poliris.com/c175/b/7/0/2/b7025dc1-338c.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>600</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>2</ordre>
+                    <thbUrl>http://9.visuels.poliris.com/thumbnails/9/d/8/6/9d86efc6-33e4.jpg</thbUrl>
+                    <carreurl>http://9.visuels.poliris.com/carre/9/d/8/6/9d86efc6-33e4.jpg</carreurl>
+                    <bigUrl>http://9.visuels.poliris.com/bigs/9/d/8/6/9d86efc6-33e4.jpg</bigUrl>
+                    <stdUrl>http://9.visuels.poliris.com/2d/9/d/8/6/9d86efc6-33e4.jpg</stdUrl>
+                    <c175url>http://9.visuels.poliris.com/c175/9/d/8/6/9d86efc6-33e4.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>600</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>3</ordre>
+                    <thbUrl>http://0.visuels.poliris.com/thumbnails/0/1/d/0/01d02c68-3d85.jpg</thbUrl>
+                    <carreurl>http://0.visuels.poliris.com/carre/0/1/d/0/01d02c68-3d85.jpg</carreurl>
+                    <bigUrl>http://0.visuels.poliris.com/bigs/0/1/d/0/01d02c68-3d85.jpg</bigUrl>
+                    <stdUrl>http://0.visuels.poliris.com/2d/0/1/d/0/01d02c68-3d85.jpg</stdUrl>
+                    <c175url>http://0.visuels.poliris.com/c175/0/1/d/0/01d02c68-3d85.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>600</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>4</ordre>
+                    <thbUrl>http://7.visuels.poliris.com/thumbnails/7/0/2/f/702f9505-3d82.jpg</thbUrl>
+                    <carreurl>http://7.visuels.poliris.com/carre/7/0/2/f/702f9505-3d82.jpg</carreurl>
+                    <bigUrl>http://7.visuels.poliris.com/bigs/7/0/2/f/702f9505-3d82.jpg</bigUrl>
+                    <stdUrl>http://7.visuels.poliris.com/2d/7/0/2/f/702f9505-3d82.jpg</stdUrl>
+                    <c175url>http://7.visuels.poliris.com/c175/7/0/2/f/702f9505-3d82.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>600</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>5</ordre>
+                    <thbUrl>http://6.visuels.poliris.com/thumbnails/6/c/2/c/6c2cc8e1-2fdf.jpg</thbUrl>
+                    <carreurl>http://6.visuels.poliris.com/carre/6/c/2/c/6c2cc8e1-2fdf.jpg</carreurl>
+                    <bigUrl>http://6.visuels.poliris.com/bigs/6/c/2/c/6c2cc8e1-2fdf.jpg</bigUrl>
+                    <stdUrl>http://6.visuels.poliris.com/2d/6/c/2/c/6c2cc8e1-2fdf.jpg</stdUrl>
+                    <c175url>http://6.visuels.poliris.com/c175/6/c/2/c/6c2cc8e1-2fdf.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>600</bigheight>
+                </photo>
+            </photos>
+            <nbsallesdebain>1</nbsallesdebain>
+            <nbsalleseau />
+            <nbtoilettes>1</nbtoilettes>
+            <sisejour>True</sisejour>
+            <surfsejour />
+            <anneeconstruct />
+            <nbparkings />
+            <nbboxes />
+            <siterrasse>False</siterrasse>
+            <nbterrasses />
+            <sipiscine>False</sipiscine>
+        </annonce>
+        <annonce>
+            <idTiers>65973</idTiers>
+            <idAnnonce>75971403</idAnnonce>
+            <idPublication>411</idPublication>
+            <idTypeTransaction>1</idTypeTransaction>
+            <idTypeBien>1</idTypeBien>
+            <dtFraicheur>2013-03-31T22:42:00</dtFraicheur>
+            <dtCreation>2013-03-28T23:24:00</dtCreation>
+            <titre>Appartement 3 pièces</titre>
+            <libelle>Paris 11ème</libelle>
+            <proximite>Belleville</proximite>
+            <descriptif>Paris 11ème - métro belleville
+                3 pièces de 62 m² entièrement refait a neuf offrant: entrée - cuisine séparée
+                et aménagée - grand séjour avec parquet et cheminée décorative - deux chambres
+                donnant sur cour dont une avec placards - dressing - salle de bains &amp; WC.
+                Libre de suite loyer: 1650 e cc - honoraires loc: 1776,12 e.</descriptif>
+            <prix>1640</prix>
+            <prixUnite>€cc*</prixUnite>
+            <prixMention>* Loyer mensuel charges comprises</prixMention>
+            <loyerAnnuel>18696</loyerAnnuel>
+            <loyerAnnuelUnite>€</loyerAnnuelUnite>
+            <nbPiece>3</nbPiece>
+            <nbChambre>2</nbChambre>
+            <surface>62</surface>
+            <surfaceUnite>m²</surfaceUnite>
+            <idPays>250</idPays>
+            <pays>France</pays>
+            <cp>75011</cp>
+            <codeInsee>750111</codeInsee>
+            <ville>Paris 11ème</ville>
+            <nbPhotos>4</nbPhotos>
+            <firstThumb>http://f.visuels.poliris.com/carre/f/1/c/3/f1c36f6e-3aff.jpg</firstThumb>
+            <permaLien>http://www.seloger.com/annonces/locations/appartement/paris-11eme-75/belleville-saint-maur/75971403.htm?p=CBBPqSgYAAM0ABmw</permaLien>
+            <latitude>48.866171</latitude>
+            <longitude>2.378795</longitude>
+            <llPrecision>qrt</llPrecision>
+            <typeDPE>hab</typeDPE>
+            <consoEnergie>450</consoEnergie>
+            <bilanConsoEnergie>F</bilanConsoEnergie>
+            <emissionGES>80</emissionGES>
+            <bilanEmissionGES>F</bilanEmissionGES>
+            <siLotNeuf>false</siLotNeuf>
+            <siMandatExclusif> false</siMandatExclusif>
+            <siMandatStar> false</siMandatStar>
+            <contact>
+                <siAudiotel>false</siAudiotel>
+                <idPublication>411</idPublication>
+                <nom>BELLETOILE IMMOBILIER</nom>
+                <rcsSiren>381065978</rcsSiren>
+                <rcsNic>00029</rcsNic>
+            </contact>
+            <photos>
+                <photo>
+                    <titre />
+                    <ordre>0</ordre>
+                    <thbUrl>http://f.visuels.poliris.com/thumbnails/f/1/c/3/f1c36f6e-3aff.jpg</thbUrl>
+                    <carreurl>http://f.visuels.poliris.com/carre/f/1/c/3/f1c36f6e-3aff.jpg</carreurl>
+                    <bigUrl />
+                    <stdUrl>http://f.visuels.poliris.com/2d/f/1/c/3/f1c36f6e-3aff.jpg</stdUrl>
+                    <c175url>http://f.visuels.poliris.com/c175/f/1/c/3/f1c36f6e-3aff.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>400</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth />
+                    <bigheight />
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>1</ordre>
+                    <thbUrl>http://2.visuels.poliris.com/thumbnails/2/2/2/8/2228d666-3ca5.jpg</thbUrl>
+                    <carreurl>http://2.visuels.poliris.com/carre/2/2/2/8/2228d666-3ca5.jpg</carreurl>
+                    <bigUrl />
+                    <stdUrl>http://2.visuels.poliris.com/2d/2/2/2/8/2228d666-3ca5.jpg</stdUrl>
+                    <c175url>http://2.visuels.poliris.com/c175/2/2/2/8/2228d666-3ca5.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>400</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth />
+                    <bigheight />
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>2</ordre>
+                    <thbUrl>http://4.visuels.poliris.com/thumbnails/4/8/a/3/48a37fc7-301f.jpg</thbUrl>
+                    <carreurl>http://4.visuels.poliris.com/carre/4/8/a/3/48a37fc7-301f.jpg</carreurl>
+                    <bigUrl />
+                    <stdUrl>http://4.visuels.poliris.com/2d/4/8/a/3/48a37fc7-301f.jpg</stdUrl>
+                    <c175url>http://4.visuels.poliris.com/c175/4/8/a/3/48a37fc7-301f.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>400</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth />
+                    <bigheight />
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>3</ordre>
+                    <thbUrl>http://3.visuels.poliris.com/thumbnails/3/9/3/a/393a767f-32ee.jpg</thbUrl>
+                    <carreurl>http://3.visuels.poliris.com/carre/3/9/3/a/393a767f-32ee.jpg</carreurl>
+                    <bigUrl />
+                    <stdUrl>http://3.visuels.poliris.com/2d/3/9/3/a/393a767f-32ee.jpg</stdUrl>
+                    <c175url>http://3.visuels.poliris.com/c175/3/9/3/a/393a767f-32ee.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>400</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth />
+                    <bigheight />
+                </photo>
+            </photos>
+            <nbsallesdebain>1</nbsallesdebain>
+            <nbsalleseau />
+            <nbtoilettes>1</nbtoilettes>
+            <sisejour>True</sisejour>
+            <surfsejour>20</surfsejour>
+            <anneeconstruct />
+            <nbparkings />
+            <nbboxes />
+            <siterrasse>False</siterrasse>
+            <nbterrasses />
+            <sipiscine>False</sipiscine>
+        </annonce>
+        <annonce>
+            <idTiers>979</idTiers>
+            <idAnnonce>76708663</idAnnonce>
+            <idPublication>20275</idPublication>
+            <idTypeTransaction>1</idTypeTransaction>
+            <idTypeBien>1</idTypeBien>
+            <dtFraicheur>2013-03-29T18:08:00</dtFraicheur>
+            <dtCreation>2013-03-27T16:53:00</dtCreation>
+            <titre>Appartement 3 pièces</titre>
+            <libelle>3 Pièces</libelle>
+            <proximite>Métro Chemin Vert</proximite>
+            <descriptif>Dans un immeuble année 70
+                3 pièces 69m² au premier étage avec ascenseur entrée, cuisine, séjour,
+                2 chambres, salle de bain avec baignoire, toilette et 2 dressing
+                boxe et cave chauffage collectif gaz libre.</descriptif>
+            <prix>1745</prix>
+            <prixUnite>€+ch</prixUnite>
+            <prixMention />
+            <nbPiece>3</nbPiece>
+            <nbChambre>2</nbChambre>
+            <surface>69</surface>
+            <surfaceUnite>m²</surfaceUnite>
+            <idPays>250</idPays>
+            <pays>France</pays>
+            <cp>75011</cp>
+            <codeInsee>750111</codeInsee>
+            <ville>Paris 11ème</ville>
+            <nbPhotos>3</nbPhotos>
+            <firstThumb>http://5.visuels.poliris.com/carre/5/6/4/6/5646f1e8-2df3.jpg</firstThumb>
+            <permaLien>http://www.seloger.com/annonces/locations/appartement/paris-11eme-75/bastille-popincourt/76708663.htm?p=CBBPqSgYAANohPMw</permaLien>
+            <latitude>48.85399</latitude>
+            <longitude>2.376603</longitude>
+            <llPrecision>qrt</llPrecision>
+            <typeDPE>hab</typeDPE>
+            <siLotNeuf>false</siLotNeuf>
+            <siMandatExclusif> false</siMandatExclusif>
+            <siMandatStar> false</siMandatStar>
+            <contact>
+                <siAudiotel>false</siAudiotel>
+                <idPublication>20275</idPublication>
+                <nom>AGENCE AGT BASTILLE</nom>
+                <rcsSiren>451483291</rcsSiren>
+                <rcsNic>00014</rcsNic>
+            </contact>
+            <photos>
+                <photo>
+                    <titre />
+                    <ordre>0</ordre>
+                    <thbUrl>http://5.visuels.poliris.com/thumbnails/5/6/4/6/5646f1e8-2df3.jpg</thbUrl>
+                    <carreurl>http://5.visuels.poliris.com/carre/5/6/4/6/5646f1e8-2df3.jpg</carreurl>
+                    <bigUrl>http://5.visuels.poliris.com/bigs/5/6/4/6/5646f1e8-2df3.jpg</bigUrl>
+                    <stdUrl>http://5.visuels.poliris.com/2d/5/6/4/6/5646f1e8-2df3.jpg</stdUrl>
+                    <c175url>http://5.visuels.poliris.com/c175/5/6/4/6/5646f1e8-2df3.jpg</c175url>
+                    <stdwidth>300</stdwidth>
+                    <stdheight>400</stdheight>
+                    <thumbwidth>75</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth>600</bigwidth>
+                    <bigheight>800</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>1</ordre>
+                    <thbUrl>http://0.visuels.poliris.com/thumbnails/0/5/c/0/05c0d0b6-38a5.jpg</thbUrl>
+                    <carreurl>http://0.visuels.poliris.com/carre/0/5/c/0/05c0d0b6-38a5.jpg</carreurl>
+                    <bigUrl>http://0.visuels.poliris.com/bigs/0/5/c/0/05c0d0b6-38a5.jpg</bigUrl>
+                    <stdUrl>http://0.visuels.poliris.com/2d/0/5/c/0/05c0d0b6-38a5.jpg</stdUrl>
+                    <c175url>http://0.visuels.poliris.com/c175/0/5/c/0/05c0d0b6-38a5.jpg</c175url>
+                    <stdwidth>300</stdwidth>
+                    <stdheight>400</stdheight>
+                    <thumbwidth>75</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth>600</bigwidth>
+                    <bigheight>800</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>2</ordre>
+                    <thbUrl>http://9.visuels.poliris.com/thumbnails/9/b/5/e/9b5ee25a-6c97.jpg</thbUrl>
+                    <carreurl>http://9.visuels.poliris.com/carre/9/b/5/e/9b5ee25a-6c97.jpg</carreurl>
+                    <bigUrl>http://9.visuels.poliris.com/bigs/9/b/5/e/9b5ee25a-6c97.jpg</bigUrl>
+                    <stdUrl>http://9.visuels.poliris.com/2d/9/b/5/e/9b5ee25a-6c97.jpg</stdUrl>
+                    <c175url>http://9.visuels.poliris.com/c175/9/b/5/e/9b5ee25a-6c97.jpg</c175url>
+                    <stdwidth>300</stdwidth>
+                    <stdheight>400</stdheight>
+                    <thumbwidth>75</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth>600</bigwidth>
+                    <bigheight>800</bigheight>
+                </photo>
+            </photos>
+            <nbsallesdebain>1</nbsallesdebain>
+            <nbsalleseau />
+            <nbtoilettes>1</nbtoilettes>
+            <sisejour>True</sisejour>
+            <surfsejour />
+            <anneeconstruct />
+            <nbparkings>0</nbparkings>
+            <nbboxes>1</nbboxes>
+            <siterrasse>False</siterrasse>
+            <nbterrasses />
+            <sipiscine>False</sipiscine>
+        </annonce>
+        <annonce>
+            <idTiers>1859</idTiers>
+            <idAnnonce>76683233</idAnnonce>
+            <idPublication>882</idPublication>
+            <idTypeTransaction>1</idTypeTransaction>
+            <idTypeBien>1</idTypeBien>
+            <idSousTypeBien>46</idSousTypeBien>
+            <dtFraicheur>2013-03-31T21:59:00</dtFraicheur>
+            <dtCreation>2013-03-26T23:40:00</dtCreation>
+            <titre>Duplex 3 pièces</titre>
+            <libelle>Appartement</libelle>
+            <proximite>M°saint maur</proximite>
+            <descriptif>Rue des Bluets, proche M°SAINT MAUR, &quot;Comme une maison de ville&quot;, un appartement 3 Pièces luxueux en Duplex en rez-de-chaussée comprenant séjour avec cuisine équipée et aménagée à l&#39;américaine de 44 m² environ, WC et à l&#39;étage, 2 chambres, salle de bains avec WC. Belle hauteur sous plafond, poutres apparentes, parquet, double vitrage, volets électriques. Très bon état. PRESTATIONS DE GRANDE QUALITÉ. Colocation possible.</descriptif>
+            <prix>1819</prix>
+            <prixUnite>€cc*</prixUnite>
+            <prixMention>* Loyer mensuel charges comprises</prixMention>
+            <nbPiece>3</nbPiece>
+            <nbChambre>2</nbChambre>
+            <surface>85</surface>
+            <surfaceUnite>m²</surfaceUnite>
+            <idPays>250</idPays>
+            <pays>France</pays>
+            <cp>75011</cp>
+            <codeInsee>750111</codeInsee>
+            <ville>Paris 11ème</ville>
+            <nbPhotos>4</nbPhotos>
+            <firstThumb>http://9.visuels.poliris.com/carre/9/a/1/d/9a1d051a-311b.jpg</firstThumb>
+            <permaLien>http://www.seloger.com/annonces/locations/appartement/paris-11eme-75/belleville-saint-maur/76683233.htm?p=CBBPqSgYAAONgDcg</permaLien>
+            <latitude>48.866171</latitude>
+            <longitude>2.378795</longitude>
+            <llPrecision>qrt</llPrecision>
+            <typeDPE>hab</typeDPE>
+            <consoEnergie>451</consoEnergie>
+            <bilanConsoEnergie>G</bilanConsoEnergie>
+            <siLotNeuf>false</siLotNeuf>
+            <siMandatExclusif> false</siMandatExclusif>
+            <siMandatStar> false</siMandatStar>
+            <contact>
+                <siAudiotel>false</siAudiotel>
+                <idPublication>882</idPublication>
+                <nom>ECG</nom>
+                <rcsSiren>379382690</rcsSiren>
+                <rcsNic>00046</rcsNic>
+            </contact>
+            <photos>
+                <photo>
+                    <titre />
+                    <ordre>0</ordre>
+                    <thbUrl>http://9.visuels.poliris.com/thumbnails/9/a/1/d/9a1d051a-311b.jpg</thbUrl>
+                    <carreurl>http://9.visuels.poliris.com/carre/9/a/1/d/9a1d051a-311b.jpg</carreurl>
+                    <bigUrl>http://9.visuels.poliris.com/bigs/9/a/1/d/9a1d051a-311b.jpg</bigUrl>
+                    <stdUrl>http://9.visuels.poliris.com/2d/9/a/1/d/9a1d051a-311b.jpg</stdUrl>
+                    <c175url>http://9.visuels.poliris.com/c175/9/a/1/d/9a1d051a-311b.jpg</c175url>
+                    <stdwidth>300</stdwidth>
+                    <stdheight>400</stdheight>
+                    <thumbwidth>75</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth>600</bigwidth>
+                    <bigheight>800</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>1</ordre>
+                    <thbUrl>http://7.visuels.poliris.com/thumbnails/7/4/6/1/7461fc81-384e.jpg</thbUrl>
+                    <carreurl>http://7.visuels.poliris.com/carre/7/4/6/1/7461fc81-384e.jpg</carreurl>
+                    <bigUrl>http://7.visuels.poliris.com/bigs/7/4/6/1/7461fc81-384e.jpg</bigUrl>
+                    <stdUrl>http://7.visuels.poliris.com/2d/7/4/6/1/7461fc81-384e.jpg</stdUrl>
+                    <c175url>http://7.visuels.poliris.com/c175/7/4/6/1/7461fc81-384e.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>600</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>2</ordre>
+                    <thbUrl>http://8.visuels.poliris.com/thumbnails/8/e/6/c/8e6c669c-31f4.jpg</thbUrl>
+                    <carreurl>http://8.visuels.poliris.com/carre/8/e/6/c/8e6c669c-31f4.jpg</carreurl>
+                    <bigUrl>http://8.visuels.poliris.com/bigs/8/e/6/c/8e6c669c-31f4.jpg</bigUrl>
+                    <stdUrl>http://8.visuels.poliris.com/2d/8/e/6/c/8e6c669c-31f4.jpg</stdUrl>
+                    <c175url>http://8.visuels.poliris.com/c175/8/e/6/c/8e6c669c-31f4.jpg</c175url>
+                    <stdwidth>300</stdwidth>
+                    <stdheight>400</stdheight>
+                    <thumbwidth>75</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth>600</bigwidth>
+                    <bigheight>800</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>3</ordre>
+                    <thbUrl>http://e.visuels.poliris.com/thumbnails/e/a/7/9/ea793af4-2bf7.jpg</thbUrl>
+                    <carreurl>http://e.visuels.poliris.com/carre/e/a/7/9/ea793af4-2bf7.jpg</carreurl>
+                    <bigUrl>http://e.visuels.poliris.com/bigs/e/a/7/9/ea793af4-2bf7.jpg</bigUrl>
+                    <stdUrl>http://e.visuels.poliris.com/2d/e/a/7/9/ea793af4-2bf7.jpg</stdUrl>
+                    <c175url>http://e.visuels.poliris.com/c175/e/a/7/9/ea793af4-2bf7.jpg</c175url>
+                    <stdwidth>300</stdwidth>
+                    <stdheight>400</stdheight>
+                    <thumbwidth>75</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth>600</bigwidth>
+                    <bigheight>800</bigheight>
+                </photo>
+            </photos>
+            <nbsallesdebain>1</nbsallesdebain>
+            <nbsalleseau />
+            <nbtoilettes>2</nbtoilettes>
+            <sisejour>True</sisejour>
+            <surfsejour />
+            <anneeconstruct />
+            <nbparkings />
+            <nbboxes />
+            <siterrasse>False</siterrasse>
+            <nbterrasses />
+            <sipiscine>False</sipiscine>
+        </annonce>
+        <annonce>
+            <idTiers>69529</idTiers>
+            <idAnnonce>76664079</idAnnonce>
+            <idPublication>318943</idPublication>
+            <idTypeTransaction>1</idTypeTransaction>
+            <idTypeBien>1</idTypeBien>
+            <dtFraicheur>2013-03-31T09:42:00</dtFraicheur>
+            <dtCreation>2013-03-26T11:51:00</dtCreation>
+            <titre>Appartement 3 pièces</titre>
+            <libelle>3 pièces</libelle>
+            <descriptif>A proximité du Cirque d&#39;Hiver et rue de
+                Bretagne, dans bel immeuble ancien, appartement de caractère, en état
+                impeccable et clair, offrant: entrée, cuisine, séjour, deux chambres,
+                salle de bains et WC séparé.</descriptif>
+            <prix>1569.36</prix>
+            <prixUnite>€cc*</prixUnite>
+            <prixMention>* Loyer mensuel charges comprises</prixMention>
+            <nbPiece>3</nbPiece>
+            <nbChambre>2</nbChambre>
+            <surface>57.11</surface>
+            <surfaceUnite>m²</surfaceUnite>
+            <idPays>250</idPays>
+            <pays>France</pays>
+            <cp>75003</cp>
+            <codeInsee>750103</codeInsee>
+            <ville>Paris 3ème</ville>
+            <nbPhotos>3</nbPhotos>
+            <firstThumb>http://7.visuels.poliris.com/carre/7/a/8/d/7a8d2eda-6973.jpg</firstThumb>
+            <permaLien>http://www.seloger.com/annonces/locations/appartement/paris-3eme-75/76664079.htm?p=CBBPqSfYAAMQzd3w</permaLien>
+            <latitude>48.861797</latitude>
+            <longitude>2.360735</longitude>
+            <llPrecision>vil</llPrecision>
+            <typeDPE>hab</typeDPE>
+            <consoEnergie>93</consoEnergie>
+            <bilanConsoEnergie>C</bilanConsoEnergie>
+            <emissionGES>21</emissionGES>
+            <bilanEmissionGES>D</bilanEmissionGES>
+            <siLotNeuf>false</siLotNeuf>
+            <siMandatExclusif> false</siMandatExclusif>
+            <siMandatStar> false</siMandatStar>
+            <contact>
+                <siAudiotel>false</siAudiotel>
+                <idPublication>318943</idPublication>
+                <nom>Foncia Transaction Location</nom>
+            </contact>
+            <photos>
+                <photo>
+                    <titre />
+                    <ordre>0</ordre>
+                    <thbUrl>http://7.visuels.poliris.com/thumbnails/7/a/8/d/7a8d2eda-6973.jpg</thbUrl>
+                    <carreurl>http://7.visuels.poliris.com/carre/7/a/8/d/7a8d2eda-6973.jpg</carreurl>
+                    <bigUrl>http://7.visuels.poliris.com/bigs/7/a/8/d/7a8d2eda-6973.jpg</bigUrl>
+                    <stdUrl>http://7.visuels.poliris.com/2d/7/a/8/d/7a8d2eda-6973.jpg</stdUrl>
+                    <c175url>http://7.visuels.poliris.com/c175/7/a/8/d/7a8d2eda-6973.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>600</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>1</ordre>
+                    <thbUrl>http://4.visuels.poliris.com/thumbnails/4/9/b/0/49b0267f-2b09.jpg</thbUrl>
+                    <carreurl>http://4.visuels.poliris.com/carre/4/9/b/0/49b0267f-2b09.jpg</carreurl>
+                    <bigUrl>http://4.visuels.poliris.com/bigs/4/9/b/0/49b0267f-2b09.jpg</bigUrl>
+                    <stdUrl>http://4.visuels.poliris.com/2d/4/9/b/0/49b0267f-2b09.jpg</stdUrl>
+                    <c175url>http://4.visuels.poliris.com/c175/4/9/b/0/49b0267f-2b09.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>600</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>2</ordre>
+                    <thbUrl>http://2.visuels.poliris.com/thumbnails/2/2/f/a/22faffb4-3649.jpg</thbUrl>
+                    <carreurl>http://2.visuels.poliris.com/carre/2/2/f/a/22faffb4-3649.jpg</carreurl>
+                    <bigUrl>http://2.visuels.poliris.com/bigs/2/2/f/a/22faffb4-3649.jpg</bigUrl>
+                    <stdUrl>http://2.visuels.poliris.com/2d/2/2/f/a/22faffb4-3649.jpg</stdUrl>
+                    <c175url>http://2.visuels.poliris.com/c175/2/2/f/a/22faffb4-3649.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>600</bigheight>
+                </photo>
+            </photos>
+            <nbsallesdebain>1</nbsallesdebain>
+            <nbsalleseau>0</nbsalleseau>
+            <nbtoilettes>1</nbtoilettes>
+            <sisejour>True</sisejour>
+            <surfsejour />
+            <anneeconstruct>1900</anneeconstruct>
+            <nbparkings>0</nbparkings>
+            <nbboxes />
+            <siterrasse>False</siterrasse>
+            <nbterrasses />
+            <sipiscine>False</sipiscine>
+        </annonce>
+        <annonce>
+            <idTiers>1244</idTiers>
+            <idAnnonce>76637629</idAnnonce>
+            <idPublication>19566</idPublication>
+            <idTypeTransaction>1</idTypeTransaction>
+            <idTypeBien>1</idTypeBien>
+            <dtFraicheur>2013-03-26T11:54:00</dtFraicheur>
+            <dtCreation>2013-03-25T17:17:00</dtCreation>
+            <titre>Appartement 3 pièces</titre>
+            <libelle>3 pièces</libelle>
+            <proximite>Metro oberkampf/République</proximite>
+            <descriptif>Metro OBERKAMPF, boulevard Voltaire, Immeuble Pierre de taille, 4ème étage, ascenseur,
+                3 pièces de 75 M² comprenant: entrée, séjour, 2 chambres, cuisine aménagée, salle de bains et WC sép. Lumineux et calme. Proche tous commerces.
+                Parfait état; immeuble entièrement rénové.</descriptif>
+            <prix>1790</prix>
+            <prixUnite>€+ch</prixUnite>
+            <prixMention />
+            <nbPiece>3</nbPiece>
+            <nbChambre>2</nbChambre>
+            <surface>75</surface>
+            <surfaceUnite>m²</surfaceUnite>
+            <idPays>250</idPays>
+            <pays>France</pays>
+            <cp>75011</cp>
+            <codeInsee>750111</codeInsee>
+            <ville>Paris 11ème</ville>
+            <nbPhotos>3</nbPhotos>
+            <firstThumb>http://4.visuels.poliris.com/carre/4/3/f/9/43f92741-3da7.jpg</firstThumb>
+            <permaLien>http://www.seloger.com/annonces/locations/appartement/paris-11eme-75/republique-saint-ambroise/76637629.htm?p=CBBPqSgYAAN_BMbg</permaLien>
+            <latitude>48.863992</latitude>
+            <longitude>2.370834</longitude>
+            <llPrecision>qrt</llPrecision>
+            <typeDPE>hab</typeDPE>
+            <consoEnergie>285</consoEnergie>
+            <bilanConsoEnergie>E</bilanConsoEnergie>
+            <siLotNeuf>false</siLotNeuf>
+            <siMandatExclusif> false</siMandatExclusif>
+            <siMandatStar> false</siMandatStar>
+            <contact>
+                <siAudiotel>false</siAudiotel>
+                <idPublication>19566</idPublication>
+                <nom>CARNOT IMMOBILIER</nom>
+                <rcsSiren>395066160</rcsSiren>
+                <rcsNic>00015</rcsNic>
+            </contact>
+            <photos>
+                <photo>
+                    <titre />
+                    <ordre>0</ordre>
+                    <thbUrl>http://4.visuels.poliris.com/thumbnails/4/3/f/9/43f92741-3da7.jpg</thbUrl>
+                    <carreurl>http://4.visuels.poliris.com/carre/4/3/f/9/43f92741-3da7.jpg</carreurl>
+                    <bigUrl>http://4.visuels.poliris.com/bigs/4/3/f/9/43f92741-3da7.jpg</bigUrl>
+                    <stdUrl>http://4.visuels.poliris.com/2d/4/3/f/9/43f92741-3da7.jpg</stdUrl>
+                    <c175url>http://4.visuels.poliris.com/c175/4/3/f/9/43f92741-3da7.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>600</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>1</ordre>
+                    <thbUrl>http://8.visuels.poliris.com/thumbnails/8/5/e/b/85eba045-47c7.jpg</thbUrl>
+                    <carreurl>http://8.visuels.poliris.com/carre/8/5/e/b/85eba045-47c7.jpg</carreurl>
+                    <bigUrl>http://8.visuels.poliris.com/bigs/8/5/e/b/85eba045-47c7.jpg</bigUrl>
+                    <stdUrl>http://8.visuels.poliris.com/2d/8/5/e/b/85eba045-47c7.jpg</stdUrl>
+                    <c175url>http://8.visuels.poliris.com/c175/8/5/e/b/85eba045-47c7.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>600</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>2</ordre>
+                    <thbUrl>http://e.visuels.poliris.com/thumbnails/e/a/d/5/ead5575f-45e6.jpg</thbUrl>
+                    <carreurl>http://e.visuels.poliris.com/carre/e/a/d/5/ead5575f-45e6.jpg</carreurl>
+                    <bigUrl>http://e.visuels.poliris.com/bigs/e/a/d/5/ead5575f-45e6.jpg</bigUrl>
+                    <stdUrl>http://e.visuels.poliris.com/2d/e/a/d/5/ead5575f-45e6.jpg</stdUrl>
+                    <c175url>http://e.visuels.poliris.com/c175/e/a/d/5/ead5575f-45e6.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>600</bigheight>
+                </photo>
+            </photos>
+            <nbsallesdebain>1</nbsallesdebain>
+            <nbsalleseau />
+            <nbtoilettes>1</nbtoilettes>
+            <sisejour>True</sisejour>
+            <surfsejour />
+            <anneeconstruct />
+            <nbparkings />
+            <nbboxes />
+            <siterrasse>False</siterrasse>
+            <nbterrasses />
+            <sipiscine>False</sipiscine>
+        </annonce>
+        <annonce>
+            <idTiers>3463</idTiers>
+            <idAnnonce>76599877</idAnnonce>
+            <idPublication>1731</idPublication>
+            <idTypeTransaction>1</idTypeTransaction>
+            <idTypeBien>1</idTypeBien>
+            <dtFraicheur>2013-04-01T14:58:00</dtFraicheur>
+            <dtCreation>2013-03-23T00:43:00</dtCreation>
+            <titre>Appartement 3 pièces</titre>
+            <libelle>Appartement</libelle>
+            <proximite>Parmentier</proximite>
+            <descriptif>11ème. 65 avenue Parmentier. SURPLACE SAMEDI 30/03/2013 DE 11H A 12H. VENIR SANS RDV. appartement 3 pièces de 66m² au 5ème étage avec ascenseur, une entrée, un séjour, deux chambres, une cuisine séparée, une salle de bains, WC séparés, un parking en sous-sol et une cave. Chauffage et eau collectifs. Appartement Locataires en CDI 3x le loyer avec garants.</descriptif>
+            <prix>1760</prix>
+            <prixUnite>€cc*</prixUnite>
+            <prixMention>* Loyer mensuel charges comprises</prixMention>
+            <nbPiece>3</nbPiece>
+            <nbChambre>2</nbChambre>
+            <surface>66</surface>
+            <surfaceUnite>m²</surfaceUnite>
+            <idPays>250</idPays>
+            <pays>France</pays>
+            <cp>75011</cp>
+            <codeInsee>750111</codeInsee>
+            <ville>Paris 11ème</ville>
+            <nbPhotos>4</nbPhotos>
+            <firstThumb>http://4.visuels.poliris.com/carre/4/5/0/f/450fd566-340f.jpg</firstThumb>
+            <permaLien>http://www.seloger.com/annonces/locations/appartement/paris-11eme-75/republique-saint-ambroise/76599877.htm?p=CBBPqSgYAANwAGww</permaLien>
+            <latitude>48.863992</latitude>
+            <longitude>2.370834</longitude>
+            <llPrecision>qrt</llPrecision>
+            <typeDPE>hab</typeDPE>
+            <siLotNeuf>false</siLotNeuf>
+            <siMandatExclusif> false</siMandatExclusif>
+            <siMandatStar> false</siMandatStar>
+            <contact>
+                <siAudiotel>false</siAudiotel>
+                <idPublication>1731</idPublication>
+                <nom>NB INTERMEDIAIRES</nom>
+                <rcsSiren>420467342</rcsSiren>
+                <rcsNic>00010</rcsNic>
+            </contact>
+            <photos>
+                <photo>
+                    <titre />
+                    <ordre>0</ordre>
+                    <thbUrl>http://4.visuels.poliris.com/thumbnails/4/5/0/f/450fd566-340f.jpg</thbUrl>
+                    <carreurl>http://4.visuels.poliris.com/carre/4/5/0/f/450fd566-340f.jpg</carreurl>
+                    <bigUrl>http://4.visuels.poliris.com/bigs/4/5/0/f/450fd566-340f.jpg</bigUrl>
+                    <stdUrl>http://4.visuels.poliris.com/2d/4/5/0/f/450fd566-340f.jpg</stdUrl>
+                    <c175url>http://4.visuels.poliris.com/c175/4/5/0/f/450fd566-340f.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>299</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>598</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>1</ordre>
+                    <thbUrl>http://5.visuels.poliris.com/thumbnails/5/1/c/2/51c215e6-2f37.jpg</thbUrl>
+                    <carreurl>http://5.visuels.poliris.com/carre/5/1/c/2/51c215e6-2f37.jpg</carreurl>
+                    <bigUrl>http://5.visuels.poliris.com/bigs/5/1/c/2/51c215e6-2f37.jpg</bigUrl>
+                    <stdUrl>http://5.visuels.poliris.com/2d/5/1/c/2/51c215e6-2f37.jpg</stdUrl>
+                    <c175url>http://5.visuels.poliris.com/c175/5/1/c/2/51c215e6-2f37.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>299</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>598</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>2</ordre>
+                    <thbUrl>http://1.visuels.poliris.com/thumbnails/1/c/c/5/1cc52a43-2cde.jpg</thbUrl>
+                    <carreurl>http://1.visuels.poliris.com/carre/1/c/c/5/1cc52a43-2cde.jpg</carreurl>
+                    <bigUrl>http://1.visuels.poliris.com/bigs/1/c/c/5/1cc52a43-2cde.jpg</bigUrl>
+                    <stdUrl>http://1.visuels.poliris.com/2d/1/c/c/5/1cc52a43-2cde.jpg</stdUrl>
+                    <c175url>http://1.visuels.poliris.com/c175/1/c/c/5/1cc52a43-2cde.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>299</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>598</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>3</ordre>
+                    <thbUrl>http://4.visuels.poliris.com/thumbnails/4/9/c/6/49c6718c-4819.jpg</thbUrl>
+                    <carreurl>http://4.visuels.poliris.com/carre/4/9/c/6/49c6718c-4819.jpg</carreurl>
+                    <bigUrl>http://4.visuels.poliris.com/bigs/4/9/c/6/49c6718c-4819.jpg</bigUrl>
+                    <stdUrl>http://4.visuels.poliris.com/2d/4/9/c/6/49c6718c-4819.jpg</stdUrl>
+                    <c175url>http://4.visuels.poliris.com/c175/4/9/c/6/49c6718c-4819.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>299</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>598</bigheight>
+                </photo>
+            </photos>
+            <nbsallesdebain>1</nbsallesdebain>
+            <nbsalleseau />
+            <nbtoilettes>1</nbtoilettes>
+            <sisejour>True</sisejour>
+            <surfsejour>18</surfsejour>
+            <anneeconstruct>1970</anneeconstruct>
+            <nbparkings>1</nbparkings>
+            <nbboxes />
+            <siterrasse>False</siterrasse>
+            <nbterrasses />
+            <sipiscine>False</sipiscine>
+        </annonce>
+        <annonce>
+            <idTiers>127891</idTiers>
+            <idAnnonce>76587289</idAnnonce>
+            <idPublication>348136</idPublication>
+            <idTypeTransaction>1</idTypeTransaction>
+            <idTypeBien>1</idTypeBien>
+            <dtFraicheur>2013-03-30T17:29:00</dtFraicheur>
+            <dtCreation>2013-03-22T17:42:00</dtCreation>
+            <titre>Appartement 3 pièces</titre>
+            <libelle>3 pièces 60 m² meublé 5 min Métro République</libelle>
+            <proximite>Métro République</proximite>
+            <descriptif>5 mn métro République. Boulevard Richard Lenoir. Appartement 60 m², meublé, au 4ème sans vis à vis dans bel immeuble avec ascenseur. Très lumineux, ensoleillé. Cuisine américaine toute équipée (lave-vaisselle) ouverte sur séjour avec télévision écran plat, 1 grande chambre et une petite chambre (18 et 9 m²), salle de bains avec baignoire, WC séparés, dressing. 1.850 E/mois charges comprises. Pas de collocation.</descriptif>
+            <prix>1850</prix>
+            <prixUnite>€cc*</prixUnite>
+            <prixMention>* Loyer mensuel charges comprises</prixMention>
+            <nbPiece>3</nbPiece>
+            <nbChambre>2</nbChambre>
+            <surface>60</surface>
+            <surfaceUnite>m²</surfaceUnite>
+            <idPays>250</idPays>
+            <pays>France</pays>
+            <cp>75011</cp>
+            <codeInsee>750111</codeInsee>
+            <ville>Paris 11ème</ville>
+            <nbPhotos>3</nbPhotos>
+            <firstThumb>http://f.visuels.poliris.com/carre/f/a/7/4/fa74bde0-44da.jpg</firstThumb>
+            <permaLien>http://www.seloger.com/annonces/locations/appartement/paris-11eme-75/republique-saint-ambroise/76587289.htm?p=CBBPqSgYAAOdVP6A</permaLien>
+            <latitude>48.863992</latitude>
+            <longitude>2.370834</longitude>
+            <llPrecision>qrt</llPrecision>
+            <typeDPE>hab</typeDPE>
+            <bilanConsoEnergie>C</bilanConsoEnergie>
+            <bilanEmissionGES>C</bilanEmissionGES>
+            <siLotNeuf>false</siLotNeuf>
+            <siMandatExclusif> false</siMandatExclusif>
+            <siMandatStar> false</siMandatStar>
+            <contact>
+                <siAudiotel>false</siAudiotel>
+                <idPublication>348136</idPublication>
+                <nom>EMPORIUM</nom>
+                <rcsSiren>492154133</rcsSiren>
+                <rcsNic>00010</rcsNic>
+            </contact>
+            <photos>
+                <photo>
+                    <titre />
+                    <ordre>0</ordre>
+                    <thbUrl>http://f.visuels.poliris.com/thumbnails/f/a/7/4/fa74bde0-44da.jpg</thbUrl>
+                    <carreurl>http://f.visuels.poliris.com/carre/f/a/7/4/fa74bde0-44da.jpg</carreurl>
+                    <bigUrl>http://f.visuels.poliris.com/bigs/f/a/7/4/fa74bde0-44da.jpg</bigUrl>
+                    <stdUrl>http://f.visuels.poliris.com/2d/f/a/7/4/fa74bde0-44da.jpg</stdUrl>
+                    <c175url>http://f.visuels.poliris.com/c175/f/a/7/4/fa74bde0-44da.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>324</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>81</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>648</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>1</ordre>
+                    <thbUrl>http://9.visuels.poliris.com/thumbnails/9/5/a/b/95ab1355-414d.jpg</thbUrl>
+                    <carreurl>http://9.visuels.poliris.com/carre/9/5/a/b/95ab1355-414d.jpg</carreurl>
+                    <bigUrl>http://9.visuels.poliris.com/bigs/9/5/a/b/95ab1355-414d.jpg</bigUrl>
+                    <stdUrl>http://9.visuels.poliris.com/2d/9/5/a/b/95ab1355-414d.jpg</stdUrl>
+                    <c175url>http://9.visuels.poliris.com/c175/9/5/a/b/95ab1355-414d.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>265</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>66</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>530</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>2</ordre>
+                    <thbUrl>http://a.visuels.poliris.com/thumbnails/a/6/1/0/a610be95-3e8d.jpg</thbUrl>
+                    <carreurl>http://a.visuels.poliris.com/carre/a/6/1/0/a610be95-3e8d.jpg</carreurl>
+                    <bigUrl>http://a.visuels.poliris.com/bigs/a/6/1/0/a610be95-3e8d.jpg</bigUrl>
+                    <stdUrl>http://a.visuels.poliris.com/2d/a/6/1/0/a610be95-3e8d.jpg</stdUrl>
+                    <c175url>http://a.visuels.poliris.com/c175/a/6/1/0/a610be95-3e8d.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>223</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>56</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>445</bigheight>
+                </photo>
+            </photos>
+            <nbsallesdebain>1</nbsallesdebain>
+            <nbsalleseau />
+            <nbtoilettes>1</nbtoilettes>
+            <sisejour>True</sisejour>
+            <surfsejour />
+            <anneeconstruct />
+            <nbparkings />
+            <nbboxes />
+            <siterrasse>False</siterrasse>
+            <nbterrasses />
+            <sipiscine>False</sipiscine>
+        </annonce>
+        <annonce>
+            <idTiers>25968</idTiers>
+            <idAnnonce>76575383</idAnnonce>
+            <idPublication>840</idPublication>
+            <idTypeTransaction>1</idTypeTransaction>
+            <idTypeBien>1</idTypeBien>
+            <idSousTypeBien>46</idSousTypeBien>
+            <dtFraicheur>2013-03-30T16:03:00</dtFraicheur>
+            <dtCreation>2013-03-22T12:38:00</dtCreation>
+            <titre>Duplex 3 pièces</titre>
+            <libelle>Appartement 3 pièces secteur Bastille</libelle>
+            <proximite>Bastille</proximite>
+            <descriptif>Beau loft meublé 71m² en duplex, séjour avec cuisine US, salon, 1 chambre possibilité d&#39;une chambre, salle de bains, WC séparés et nombreux rangements. Métro Bastille / Ledru Rollin.</descriptif>
+            <prix>1831</prix>
+            <prixUnite>€cc*</prixUnite>
+            <prixMention>* Loyer mensuel charges comprises</prixMention>
+            <nbPiece>3</nbPiece>
+            <nbChambre>2</nbChambre>
+            <surface>71</surface>
+            <surfaceUnite>m²</surfaceUnite>
+            <idPays>250</idPays>
+            <pays>France</pays>
+            <cp>75011</cp>
+            <codeInsee>750111</codeInsee>
+            <ville>Paris 11ème</ville>
+            <nbPhotos>3</nbPhotos>
+            <firstThumb>http://c.visuels.poliris.com/carre/c/1/b/1/c1b18f33-5ef9.jpg</firstThumb>
+            <permaLien>http://www.seloger.com/annonces/locations/appartement/paris-11eme-75/bastille-popincourt/76575383.htm?p=CBBPqSgYAAOTgDSA</permaLien>
+            <latitude>48.85399</latitude>
+            <longitude>2.376603</longitude>
+            <llPrecision>qrt</llPrecision>
+            <typeDPE>hab</typeDPE>
+            <consoEnergie>567</consoEnergie>
+            <bilanConsoEnergie>G</bilanConsoEnergie>
+            <emissionGES>35</emissionGES>
+            <bilanEmissionGES>D</bilanEmissionGES>
+            <siLotNeuf>false</siLotNeuf>
+            <siMandatExclusif> false</siMandatExclusif>
+            <siMandatStar> false</siMandatStar>
+            <contact>
+                <siAudiotel>false</siAudiotel>
+                <idPublication>840</idPublication>
+                <nom>ANNE CAROLE IMMOBILIER</nom>
+                <rcsSiren>479831091</rcsSiren>
+                <rcsNic>00018</rcsNic>
+            </contact>
+            <photos>
+                <photo>
+                    <titre />
+                    <ordre>0</ordre>
+                    <thbUrl>http://c.visuels.poliris.com/thumbnails/c/1/b/1/c1b18f33-5ef9.jpg</thbUrl>
+                    <carreurl>http://c.visuels.poliris.com/carre/c/1/b/1/c1b18f33-5ef9.jpg</carreurl>
+                    <bigUrl>http://c.visuels.poliris.com/bigs/c/1/b/1/c1b18f33-5ef9.jpg</bigUrl>
+                    <stdUrl>http://c.visuels.poliris.com/2d/c/1/b/1/c1b18f33-5ef9.jpg</stdUrl>
+                    <c175url>http://c.visuels.poliris.com/c175/c/1/b/1/c1b18f33-5ef9.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>600</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>1</ordre>
+                    <thbUrl>http://c.visuels.poliris.com/thumbnails/c/7/d/6/c7d6ff14-566c.jpg</thbUrl>
+                    <carreurl>http://c.visuels.poliris.com/carre/c/7/d/6/c7d6ff14-566c.jpg</carreurl>
+                    <bigUrl>http://c.visuels.poliris.com/bigs/c/7/d/6/c7d6ff14-566c.jpg</bigUrl>
+                    <stdUrl>http://c.visuels.poliris.com/2d/c/7/d/6/c7d6ff14-566c.jpg</stdUrl>
+                    <c175url>http://c.visuels.poliris.com/c175/c/7/d/6/c7d6ff14-566c.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>600</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>2</ordre>
+                    <thbUrl>http://0.visuels.poliris.com/thumbnails/0/3/d/d/03dd7522-4f16.jpg</thbUrl>
+                    <carreurl>http://0.visuels.poliris.com/carre/0/3/d/d/03dd7522-4f16.jpg</carreurl>
+                    <bigUrl>http://0.visuels.poliris.com/bigs/0/3/d/d/03dd7522-4f16.jpg</bigUrl>
+                    <stdUrl>http://0.visuels.poliris.com/2d/0/3/d/d/03dd7522-4f16.jpg</stdUrl>
+                    <c175url>http://0.visuels.poliris.com/c175/0/3/d/d/03dd7522-4f16.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>600</bigheight>
+                </photo>
+            </photos>
+            <nbsallesdebain>1</nbsallesdebain>
+            <nbsalleseau />
+            <nbtoilettes>1</nbtoilettes>
+            <sisejour>False</sisejour>
+            <surfsejour />
+            <anneeconstruct>1880</anneeconstruct>
+            <nbparkings />
+            <nbboxes />
+            <siterrasse>False</siterrasse>
+            <nbterrasses />
+            <sipiscine>False</sipiscine>
+        </annonce>
+        <annonce>
+            <idTiers>21215</idTiers>
+            <idAnnonce>76570935</idAnnonce>
+            <idPublication>217888</idPublication>
+            <idTypeTransaction>1</idTypeTransaction>
+            <idTypeBien>1</idTypeBien>
+            <dtFraicheur>2013-03-27T17:20:00</dtFraicheur>
+            <dtCreation>2013-03-22T10:09:00</dtCreation>
+            <titre>Appartement 3 pièces</titre>
+            <libelle>3 pièces</libelle>
+            <proximite>Goncourt</proximite>
+            <descriptif>Dans un bel immeuble situé rue du Faubourg du Temple, beau 3 pièces refait à neuf comprenant une entrée, un séjour, une cuisine aménagée, deux chambres, une salle de bains et des WC séparés. Chauffage et eau chaude par chaudière individuelle gaz. Digicode. Clair et calme.</descriptif>
+            <prix>1700</prix>
+            <prixUnite>€+ch</prixUnite>
+            <prixMention />
+            <nbPiece>3</nbPiece>
+            <nbChambre>2</nbChambre>
+            <surface>60</surface>
+            <surfaceUnite>m²</surfaceUnite>
+            <idPays>250</idPays>
+            <pays>France</pays>
+            <cp>75011</cp>
+            <codeInsee>750111</codeInsee>
+            <ville>Paris 11ème</ville>
+            <nbPhotos>0</nbPhotos>
+            <firstThumb>http://4.visuels.poliris.com/carre/4/2/5/4/4254ffd3-0b68.jpg</firstThumb>
+            <permaLien>http://www.seloger.com/annonces/locations/appartement/paris-11eme-75/republique-saint-ambroise/76570935.htm?p=CBBPqSgYAANSNTIA</permaLien>
+            <latitude>48.863992</latitude>
+            <longitude>2.370834</longitude>
+            <llPrecision>qrt</llPrecision>
+            <typeDPE>hab</typeDPE>
+            <bilanConsoEnergie>D</bilanConsoEnergie>
+            <bilanEmissionGES>E</bilanEmissionGES>
+            <siLotNeuf>false</siLotNeuf>
+            <siMandatExclusif> false</siMandatExclusif>
+            <siMandatStar> false</siMandatStar>
+            <contact>
+                <siAudiotel>false</siAudiotel>
+                <idPublication>217888</idPublication>
+                <nom>HF2G IMMOBILIER</nom>
+                <rcsSiren>484044581</rcsSiren>
+                <rcsNic>00011</rcsNic>
+            </contact>
+            <photos>
+                <photo>
+                    <titre />
+                    <ordre>0</ordre>
+                    <thbUrl>http://4.visuels.poliris.com/thumbnails/4/2/5/4/4254ffd3-0b68.jpg</thbUrl>
+                    <carreurl>http://4.visuels.poliris.com/carre/4/2/5/4/4254ffd3-0b68.jpg</carreurl>
+                    <bigUrl />
+                    <stdUrl>http://4.visuels.poliris.com/2d/4/2/5/4/4254ffd3-0b68.jpg</stdUrl>
+                    <c175url>http://4.visuels.poliris.com/c175/4/2/5/4/4254ffd3-0b68.jpg</c175url>
+                    <stdwidth>112</stdwidth>
+                    <stdheight>150</stdheight>
+                    <thumbwidth>75</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth />
+                    <bigheight />
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>1</ordre>
+                    <thbUrl>http://a.visuels.poliris.com/thumbnails/a/d/9/a/ad9a8fe3-0d5e.jpg</thbUrl>
+                    <carreurl>http://a.visuels.poliris.com/carre/a/d/9/a/ad9a8fe3-0d5e.jpg</carreurl>
+                    <bigUrl />
+                    <stdUrl>http://a.visuels.poliris.com/2d/a/d/9/a/ad9a8fe3-0d5e.jpg</stdUrl>
+                    <c175url>http://a.visuels.poliris.com/c175/a/d/9/a/ad9a8fe3-0d5e.jpg</c175url>
+                    <stdwidth>112</stdwidth>
+                    <stdheight>150</stdheight>
+                    <thumbwidth>75</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth />
+                    <bigheight />
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>2</ordre>
+                    <thbUrl>http://6.visuels.poliris.com/thumbnails/6/8/f/e/68febd4e-0a89.jpg</thbUrl>
+                    <carreurl>http://6.visuels.poliris.com/carre/6/8/f/e/68febd4e-0a89.jpg</carreurl>
+                    <bigUrl />
+                    <stdUrl>http://6.visuels.poliris.com/2d/6/8/f/e/68febd4e-0a89.jpg</stdUrl>
+                    <c175url>http://6.visuels.poliris.com/c175/6/8/f/e/68febd4e-0a89.jpg</c175url>
+                    <stdwidth>112</stdwidth>
+                    <stdheight>150</stdheight>
+                    <thumbwidth>75</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth />
+                    <bigheight />
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>3</ordre>
+                    <thbUrl>http://c.visuels.poliris.com/thumbnails/c/3/6/9/c369a27f-0cbe.jpg</thbUrl>
+                    <carreurl>http://c.visuels.poliris.com/carre/c/3/6/9/c369a27f-0cbe.jpg</carreurl>
+                    <bigUrl />
+                    <stdUrl>http://c.visuels.poliris.com/2d/c/3/6/9/c369a27f-0cbe.jpg</stdUrl>
+                    <c175url>http://c.visuels.poliris.com/c175/c/3/6/9/c369a27f-0cbe.jpg</c175url>
+                    <stdwidth>112</stdwidth>
+                    <stdheight>150</stdheight>
+                    <thumbwidth>75</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth />
+                    <bigheight />
+                </photo>
+            </photos>
+            <nbsallesdebain>1</nbsallesdebain>
+            <nbsalleseau />
+            <nbtoilettes>1</nbtoilettes>
+            <sisejour>True</sisejour>
+            <surfsejour />
+            <anneeconstruct />
+            <nbparkings />
+            <nbboxes />
+            <siterrasse>False</siterrasse>
+            <nbterrasses />
+            <sipiscine>False</sipiscine>
+        </annonce>
+        <annonce>
+            <idTiers>25872</idTiers>
+            <idAnnonce>76534149</idAnnonce>
+            <idPublication>147868</idPublication>
+            <idTypeTransaction>1</idTypeTransaction>
+            <idTypeBien>1</idTypeBien>
+            <dtFraicheur>2013-03-31T09:15:00</dtFraicheur>
+            <dtCreation>2013-03-21T13:07:00</dtCreation>
+            <titre>Appartement 3 pièces</titre>
+            <libelle>3 pièces</libelle>
+            <descriptif>Métro goncourt rue du faubourg du temple dans un bel immeuble ancien sur cour au deuxième étage avec ascenseur 3 pièces de 63m² comprenant une entrée, un séjour avec une cuisine semi ouverte aménagée et équipée, deux chambres dont une avec dressing, salle de bains, WC et cave. Refait à neuf.</descriptif>
+            <prix>1790</prix>
+            <prixUnite>€cc*</prixUnite>
+            <prixMention>* Loyer mensuel charges comprises</prixMention>
+            <nbPiece>3</nbPiece>
+            <nbChambre>2</nbChambre>
+            <surface>63</surface>
+            <surfaceUnite>m²</surfaceUnite>
+            <idPays>250</idPays>
+            <pays>France</pays>
+            <cp>75011</cp>
+            <codeInsee>750111</codeInsee>
+            <ville>Paris 11ème</ville>
+            <nbPhotos>5</nbPhotos>
+            <firstThumb>http://4.visuels.poliris.com/carre/4/4/e/b/44eb905a-64cd.jpg</firstThumb>
+            <permaLien>http://www.seloger.com/annonces/locations/appartement/paris-11eme-75/republique-saint-ambroise/76534149.htm?p=CBBPqSgYAAN_JBnA</permaLien>
+            <latitude>48.863992</latitude>
+            <longitude>2.370834</longitude>
+            <llPrecision>qrt</llPrecision>
+            <typeDPE>hab</typeDPE>
+            <siLotNeuf>false</siLotNeuf>
+            <siMandatExclusif> false</siMandatExclusif>
+            <siMandatStar> false</siMandatStar>
+            <contact>
+                <siAudiotel>false</siAudiotel>
+                <idPublication>147868</idPublication>
+                <nom>BENY IMMOBILIER</nom>
+                <rcsSiren>349797225</rcsSiren>
+                <rcsNic>00043</rcsNic>
+            </contact>
+            <photos>
+                <photo>
+                    <titre />
+                    <ordre>0</ordre>
+                    <thbUrl>http://4.visuels.poliris.com/thumbnails/4/4/e/b/44eb905a-64cd.jpg</thbUrl>
+                    <carreurl>http://4.visuels.poliris.com/carre/4/4/e/b/44eb905a-64cd.jpg</carreurl>
+                    <bigUrl />
+                    <stdUrl>http://4.visuels.poliris.com/2d/4/4/e/b/44eb905a-64cd.jpg</stdUrl>
+                    <c175url>http://4.visuels.poliris.com/c175/4/4/e/b/44eb905a-64cd.jpg</c175url>
+                    <stdwidth>300</stdwidth>
+                    <stdheight>400</stdheight>
+                    <thumbwidth>75</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth />
+                    <bigheight />
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>1</ordre>
+                    <thbUrl>http://c.visuels.poliris.com/thumbnails/c/6/9/3/c6938ff7-3a31.jpg</thbUrl>
+                    <carreurl>http://c.visuels.poliris.com/carre/c/6/9/3/c6938ff7-3a31.jpg</carreurl>
+                    <bigUrl />
+                    <stdUrl>http://c.visuels.poliris.com/2d/c/6/9/3/c6938ff7-3a31.jpg</stdUrl>
+                    <c175url>http://c.visuels.poliris.com/c175/c/6/9/3/c6938ff7-3a31.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth />
+                    <bigheight />
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>2</ordre>
+                    <thbUrl>http://a.visuels.poliris.com/thumbnails/a/2/d/3/a2d3f7c1-4433.jpg</thbUrl>
+                    <carreurl>http://a.visuels.poliris.com/carre/a/2/d/3/a2d3f7c1-4433.jpg</carreurl>
+                    <bigUrl />
+                    <stdUrl>http://a.visuels.poliris.com/2d/a/2/d/3/a2d3f7c1-4433.jpg</stdUrl>
+                    <c175url>http://a.visuels.poliris.com/c175/a/2/d/3/a2d3f7c1-4433.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth />
+                    <bigheight />
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>3</ordre>
+                    <thbUrl>http://9.visuels.poliris.com/thumbnails/9/1/c/1/91c19319-30bb.jpg</thbUrl>
+                    <carreurl>http://9.visuels.poliris.com/carre/9/1/c/1/91c19319-30bb.jpg</carreurl>
+                    <bigUrl />
+                    <stdUrl>http://9.visuels.poliris.com/2d/9/1/c/1/91c19319-30bb.jpg</stdUrl>
+                    <c175url>http://9.visuels.poliris.com/c175/9/1/c/1/91c19319-30bb.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth />
+                    <bigheight />
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>4</ordre>
+                    <thbUrl>http://3.visuels.poliris.com/thumbnails/3/e/b/0/3eb0eac1-4158.jpg</thbUrl>
+                    <carreurl>http://3.visuels.poliris.com/carre/3/e/b/0/3eb0eac1-4158.jpg</carreurl>
+                    <bigUrl />
+                    <stdUrl>http://3.visuels.poliris.com/2d/3/e/b/0/3eb0eac1-4158.jpg</stdUrl>
+                    <c175url>http://3.visuels.poliris.com/c175/3/e/b/0/3eb0eac1-4158.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth />
+                    <bigheight />
+                </photo>
+            </photos>
+            <nbsallesdebain>1</nbsallesdebain>
+            <nbsalleseau />
+            <nbtoilettes>1</nbtoilettes>
+            <sisejour>True</sisejour>
+            <surfsejour />
+            <anneeconstruct />
+            <nbparkings />
+            <nbboxes />
+            <siterrasse>False</siterrasse>
+            <nbterrasses />
+            <sipiscine>False</sipiscine>
+        </annonce>
+        <annonce>
+            <idTiers>1411</idTiers>
+            <idAnnonce>76031783</idAnnonce>
+            <idPublication>17950</idPublication>
+            <idTypeTransaction>1</idTypeTransaction>
+            <idTypeBien>1</idTypeBien>
+            <dtFraicheur>2013-03-29T11:58:00</dtFraicheur>
+            <dtCreation>2013-03-21T11:06:00</dtCreation>
+            <titre>Appartement 3 pièces</titre>
+            <libelle>2/3 pièces</libelle>
+            <proximite>Faidherbe</proximite>
+            <descriptif>Rue chanzy, dans un bel immeuble pierre de taille, au 5ème étage avec ascenseur, un appartement de 2/3 pièces de 65m² comprenant un double séjour, une cuisine, une chambre (possibilité 2 chambres), une salle de bains, chauffage au gaz individuel, parquet, double vitrage, refait neuf, soleil et calme.</descriptif>
+            <prix>1530</prix>
+            <prixUnite>€+ch</prixUnite>
+            <prixMention />
+            <nbPiece>3</nbPiece>
+            <nbChambre>2</nbChambre>
+            <surface>65</surface>
+            <surfaceUnite>m²</surfaceUnite>
+            <idPays>250</idPays>
+            <pays>France</pays>
+            <cp>75011</cp>
+            <codeInsee>750111</codeInsee>
+            <ville>Paris 11ème</ville>
+            <nbPhotos>5</nbPhotos>
+            <firstThumb>http://0.visuels.poliris.com/carre/0/1/f/5/01f5fc7d-286a.jpg</firstThumb>
+            <permaLien>http://www.seloger.com/annonces/locations/appartement/paris-11eme-75/bastille-popincourt/76031783.htm?p=CBBPqSgYAAL9BGHg</permaLien>
+            <latitude>48.85399</latitude>
+            <longitude>2.376603</longitude>
+            <llPrecision>qrt</llPrecision>
+            <typeDPE>hab</typeDPE>
+            <siLotNeuf>false</siLotNeuf>
+            <siMandatExclusif> false</siMandatExclusif>
+            <siMandatStar> false</siMandatStar>
+            <contact>
+                <siAudiotel>false</siAudiotel>
+                <idPublication>17950</idPublication>
+                <nom>LE CHENE VERT IMMOBILIER</nom>
+                <rcsSiren>421419862</rcsSiren>
+                <rcsNic>00014</rcsNic>
+            </contact>
+            <photos>
+                <photo>
+                    <titre />
+                    <ordre>0</ordre>
+                    <thbUrl>http://0.visuels.poliris.com/thumbnails/0/1/f/5/01f5fc7d-286a.jpg</thbUrl>
+                    <carreurl>http://0.visuels.poliris.com/carre/0/1/f/5/01f5fc7d-286a.jpg</carreurl>
+                    <bigUrl>http://0.visuels.poliris.com/bigs/0/1/f/5/01f5fc7d-286a.jpg</bigUrl>
+                    <stdUrl>http://0.visuels.poliris.com/2d/0/1/f/5/01f5fc7d-286a.jpg</stdUrl>
+                    <c175url>http://0.visuels.poliris.com/c175/0/1/f/5/01f5fc7d-286a.jpg</c175url>
+                    <stdwidth>300</stdwidth>
+                    <stdheight>400</stdheight>
+                    <thumbwidth>75</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth>601</bigwidth>
+                    <bigheight>800</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>1</ordre>
+                    <thbUrl>http://e.visuels.poliris.com/thumbnails/e/1/3/f/e13f1d4b-27b5.jpg</thbUrl>
+                    <carreurl>http://e.visuels.poliris.com/carre/e/1/3/f/e13f1d4b-27b5.jpg</carreurl>
+                    <bigUrl>http://e.visuels.poliris.com/bigs/e/1/3/f/e13f1d4b-27b5.jpg</bigUrl>
+                    <stdUrl>http://e.visuels.poliris.com/2d/e/1/3/f/e13f1d4b-27b5.jpg</stdUrl>
+                    <c175url>http://e.visuels.poliris.com/c175/e/1/3/f/e13f1d4b-27b5.jpg</c175url>
+                    <stdwidth>300</stdwidth>
+                    <stdheight>400</stdheight>
+                    <thumbwidth>75</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth>601</bigwidth>
+                    <bigheight>800</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>2</ordre>
+                    <thbUrl>http://f.visuels.poliris.com/thumbnails/f/3/3/3/f33356f4-2a31.jpg</thbUrl>
+                    <carreurl>http://f.visuels.poliris.com/carre/f/3/3/3/f33356f4-2a31.jpg</carreurl>
+                    <bigUrl>http://f.visuels.poliris.com/bigs/f/3/3/3/f33356f4-2a31.jpg</bigUrl>
+                    <stdUrl>http://f.visuels.poliris.com/2d/f/3/3/3/f33356f4-2a31.jpg</stdUrl>
+                    <c175url>http://f.visuels.poliris.com/c175/f/3/3/3/f33356f4-2a31.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>601</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>3</ordre>
+                    <thbUrl>http://7.visuels.poliris.com/thumbnails/7/c/4/e/7c4e9381-1dee.jpg</thbUrl>
+                    <carreurl>http://7.visuels.poliris.com/carre/7/c/4/e/7c4e9381-1dee.jpg</carreurl>
+                    <bigUrl>http://7.visuels.poliris.com/bigs/7/c/4/e/7c4e9381-1dee.jpg</bigUrl>
+                    <stdUrl>http://7.visuels.poliris.com/2d/7/c/4/e/7c4e9381-1dee.jpg</stdUrl>
+                    <c175url>http://7.visuels.poliris.com/c175/7/c/4/e/7c4e9381-1dee.jpg</c175url>
+                    <stdwidth>300</stdwidth>
+                    <stdheight>400</stdheight>
+                    <thumbwidth>75</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth>601</bigwidth>
+                    <bigheight>800</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>4</ordre>
+                    <thbUrl>http://9.visuels.poliris.com/thumbnails/9/a/2/f/9a2f112b-3bed.jpg</thbUrl>
+                    <carreurl>http://9.visuels.poliris.com/carre/9/a/2/f/9a2f112b-3bed.jpg</carreurl>
+                    <bigUrl>http://9.visuels.poliris.com/bigs/9/a/2/f/9a2f112b-3bed.jpg</bigUrl>
+                    <stdUrl>http://9.visuels.poliris.com/2d/9/a/2/f/9a2f112b-3bed.jpg</stdUrl>
+                    <c175url>http://9.visuels.poliris.com/c175/9/a/2/f/9a2f112b-3bed.jpg</c175url>
+                    <stdwidth>300</stdwidth>
+                    <stdheight>400</stdheight>
+                    <thumbwidth>75</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth>601</bigwidth>
+                    <bigheight>800</bigheight>
+                </photo>
+            </photos>
+            <nbsallesdebain>1</nbsallesdebain>
+            <nbsalleseau />
+            <nbtoilettes />
+            <sisejour>True</sisejour>
+            <surfsejour />
+            <anneeconstruct />
+            <nbparkings />
+            <nbboxes />
+            <siterrasse>False</siterrasse>
+            <nbterrasses />
+            <sipiscine>False</sipiscine>
+        </annonce>
+        <annonce>
+            <idTiers>4718</idTiers>
+            <idAnnonce>76524179</idAnnonce>
+            <idPublication>191811</idPublication>
+            <idTypeTransaction>1</idTypeTransaction>
+            <idTypeBien>1</idTypeBien>
+            <dtFraicheur>2013-03-31T03:44:00</dtFraicheur>
+            <dtCreation>2013-03-21T05:40:00</dtCreation>
+            <titre>Appartement 3 pièces</titre>
+            <libelle>Appartement</libelle>
+            <descriptif>QUARTIER République - Métro Temple: Appartement F3 de 63 m² au 1er étage sur cour comprenant cuisine ouverte sur séjour, 2 chambres, salle de bains, WC, cave.</descriptif>
+            <prix>1680</prix>
+            <prixUnite>€cc*</prixUnite>
+            <prixMention>* Loyer mensuel charges comprises</prixMention>
+            <nbPiece>3</nbPiece>
+            <nbChambre>2</nbChambre>
+            <surface>63</surface>
+            <surfaceUnite>m²</surfaceUnite>
+            <idPays>250</idPays>
+            <pays>France</pays>
+            <cp>75003</cp>
+            <codeInsee>750103</codeInsee>
+            <ville>Paris 3ème</ville>
+            <nbPhotos>5</nbPhotos>
+            <firstThumb>http://a.visuels.poliris.com/carre/a/c/5/5/ac55c574-4222.jpg</firstThumb>
+            <permaLien>http://www.seloger.com/annonces/locations/appartement/paris-3eme-75/arts-et-metiers/76524179.htm?p=CBBPqSfYAANILtQw</permaLien>
+            <latitude>48.865961</latitude>
+            <longitude>2.357015</longitude>
+            <llPrecision>qrt</llPrecision>
+            <typeDPE>hab</typeDPE>
+            <consoEnergie>321</consoEnergie>
+            <bilanConsoEnergie>E</bilanConsoEnergie>
+            <emissionGES>9</emissionGES>
+            <bilanEmissionGES>B</bilanEmissionGES>
+            <siLotNeuf>false</siLotNeuf>
+            <siMandatExclusif> false</siMandatExclusif>
+            <siMandatStar> false</siMandatStar>
+            <contact>
+                <siAudiotel>false</siAudiotel>
+                <idPublication>191811</idPublication>
+                <nom>LAFORÊT IMMOBILIER CGL FRANCONVILLE</nom>
+                <rcsSiren>424525665</rcsSiren>
+                <rcsNic>00016</rcsNic>
+            </contact>
+            <photos>
+                <photo>
+                    <titre />
+                    <ordre>0</ordre>
+                    <thbUrl>http://a.visuels.poliris.com/thumbnails/a/c/5/5/ac55c574-4222.jpg</thbUrl>
+                    <carreurl>http://a.visuels.poliris.com/carre/a/c/5/5/ac55c574-4222.jpg</carreurl>
+                    <bigUrl>http://a.visuels.poliris.com/bigs/a/c/5/5/ac55c574-4222.jpg</bigUrl>
+                    <stdUrl>http://a.visuels.poliris.com/2d/a/c/5/5/ac55c574-4222.jpg</stdUrl>
+                    <c175url>http://a.visuels.poliris.com/c175/a/c/5/5/ac55c574-4222.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>600</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>1</ordre>
+                    <thbUrl>http://6.visuels.poliris.com/thumbnails/6/4/b/c/64bc217c-4c52.jpg</thbUrl>
+                    <carreurl>http://6.visuels.poliris.com/carre/6/4/b/c/64bc217c-4c52.jpg</carreurl>
+                    <bigUrl>http://6.visuels.poliris.com/bigs/6/4/b/c/64bc217c-4c52.jpg</bigUrl>
+                    <stdUrl>http://6.visuels.poliris.com/2d/6/4/b/c/64bc217c-4c52.jpg</stdUrl>
+                    <c175url>http://6.visuels.poliris.com/c175/6/4/b/c/64bc217c-4c52.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>600</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>2</ordre>
+                    <thbUrl>http://8.visuels.poliris.com/thumbnails/8/b/7/e/8b7eb520-4410.jpg</thbUrl>
+                    <carreurl>http://8.visuels.poliris.com/carre/8/b/7/e/8b7eb520-4410.jpg</carreurl>
+                    <bigUrl>http://8.visuels.poliris.com/bigs/8/b/7/e/8b7eb520-4410.jpg</bigUrl>
+                    <stdUrl>http://8.visuels.poliris.com/2d/8/b/7/e/8b7eb520-4410.jpg</stdUrl>
+                    <c175url>http://8.visuels.poliris.com/c175/8/b/7/e/8b7eb520-4410.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>600</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>3</ordre>
+                    <thbUrl>http://3.visuels.poliris.com/thumbnails/3/a/7/d/3a7de151-3977.jpg</thbUrl>
+                    <carreurl>http://3.visuels.poliris.com/carre/3/a/7/d/3a7de151-3977.jpg</carreurl>
+                    <bigUrl>http://3.visuels.poliris.com/bigs/3/a/7/d/3a7de151-3977.jpg</bigUrl>
+                    <stdUrl>http://3.visuels.poliris.com/2d/3/a/7/d/3a7de151-3977.jpg</stdUrl>
+                    <c175url>http://3.visuels.poliris.com/c175/3/a/7/d/3a7de151-3977.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>600</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>4</ordre>
+                    <thbUrl>http://b.visuels.poliris.com/thumbnails/b/b/c/9/bbc9688c-31cc.jpg</thbUrl>
+                    <carreurl>http://b.visuels.poliris.com/carre/b/b/c/9/bbc9688c-31cc.jpg</carreurl>
+                    <bigUrl>http://b.visuels.poliris.com/bigs/b/b/c/9/bbc9688c-31cc.jpg</bigUrl>
+                    <stdUrl>http://b.visuels.poliris.com/2d/b/b/c/9/bbc9688c-31cc.jpg</stdUrl>
+                    <c175url>http://b.visuels.poliris.com/c175/b/b/c/9/bbc9688c-31cc.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>600</bigheight>
+                </photo>
+            </photos>
+            <nbsallesdebain>1</nbsallesdebain>
+            <nbsalleseau />
+            <nbtoilettes>1</nbtoilettes>
+            <sisejour>True</sisejour>
+            <surfsejour>22</surfsejour>
+            <anneeconstruct />
+            <nbparkings />
+            <nbboxes />
+            <siterrasse>False</siterrasse>
+            <nbterrasses />
+            <sipiscine>False</sipiscine>
+        </annonce>
+        <annonce>
+            <idTiers>96578</idTiers>
+            <idAnnonce>75411967</idAnnonce>
+            <idPublication>359537</idPublication>
+            <idTypeTransaction>1</idTypeTransaction>
+            <idTypeBien>1</idTypeBien>
+            <dtFraicheur>2013-03-26T13:12:00</dtFraicheur>
+            <dtCreation>2013-03-20T14:20:00</dtCreation>
+            <titre>Appartement 3 pièces</titre>
+            <libelle>2 pièces</libelle>
+            <proximite>Charonne</proximite>
+            <descriptif>Rue Émile Lepeu, appartement meublé d&#39;environ 59 m², dans un immeuble ancien, au 1er étage sans ascenseur. Il se compose d&#39;une entrée, d&#39;un séjour, d&#39;une chambre et d&#39;une petite chambre/bureau, d&#39;une cuisine équipée avec un coin repas séparé et d&#39;une d&#39;une salle de d&#39;eau, WC séparés.
+                Appartement en très bon état, chauffage collectif, calme et lumineux. Bail de un 1 an renouvelable tacitement.</descriptif>
+            <prix>1800</prix>
+            <prixUnite>€cc*</prixUnite>
+            <prixMention>* Loyer mensuel charges comprises</prixMention>
+            <nbPiece>3</nbPiece>
+            <nbChambre>2</nbChambre>
+            <surface>59</surface>
+            <surfaceUnite>m²</surfaceUnite>
+            <idPays>250</idPays>
+            <pays>France</pays>
+            <cp>75011</cp>
+            <codeInsee>750111</codeInsee>
+            <ville>Paris 11ème</ville>
+            <nbPhotos>5</nbPhotos>
+            <firstThumb>http://e.visuels.poliris.com/carre/e/7/b/9/e7b9762f-31d6.jpg</firstThumb>
+            <permaLien>http://www.seloger.com/annonces/locations/appartement/paris-11eme-75/nation-alexandre-dumas/75411967.htm?p=CBBPqSgYAAOEV8cQ</permaLien>
+            <latitude>48.852086</latitude>
+            <longitude>2.390963</longitude>
+            <llPrecision>qrt</llPrecision>
+            <typeDPE>hab</typeDPE>
+            <consoEnergie>229</consoEnergie>
+            <bilanConsoEnergie>D</bilanConsoEnergie>
+            <emissionGES>53</emissionGES>
+            <bilanEmissionGES>E</bilanEmissionGES>
+            <siLotNeuf>false</siLotNeuf>
+            <siMandatExclusif> false</siMandatExclusif>
+            <siMandatStar> false</siMandatStar>
+            <contact>
+                <siAudiotel>false</siAudiotel>
+                <idPublication>359537</idPublication>
+                <nom>PARIS LOCATIONS MEUBLEES</nom>
+                <rcsSiren>408228856</rcsSiren>
+            </contact>
+            <photos>
+                <photo>
+                    <titre />
+                    <ordre>0</ordre>
+                    <thbUrl>http://e.visuels.poliris.com/thumbnails/e/7/b/9/e7b9762f-31d6.jpg</thbUrl>
+                    <carreurl>http://e.visuels.poliris.com/carre/e/7/b/9/e7b9762f-31d6.jpg</carreurl>
+                    <bigUrl>http://e.visuels.poliris.com/bigs/e/7/b/9/e7b9762f-31d6.jpg</bigUrl>
+                    <stdUrl>http://e.visuels.poliris.com/2d/e/7/b/9/e7b9762f-31d6.jpg</stdUrl>
+                    <c175url>http://e.visuels.poliris.com/c175/e/7/b/9/e7b9762f-31d6.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>225</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>56</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>450</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>1</ordre>
+                    <thbUrl>http://c.visuels.poliris.com/thumbnails/c/f/7/f/cf7f6fad-2b46.jpg</thbUrl>
+                    <carreurl>http://c.visuels.poliris.com/carre/c/f/7/f/cf7f6fad-2b46.jpg</carreurl>
+                    <bigUrl>http://c.visuels.poliris.com/bigs/c/f/7/f/cf7f6fad-2b46.jpg</bigUrl>
+                    <stdUrl>http://c.visuels.poliris.com/2d/c/f/7/f/cf7f6fad-2b46.jpg</stdUrl>
+                    <c175url>http://c.visuels.poliris.com/c175/c/f/7/f/cf7f6fad-2b46.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>225</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>56</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>450</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>2</ordre>
+                    <thbUrl>http://4.visuels.poliris.com/thumbnails/4/c/a/3/4ca34479-2de3.jpg</thbUrl>
+                    <carreurl>http://4.visuels.poliris.com/carre/4/c/a/3/4ca34479-2de3.jpg</carreurl>
+                    <bigUrl>http://4.visuels.poliris.com/bigs/4/c/a/3/4ca34479-2de3.jpg</bigUrl>
+                    <stdUrl>http://4.visuels.poliris.com/2d/4/c/a/3/4ca34479-2de3.jpg</stdUrl>
+                    <c175url>http://4.visuels.poliris.com/c175/4/c/a/3/4ca34479-2de3.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>225</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>56</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>450</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>3</ordre>
+                    <thbUrl>http://0.visuels.poliris.com/thumbnails/0/3/f/3/03f300c2-2a27.jpg</thbUrl>
+                    <carreurl>http://0.visuels.poliris.com/carre/0/3/f/3/03f300c2-2a27.jpg</carreurl>
+                    <bigUrl>http://0.visuels.poliris.com/bigs/0/3/f/3/03f300c2-2a27.jpg</bigUrl>
+                    <stdUrl>http://0.visuels.poliris.com/2d/0/3/f/3/03f300c2-2a27.jpg</stdUrl>
+                    <c175url>http://0.visuels.poliris.com/c175/0/3/f/3/03f300c2-2a27.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>225</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>56</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>450</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>4</ordre>
+                    <thbUrl>http://0.visuels.poliris.com/thumbnails/0/4/8/e/048e562b-2ebe.jpg</thbUrl>
+                    <carreurl>http://0.visuels.poliris.com/carre/0/4/8/e/048e562b-2ebe.jpg</carreurl>
+                    <bigUrl>http://0.visuels.poliris.com/bigs/0/4/8/e/048e562b-2ebe.jpg</bigUrl>
+                    <stdUrl>http://0.visuels.poliris.com/2d/0/4/8/e/048e562b-2ebe.jpg</stdUrl>
+                    <c175url>http://0.visuels.poliris.com/c175/0/4/8/e/048e562b-2ebe.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>225</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>56</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>450</bigheight>
+                </photo>
+            </photos>
+            <nbsallesdebain />
+            <nbsalleseau />
+            <nbtoilettes>1</nbtoilettes>
+            <sisejour>True</sisejour>
+            <surfsejour />
+            <anneeconstruct />
+            <nbparkings />
+            <nbboxes />
+            <siterrasse>False</siterrasse>
+            <nbterrasses />
+            <sipiscine>False</sipiscine>
+        </annonce>
+        <annonce>
+            <idTiers>138131</idTiers>
+            <idAnnonce>76484563</idAnnonce>
+            <idPublication>466367</idPublication>
+            <idTypeTransaction>1</idTypeTransaction>
+            <idTypeBien>1</idTypeBien>
+            <dtFraicheur>2013-03-31T10:32:00</dtFraicheur>
+            <dtCreation>2013-03-20T11:46:00</dtCreation>
+            <titre>Appartement 3 pièces</titre>
+            <libelle>Appartement récent</libelle>
+            <descriptif>MÉTRO RUE DES BOULETS / NATION / AVENUE PHILIPPE AUGUSTE
+                Beau 3 pièces de 56,48 m² au 2ème étage avec ascenseur comprenant: une entrée avec placard, un séjour avec petit
+                balcon, deux chambres, une salle de bains, un WC séparé, une cuisine. Chauffage collectif, parquet au sol, présence d&#39;un
+                gardien. Pour une visite, merci de contacter.</descriptif>
+            <prix>1310</prix>
+            <prixUnite>€+ch</prixUnite>
+            <prixMention />
+            <nbPiece>3</nbPiece>
+            <nbChambre>2</nbChambre>
+            <surface>56</surface>
+            <surfaceUnite>m²</surfaceUnite>
+            <idPays>250</idPays>
+            <pays>France</pays>
+            <cp>75011</cp>
+            <codeInsee>750111</codeInsee>
+            <ville>Paris 11ème</ville>
+            <nbPhotos>3</nbPhotos>
+            <firstThumb>http://7.visuels.poliris.com/carre/7/f/c/3/7fc3bf1e-725c.jpg</firstThumb>
+            <permaLien>http://www.seloger.com/annonces/locations/appartement/paris-11eme-75/76484563.htm?p=CBBPqSgYAAKPcdvw</permaLien>
+            <latitude>48.859266</latitude>
+            <longitude>2.379445</longitude>
+            <llPrecision>vil</llPrecision>
+            <typeDPE>hab</typeDPE>
+            <bilanConsoEnergie>D</bilanConsoEnergie>
+            <bilanEmissionGES>D</bilanEmissionGES>
+            <siLotNeuf>false</siLotNeuf>
+            <siMandatExclusif> false</siMandatExclusif>
+            <siMandatStar> false</siMandatStar>
+            <contact>
+                <siAudiotel>false</siAudiotel>
+                <idPublication>466367</idPublication>
+                <nom>Oralia Garraud-Maillet</nom>
+                <rcsSiren>330621327</rcsSiren>
+                <rcsNic>00015</rcsNic>
+            </contact>
+            <photos>
+                <photo>
+                    <titre>facade_48-50_Ph_Augu</titre>
+                    <ordre>0</ordre>
+                    <thbUrl>http://7.visuels.poliris.com/thumbnails/7/f/c/3/7fc3bf1e-725c.jpg</thbUrl>
+                    <carreurl>http://7.visuels.poliris.com/carre/7/f/c/3/7fc3bf1e-725c.jpg</carreurl>
+                    <bigUrl>http://7.visuels.poliris.com/bigs/7/f/c/3/7fc3bf1e-725c.jpg</bigUrl>
+                    <stdUrl>http://7.visuels.poliris.com/2d/7/f/c/3/7fc3bf1e-725c.jpg</stdUrl>
+                    <c175url>http://7.visuels.poliris.com/c175/7/f/c/3/7fc3bf1e-725c.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>600</bigheight>
+                </photo>
+                <photo>
+                    <titre>48-50PhAugusteCOUR</titre>
+                    <ordre>1</ordre>
+                    <thbUrl>http://d.visuels.poliris.com/thumbnails/d/7/4/f/d74f58ec-76e7.jpg</thbUrl>
+                    <carreurl>http://d.visuels.poliris.com/carre/d/7/4/f/d74f58ec-76e7.jpg</carreurl>
+                    <bigUrl>http://d.visuels.poliris.com/bigs/d/7/4/f/d74f58ec-76e7.jpg</bigUrl>
+                    <stdUrl>http://d.visuels.poliris.com/2d/d/7/4/f/d74f58ec-76e7.jpg</stdUrl>
+                    <c175url>http://d.visuels.poliris.com/c175/d/7/4/f/d74f58ec-76e7.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>600</bigheight>
+                </photo>
+                <photo>
+                    <titre>48-50PhAugusteCOUR2</titre>
+                    <ordre>2</ordre>
+                    <thbUrl>http://8.visuels.poliris.com/thumbnails/8/5/d/8/85d8a21a-6058.jpg</thbUrl>
+                    <carreurl>http://8.visuels.poliris.com/carre/8/5/d/8/85d8a21a-6058.jpg</carreurl>
+                    <bigUrl>http://8.visuels.poliris.com/bigs/8/5/d/8/85d8a21a-6058.jpg</bigUrl>
+                    <stdUrl>http://8.visuels.poliris.com/2d/8/5/d/8/85d8a21a-6058.jpg</stdUrl>
+                    <c175url>http://8.visuels.poliris.com/c175/8/5/d/8/85d8a21a-6058.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>600</bigheight>
+                </photo>
+            </photos>
+            <nbsallesdebain>1</nbsallesdebain>
+            <nbsalleseau />
+            <nbtoilettes>1</nbtoilettes>
+            <sisejour>True</sisejour>
+            <surfsejour />
+            <anneeconstruct>1955</anneeconstruct>
+            <nbparkings />
+            <nbboxes />
+            <siterrasse>False</siterrasse>
+            <nbterrasses />
+            <sipiscine>False</sipiscine>
+        </annonce>
+        <annonce>
+            <idTiers>4554</idTiers>
+            <idAnnonce>76439489</idAnnonce>
+            <idPublication>10558</idPublication>
+            <idTypeTransaction>1</idTypeTransaction>
+            <idTypeBien>1</idTypeBien>
+            <dtFraicheur>2013-03-31T15:40:00</dtFraicheur>
+            <dtCreation>2013-03-18T16:55:00</dtCreation>
+            <titre>Appartement 3 pièces</titre>
+            <libelle>3 pièces</libelle>
+            <proximite>Philippe auguste</proximite>
+            <descriptif>Impasse Montlouis, appartement en bon état au 3ème étage (dernier étage) sans ascenseur comprenant une entrée, un grand séjour, une cuisine vide, 2 chambres et une salle d&#39;eau avec WC. Parquet, fenêtres double vitrage, chauffage individuel au gaz..</descriptif>
+            <prix>1825</prix>
+            <prixUnite>€cc*</prixUnite>
+            <prixMention>* Loyer mensuel charges comprises</prixMention>
+            <nbPiece>3</nbPiece>
+            <nbChambre>2</nbChambre>
+            <surface>74</surface>
+            <surfaceUnite>m²</surfaceUnite>
+            <idPays>250</idPays>
+            <pays>France</pays>
+            <cp>75011</cp>
+            <codeInsee>750111</codeInsee>
+            <ville>Paris 11ème</ville>
+            <nbPhotos>5</nbPhotos>
+            <firstThumb>http://4.visuels.poliris.com/carre/4/a/0/1/4a0165a6-3761.jpg</firstThumb>
+            <permaLien>http://www.seloger.com/annonces/locations/appartement/paris-11eme-75/76439489.htm?p=CBBPqSgYAAOQgpPg</permaLien>
+            <latitude>48.859266</latitude>
+            <longitude>2.379445</longitude>
+            <llPrecision>vil</llPrecision>
+            <typeDPE>hab</typeDPE>
+            <bilanConsoEnergie>F</bilanConsoEnergie>
+            <bilanEmissionGES>G</bilanEmissionGES>
+            <siLotNeuf>false</siLotNeuf>
+            <siMandatExclusif> false</siMandatExclusif>
+            <siMandatStar> false</siMandatStar>
+            <contact>
+                <siAudiotel>false</siAudiotel>
+                <idPublication>10558</idPublication>
+                <nom>CABINET VIDAL</nom>
+                <rcsSiren>417919081</rcsSiren>
+                <rcsNic>00014</rcsNic>
+            </contact>
+            <photos>
+                <photo>
+                    <titre />
+                    <ordre>0</ordre>
+                    <thbUrl>http://4.visuels.poliris.com/thumbnails/4/a/0/1/4a0165a6-3761.jpg</thbUrl>
+                    <carreurl>http://4.visuels.poliris.com/carre/4/a/0/1/4a0165a6-3761.jpg</carreurl>
+                    <bigUrl>http://4.visuels.poliris.com/bigs/4/a/0/1/4a0165a6-3761.jpg</bigUrl>
+                    <stdUrl>http://4.visuels.poliris.com/2d/4/a/0/1/4a0165a6-3761.jpg</stdUrl>
+                    <c175url>http://4.visuels.poliris.com/c175/4/a/0/1/4a0165a6-3761.jpg</c175url>
+                    <stdwidth>299</stdwidth>
+                    <stdheight>400</stdheight>
+                    <thumbwidth>75</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth>598</bigwidth>
+                    <bigheight>800</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>1</ordre>
+                    <thbUrl>http://f.visuels.poliris.com/thumbnails/f/2/5/b/f25bc6f7-39c6.jpg</thbUrl>
+                    <carreurl>http://f.visuels.poliris.com/carre/f/2/5/b/f25bc6f7-39c6.jpg</carreurl>
+                    <bigUrl>http://f.visuels.poliris.com/bigs/f/2/5/b/f25bc6f7-39c6.jpg</bigUrl>
+                    <stdUrl>http://f.visuels.poliris.com/2d/f/2/5/b/f25bc6f7-39c6.jpg</stdUrl>
+                    <c175url>http://f.visuels.poliris.com/c175/f/2/5/b/f25bc6f7-39c6.jpg</c175url>
+                    <stdwidth>299</stdwidth>
+                    <stdheight>400</stdheight>
+                    <thumbwidth>75</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth>598</bigwidth>
+                    <bigheight>800</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>2</ordre>
+                    <thbUrl>http://6.visuels.poliris.com/thumbnails/6/4/6/4/6464b3c4-46a1.jpg</thbUrl>
+                    <carreurl>http://6.visuels.poliris.com/carre/6/4/6/4/6464b3c4-46a1.jpg</carreurl>
+                    <bigUrl>http://6.visuels.poliris.com/bigs/6/4/6/4/6464b3c4-46a1.jpg</bigUrl>
+                    <stdUrl>http://6.visuels.poliris.com/2d/6/4/6/4/6464b3c4-46a1.jpg</stdUrl>
+                    <c175url>http://6.visuels.poliris.com/c175/6/4/6/4/6464b3c4-46a1.jpg</c175url>
+                    <stdwidth>299</stdwidth>
+                    <stdheight>400</stdheight>
+                    <thumbwidth>75</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth>598</bigwidth>
+                    <bigheight>800</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>3</ordre>
+                    <thbUrl>http://d.visuels.poliris.com/thumbnails/d/d/c/3/ddc3c779-3504.jpg</thbUrl>
+                    <carreurl>http://d.visuels.poliris.com/carre/d/d/c/3/ddc3c779-3504.jpg</carreurl>
+                    <bigUrl>http://d.visuels.poliris.com/bigs/d/d/c/3/ddc3c779-3504.jpg</bigUrl>
+                    <stdUrl>http://d.visuels.poliris.com/2d/d/d/c/3/ddc3c779-3504.jpg</stdUrl>
+                    <c175url>http://d.visuels.poliris.com/c175/d/d/c/3/ddc3c779-3504.jpg</c175url>
+                    <stdwidth>299</stdwidth>
+                    <stdheight>400</stdheight>
+                    <thumbwidth>75</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth>598</bigwidth>
+                    <bigheight>800</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>4</ordre>
+                    <thbUrl>http://2.visuels.poliris.com/thumbnails/2/2/d/7/22d75bc2-31a4.jpg</thbUrl>
+                    <carreurl>http://2.visuels.poliris.com/carre/2/2/d/7/22d75bc2-31a4.jpg</carreurl>
+                    <bigUrl>http://2.visuels.poliris.com/bigs/2/2/d/7/22d75bc2-31a4.jpg</bigUrl>
+                    <stdUrl>http://2.visuels.poliris.com/2d/2/2/d/7/22d75bc2-31a4.jpg</stdUrl>
+                    <c175url>http://2.visuels.poliris.com/c175/2/2/d/7/22d75bc2-31a4.jpg</c175url>
+                    <stdwidth>299</stdwidth>
+                    <stdheight>400</stdheight>
+                    <thumbwidth>75</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth>598</bigwidth>
+                    <bigheight>800</bigheight>
+                </photo>
+            </photos>
+            <nbsallesdebain />
+            <nbsalleseau>1</nbsalleseau>
+            <nbtoilettes>1</nbtoilettes>
+            <sisejour>True</sisejour>
+            <surfsejour />
+            <anneeconstruct />
+            <nbparkings />
+            <nbboxes />
+            <siterrasse>False</siterrasse>
+            <nbterrasses />
+            <sipiscine>False</sipiscine>
+        </annonce>
+        <annonce>
+            <idTiers>1187</idTiers>
+            <idAnnonce>76439017</idAnnonce>
+            <idPublication>36037</idPublication>
+            <idTypeTransaction>1</idTypeTransaction>
+            <idTypeBien>1</idTypeBien>
+            <dtFraicheur>2013-04-01T20:34:00</dtFraicheur>
+            <dtCreation>2013-03-18T16:36:00</dtCreation>
+            <titre>Appartement 3 pièces</titre>
+            <libelle>appartement trois pièces</libelle>
+            <proximite>Métro alexandre dumas</proximite>
+            <descriptif>Appartement de trois pièces, d&#39;une surface de 60 M², mi-hauteur entre 4ème et 5ème étage, avec cave et parking, comprenant: entrée, cuisine équipée (placards évier 2 bacs, plaques chauffantes, dégagement avec placard, 2 chambres, salle de bains, WC indépendants, ascenseur, chauffage par le sol, eau chaude collective, appartement rénové en 2011.
+                Gardien.</descriptif>
+            <prix>1690</prix>
+            <prixUnite>€cc*</prixUnite>
+            <prixMention>* Loyer mensuel charges comprises</prixMention>
+            <nbPiece>3</nbPiece>
+            <nbChambre>2</nbChambre>
+            <surface>60</surface>
+            <surfaceUnite>m²</surfaceUnite>
+            <idPays>250</idPays>
+            <pays>France</pays>
+            <cp>75011</cp>
+            <codeInsee>750111</codeInsee>
+            <ville>Paris 11ème</ville>
+            <nbPhotos>0</nbPhotos>
+            <permaLien>http://www.seloger.com/annonces/locations/appartement/paris-11eme-75/nation-alexandre-dumas/76439017.htm?p=CBBPqSgYAANNCMxQ</permaLien>
+            <latitude>48.852086</latitude>
+            <longitude>2.390963</longitude>
+            <llPrecision>qrt</llPrecision>
+            <typeDPE>hab</typeDPE>
+            <consoEnergie>132</consoEnergie>
+            <bilanConsoEnergie>C</bilanConsoEnergie>
+            <emissionGES>31</emissionGES>
+            <bilanEmissionGES>D</bilanEmissionGES>
+            <siLotNeuf>false</siLotNeuf>
+            <siMandatExclusif> false</siMandatExclusif>
+            <siMandatStar> false</siMandatStar>
+            <contact>
+                <siAudiotel>false</siAudiotel>
+                <idPublication>36037</idPublication>
+                <nom>CABINET MICHOU</nom>
+                <rcsSiren>562016535</rcsSiren>
+                <rcsNic>00014</rcsNic>
+            </contact>
+            <photos>
+            </photos>
+            <nbsallesdebain>1</nbsallesdebain>
+            <nbsalleseau />
+            <nbtoilettes>1</nbtoilettes>
+            <sisejour />
+            <surfsejour />
+            <anneeconstruct />
+            <nbparkings>1</nbparkings>
+            <nbboxes>0</nbboxes>
+            <siterrasse>False</siterrasse>
+            <nbterrasses />
+            <sipiscine>False</sipiscine>
+        </annonce>
+        <annonce>
+            <idTiers>1393</idTiers>
+            <idAnnonce>76438319</idAnnonce>
+            <idPublication>19080</idPublication>
+            <idTypeTransaction>1</idTypeTransaction>
+            <idTypeBien>1</idTypeBien>
+            <dtFraicheur>2013-04-01T13:08:00</dtFraicheur>
+            <dtCreation>2013-03-18T15:55:00</dtCreation>
+            <titre>Appartement 3 pièces</titre>
+            <libelle>3 pièces refait neuf</libelle>
+            <proximite>Métro Saint ambroise</proximite>
+            <descriptif>Métro Saint AMBROISE: bel immeuble haussmannien de standing en pierre de taille, bel appartement de 3 pièces de 70m², situé derrière l&#39;église Saint Ambroise à 2 pas de la future coulée verte. Au 1er étage avec ascenseur, composé d&#39;un séjour avec parquet vitrifié, cuisine séparée, de 2 chambres avec parquet vitrifié, d&#39;une salle de bain avec baignoire, WC séparés, il est orienté nord et sud (double exposition). En cours de rénovation. Chauffage central au gaz. Double vitrage. Concierge. Colocation possible. Ascenseur. Digicode + interphone. Cave au sous-sol. Honoraires: 1.500 euros.</descriptif>
+            <prix>1680</prix>
+            <prixUnite>€cc*</prixUnite>
+            <prixMention>* Loyer mensuel charges comprises</prixMention>
+            <nbPiece>3</nbPiece>
+            <nbChambre>2</nbChambre>
+            <surface>70</surface>
+            <surfaceUnite>m²</surfaceUnite>
+            <idPays>250</idPays>
+            <pays>France</pays>
+            <cp>75011</cp>
+            <codeInsee>750111</codeInsee>
+            <ville>Paris 11ème</ville>
+            <nbPhotos>5</nbPhotos>
+            <firstThumb>http://d.visuels.poliris.com/carre/d/1/c/2/d1c2ec16-49f4.jpg</firstThumb>
+            <permaLien>http://www.seloger.com/annonces/locations/appartement/paris-11eme-75/republique-saint-ambroise/76438319.htm?p=CBBPqSgYAANIBKiA</permaLien>
+            <latitude>48.863992</latitude>
+            <longitude>2.370834</longitude>
+            <llPrecision>qrt</llPrecision>
+            <typeDPE>hab</typeDPE>
+            <bilanConsoEnergie>D</bilanConsoEnergie>
+            <bilanEmissionGES>E</bilanEmissionGES>
+            <siLotNeuf>false</siLotNeuf>
+            <siMandatExclusif> false</siMandatExclusif>
+            <siMandatStar> false</siMandatStar>
+            <contact>
+                <siAudiotel>false</siAudiotel>
+                <idPublication>19080</idPublication>
+                <nom>Chateauvieux Conseil</nom>
+                <rcsSiren>434095089</rcsSiren>
+                <rcsNic>00018</rcsNic>
+            </contact>
+            <photos>
+                <photo>
+                    <titre />
+                    <ordre>0</ordre>
+                    <thbUrl>http://d.visuels.poliris.com/thumbnails/d/1/c/2/d1c2ec16-49f4.jpg</thbUrl>
+                    <carreurl>http://d.visuels.poliris.com/carre/d/1/c/2/d1c2ec16-49f4.jpg</carreurl>
+                    <bigUrl />
+                    <stdUrl>http://d.visuels.poliris.com/2d/d/1/c/2/d1c2ec16-49f4.jpg</stdUrl>
+                    <c175url>http://d.visuels.poliris.com/c175/d/1/c/2/d1c2ec16-49f4.jpg</c175url>
+                    <stdwidth>300</stdwidth>
+                    <stdheight>400</stdheight>
+                    <thumbwidth>75</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth />
+                    <bigheight />
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>1</ordre>
+                    <thbUrl>http://8.visuels.poliris.com/thumbnails/8/8/d/c/88dc9397-4ca8.jpg</thbUrl>
+                    <carreurl>http://8.visuels.poliris.com/carre/8/8/d/c/88dc9397-4ca8.jpg</carreurl>
+                    <bigUrl>http://8.visuels.poliris.com/bigs/8/8/d/c/88dc9397-4ca8.jpg</bigUrl>
+                    <stdUrl>http://8.visuels.poliris.com/2d/8/8/d/c/88dc9397-4ca8.jpg</stdUrl>
+                    <c175url>http://8.visuels.poliris.com/c175/8/8/d/c/88dc9397-4ca8.jpg</c175url>
+                    <stdwidth>300</stdwidth>
+                    <stdheight>400</stdheight>
+                    <thumbwidth>75</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth>600</bigwidth>
+                    <bigheight>800</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>2</ordre>
+                    <thbUrl>http://3.visuels.poliris.com/thumbnails/3/d/5/4/3d54dae7-2c4c.jpg</thbUrl>
+                    <carreurl>http://3.visuels.poliris.com/carre/3/d/5/4/3d54dae7-2c4c.jpg</carreurl>
+                    <bigUrl>http://3.visuels.poliris.com/bigs/3/d/5/4/3d54dae7-2c4c.jpg</bigUrl>
+                    <stdUrl>http://3.visuels.poliris.com/2d/3/d/5/4/3d54dae7-2c4c.jpg</stdUrl>
+                    <c175url>http://3.visuels.poliris.com/c175/3/d/5/4/3d54dae7-2c4c.jpg</c175url>
+                    <stdwidth>300</stdwidth>
+                    <stdheight>400</stdheight>
+                    <thumbwidth>75</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth>600</bigwidth>
+                    <bigheight>800</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>3</ordre>
+                    <thbUrl>http://2.visuels.poliris.com/thumbnails/2/1/4/4/21444be6-27dc.jpg</thbUrl>
+                    <carreurl>http://2.visuels.poliris.com/carre/2/1/4/4/21444be6-27dc.jpg</carreurl>
+                    <bigUrl>http://2.visuels.poliris.com/bigs/2/1/4/4/21444be6-27dc.jpg</bigUrl>
+                    <stdUrl>http://2.visuels.poliris.com/2d/2/1/4/4/21444be6-27dc.jpg</stdUrl>
+                    <c175url>http://2.visuels.poliris.com/c175/2/1/4/4/21444be6-27dc.jpg</c175url>
+                    <stdwidth>300</stdwidth>
+                    <stdheight>400</stdheight>
+                    <thumbwidth>75</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth>600</bigwidth>
+                    <bigheight>800</bigheight>
+                </photo>
+            </photos>
+            <nbsallesdebain>1</nbsallesdebain>
+            <nbsalleseau />
+            <nbtoilettes>1</nbtoilettes>
+            <sisejour>True</sisejour>
+            <surfsejour />
+            <anneeconstruct />
+            <nbparkings />
+            <nbboxes />
+            <siterrasse>False</siterrasse>
+            <nbterrasses />
+            <sipiscine>False</sipiscine>
+        </annonce>
+        <annonce>
+            <idTiers>2852</idTiers>
+            <idAnnonce>76434263</idAnnonce>
+            <idPublication>13812</idPublication>
+            <idTypeTransaction>1</idTypeTransaction>
+            <idTypeBien>1</idTypeBien>
+            <dtFraicheur>2013-03-21T11:15:00</dtFraicheur>
+            <dtCreation>2013-03-18T14:05:00</dtCreation>
+            <titre>Appartement 3 pièces</titre>
+            <libelle>3 pièces</libelle>
+            <proximite>Rue du Temple</proximite>
+            <descriptif>Rue du Temple, Quartier du Marais, appartement au 3ème étage sans ascenseur sur cour calme, 3 pièces de 63m² entièrement rénové, comprenant: une entrée / bureau, un salon, deux chambres dont une avec grand dressing ou chambre bébé, une cuisine et une salle d&#39;eau avec WC. Chauffage électrique.</descriptif>
+            <prix>1700</prix>
+            <prixUnite>€cc*</prixUnite>
+            <prixMention>* Loyer mensuel charges comprises</prixMention>
+            <nbPiece>3</nbPiece>
+            <nbChambre>2</nbChambre>
+            <surface>63</surface>
+            <surfaceUnite>m²</surfaceUnite>
+            <idPays>250</idPays>
+            <pays>France</pays>
+            <cp>75003</cp>
+            <codeInsee>750103</codeInsee>
+            <ville>Paris 3ème</ville>
+            <nbPhotos>0</nbPhotos>
+            <permaLien>http://www.seloger.com/annonces/locations/appartement/paris-3eme-75/arts-et-metiers/76434263.htm?p=CBBPqSfYAANSA19A</permaLien>
+            <latitude>48.865961</latitude>
+            <longitude>2.357015</longitude>
+            <llPrecision>qrt</llPrecision>
+            <typeDPE>hab</typeDPE>
+            <bilanConsoEnergie>F</bilanConsoEnergie>
+            <bilanEmissionGES>D</bilanEmissionGES>
+            <siLotNeuf>false</siLotNeuf>
+            <siMandatExclusif> false</siMandatExclusif>
+            <siMandatStar> false</siMandatStar>
+            <contact>
+                <siAudiotel>false</siAudiotel>
+                <idPublication>13812</idPublication>
+                <nom>CABINET JUNEGE</nom>
+                <rcsSiren>400023719</rcsSiren>
+                <rcsNic>00018</rcsNic>
+            </contact>
+            <photos>
+            </photos>
+            <nbsallesdebain />
+            <nbsalleseau>1</nbsalleseau>
+            <nbtoilettes>1</nbtoilettes>
+            <sisejour />
+            <surfsejour />
+            <anneeconstruct />
+            <nbparkings />
+            <nbboxes />
+            <siterrasse>False</siterrasse>
+            <nbterrasses />
+            <sipiscine>False</sipiscine>
+        </annonce>
+        <annonce>
+            <idTiers>1617</idTiers>
+            <idAnnonce>76353657</idAnnonce>
+            <idPublication>18473</idPublication>
+            <idTypeTransaction>1</idTypeTransaction>
+            <idTypeBien>1</idTypeBien>
+            <dtFraicheur>2013-03-27T15:37:00</dtFraicheur>
+            <dtCreation>2013-03-14T18:20:00</dtCreation>
+            <titre>Appartement 3 pièces</titre>
+            <libelle>3 pièces</libelle>
+            <proximite>Charonne</proximite>
+            <descriptif>Au pied du métro charonne, dans bel immeuble.
+                Situé au 1er étage. Entrée, WC, dressing, salle de bains avec fenêtre.
+                Cuisine. Chaudière individuelle gaz. Séjour,
+                2 chambres. Parquet cheminée.
+                Charme.</descriptif>
+            <prix>1660</prix>
+            <prixUnite>€cc*</prixUnite>
+            <prixMention>* Loyer mensuel charges comprises</prixMention>
+            <nbPiece>3</nbPiece>
+            <nbChambre>2</nbChambre>
+            <surface>65</surface>
+            <surfaceUnite>m²</surfaceUnite>
+            <idPays>250</idPays>
+            <pays>France</pays>
+            <cp>75011</cp>
+            <codeInsee>750111</codeInsee>
+            <ville>Paris 11ème</ville>
+            <nbPhotos>0</nbPhotos>
+            <permaLien>http://www.seloger.com/annonces/locations/appartement/paris-11eme-75/leon-blum-folie-regnault/76353657.htm?p=CBBPqSgYAAM-BIKQ</permaLien>
+            <latitude>48.85876</latitude>
+            <longitude>2.384003</longitude>
+            <llPrecision>qrt</llPrecision>
+            <typeDPE>hab</typeDPE>
+            <siLotNeuf>false</siLotNeuf>
+            <siMandatExclusif> false</siMandatExclusif>
+            <siMandatStar> false</siMandatStar>
+            <contact>
+                <siAudiotel>false</siAudiotel>
+                <idPublication>18473</idPublication>
+                <nom>CRAUNOT TRANSACTIONS</nom>
+                <rcsSiren>331014449</rcsSiren>
+                <rcsNic>00036</rcsNic>
+            </contact>
+            <photos>
+            </photos>
+            <nbsallesdebain>1</nbsallesdebain>
+            <nbsalleseau />
+            <nbtoilettes>1</nbtoilettes>
+            <sisejour>True</sisejour>
+            <surfsejour />
+            <anneeconstruct />
+            <nbparkings />
+            <nbboxes />
+            <siterrasse>False</siterrasse>
+            <nbterrasses />
+            <sipiscine>False</sipiscine>
+        </annonce>
+        <annonce>
+            <idTiers>4263</idTiers>
+            <idAnnonce>75707169</idAnnonce>
+            <idPublication>2190</idPublication>
+            <idTypeTransaction>1</idTypeTransaction>
+            <idTypeBien>1</idTypeBien>
+            <dtFraicheur>2013-03-27T10:46:00</dtFraicheur>
+            <dtCreation>2013-03-11T13:57:00</dtCreation>
+            <titre>Appartement 3 pièces</titre>
+            <libelle>F3 refait à neuf + balcons</libelle>
+            <proximite>Oberkampf</proximite>
+            <descriptif>Dans rue calme. Immeuble standing. F3 avec balcons sur verdure refait à neuf. Très belles prestations. Entrée. Deux chambres sur jardin avec balcons. Séjour avec balcon sur rue. Chauffage immeuble. Superbe. A saisir !!</descriptif>
+            <prix>1750</prix>
+            <prixUnite>€cc*</prixUnite>
+            <prixMention>* Loyer mensuel charges comprises</prixMention>
+            <nbPiece>3</nbPiece>
+            <nbChambre>2</nbChambre>
+            <surface>62</surface>
+            <surfaceUnite>m²</surfaceUnite>
+            <idPays>250</idPays>
+            <pays>France</pays>
+            <cp>75011</cp>
+            <codeInsee>750111</codeInsee>
+            <ville>Paris 11ème</ville>
+            <nbPhotos>3</nbPhotos>
+            <firstThumb>http://b.visuels.poliris.com/carre/b/6/8/0/b680e5c4-34e9.jpg</firstThumb>
+            <permaLien>http://www.seloger.com/annonces/locations/appartement/paris-11eme-75/belleville-saint-maur/75707169.htm?p=CBBPqSgYAANrAIjg</permaLien>
+            <latitude>48.866171</latitude>
+            <longitude>2.378795</longitude>
+            <llPrecision>qrt</llPrecision>
+            <typeDPE>hab</typeDPE>
+            <consoEnergie>208</consoEnergie>
+            <bilanConsoEnergie>D</bilanConsoEnergie>
+            <emissionGES>48</emissionGES>
+            <bilanEmissionGES>E</bilanEmissionGES>
+            <siLotNeuf>false</siLotNeuf>
+            <siMandatExclusif> false</siMandatExclusif>
+            <siMandatStar> false</siMandatStar>
+            <contact>
+                <siAudiotel>false</siAudiotel>
+                <idPublication>2190</idPublication>
+                <nom>CABINET STEIN</nom>
+                <rcsSiren>403631195</rcsSiren>
+            </contact>
+            <photos>
+                <photo>
+                    <titre />
+                    <ordre>0</ordre>
+                    <thbUrl>http://b.visuels.poliris.com/thumbnails/b/6/8/0/b680e5c4-34e9.jpg</thbUrl>
+                    <carreurl>http://b.visuels.poliris.com/carre/b/6/8/0/b680e5c4-34e9.jpg</carreurl>
+                    <bigUrl>http://b.visuels.poliris.com/bigs/b/6/8/0/b680e5c4-34e9.jpg</bigUrl>
+                    <stdUrl>http://b.visuels.poliris.com/2d/b/6/8/0/b680e5c4-34e9.jpg</stdUrl>
+                    <c175url>http://b.visuels.poliris.com/c175/b/6/8/0/b680e5c4-34e9.jpg</c175url>
+                    <stdwidth>300</stdwidth>
+                    <stdheight>400</stdheight>
+                    <thumbwidth>75</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth>600</bigwidth>
+                    <bigheight>800</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>1</ordre>
+                    <thbUrl>http://4.visuels.poliris.com/thumbnails/4/7/7/0/477011a5-27de.jpg</thbUrl>
+                    <carreurl>http://4.visuels.poliris.com/carre/4/7/7/0/477011a5-27de.jpg</carreurl>
+                    <bigUrl>http://4.visuels.poliris.com/bigs/4/7/7/0/477011a5-27de.jpg</bigUrl>
+                    <stdUrl>http://4.visuels.poliris.com/2d/4/7/7/0/477011a5-27de.jpg</stdUrl>
+                    <c175url>http://4.visuels.poliris.com/c175/4/7/7/0/477011a5-27de.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>600</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>2</ordre>
+                    <thbUrl>http://f.visuels.poliris.com/thumbnails/f/4/8/5/f4857e3a-3677.jpg</thbUrl>
+                    <carreurl>http://f.visuels.poliris.com/carre/f/4/8/5/f4857e3a-3677.jpg</carreurl>
+                    <bigUrl>http://f.visuels.poliris.com/bigs/f/4/8/5/f4857e3a-3677.jpg</bigUrl>
+                    <stdUrl>http://f.visuels.poliris.com/2d/f/4/8/5/f4857e3a-3677.jpg</stdUrl>
+                    <c175url>http://f.visuels.poliris.com/c175/f/4/8/5/f4857e3a-3677.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>600</bigheight>
+                </photo>
+            </photos>
+            <nbsallesdebain />
+            <nbsalleseau />
+            <nbtoilettes />
+            <sisejour>True</sisejour>
+            <surfsejour />
+            <anneeconstruct />
+            <nbparkings />
+            <nbboxes />
+            <siterrasse>False</siterrasse>
+            <nbterrasses />
+            <sipiscine>False</sipiscine>
+        </annonce>
+        <annonce>
+            <idTiers>22097</idTiers>
+            <idAnnonce>76061199</idAnnonce>
+            <idPublication>215545</idPublication>
+            <idTypeTransaction>1</idTypeTransaction>
+            <idTypeBien>1</idTypeBien>
+            <dtFraicheur>2013-03-30T15:17:00</dtFraicheur>
+            <dtCreation>2013-03-05T09:39:00</dtCreation>
+            <titre>Appartement 3 pièces</titre>
+            <libelle>3 Pièces</libelle>
+            <proximite>Place voltaire Léon blum</proximite>
+            <descriptif>Rue de la Roquette, au pied du métro Voltaire Léon Blum, ce charmant 3/4 pièces est situé au 4ème étage sans ascenseur d&#39;un immeuble ancien.
+                Il se compose d&#39;une entrée, d&#39;un double séjour, de deux chambres, d&#39;une cuisine séparée, d&#39;une salle de bain avec WC.
+                Idéal couple avec enfant ou colocation. Loyer: 1 649 E / mois CC
+                Attention: Dossiers acceptés: Étudiants seulement avec garants ou salariés gagnant min 4947 E net. Intéressé, vous pouvez dès à présent déposer votre dossier sur le site, en y insérant le code suivant: ROQUETTE.</descriptif>
+            <prix>1499</prix>
+            <prixUnite>€+ch</prixUnite>
+            <prixMention />
+            <nbPiece>3</nbPiece>
+            <nbChambre>2</nbChambre>
+            <surface>57</surface>
+            <surfaceUnite>m²</surfaceUnite>
+            <idPays>250</idPays>
+            <pays>France</pays>
+            <cp>75011</cp>
+            <codeInsee>750111</codeInsee>
+            <ville>Paris 11ème</ville>
+            <nbPhotos>5</nbPhotos>
+            <firstThumb>http://e.visuels.poliris.com/carre/e/f/a/0/efa05585-58c9.jpg</firstThumb>
+            <permaLien>http://www.seloger.com/annonces/locations/appartement/paris-11eme-75/leon-blum-folie-regnault/76061199.htm?p=CBBPqSgYAALttJ-Q</permaLien>
+            <latitude>48.85876</latitude>
+            <longitude>2.384003</longitude>
+            <llPrecision>qrt</llPrecision>
+            <typeDPE>hab</typeDPE>
+            <siLotNeuf>false</siLotNeuf>
+            <siMandatExclusif> false</siMandatExclusif>
+            <siMandatStar> false</siMandatStar>
+            <contact>
+                <siAudiotel>false</siAudiotel>
+                <idPublication>215545</idPublication>
+                <nom>ORPI Porte Dorée</nom>
+                <rcsSiren>485032940</rcsSiren>
+                <rcsNic>00010</rcsNic>
+            </contact>
+            <photos>
+                <photo>
+                    <titre />
+                    <ordre>0</ordre>
+                    <thbUrl>http://e.visuels.poliris.com/thumbnails/e/f/a/0/efa05585-58c9.jpg</thbUrl>
+                    <carreurl>http://e.visuels.poliris.com/carre/e/f/a/0/efa05585-58c9.jpg</carreurl>
+                    <bigUrl>http://e.visuels.poliris.com/bigs/e/f/a/0/efa05585-58c9.jpg</bigUrl>
+                    <stdUrl>http://e.visuels.poliris.com/2d/e/f/a/0/efa05585-58c9.jpg</stdUrl>
+                    <c175url>http://e.visuels.poliris.com/c175/e/f/a/0/efa05585-58c9.jpg</c175url>
+                    <stdwidth>300</stdwidth>
+                    <stdheight>400</stdheight>
+                    <thumbwidth>75</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth>600</bigwidth>
+                    <bigheight>800</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>1</ordre>
+                    <thbUrl>http://2.visuels.poliris.com/thumbnails/2/c/d/4/2cd48f83-24fd.jpg</thbUrl>
+                    <carreurl>http://2.visuels.poliris.com/carre/2/c/d/4/2cd48f83-24fd.jpg</carreurl>
+                    <bigUrl>http://2.visuels.poliris.com/bigs/2/c/d/4/2cd48f83-24fd.jpg</bigUrl>
+                    <stdUrl>http://2.visuels.poliris.com/2d/2/c/d/4/2cd48f83-24fd.jpg</stdUrl>
+                    <c175url>http://2.visuels.poliris.com/c175/2/c/d/4/2cd48f83-24fd.jpg</c175url>
+                    <stdwidth>300</stdwidth>
+                    <stdheight>400</stdheight>
+                    <thumbwidth>75</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth>600</bigwidth>
+                    <bigheight>800</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>2</ordre>
+                    <thbUrl>http://8.visuels.poliris.com/thumbnails/8/0/8/8/8088d44d-269f.jpg</thbUrl>
+                    <carreurl>http://8.visuels.poliris.com/carre/8/0/8/8/8088d44d-269f.jpg</carreurl>
+                    <bigUrl>http://8.visuels.poliris.com/bigs/8/0/8/8/8088d44d-269f.jpg</bigUrl>
+                    <stdUrl>http://8.visuels.poliris.com/2d/8/0/8/8/8088d44d-269f.jpg</stdUrl>
+                    <c175url>http://8.visuels.poliris.com/c175/8/0/8/8/8088d44d-269f.jpg</c175url>
+                    <stdwidth>300</stdwidth>
+                    <stdheight>400</stdheight>
+                    <thumbwidth>75</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth>600</bigwidth>
+                    <bigheight>800</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>3</ordre>
+                    <thbUrl>http://f.visuels.poliris.com/thumbnails/f/f/7/b/ff7bc9e6-2972.jpg</thbUrl>
+                    <carreurl>http://f.visuels.poliris.com/carre/f/f/7/b/ff7bc9e6-2972.jpg</carreurl>
+                    <bigUrl>http://f.visuels.poliris.com/bigs/f/f/7/b/ff7bc9e6-2972.jpg</bigUrl>
+                    <stdUrl>http://f.visuels.poliris.com/2d/f/f/7/b/ff7bc9e6-2972.jpg</stdUrl>
+                    <c175url>http://f.visuels.poliris.com/c175/f/f/7/b/ff7bc9e6-2972.jpg</c175url>
+                    <stdwidth>300</stdwidth>
+                    <stdheight>400</stdheight>
+                    <thumbwidth>75</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth>600</bigwidth>
+                    <bigheight>800</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>4</ordre>
+                    <thbUrl>http://5.visuels.poliris.com/thumbnails/5/a/4/5/5a450b38-2dca.jpg</thbUrl>
+                    <carreurl>http://5.visuels.poliris.com/carre/5/a/4/5/5a450b38-2dca.jpg</carreurl>
+                    <bigUrl>http://5.visuels.poliris.com/bigs/5/a/4/5/5a450b38-2dca.jpg</bigUrl>
+                    <stdUrl>http://5.visuels.poliris.com/2d/5/a/4/5/5a450b38-2dca.jpg</stdUrl>
+                    <c175url>http://5.visuels.poliris.com/c175/5/a/4/5/5a450b38-2dca.jpg</c175url>
+                    <stdwidth>300</stdwidth>
+                    <stdheight>400</stdheight>
+                    <thumbwidth>75</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth>600</bigwidth>
+                    <bigheight>800</bigheight>
+                </photo>
+            </photos>
+            <nbsallesdebain>1</nbsallesdebain>
+            <nbsalleseau />
+            <nbtoilettes>1</nbtoilettes>
+            <sisejour>True</sisejour>
+            <surfsejour />
+            <anneeconstruct />
+            <nbparkings />
+            <nbboxes />
+            <siterrasse>False</siterrasse>
+            <nbterrasses />
+            <sipiscine>False</sipiscine>
+        </annonce>
+        <annonce>
+            <idTiers>49644</idTiers>
+            <idAnnonce>76034315</idAnnonce>
+            <idPublication>1093</idPublication>
+            <idTypeTransaction>1</idTypeTransaction>
+            <idTypeBien>1</idTypeBien>
+            <dtFraicheur>2013-03-29T14:01:00</dtFraicheur>
+            <dtCreation>2013-03-04T12:26:00</dtCreation>
+            <titre>Appartement 3 pièces</titre>
+            <libelle>3 pièces</libelle>
+            <descriptif>13 AVENUE PHILIPPE AUGUSTE, dans un immeuble pierre de taille, à 100 mètre de la place de la NATION, appartement offrant une entrée, séjour, cuisine ouverte deux chambres en enfilade, salle de bains avec WC, chauffage individuel au gaz,.</descriptif>
+            <prix>1620</prix>
+            <prixUnite>€cc*</prixUnite>
+            <prixMention>* Loyer mensuel charges comprises</prixMention>
+            <nbPiece>3</nbPiece>
+            <nbChambre>2</nbChambre>
+            <surface>62</surface>
+            <surfaceUnite>m²</surfaceUnite>
+            <idPays>250</idPays>
+            <pays>France</pays>
+            <cp>75011</cp>
+            <codeInsee>750111</codeInsee>
+            <ville>Paris 11ème</ville>
+            <nbPhotos>1</nbPhotos>
+            <firstThumb>http://b.visuels.poliris.com/carre/b/5/8/8/b588ab8c-716b.jpg</firstThumb>
+            <permaLien>http://www.seloger.com/annonces/locations/appartement/paris-11eme-75/76034315.htm?p=CBBPqSgYAAMqAERQ</permaLien>
+            <latitude>48.859266</latitude>
+            <longitude>2.379445</longitude>
+            <llPrecision>vil</llPrecision>
+            <typeDPE>hab</typeDPE>
+            <siLotNeuf>false</siLotNeuf>
+            <siMandatExclusif> false</siMandatExclusif>
+            <siMandatStar> false</siMandatStar>
+            <contact>
+                <siAudiotel>false</siAudiotel>
+                <idPublication>1093</idPublication>
+                <nom>GERANCE IMMOBILIERE 94</nom>
+                <rcsSiren>439645714</rcsSiren>
+                <rcsNic>00023</rcsNic>
+            </contact>
+            <photos>
+                <photo>
+                    <titre />
+                    <ordre>0</ordre>
+                    <thbUrl>http://b.visuels.poliris.com/thumbnails/b/5/8/8/b588ab8c-716b.jpg</thbUrl>
+                    <carreurl>http://b.visuels.poliris.com/carre/b/5/8/8/b588ab8c-716b.jpg</carreurl>
+                    <bigUrl>http://b.visuels.poliris.com/bigs/b/5/8/8/b588ab8c-716b.jpg</bigUrl>
+                    <stdUrl>http://b.visuels.poliris.com/2d/b/5/8/8/b588ab8c-716b.jpg</stdUrl>
+                    <c175url>http://b.visuels.poliris.com/c175/b/5/8/8/b588ab8c-716b.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>267</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>67</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>533</bigheight>
+                </photo>
+            </photos>
+            <nbsallesdebain>1</nbsallesdebain>
+            <nbsalleseau />
+            <nbtoilettes>1</nbtoilettes>
+            <sisejour>True</sisejour>
+            <surfsejour />
+            <anneeconstruct />
+            <nbparkings />
+            <nbboxes />
+            <siterrasse>False</siterrasse>
+            <nbterrasses />
+            <sipiscine>False</sipiscine>
+        </annonce>
+        <annonce>
+            <idTiers>2362</idTiers>
+            <idAnnonce>75777563</idAnnonce>
+            <idPublication>1149</idPublication>
+            <idTypeTransaction>1</idTypeTransaction>
+            <idTypeBien>1</idTypeBien>
+            <dtFraicheur>2013-03-29T14:27:00</dtFraicheur>
+            <dtCreation>2013-02-22T09:33:00</dtCreation>
+            <titre>Appartement 3 pièces</titre>
+            <libelle>Appartement 3 pièces</libelle>
+            <proximite>Métro alexandre dumas</proximite>
+            <descriptif>Au 6ème étage (sans ascenseur) - appartement meublé 59m² bon état, comprenant: entrée, cuisine, séjour, deux chambres, salle d&#39;eau, WC - deux cheminées - eau chaude et chauffage individuels électriques.
+                Loyer: 1660 euros Charges: 140 euros
+                Revenus mensuels exigés: 5145 euros ou étudiants avec garants.</descriptif>
+            <prix>1800</prix>
+            <prixUnite>€cc*</prixUnite>
+            <prixMention>* Loyer mensuel charges comprises</prixMention>
+            <nbPiece>3</nbPiece>
+            <nbChambre>2</nbChambre>
+            <surface>58.93</surface>
+            <surfaceUnite>m²</surfaceUnite>
+            <idPays>250</idPays>
+            <pays>France</pays>
+            <cp>75011</cp>
+            <codeInsee>750111</codeInsee>
+            <ville>Paris 11ème</ville>
+            <nbPhotos>0</nbPhotos>
+            <permaLien>http://www.seloger.com/annonces/locations/appartement/paris-11eme-75/nation-alexandre-dumas/75777563.htm?p=CBBPqSgYAAOEAEfQ</permaLien>
+            <latitude>48.852086</latitude>
+            <longitude>2.390963</longitude>
+            <llPrecision>qrt</llPrecision>
+            <typeDPE>hab</typeDPE>
+            <consoEnergie>169</consoEnergie>
+            <bilanConsoEnergie>D</bilanConsoEnergie>
+            <emissionGES>19</emissionGES>
+            <bilanEmissionGES>C</bilanEmissionGES>
+            <siLotNeuf>false</siLotNeuf>
+            <siMandatExclusif> false</siMandatExclusif>
+            <siMandatStar> false</siMandatStar>
+            <contact>
+                <siAudiotel>false</siAudiotel>
+                <idPublication>1149</idPublication>
+                <nom>GPTI SABIM</nom>
+                <rcsSiren>334886876</rcsSiren>
+            </contact>
+            <photos>
+            </photos>
+            <nbsallesdebain />
+            <nbsalleseau>1</nbsalleseau>
+            <nbtoilettes>1</nbtoilettes>
+            <sisejour>True</sisejour>
+            <surfsejour />
+            <anneeconstruct />
+            <nbparkings />
+            <nbboxes />
+            <siterrasse>False</siterrasse>
+            <nbterrasses />
+            <sipiscine>False</sipiscine>
+        </annonce>
+        <annonce>
+            <idTiers>114378</idTiers>
+            <idAnnonce>75734255</idAnnonce>
+            <idPublication>1727</idPublication>
+            <idTypeTransaction>1</idTypeTransaction>
+            <idTypeBien>1</idTypeBien>
+            <dtFraicheur>2013-03-31T00:35:00</dtFraicheur>
+            <dtCreation>2013-02-21T00:40:00</dtCreation>
+            <titre>Appartement 3 pièces</titre>
+            <libelle>Appartement Type 3</libelle>
+            <descriptif>A deux pas de la place de la Nation, avenue Philippe Auguste, dans immeuble ancien, 3 pièces sur cour de 57 m², comprenant: Une entrée, un séjour, une cuisine aménagée, une salle de bains avec WC, une petite chambre, une grande chambre avec placard - très calme sur cour - chauffage individuel gaz - contact.</descriptif>
+            <prix>1400</prix>
+            <prixUnite>€cc*</prixUnite>
+            <prixMention>* Loyer mensuel charges comprises</prixMention>
+            <nbPiece>3</nbPiece>
+            <nbChambre>2</nbChambre>
+            <surface>55.38</surface>
+            <surfaceUnite>m²</surfaceUnite>
+            <idPays>250</idPays>
+            <pays>France</pays>
+            <cp>75011</cp>
+            <codeInsee>750111</codeInsee>
+            <ville>Paris 11ème</ville>
+            <nbPhotos>9</nbPhotos>
+            <firstThumb>http://7.visuels.poliris.com/carre/7/a/a/0/7aa02db9-30ab.jpg</firstThumb>
+            <permaLien>http://www.seloger.com/annonces/locations/appartement/paris-11eme-75/nation-alexandre-dumas/75734255.htm?p=CBBPqSgYAAK8AGvw</permaLien>
+            <latitude>48.852086</latitude>
+            <longitude>2.390963</longitude>
+            <llPrecision>qrt</llPrecision>
+            <typeDPE>hab</typeDPE>
+            <consoEnergie>230</consoEnergie>
+            <bilanConsoEnergie>D</bilanConsoEnergie>
+            <emissionGES>53</emissionGES>
+            <bilanEmissionGES>E</bilanEmissionGES>
+            <siLotNeuf>false</siLotNeuf>
+            <siMandatExclusif> false</siMandatExclusif>
+            <siMandatStar> false</siMandatStar>
+            <contact>
+                <siAudiotel>false</siAudiotel>
+                <idPublication>1727</idPublication>
+                <nom>Nexity Paris Nation</nom>
+                <rcsSiren>692037674</rcsSiren>
+                <rcsNic>00045</rcsNic>
+            </contact>
+            <photos>
+                <photo>
+                    <titre />
+                    <ordre>0</ordre>
+                    <thbUrl>http://7.visuels.poliris.com/thumbnails/7/a/a/0/7aa02db9-30ab.jpg</thbUrl>
+                    <carreurl>http://7.visuels.poliris.com/carre/7/a/a/0/7aa02db9-30ab.jpg</carreurl>
+                    <bigUrl />
+                    <stdUrl>http://7.visuels.poliris.com/2d/7/a/a/0/7aa02db9-30ab.jpg</stdUrl>
+                    <c175url>http://7.visuels.poliris.com/c175/7/a/a/0/7aa02db9-30ab.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth />
+                    <bigheight />
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>1</ordre>
+                    <thbUrl>http://6.visuels.poliris.com/thumbnails/6/e/3/6/6e363d06-40fc.jpg</thbUrl>
+                    <carreurl>http://6.visuels.poliris.com/carre/6/e/3/6/6e363d06-40fc.jpg</carreurl>
+                    <bigUrl />
+                    <stdUrl>http://6.visuels.poliris.com/2d/6/e/3/6/6e363d06-40fc.jpg</stdUrl>
+                    <c175url>http://6.visuels.poliris.com/c175/6/e/3/6/6e363d06-40fc.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth />
+                    <bigheight />
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>2</ordre>
+                    <thbUrl>http://2.visuels.poliris.com/thumbnails/2/a/e/0/2ae06845-2aae.jpg</thbUrl>
+                    <carreurl>http://2.visuels.poliris.com/carre/2/a/e/0/2ae06845-2aae.jpg</carreurl>
+                    <bigUrl />
+                    <stdUrl>http://2.visuels.poliris.com/2d/2/a/e/0/2ae06845-2aae.jpg</stdUrl>
+                    <c175url>http://2.visuels.poliris.com/c175/2/a/e/0/2ae06845-2aae.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth />
+                    <bigheight />
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>3</ordre>
+                    <thbUrl>http://5.visuels.poliris.com/thumbnails/5/8/9/c/589cbd87-2767.jpg</thbUrl>
+                    <carreurl>http://5.visuels.poliris.com/carre/5/8/9/c/589cbd87-2767.jpg</carreurl>
+                    <bigUrl />
+                    <stdUrl>http://5.visuels.poliris.com/2d/5/8/9/c/589cbd87-2767.jpg</stdUrl>
+                    <c175url>http://5.visuels.poliris.com/c175/5/8/9/c/589cbd87-2767.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth />
+                    <bigheight />
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>4</ordre>
+                    <thbUrl>http://2.visuels.poliris.com/thumbnails/2/a/b/e/2abec789-31d9.jpg</thbUrl>
+                    <carreurl>http://2.visuels.poliris.com/carre/2/a/b/e/2abec789-31d9.jpg</carreurl>
+                    <bigUrl />
+                    <stdUrl>http://2.visuels.poliris.com/2d/2/a/b/e/2abec789-31d9.jpg</stdUrl>
+                    <c175url>http://2.visuels.poliris.com/c175/2/a/b/e/2abec789-31d9.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth />
+                    <bigheight />
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>5</ordre>
+                    <thbUrl>http://b.visuels.poliris.com/thumbnails/b/0/c/f/b0cf6432-39c4.jpg</thbUrl>
+                    <carreurl>http://b.visuels.poliris.com/carre/b/0/c/f/b0cf6432-39c4.jpg</carreurl>
+                    <bigUrl />
+                    <stdUrl>http://b.visuels.poliris.com/2d/b/0/c/f/b0cf6432-39c4.jpg</stdUrl>
+                    <c175url>http://b.visuels.poliris.com/c175/b/0/c/f/b0cf6432-39c4.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth />
+                    <bigheight />
+                </photo>
+            </photos>
+            <nbsallesdebain>1</nbsallesdebain>
+            <nbsalleseau>0</nbsalleseau>
+            <nbtoilettes>1</nbtoilettes>
+            <sisejour>True</sisejour>
+            <surfsejour />
+            <anneeconstruct />
+            <nbparkings>0</nbparkings>
+            <nbboxes />
+            <siterrasse>False</siterrasse>
+            <nbterrasses />
+            <sipiscine>False</sipiscine>
+        </annonce>
+        <annonce>
+            <idTiers>61588</idTiers>
+            <idAnnonce>75649091</idAnnonce>
+            <idPublication>355747</idPublication>
+            <idTypeTransaction>1</idTypeTransaction>
+            <idTypeBien>1</idTypeBien>
+            <dtFraicheur>2013-03-28T13:03:00</dtFraicheur>
+            <dtCreation>2013-02-19T16:47:00</dtCreation>
+            <titre>Appartement 3 pièces</titre>
+            <libelle>3 pièces 68m² Ledru Rollin</libelle>
+            <proximite>Passage Rauch</proximite>
+            <descriptif>A deux pas de la Bastille dans un passage au calme absolu plein sud ce charmant 3 pièces de 68m². Situé au premier étage surélevé avec ascenseur dans un immeuble ancien de très grand standing refait à neuf enitèrement 3.20 M Hauteur sous plafond il est composé d&#39;une grande réception, une petite chambre/bureau, une salle de douche avec WC attenant, une cuisine semi-ouverte aménagée, une grande chambre. Chauffage individuel électrique digicode gardienne libre de suite A visiter.</descriptif>
+            <prix>1820</prix>
+            <prixUnite>€+ch</prixUnite>
+            <prixMention />
+            <nbPiece>3</nbPiece>
+            <nbChambre>2</nbChambre>
+            <surface>68</surface>
+            <surfaceUnite>m²</surfaceUnite>
+            <idPays>250</idPays>
+            <pays>France</pays>
+            <cp>75011</cp>
+            <codeInsee>750111</codeInsee>
+            <ville>Paris 11ème</ville>
+            <nbPhotos>5</nbPhotos>
+            <firstThumb>http://c.visuels.poliris.com/carre/c/f/d/4/cfd4d75d-31bc.jpg</firstThumb>
+            <permaLien>http://www.seloger.com/annonces/locations/appartement/paris-11eme-75/75649091.htm?p=CBBPqSgYAAOOVtow</permaLien>
+            <latitude>48.859266</latitude>
+            <longitude>2.379445</longitude>
+            <llPrecision>vil</llPrecision>
+            <typeDPE>hab</typeDPE>
+            <siLotNeuf>false</siLotNeuf>
+            <siMandatExclusif> false</siMandatExclusif>
+            <siMandatStar> false</siMandatStar>
+            <contact>
+                <siAudiotel>false</siAudiotel>
+                <idPublication>355747</idPublication>
+                <nom>SURFACE IMMO</nom>
+                <rcsSiren>497775247</rcsSiren>
+                <rcsNic>00016</rcsNic>
+            </contact>
+            <photos>
+                <photo>
+                    <titre />
+                    <ordre>0</ordre>
+                    <thbUrl>http://c.visuels.poliris.com/thumbnails/c/f/d/4/cfd4d75d-31bc.jpg</thbUrl>
+                    <carreurl>http://c.visuels.poliris.com/carre/c/f/d/4/cfd4d75d-31bc.jpg</carreurl>
+                    <bigUrl>http://c.visuels.poliris.com/bigs/c/f/d/4/cfd4d75d-31bc.jpg</bigUrl>
+                    <stdUrl>http://c.visuels.poliris.com/2d/c/f/d/4/cfd4d75d-31bc.jpg</stdUrl>
+                    <c175url>http://c.visuels.poliris.com/c175/c/f/d/4/cfd4d75d-31bc.jpg</c175url>
+                    <stdwidth>300</stdwidth>
+                    <stdheight>400</stdheight>
+                    <thumbwidth>75</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth>600</bigwidth>
+                    <bigheight>800</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>1</ordre>
+                    <thbUrl>http://a.visuels.poliris.com/thumbnails/a/8/3/d/a83d1bd2-2794.jpg</thbUrl>
+                    <carreurl>http://a.visuels.poliris.com/carre/a/8/3/d/a83d1bd2-2794.jpg</carreurl>
+                    <bigUrl>http://a.visuels.poliris.com/bigs/a/8/3/d/a83d1bd2-2794.jpg</bigUrl>
+                    <stdUrl>http://a.visuels.poliris.com/2d/a/8/3/d/a83d1bd2-2794.jpg</stdUrl>
+                    <c175url>http://a.visuels.poliris.com/c175/a/8/3/d/a83d1bd2-2794.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>600</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>2</ordre>
+                    <thbUrl>http://d.visuels.poliris.com/thumbnails/d/2/6/0/d26000b2-361a.jpg</thbUrl>
+                    <carreurl>http://d.visuels.poliris.com/carre/d/2/6/0/d26000b2-361a.jpg</carreurl>
+                    <bigUrl>http://d.visuels.poliris.com/bigs/d/2/6/0/d26000b2-361a.jpg</bigUrl>
+                    <stdUrl>http://d.visuels.poliris.com/2d/d/2/6/0/d26000b2-361a.jpg</stdUrl>
+                    <c175url>http://d.visuels.poliris.com/c175/d/2/6/0/d26000b2-361a.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>600</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>3</ordre>
+                    <thbUrl>http://0.visuels.poliris.com/thumbnails/0/3/c/0/03c0a937-403a.jpg</thbUrl>
+                    <carreurl>http://0.visuels.poliris.com/carre/0/3/c/0/03c0a937-403a.jpg</carreurl>
+                    <bigUrl>http://0.visuels.poliris.com/bigs/0/3/c/0/03c0a937-403a.jpg</bigUrl>
+                    <stdUrl>http://0.visuels.poliris.com/2d/0/3/c/0/03c0a937-403a.jpg</stdUrl>
+                    <c175url>http://0.visuels.poliris.com/c175/0/3/c/0/03c0a937-403a.jpg</c175url>
+                    <stdwidth>300</stdwidth>
+                    <stdheight>400</stdheight>
+                    <thumbwidth>75</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth>600</bigwidth>
+                    <bigheight>800</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>4</ordre>
+                    <thbUrl>http://1.visuels.poliris.com/thumbnails/1/6/d/5/16d5aed2-27bf.jpg</thbUrl>
+                    <carreurl>http://1.visuels.poliris.com/carre/1/6/d/5/16d5aed2-27bf.jpg</carreurl>
+                    <bigUrl>http://1.visuels.poliris.com/bigs/1/6/d/5/16d5aed2-27bf.jpg</bigUrl>
+                    <stdUrl>http://1.visuels.poliris.com/2d/1/6/d/5/16d5aed2-27bf.jpg</stdUrl>
+                    <c175url>http://1.visuels.poliris.com/c175/1/6/d/5/16d5aed2-27bf.jpg</c175url>
+                    <stdwidth>300</stdwidth>
+                    <stdheight>400</stdheight>
+                    <thumbwidth>75</thumbwidth>
+                    <thumbheight>100</thumbheight>
+                    <bigwidth>600</bigwidth>
+                    <bigheight>800</bigheight>
+                </photo>
+            </photos>
+            <nbsallesdebain />
+            <nbsalleseau />
+            <nbtoilettes>1</nbtoilettes>
+            <sisejour />
+            <surfsejour />
+            <anneeconstruct />
+            <nbparkings />
+            <nbboxes />
+            <siterrasse>False</siterrasse>
+            <nbterrasses />
+            <sipiscine>False</sipiscine>
+        </annonce>
+        <annonce>
+            <idTiers>4140</idTiers>
+            <idAnnonce>75196457</idAnnonce>
+            <idPublication>2121</idPublication>
+            <idTypeTransaction>1</idTypeTransaction>
+            <idTypeBien>1</idTypeBien>
+            <dtFraicheur>2013-03-25T17:16:00</dtFraicheur>
+            <dtCreation>2013-02-04T10:16:00</dtCreation>
+            <titre>Appartement 3 pièces</titre>
+            <libelle>Appartement 2 Chambres</libelle>
+            <proximite>Boulets - montreuil</proximite>
+            <descriptif>Paris 11ème - métro rue des boulets - quartier nation - rue alexandre dumas - proche des transports et des commerces - dans très bel immeuble ancien pierre de taille - bel appartement en très bon état - placards -.</descriptif>
+            <prix>1730</prix>
+            <prixUnite>€cc*</prixUnite>
+            <prixMention>* Loyer mensuel charges comprises</prixMention>
+            <nbPiece>3</nbPiece>
+            <nbChambre>2</nbChambre>
+            <surface>70</surface>
+            <surfaceUnite>m²</surfaceUnite>
+            <idPays>250</idPays>
+            <pays>France</pays>
+            <cp>75011</cp>
+            <codeInsee>750111</codeInsee>
+            <ville>Paris 11ème</ville>
+            <nbPhotos>5</nbPhotos>
+            <firstThumb>http://8.visuels.poliris.com/carre/8/3/6/6/83669dff-589c.jpg</firstThumb>
+            <permaLien>http://www.seloger.com/annonces/locations/appartement/paris-11eme-75/nation-alexandre-dumas/75196457.htm?p=CBBPqSgYAANhAISQ</permaLien>
+            <latitude>48.852086</latitude>
+            <longitude>2.390963</longitude>
+            <llPrecision>qrt</llPrecision>
+            <typeDPE>hab</typeDPE>
+            <consoEnergie>454</consoEnergie>
+            <bilanConsoEnergie>G</bilanConsoEnergie>
+            <emissionGES>57</emissionGES>
+            <bilanEmissionGES>F</bilanEmissionGES>
+            <siLotNeuf>false</siLotNeuf>
+            <siMandatExclusif> True</siMandatExclusif>
+            <siMandatStar> false</siMandatStar>
+            <contact>
+                <siAudiotel>false</siAudiotel>
+                <idPublication>2121</idPublication>
+                <nom>SERVICE IMMOBILIER PARISIEN</nom>
+                <rcsSiren>732059043</rcsSiren>
+                <rcsNic>00040</rcsNic>
+            </contact>
+            <photos>
+                <photo>
+                    <titre />
+                    <ordre>0</ordre>
+                    <thbUrl>http://8.visuels.poliris.com/thumbnails/8/3/6/6/83669dff-589c.jpg</thbUrl>
+                    <carreurl>http://8.visuels.poliris.com/carre/8/3/6/6/83669dff-589c.jpg</carreurl>
+                    <bigUrl>http://8.visuels.poliris.com/bigs/8/3/6/6/83669dff-589c.jpg</bigUrl>
+                    <stdUrl>http://8.visuels.poliris.com/2d/8/3/6/6/83669dff-589c.jpg</stdUrl>
+                    <c175url>http://8.visuels.poliris.com/c175/8/3/6/6/83669dff-589c.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>600</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>1</ordre>
+                    <thbUrl>http://5.visuels.poliris.com/thumbnails/5/8/7/d/587dbb97-274f.jpg</thbUrl>
+                    <carreurl>http://5.visuels.poliris.com/carre/5/8/7/d/587dbb97-274f.jpg</carreurl>
+                    <bigUrl>http://5.visuels.poliris.com/bigs/5/8/7/d/587dbb97-274f.jpg</bigUrl>
+                    <stdUrl>http://5.visuels.poliris.com/2d/5/8/7/d/587dbb97-274f.jpg</stdUrl>
+                    <c175url>http://5.visuels.poliris.com/c175/5/8/7/d/587dbb97-274f.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>600</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>2</ordre>
+                    <thbUrl>http://4.visuels.poliris.com/thumbnails/4/4/7/3/44733b0f-240d.jpg</thbUrl>
+                    <carreurl>http://4.visuels.poliris.com/carre/4/4/7/3/44733b0f-240d.jpg</carreurl>
+                    <bigUrl>http://4.visuels.poliris.com/bigs/4/4/7/3/44733b0f-240d.jpg</bigUrl>
+                    <stdUrl>http://4.visuels.poliris.com/2d/4/4/7/3/44733b0f-240d.jpg</stdUrl>
+                    <c175url>http://4.visuels.poliris.com/c175/4/4/7/3/44733b0f-240d.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>600</bigheight>
+                </photo>
+                <photo>
+                    <titre />
+                    <ordre>3</ordre>
+                    <thbUrl>http://f.visuels.poliris.com/thumbnails/f/6/1/e/f61e5c78-32f1.jpg</thbUrl>
+                    <carreurl>http://f.visuels.poliris.com/carre/f/6/1/e/f61e5c78-32f1.jpg</carreurl>
+                    <bigUrl>http://f.visuels.poliris.com/bigs/f/6/1/e/f61e5c78-32f1.jpg</bigUrl>
+                    <stdUrl>http://f.visuels.poliris.com/2d/f/6/1/e/f61e5c78-32f1.jpg</stdUrl>
+                    <c175url>http://f.visuels.poliris.com/c175/f/6/1/e/f61e5c78-32f1.jpg</c175url>
+                    <stdwidth>400</stdwidth>
+                    <stdheight>300</stdheight>
+                    <thumbwidth>100</thumbwidth>
+                    <thumbheight>75</thumbheight>
+                    <bigwidth>800</bigwidth>
+                    <bigheight>600</bigheight>
+                </photo>
+            </photos>
+            <nbsallesdebain>1</nbsallesdebain>
+            <nbsalleseau>0</nbsalleseau>
+            <nbtoilettes>1</nbtoilettes>
+            <sisejour>False</sisejour>
+            <surfsejour />
+            <anneeconstruct />
+            <nbparkings>0</nbparkings>
+            <nbboxes>0</nbboxes>
+            <siterrasse>False</siterrasse>
+            <nbterrasses />
+            <sipiscine>False</sipiscine>
+        </annonce>
+    </annonces>
+</recherche>
+<!-- ID3x v4.60 (491.9) - X19 - 00.423.410 - base - 4/1/2013 9:46:17 PM - search.xml -->

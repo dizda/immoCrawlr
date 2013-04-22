@@ -1,0 +1,190 @@
+<classifieds>
+    <classified>
+        <id>27049784-1</id>
+        <partnerId>I2SN/8437292</partnerId>
+        <customerId>139441</customerId>
+        <creationDate>23/03/2013</creationDate>
+        <modificationDate>28/03/2013</modificationDate>
+        <photo hasThumb="false" order="1" url="http://iphoneimages.explorimmo.com/img/l/0/external/http%3A%2F%2Fphoto3.pericles.fr%2Fphoto_get.php%3FS1%3D1317%26S2%3D01%26I0%3D8437292%26lettre%3Da%26format%3D1" />
+        <photoCount>4</photoCount>
+        <localisation>Paris 11ème (75)</localisation>
+        <goodType>Appartement</goodType>
+        <nbRooms>3</nbRooms>
+        <surface>66.0</surface>
+        <surfaceCertification>false</surfaceCertification>
+        <surfaceUnit>M2</surfaceUnit>
+        <amount>1760.0</amount>
+        <chargesIncluded>true</chargesIncluded>
+        <rcs>B420.467.342</rcs>
+        <corporateName>N  B INTERMEDIAIRES</corporateName>
+    </classified>
+    <classified>
+        <id>27081693-1</id>
+        <partnerId>I2SN/8446683</partnerId>
+        <customerId>3011190</customerId>
+        <creationDate>27/03/2013</creationDate>
+        <modificationDate>27/03/2013</modificationDate>
+        <photo hasThumb="false" order="1" url="http://iphoneimages.explorimmo.com/img/l/0/external/http%3A%2F%2Fphoto1.pericles.fr%2Fphoto_get.php%3FS1%3D9925%26S2%3D01%26I0%3D8446683%26lettre%3Da%26format%3D1" />
+        <photoCount>1</photoCount>
+        <localisation>Paris 11ème (75)</localisation>
+        <goodType>Appartement</goodType>
+        <nbRooms>4</nbRooms>
+        <surface>76.0</surface>
+        <surfaceCertification>false</surfaceCertification>
+        <surfaceUnit>M2</surfaceUnit>
+        <amount>1700.0</amount>
+        <chargesIncluded>true</chargesIncluded>
+        <rcs>529196412</rcs>
+        <corporateName>IMMO DE FRANCE ILE DE FRANCE</corporateName>
+    </classified>
+    <classified>
+        <id>27055708-1</id>
+        <partnerId>PRP/75.ORJW-8519754</partnerId>
+        <customerId>436841</customerId>
+        <creationDate>23/03/2013</creationDate>
+        <modificationDate>23/03/2013</modificationDate>
+        <photo hasThumb="false" order="1" url="http://iphoneimages.explorimmo.com/img/l/0/external/http%3A%2F%2Fimages.pro-a-part.com%2Fimg%2Fannonces%2F8%2F5%2Flarge%2F8519754_246264428_large.jpg" />
+        <photoCount>5</photoCount>
+        <localisation>Paris 11ème (75)</localisation>
+        <goodType>Appartement</goodType>
+        <nbRooms>3</nbRooms>
+        <surface>63.0</surface>
+        <surfaceCertification>false</surfaceCertification>
+        <surfaceUnit>M2</surfaceUnit>
+        <amount>1790.0</amount>
+        <chargesIncluded>true</chargesIncluded>
+        <rcs>349797225</rcs>
+        <corporateName>ORPI - BENY IMMOBILIER</corporateName>
+    </classified>
+    <classified>
+        <id>27026728-1</id>
+        <partnerId>PRP/6939791-8497273</partnerId>
+        <customerId>6939791</customerId>
+        <creationDate>20/03/2013</creationDate>
+        <modificationDate>20/03/2013</modificationDate>
+        <photo hasThumb="false" order="1" url="http://iphoneimages.explorimmo.com/img/l/0/external/http%3A%2F%2Fimages.pro-a-part.com%2Fimg%2Fannonces%2F8%2F4%2Flarge%2F8497273_245231491_large.jpg" />
+        <photoCount>3</photoCount>
+        <localisation>Paris 11ème (75)</localisation>
+        <goodType>Appartement</goodType>
+        <nbRooms>3</nbRooms>
+        <surface>56.0</surface>
+        <surfaceCertification>false</surfaceCertification>
+        <surfaceUnit>M2</surfaceUnit>
+        <amount>1425.0</amount>
+        <chargesIncluded>true</chargesIncluded>
+        <rcs>330621327</rcs>
+        <corporateName>ORALLIA GARRAUD MAILLET</corporateName>
+    </classified>
+    <classified>
+        <id>127990</id>
+        <partnerId>IMBX/127990</partnerId>
+        <customerId>4841685</customerId>
+        <creationDate>20/02/2013</creationDate>
+        <modificationDate>11/03/2013</modificationDate>
+        <photoCount>0</photoCount>
+        <localisation>Paris 11ème (75)</localisation>
+        <goodType>Appartement</goodType>
+        <nbRooms>3</nbRooms>
+        <surface>62.0</surface>
+        <surfaceCertification>true</surfaceCertification>
+        <surfaceUnit>M2</surfaceUnit>
+        <amount>1750.0</amount>
+        <chargesIncluded>true</chargesIncluded>
+        <rcs>40363119500019</rcs>
+        <corporateName>CABINET STEIN</corporateName>
+    </classified>
+    <classified>
+        <id>129948</id>
+        <partnerId>IMBX/129948</partnerId>
+        <customerId>6957478</customerId>
+        <creationDate>25/02/2013</creationDate>
+        <modificationDate>25/02/2013</modificationDate>
+        <photoCount>0</photoCount>
+        <localisation>Paris 11ème (75)</localisation>
+        <goodType>Appartement</goodType>
+        <nbRooms>3</nbRooms>
+        <surface>52.0</surface>
+        <surfaceCertification>true</surfaceCertification>
+        <surfaceUnit>M2</surfaceUnit>
+        <amount>1370.0</amount>
+        <chargesIncluded>true</chargesIncluded>
+        <rcs>30247362400039</rcs>
+        <corporateName>IMMOBILIERE SENECHAL</corporateName>
+    </classified>
+    <classified>
+        <id>26754940-1</id>
+        <partnerId>I2SN/8332418</partnerId>
+        <customerId>2654205</customerId>
+        <creationDate>19/02/2013</creationDate>
+        <modificationDate>19/02/2013</modificationDate>
+        <photo hasThumb="false" order="1" url="http://iphoneimages.explorimmo.com/img/l/0/external/http%3A%2F%2Fphoto3.pericles.fr%2Fphoto_get.php%3FS1%3D0141%26S2%3D02%26I0%3D8332418%26lettre%3Da%26format%3D1" />
+        <photoCount>2</photoCount>
+        <localisation>Paris 11ème (75)</localisation>
+        <goodType>Appartement</goodType>
+        <nbRooms>3</nbRooms>
+        <surface>52.0</surface>
+        <surfaceCertification>false</surfaceCertification>
+        <surfaceUnit>M2</surfaceUnit>
+        <amount>1800.0</amount>
+        <chargesIncluded>true</chargesIncluded>
+        <rcs>403088461</rcs>
+        <corporateName>AGENCE SAINT-HONORE</corporateName>
+    </classified>
+    <classified>
+        <id>25515456-1</id>
+        <partnerId>90/REC2994</partnerId>
+        <customerId>339613</customerId>
+        <creationDate>11/09/2012</creationDate>
+        <modificationDate>18/02/2013</modificationDate>
+        <photo hasThumb="false" order="1" url="http://iphoneimages.explorimmo.com/img/l/0/external/http%3A%2F%2Fmgc-connecting.customers.artful.net%2Fimg%2Fancien%2F339613%2F2994.jpg" />
+        <photoCount>6</photoCount>
+        <localisation>Paris 11ème (75)</localisation>
+        <goodType>Appartement</goodType>
+        <nbRooms>3</nbRooms>
+        <surface>54.0</surface>
+        <surfaceCertification>false</surfaceCertification>
+        <surfaceUnit>M2</surfaceUnit>
+        <amount>1800.0</amount>
+        <chargesIncluded>true</chargesIncluded>
+        <rcs>415010081</rcs>
+        <corporateName>RECHERCHE IMMOBILIERE</corporateName>
+    </classified>
+    <classified>
+        <id>26567259-1</id>
+        <partnerId>90/CP983</partnerId>
+        <customerId>249665</customerId>
+        <creationDate>26/01/2013</creationDate>
+        <modificationDate>26/01/2013</modificationDate>
+        <photo hasThumb="false" order="1" url="http://iphoneimages.explorimmo.com/img/l/0/external/http%3A%2F%2Fmgc-connecting.customers.artful.net%2Fimg%2Fancien%2F249665%2FCP2501.jpg" />
+        <photoCount>7</photoCount>
+        <localisation>Paris 3ème (75)</localisation>
+        <goodType>Appartement</goodType>
+        <nbRooms>3</nbRooms>
+        <surface>50.0</surface>
+        <surfaceCertification>false</surfaceCertification>
+        <surfaceUnit>M2</surfaceUnit>
+        <amount>1630.0</amount>
+        <chargesIncluded>true</chargesIncluded>
+        <rcs>PARIS B 325 964 369</rcs>
+        <corporateName>CABINET DE PARIS</corporateName>
+    </classified>
+    <classified>
+        <id>23552155-1</id>
+        <partnerId>90/3115559</partnerId>
+        <customerId>330321</customerId>
+        <creationDate>09/10/2011</creationDate>
+        <modificationDate>09/10/2011</modificationDate>
+        <photo hasThumb="false" order="1" url="http://iphoneimages.explorimmo.com/img/l/0/external/http%3A%2F%2Fmgc-connecting.customers.artful.net%2Fimg%2Fancien%2F330321%2FSrc6633607.jpg" />
+        <photoCount>10</photoCount>
+        <localisation>Paris 11ème (75)</localisation>
+        <goodType>Appartement</goodType>
+        <nbRooms>3</nbRooms>
+        <surface>50.0</surface>
+        <surfaceCertification>false</surfaceCertification>
+        <surfaceUnit>M2</surfaceUnit>
+        <amount>1490.0</amount>
+        <chargesIncluded>true</chargesIncluded>
+        <rcs>42393637600015</rcs>
+        <corporateName>LODGIS</corporateName>
+    </classified>
+</classifieds>

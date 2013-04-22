@@ -1,0 +1,31 @@
+{
+    "id": "194910439",
+    "produit": "location",
+    "date_publication": "Annonce mise \u00e0 jour le  28 mars 2013",
+    "titre": "1 204 \u20ac",
+    "soustitre": "Paris 11e",
+    "detail1": "Appartement, 50 m\u00b2",
+    "detail2": "2\u00a0pi\u00e8ces, 1\u00a0chambre",
+    "texte": "Proche Nation. 2 pi\u00e8ces 50\u00a0m\u00b2 avec parking sous-sol et cave. Calme et lumineux. 10e \u00e9tage avec ascenseur : s\u00e9jour, chambre, cuisine, salle de bains, wc s\u00e9par\u00e9s. Parquet refait neuf. R\u00e9sidence bien entretenue , gardien. 1.204\u00a0\u20ac\/mois + 160\u00a0\u20ac provision charges (frais de chauffage et eau chaude inclus). Dossier solide demand\u00e9. 06.30.26.29.49",
+    "telephones": ["06.30.26.29.49"],
+    "email": "1",
+    "metros": "Avron, RER A, Nation",
+    "nb_photos": "1",
+    "photo_urls": ["http:\/\/static.pap.fr\/photos\/949\/949AA439.jpg"],
+    "photo_thumbs": ["http:\/\/static.pap.fr\/photos\/949\/949AA439.thumb.jpg"],
+    "panier": "0",
+    "commentaire": "",
+    "rdv_date": "",
+    "rdv_adresse": "",
+    "geo_lat": "",
+    "geo_lng": "",
+    "geo_zoom": "",
+    "site_pap": "",
+    "site_perso": "",
+    "pub": {
+        "top": "http:\/\/realmedia.pap.fr\/2\/PAP_ANDROID\/details_locations\/463479713@Top?page=details_locations&typebien=appartement&departement=75&ville=paris-11e&prix=1204&surface=50&nb_pieces=2&options=ascenseur%2Cgarages-parkings%2Cvide%2Clongue-duree&plateforme=android",
+        "middle": "http:\/\/realmedia.pap.fr\/2\/PAP_ANDROID\/details_locations\/617905389@Middle?page=details_locations&typebien=appartement&departement=75&ville=paris-11e&prix=1204&surface=50&nb_pieces=2&options=ascenseur%2Cgarages-parkings%2Cvide%2Clongue-duree&plateforme=android",
+        "bottom": "http:\/\/realmedia.pap.fr\/2\/PAP_ANDROID\/details_locations\/564872799@Bottom?page=details_locations&typebien=appartement&departement=75&ville=paris-11e&prix=1204&surface=50&nb_pieces=2&options=ascenseur%2Cgarages-parkings%2Cvide%2Clongue-duree&plateforme=android"
+    },
+    "classe_energie": "E"
+}
