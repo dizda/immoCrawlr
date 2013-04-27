@@ -41,15 +41,17 @@
                                 <p class="description">{{ a.description }}</p>
 
                                 <p>
-                                    <div class="btn-group">
+                                    {#<div class="btn-group">
                                         <button class="btn"><i class="icon-user"></i> {{ a.contactPhone }}</button>
                                         {% if a.contactPhone2 %}
                                             <button class="btn"><i class="icon-user"></i> {{ a.contactPhone2 }}</button>
                                         {% endif %}
                                         <button class="btn"><i class="icon-envelope"></i> {{ a.contactEmail }}</button>
-                                    </div>
+                                    </div>#}
 
-                                    <i class="icon-camera"></i>{{ a.photos|length }}
+                                    <div class="pull-left">
+                                        <i class="icon-camera"></i>{{ a.photos|length }}
+                                    </div>
 
                                     <div class="btn-group pull-right" ade-rich='{"className":"input-xlarge","id":"{{ a.id }}"}' ng-model="notes">
                                         <a class="btn"><i class="icon-pencil"></i></a>
