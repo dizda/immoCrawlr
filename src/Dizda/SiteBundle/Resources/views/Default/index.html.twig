@@ -55,6 +55,12 @@
                                         <a class="btn"><i class="icon-pencil"></i></a>
                                         <button class="btn btn-warning" ng-class="starState" ng-click="favorite('{{ a.id }}')" ng-init="starState = '{% if app.user in a.favorites %}disabled{% endif %}'"><i class="icon-star"></i></button>
                                         <a href="http://blankreferrer.com/u/{{ a.permalink|replace({'http://':''}) }}" class="btn" target="_blank"><i class="icon-globe"></i> Visit {{ a.type }}</a>
+
+                                        <button class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="javascript://"><i class="icon-trash"></i> Hide</a></li>
+                                        </ul>
+
                                     </div>
 
                                 </p>

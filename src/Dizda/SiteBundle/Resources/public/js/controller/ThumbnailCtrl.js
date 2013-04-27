@@ -1,4 +1,4 @@
-var app = angular.module('indexApp', ['ADE']).
+var app = angular.module('indexApp', ['ADE', 'ngSanitize']).
     config(function($interpolateProvider) {
         $interpolateProvider.startSymbol('<[');
         $interpolateProvider.endSymbol('>');
@@ -18,6 +18,11 @@ app.controller('ThumbnailCtrl', function($scope, $http) {
      * @param id
      */
     $scope.viewed = function(id) {
+
+        // if is already readed we dont send additional http request
+        if ($scope.isReaded != 'unreaded') {
+            return;
+        }
 
         $http.get(Routing.generate('dizda_site_default_setviewed', {'id':id})).
         success(function(data) {
@@ -42,6 +47,24 @@ app.controller('ThumbnailCtrl', function($scope, $http) {
                 $scope.isReaded  = '';
                 $scope.starState = '';
             }
+
+        });
+
+    }
+
+    $scope.hidden = function(id) {
+
+        $http.get(Routing.generate('dizda_site_default_sethidden', {'id':id})).
+        success(function(data) {
+
+            /*if (data.favorite) {
+                $scope.isReaded  = 'favorite';
+                $scope.starState = 'disabled';
+            } else {
+                $scope.isReaded  = '';
+                $scope.starState = '';
+            }*/
+
 
         });
 
