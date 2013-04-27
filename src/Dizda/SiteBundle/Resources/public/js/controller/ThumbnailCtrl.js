@@ -15,16 +15,15 @@ app.controller('ThumbnailCtrl', function($scope, $http) {
 
     /**
      * AJAX set thumb viewed on click
-     * @param id
      */
-    $scope.viewed = function(id) {
+    $scope.viewed = function() {
 
         // if is already readed we dont send additional http request
         if ($scope.isReaded != 'unreaded') {
             return;
         }
 
-        $http.get(Routing.generate('dizda_site_default_setviewed', {'id':id})).
+        $http.get(Routing.generate('dizda_site_default_setviewed', {'id':$scope.id})).
         success(function(data) {
 
             if (data.success) {
@@ -35,9 +34,9 @@ app.controller('ThumbnailCtrl', function($scope, $http) {
 
     }
 
-    $scope.favorite = function(id) {
+    $scope.favorite = function() {
 
-        $http.get(Routing.generate('dizda_site_default_setfavorite', {'id':id})).
+        $http.get(Routing.generate('dizda_site_default_setfavorite', {'id':$scope.id})).
         success(function(data) {
 
             if (data.favorite) {
@@ -52,9 +51,9 @@ app.controller('ThumbnailCtrl', function($scope, $http) {
 
     }
 
-    $scope.hidden = function(id) {
+    $scope.hidden = function() {
 
-        $http.get(Routing.generate('dizda_site_default_sethidden', {'id':id})).
+        $http.get(Routing.generate('dizda_site_default_sethidden', {'id':$scope.id})).
         success(function(data) {
 
             /*if (data.favorite) {
