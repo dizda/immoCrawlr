@@ -23,6 +23,7 @@ class User extends BaseUser
      */
     protected $createdAt;
 
+
     public function __construct()
     {
         parent::__construct();

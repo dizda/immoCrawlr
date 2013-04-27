@@ -60,7 +60,7 @@ class DefaultController extends CoreController
      *
      * @return JsonResponse
      */
-    public function setViewed($id)
+    public function setViewedAction($id)
     {
         $acco = $this->getRepo('CrawlerBundle:Accommodation')->find($id);
 
@@ -83,7 +83,7 @@ class DefaultController extends CoreController
      *
      * @return JsonResponse
      */
-    public function setFavorite($id)
+    public function setFavoriteAction($id)
     {
         $acco = $this->getRepo('CrawlerBundle:Accommodation')->find($id);
 
@@ -107,7 +107,7 @@ class DefaultController extends CoreController
      *
      * @return JsonResponse
      */
-    public function setNote(Request $request)
+    public function setNoteAction(Request $request)
     {
         //$request = json_decode(file_get_contents('php://input')); // handle json request
         $content = json_decode($request->getContent()); // handle json request
@@ -142,5 +142,32 @@ class DefaultController extends CoreController
         $this->getDm()->flush();
 
         return new JsonResponse(['updated' => false]);
+    }
+
+    /**
+     * An user can choose to hide which accommodation he dont want to see anymore
+     *
+     * @param string $id
+     *
+     * @Route("/accommodation/hidden/{id}", options={"expose"=true})
+     *
+     * @return JsonResponse
+     */
+    public function setHiddenAction($id)
+    {
+        $acco = $this->getRepo('CrawlerBundle:Accommodation')->find($id);
+
+        if (!$acco->getHidden()->contains($this->getUser())) {
+            $acco->addHidden($this->getUser());
+            $result = ['hidden' => true];
+        } else {
+            $acco->removeHidden($this->getUser());
+            $result = ['hidden' => false];
+        }
+
+        $this->getDm()->persist($acco);
+        $this->getDm()->flush();
+
+        return new JsonResponse($result);
     }
 }

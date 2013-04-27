@@ -283,6 +283,11 @@ class Accommodation
     /**
      * @JMS\Exclude
      * @MongoDB\ReferenceMany(targetDocument="Dizda\UserBundle\Document\User") */
+    protected $hidden;
+
+    /**
+     * @JMS\Exclude
+     * @MongoDB\ReferenceMany(targetDocument="Dizda\UserBundle\Document\User") */
     protected $favorites;
 
     /** @JMS\Exclude
@@ -1435,5 +1440,38 @@ class Accommodation
     public function getNotes()
     {
         return $this->notes;
+    }
+
+
+
+
+    /**
+     * Add hidden
+     *
+     * @param Dizda\UserBundle\Document\User $hidden
+     */
+    public function addHidden(\Dizda\UserBundle\Document\User $hidden)
+    {
+        $this->hidden[] = $hidden;
+    }
+
+    /**
+    * Remove hidden
+    *
+    * @param <variableType$hidden
+    */
+    public function removeHidden(\Dizda\UserBundle\Document\User $hidden)
+    {
+        $this->hidden->removeElement($hidden);
+    }
+
+    /**
+     * Get hidden
+     *
+     * @return Doctrine\Common\Collections\Collection $hidden
+     */
+    public function getHidden()
+    {
+        return $this->hidden;
     }
 }

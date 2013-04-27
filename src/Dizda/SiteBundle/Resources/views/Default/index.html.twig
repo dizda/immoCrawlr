@@ -16,11 +16,13 @@
             <ul class="thumbnails">
                 {% for a in accommodations %}
 
-                    <li class="span4 {% if loop.index0 is divisibleby(3) %}first{% endif %}{% if loop.index is divisibleby(3) %} last{% endif %}">
+                    <li ng-controller="ThumbnailCtrl"
+                        ng-init="isReaded = '{% if app.user not in a.viewed %}unreaded{% elseif app.user in a.favorites %}favorite{% endif %}'; id='{{ a.id }}'; "
+                        ng-hide="isHidden"
+                        class="span4 {% if loop.index0 is divisibleby(3) %}first{% endif %}{% if loop.index is divisibleby(3) %} last{% endif %}">
 
-                        <div class="thumbnail" ng-class="isReaded" ng-controller="ThumbnailCtrl"
-                             {% if app.user not in a.viewed %}ng-click="viewed()"{% endif %}
-                             ng-init="isReaded = '{% if app.user not in a.viewed %}unreaded{% elseif app.user in a.favorites %}favorite{% endif %}';id='{{ a.id }}'">
+                        <div class="thumbnail" ng-class="isReaded"
+                             {% if app.user not in a.viewed %}ng-click="viewed()"{% endif %}>
 
                             <div class="photos">
                                 {% for photo in a.photos %}

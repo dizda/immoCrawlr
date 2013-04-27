@@ -51,19 +51,17 @@ app.controller('ThumbnailCtrl', function($scope, $http) {
 
     }
 
+    /**
+     * Put an accommodation in trash
+     */
     $scope.hidden = function() {
 
         $http.get(Routing.generate('dizda_site_default_sethidden', {'id':$scope.id})).
         success(function(data) {
 
-            /*if (data.favorite) {
-                $scope.isReaded  = 'favorite';
-                $scope.starState = 'disabled';
-            } else {
-                $scope.isReaded  = '';
-                $scope.starState = '';
-            }*/
-
+            if (data.hidden) {
+                $scope.isHidden = true;
+            }
 
         });
 
@@ -99,6 +97,19 @@ app.controller('ThumbnailCtrl', function($scope, $http) {
         e.preventDefault();
 
     });
+
+
+    /*
+    * Sending event through ng-click : ng-click="hi($event)"
+    *
+    * then :
+    *
+    * $scope.hi = function (e) {
+         var elem = angular.element(e.srcElement);
+         elem.css('background', 'blue');
+         alert(elem.attr('id'));
+      }
+    * */
 
 });
 
