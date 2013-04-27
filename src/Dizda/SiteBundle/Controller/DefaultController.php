@@ -26,9 +26,10 @@ class DefaultController extends CoreController
      */
     public function indexAction()
     {
-        $accommodations = $this->getRepo('CrawlerBundle:Accommodation')->findBy([], [//'priority'        => 'DESC',
-                                                                                     'remoteUpdatedAt' => 'DESC',
-                                                                                     'localUpdatedAt'  => 'DESC']);
+        /*$accommodations = $this->getRepo('CrawlerBundle:Accommodation')->findBy([], ['remoteUpdatedAt' => 'DESC',
+                                                                                     'localUpdatedAt'  => 'DESC']);*/
+
+        $accommodations = $this->getRepo('CrawlerBundle:Accommodation')->findUntrashed($this->getUser());
 
         /*$pagination = $this->get('knp_paginator')->paginate(
             $accommodations,
@@ -102,6 +103,8 @@ class DefaultController extends CoreController
     }
 
     /**
+     * @param Request $request
+     *
      * @Route("/accommodation/note.{_format}", defaults={"_format"="json"}, options={"expose"=true})
      * @Method({"POST"})
      *
