@@ -4,11 +4,23 @@
 {% block page_header %}{% endblock page_header %}
 
 {% block content %}
+
     <div class="span12">
+        <div class="row-fluid">
         {% for site, nb in sites %}
             <span class="badge badge-important">{{ site }} ({{ nb }})</span>
         {% endfor %}
+        </div>
     </div>
+
+
+    <div class="offset4 span6">
+        <div class="row-fluid">
+            <input class="input-xxlarge" type="text" name="search" value="" placeholder="Filtrer par..." />
+            <br /><br />
+        </div>
+    </div>
+
 
     <div class="span12 content" ng-app="indexApp">
 
