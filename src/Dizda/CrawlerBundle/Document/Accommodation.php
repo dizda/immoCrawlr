@@ -253,6 +253,11 @@ class Accommodation
     /**
      *  @JMS\Exclude
      *  @MongoDB\Boolean */
+    protected $parent = true;
+
+    /**
+     *  @JMS\Exclude
+     *  @MongoDB\Boolean */
     protected $fullDetail = true;
 
     /**
@@ -293,6 +298,11 @@ class Accommodation
     /** @JMS\Exclude
      *  @MongoDB\EmbedMany(targetDocument="Dizda\SiteBundle\Document\Note") */
     protected $notes = array();
+
+    /**
+     * @JMS\Exclude
+     * @MongoDB\ReferenceMany(targetDocument="Dizda\CrawlerBundle\Document\Accommodation") */
+    protected $versions;
 
     /*
      * DON'T FORGET THE FOREIGN KEY TO WEBSITE AGENCY :-)
@@ -1473,5 +1483,57 @@ class Accommodation
     public function getHidden()
     {
         return $this->hidden;
+    }
+
+    /**
+     * Set parent
+     *
+     * @param boolean $parent
+     * @return \Accommodation
+     */
+    public function setParent($parent)
+    {
+        $this->parent = $parent;
+        return $this;
+    }
+
+    /**
+     * Get parent
+     *
+     * @return boolean $parent
+     */
+    public function getParent()
+    {
+        return $this->parent;
+    }
+
+    /**
+     * Add versions
+     *
+     * @param Dizda\CrawlerBundle\Document\Accommodation $versions
+     */
+    public function addVersion(\Dizda\CrawlerBundle\Document\Accommodation $versions)
+    {
+        $this->versions[] = $versions;
+    }
+
+    /**
+    * Remove versions
+    *
+    * @param <variableType$versions
+    */
+    public function removeVersion(\Dizda\CrawlerBundle\Document\Accommodation $versions)
+    {
+        $this->versions->removeElement($versions);
+    }
+
+    /**
+     * Get versions
+     *
+     * @return Doctrine\Common\Collections\Collection $versions
+     */
+    public function getVersions()
+    {
+        return $this->versions;
     }
 }
