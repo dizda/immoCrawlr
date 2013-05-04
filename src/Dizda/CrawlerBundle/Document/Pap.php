@@ -159,6 +159,10 @@ class Pap extends Accommodation
     protected $fullDetail = false;
 
 
+    /** @JMS\Type("string")
+     *  @JMS\SerializedName("date_publication")
+     *  @JMS\Accessor(setter="setRemoteCreatedAt") */
+    protected $remoteCreatedAt;
 
     /*public function generateId($versioning = false)
     {
@@ -198,14 +202,67 @@ class Pap extends Accommodation
     }
 
     /**
-     * @param \DateTime $remoteCreatedAt
+     * ex. "Annonce nouvelle du 	08 avril 2013"
+     * ex. "Annonce mise à jour le  02 mai 2013"
+     *
+     * @param string $remoteCreatedAt
      *
      * @return $this|\Accommodation
      */
     public function setRemoteCreatedAt($remoteCreatedAt)
     {
-        $remoteCreatedAt->setTime(0, 0, 0);
-        $this->remoteCreatedAt = $remoteCreatedAt;
+        preg_match('/(\d+) (\w+) (\d{4})$/i', $remoteCreatedAt, $matches);
+
+        if (count($matches)) {
+            $day   = $matches[1];
+            $month = $matches[2];
+            $year  = $matches[3];
+
+            switch ($month)
+            {
+                case 'janvier':
+                    $month = 1;
+                    break;
+                case 'fevrier':
+                    $month = 2;
+                    break;
+                case 'mars':
+                    $month = 3;
+                    break;
+                case 'avril':
+                    $month = 4;
+                    break;
+                case 'mai':
+                    $month = 5;
+                    break;
+                case 'juin':
+                    $month = 6;
+                    break;
+                case 'juillet':
+                    $month = 7;
+                    break;
+                case 'aout':
+                    $month = 8;
+                    break;
+                case 'septembre':
+                    $month = 9;
+                    break;
+                case 'octobre':
+                    $month = 10;
+                    break;
+                case 'novembre':
+                    $month = 11;
+                    break;
+                case 'decembre':
+                    $month = 12;
+                    break;
+            }
+
+            $this->remoteCreatedAt = (new \DateTime())->setDate($year, $month, $day)
+                                                      ->setTime(0, 0, 0);
+
+            $this->remoteUpdatedAt = $this->remoteCreatedAt;
+        }
 
         return $this;
     }

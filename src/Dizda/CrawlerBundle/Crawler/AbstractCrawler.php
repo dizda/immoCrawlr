@@ -153,6 +153,12 @@ abstract class AbstractCrawler
                 // we can check here if the announce was updated comparing $remoteUpdatedAt fields of both
                 // TODO: it doesn't backup Notes...weird
                 $old = $this->dm->find(static::$documentClass, $entity->generateId());
+
+                // For Pap we cannot retrieve updatedDate from list, so versioning is not supported for them
+                if ($old->getRemoteUpdatedAt() && $entity->getRemoteUpdatedAt() === null) {
+                    continue;
+                }
+
                 if ($old->getRemoteUpdatedAt() != $entity->getRemoteUpdatedAt()) {
                     $oldVersion = clone $old;
                     $oldVersion->setParent(false);
