@@ -312,7 +312,12 @@ class Accommodation
     /** @MongoDB\PrePersist */
     public function prePersist()
     {
-        $this->id             = $this->generateId();
+        // if getParent is false, so is a versioning, and we generate id with updatedDate value
+        if ($this->getParent()) {
+            $this->id             = $this->generateId();
+        } else {
+            $this->id             = $this->generateId(true);
+        }
         $this->localCreatedAt = new \DateTime();
         $this->localUpdatedAt = new \DateTime();
     }
@@ -327,11 +332,36 @@ class Accommodation
      * Generate custom local id to store in Mongo, with remote creation date + remote id to be sure it's unique
      * And we hash-it
      *
+     * @param bool $versioning Can generate id with 'updatedDate' to store few times same documents
+     *
      * @return string
      */
-    public function generateId()
+    public function generateId($versioning = false)
     {
-        return sha1($this->remoteCreatedAt->format('YmdHis') . $this->remoteId);
+        $update       = '';
+        $currentClass = explode('\\', get_class($this));
+
+        if ($versioning) {
+            $update = $this->getRemoteUpdatedAt()->format('YmdHis');
+        }
+
+        /**
+         * BC-Break [before 04/05/2013] !! new id generation
+         */
+        if ( $this->remoteCreatedAt && ($this->remoteCreatedAt > (new \DateTime('2013-05-04'))->setTime(0, 0, 0)) ) {
+            //     seloger _ 20130504203011 2131242312 (20130504203012)    : seloger_2013050418170078218825
+            return sha1(strtolower(end($currentClass)) . '_' . $this->remoteCreatedAt->format('YmdHis') . $this->remoteId . $update);
+        }
+
+        /**
+         * 04/05/2013
+         * BC-Break for Pap
+         */
+        if (end($currentClass) == 'Pap') {
+            return sha1('pap_' . $this->remoteId . $update);
+        }
+
+        return sha1($this->remoteCreatedAt->format('YmdHis') . $this->remoteId . $update . $update);
     }
 
 
@@ -1390,6 +1420,13 @@ class Accommodation
     public function getViewed()
     {
         return $this->viewed;
+    }
+
+    public function clearViewed()
+    {
+        if ($this->getViewed()) {
+            $this->viewed->clear();
+        }
     }
 
     /**

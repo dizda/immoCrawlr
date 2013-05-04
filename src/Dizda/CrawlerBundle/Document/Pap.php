@@ -159,13 +159,11 @@ class Pap extends Accommodation
     protected $fullDetail = false;
 
 
-    /**
-     * {@inheritdoc}
-     */
-    public function generateId()
+
+    /*public function generateId($versioning = false)
     {
         return sha1('pap_' . $this->remoteId);
-    }
+    }*/
 
     /**
      * In (string) : 'Appartement, 66 m²'

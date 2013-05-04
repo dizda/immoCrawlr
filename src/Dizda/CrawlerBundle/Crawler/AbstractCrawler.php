@@ -131,7 +131,8 @@ abstract class AbstractCrawler
      */
     public function saveAccomodationsList($response)
     {
-        $cpt = 0;
+        $cpt     = 0;
+        $updated = 0;
         $announces = $this->getNode($response);
 
         foreach ($announces as $announce) {
@@ -147,11 +148,38 @@ abstract class AbstractCrawler
                 }
                 $this->dm->persist($entity);
                 $cpt++;
-            } // we can check here if the announce was updated comparing $remoteUpdatedAt fields of both
+            } else {
+                // Merge new Datas into older, and backup older : versioning
+                // we can check here if the announce was updated comparing $remoteUpdatedAt fields of both
+                // TODO: it doesn't backup Notes...weird
+                $old = $this->dm->find(static::$documentClass, $entity->generateId());
+                if ($old->getRemoteUpdatedAt() != $entity->getRemoteUpdatedAt()) {
+                    $oldVersion = clone $old;
+                    $oldVersion->setParent(false);
+                    $this->dm->persist($oldVersion);
+
+                    // Setting default isFullDetailed announce to get more details if needed
+                    $isFull = new static::$documentClass();
+                    if (!$isFull->getFullDetail()) {
+                        $entity->setFullDetail(false);
+                    }
+
+                    $entity->addVersion($oldVersion);
+                    $entity->clearViewed();             // Resetting users viewed
+
+                    if (!$this->class->hasConstant('URL_DETAIL')) {
+                        $entity->setPhotos($this->getPhotoNode($photos));
+                    }
+
+                    $this->dm->persist($entity);
+                    $updated++;
+                }
+
+            }
         }
         $this->dm->flush();
 
-        $this->output->writeln('[<info>'.$this->class->getShortName().'</info>] ('.$cpt.'/'.count($announces).') accommodations added.');
+        $this->output->writeln('[<info>'.$this->class->getShortName().'</info>] ('.$cpt.'/'.count($announces).') accommodations added, '.$updated.' updated.');
 
 
         /* If following pagination is activated and if 'nextPage' link exist, we follow the link */
@@ -163,7 +191,7 @@ abstract class AbstractCrawler
 
 
         // Once each pages are scrapped, if we need additional datas, we fetch every detailed pages
-        if ($cpt && $this->class->hasConstant('URL_DETAIL')) {
+        if (($cpt + $updated) && $this->class->hasConstant('URL_DETAIL')) {
             $this->saveAccomodationsDetails();
         }
     }
@@ -175,7 +203,8 @@ abstract class AbstractCrawler
     public function saveAccomodationsDetails()
     {
         $format   = $this->class->getConstant('WS_FORMAT');
-        $entities = $this->dm->getRepository(static::$documentClass)->findBy(array('fullDetail' => false));
+        $entities = $this->dm->getRepository(static::$documentClass)->findBy(array('fullDetail' => false,
+                                                                                   'parent'     => true));
         $total    = count($entities);
 
         $this->output->writeln('[<info>'.$this->class->getShortName().'</info>] Fetching '.count($entities).' announces details...');

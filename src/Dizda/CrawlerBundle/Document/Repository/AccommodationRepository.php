@@ -14,6 +14,7 @@ class AccommodationRepository extends DocumentRepository
         return $this->createQueryBuilder('CrawlerBundle:Accommodation')
             ->group(array(), array('count' => 0))
             ->reduce('function (obj, prev) { prev.count++; }')
+            ->field('parent')->equals(true)
             ->field('discriminatorType')->equals($discriminator)
             ->getQuery()
             ->execute()['count'];
@@ -29,6 +30,7 @@ class AccommodationRepository extends DocumentRepository
     public function findUntrashed($user)
     {
         $qb = $this->createQueryBuilder('CrawlerBundle:Accommodation')
+            ->field('parent')->equals(true)
             ->field('hidden.$id')->notEqual(new \MongoId($user->getId()))
             ->sort('remoteUpdatedAt', 'desc')
             ->sort('localUpdatedAt', 'desc');
