@@ -7,7 +7,7 @@ set :user,        "www-data"
 set :scm,         :git
 set :repository,  "file:///Users/high/Sites/immoCrawler"
 # set :repository,  "#{domain}:/var/repos/#{application}.git"
-set   :deploy_via,    :copy
+set :deploy_via,    :copy
 
 
 set :model_manager, "doctrine"
