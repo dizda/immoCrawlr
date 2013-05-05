@@ -1,0 +1,110 @@
+<div class="thumbnail"
+     ng-class="isReaded"
+     {% if app.user not in a.viewed %}ng-click="viewed()"{% endif %}>
+
+    <div class="photos">
+        {% for photo in a.photos %}
+            <img data-original="{{ photo }}" alt="400x300">
+        {% else %}
+            {#<img data-src="holder.js/400x300" alt="400x300" style="width: 400px; height: 300px;" src="{{ a.photos[0]|default(noThumb) }}">#}
+            <img data-original="{{ asset('bundles/site/images/nothumb.png') }}" alt="400x300">
+        {% endfor %}
+    </div>
+    <div class="caption">
+        <span class="badge clearfix">{{ a.city }}</span>
+        <span class="badge clearfix">{{ a.district }}</span>
+        <span class="badge badge-important">{{ a.type }}</span>
+        <span class="badge badge-info pull-right clearfix">{{ a.price|number_format(0, '.', ' ') }} €</span>
+
+        <h3>{{ a.title }} {{ a.surface }}m²</h3>
+
+        <p class="description">{{ a.description }}</p>
+
+        <p>
+            {#<div class="btn-group">
+                <button class="btn"><i class="icon-user"></i> {{ a.contactPhone }}</button>
+                {% if a.contactPhone2 %}
+                    <button class="btn"><i class="icon-user"></i> {{ a.contactPhone2 }}</button>
+                {% endif %}
+                <button class="btn"><i class="icon-envelope"></i> {{ a.contactEmail }}</button>
+            </div>#}
+
+        <div class="pull-left">
+            <i class="icon-camera"></i>{{ a.photos|length }}
+        </div>
+
+        <div class="btn-group pull-right" ade-rich='{"className":"input-xlarge","id":"{{ a.id }}"}' ng-model="notes">
+            <a class="btn"><i class="icon-pencil"></i></a>
+            <button class="btn btn-warning" ng-class="starState" ng-click="favorite()" ng-init="starState = '{% if app.user in a.favorites %}disabled{% endif %}'"><i class="icon-star"></i></button>
+            <a href="http://blankreferrer.com/u/{{ a.permalink|replace({'http://':''}) }}" class="btn" target="_blank"><i class="icon-globe"></i> Visit {{ a.type }}</a>
+            <a class="btn btn-danger" href="javascript://" ng-click="hidden()"><i class="icon-trash"></i></a></a>
+
+            {#<button class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a href="javascript://" ng-click="hidden()"><i class="icon-trash"></i> Hide</a></li>
+            </ul>#}
+
+        </div>
+
+        </p>
+        <div>
+            <strong>
+                {% if a.remoteUpdatedAt %}<span class="label label-info" rel="tooltip" data-placement="right" title="Remote id : {{ a.remoteId }} created at : {{ time_diff(a.remoteCreatedAt) }}"><i class="icon-refresh"></i> Remote updated {{ time_diff(a.remoteUpdatedAt) }}</span><br />{% endif %}
+                <span class="label label-inverse" rel="tooltip" data-placement="right" title="Created at {{ time_diff(a.localCreatedAt) }}"><i class="icon-hdd icon-white"></i> Local updated {{ time_diff(a.localUpdatedAt) }}</span>
+            </strong>
+            <br />
+        </div>
+
+        <div class="notes">
+            {% set isUserCommented = false %}
+
+            {% for note in a.notes if a.notes|length > 0 %}
+                {% if note.user == app.user %}{% set isUserCommented = true %}{% endif %}
+                <div class="comment">
+                    <i class="icon-pencil"></i> <span class="username">{{ note.user.username }}</span> :
+
+                    {% if note.user == app.user %}
+                        <span ade-rich='{"className":"input-xlarge","id":"{{ a.id }}"}' ng-model="notes" ng-init="notes='{{ note.text }}'">
+                                                <[notes>
+                                            </span>
+                    {% else %}
+                        {{ note.text }}
+                    {% endif %}
+
+                </div>
+            {% endfor %}
+
+            {% if not isUserCommented %}
+                <div class="comment" ng-show="isCommented" ng-init="isCommented = false">
+                    <i class="icon-pencil"></i> <span class="username">{{ app.user.username }}</span> :
+                                        <span ade-rich='{"className":"input-xlarge","id":"{{ a.id }}"}' ng-model="notes" ng-init="notes='No notes for the moment...'">
+                                            <[notes>
+                                        </span>
+                </div>
+            {% endif %}
+        </div>
+
+        <div class="versions">
+
+            <div class="btn-group">
+                <button class="btn disabled"><i class="icon-play-circle"></i> Last version</button>
+                {% for version in a.versions|slice(0, 2) %}
+                    <button class="btn" ng-click="test()"><i class="icon-time"></i> {{ time_diff(version.remoteUpdatedAt)|replace({'il y a':''}) }}</button>
+                {% endfor %}
+
+                {% if a.versions|length > 2 %}
+
+                    <button class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+
+                        {% for version in a.versions|slice(2) %}
+                            <li><a href="#"><i class="icon-time"></i> {{ time_diff(version.remoteUpdatedAt)) }}</a></li>
+                        {% endfor %}
+
+                    </ul>
+                {% endif %}
+            </div>
+        </div>
+
+    </div>
+</div>
