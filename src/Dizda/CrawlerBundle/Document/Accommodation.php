@@ -301,7 +301,8 @@ class Accommodation
 
     /**
      * @JMS\Exclude
-     * @MongoDB\ReferenceMany(targetDocument="Dizda\CrawlerBundle\Document\Accommodation") */
+     * @MongoDB\ReferenceMany(targetDocument="Dizda\CrawlerBundle\Document\Accommodation",
+     *                        sort={"remoteUpdatedAt": "desc"}) */
     protected $versions;
 
     /*
