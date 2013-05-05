@@ -118,6 +118,16 @@
                                     {% endif %}
                                 </div>
 
+                                <div class="versions">
+
+                                    <div class="btn-group">
+                                        <button class="btn disabled"><i class="icon-play-circle"></i> Last version</button>
+                                        {% for version in a.versions %}
+                                        <button class="btn"><i class="icon-time"></i> {{ time_diff(version.remoteUpdatedAt) }}</button>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
 
