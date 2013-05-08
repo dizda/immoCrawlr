@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "fc82b29d1d9d1ae82f97b52f69b1fd13",
+    "hash": "187ac0ecd435405667f02180eac626f9",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -82,12 +82,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "b5716ea776f349a0fedcf0e7d032386c1f696f76"
+                "reference": "4116eff37635219101a22c9732f409633eb07c5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/b5716ea776f349a0fedcf0e7d032386c1f696f76",
-                "reference": "b5716ea776f349a0fedcf0e7d032386c1f696f76",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/4116eff37635219101a22c9732f409633eb07c5d",
+                "reference": "4116eff37635219101a22c9732f409633eb07c5d",
                 "shasum": ""
             },
             "require": {
@@ -130,7 +130,7 @@
                 {
                     "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -140,7 +140,7 @@
                 "cache",
                 "caching"
             ],
-            "time": "2013-03-17 13:59:02"
+            "time": "2013-05-04 23:23:40"
         },
         {
             "name": "doctrine/collections",
@@ -919,6 +919,127 @@
                 "Js Routing"
             ],
             "time": "2013-04-05 20:13:12"
+        },
+        {
+            "name": "friendsofsymfony/rest",
+            "version": "dev-master",
+            "target-dir": "FOS/Rest",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfSymfony/FOSRest.git",
+                "reference": "0.8.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRest/zipball/0.8.0",
+                "reference": "0.8.0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "symfony/http-foundation": ">=2.0,<3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.8.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "FOS\\Rest": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lukas Kahwe Smith",
+                    "email": "smith@pooteeweet.org"
+                },
+                {
+                    "name": "FriendsOfSymfony Community",
+                    "homepage": "https://github.com/FriendsOfSymfony/FOSRest/contributors"
+                }
+            ],
+            "description": "This library provides various tools to develop RESTful API's",
+            "homepage": "http://friendsofsymfony.github.com",
+            "keywords": [
+                "rest"
+            ],
+            "time": "2013-03-02 20:35:05"
+        },
+        {
+            "name": "friendsofsymfony/rest-bundle",
+            "version": "dev-master",
+            "target-dir": "FOS/RestBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
+                "reference": "06f1a901dd6d4e674d818312687d81dbf466b9ba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/06f1a901dd6d4e674d818312687d81dbf466b9ba",
+                "reference": "06f1a901dd6d4e674d818312687d81dbf466b9ba",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/inflector": "1.0.*",
+                "friendsofsymfony/rest": ">=0.7.0,<0.9.0-dev",
+                "php": ">=5.3.2",
+                "symfony/framework-bundle": ">=2.1,<3.0"
+            },
+            "require-dev": {
+                "jms/serializer-bundle": "0.12.*",
+                "sensio/framework-extra-bundle": ">=2.1,<3.0",
+                "symfony/form": ">=2.1,<3.0",
+                "symfony/security": ">=2.1,<3.0",
+                "symfony/yaml": ">=2.1,<3.0"
+            },
+            "suggest": {
+                "jms/serializer-bundle": "Add support for advanced serialization capabilities, recommended, requires 0.12.*",
+                "sensio/framework-extra-bundle": "Add support for route annotations and the view response listener",
+                "symfony/serializer": "Add support for basic serialization capabilities, requires >=2.0,<2.3-dev"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.13.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "FOS\\RestBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lukas Kahwe Smith",
+                    "email": "smith@pooteeweet.org"
+                },
+                {
+                    "name": "FriendsOfSymfony Community",
+                    "homepage": "https://github.com/friendsofsymfony/FOSRestBundle/contributors"
+                },
+                {
+                    "name": "Konstantin Kudryashov",
+                    "email": "ever.zet@gmail.com",
+                    "homepage": "http://everzet.com"
+                }
+            ],
+            "description": "This Bundle provides various tools to rapidly develop RESTful API's with Symfony2",
+            "homepage": "http://friendsofsymfony.github.com",
+            "keywords": [
+                "rest"
+            ],
+            "time": "2013-05-08 11:55:30"
         },
         {
             "name": "friendsofsymfony/user-bundle",
@@ -1898,35 +2019,34 @@
         },
         {
             "name": "mopa/bootstrap-bundle",
-            "version": "dev-master",
+            "version": "2.2.x-dev",
             "target-dir": "Mopa/Bundle/BootstrapBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phiamo/MopaBootstrapBundle.git",
-                "reference": "1a91bd5ffb216a9b7fbd7936599671871790d944"
+                "reference": "2dc88ba75d2f3f0637491a68545c5dc07a8cdfdc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phiamo/MopaBootstrapBundle/zipball/1a91bd5ffb216a9b7fbd7936599671871790d944",
-                "reference": "1a91bd5ffb216a9b7fbd7936599671871790d944",
+                "url": "https://api.github.com/repos/phiamo/MopaBootstrapBundle/zipball/2dc88ba75d2f3f0637491a68545c5dc07a8cdfdc",
+                "reference": "2dc88ba75d2f3f0637491a68545c5dc07a8cdfdc",
                 "shasum": ""
             },
             "require": {
                 "mopa/composer-bridge": "1.*",
-                "symfony/symfony": ">=2.1,<2.4-dev"
+                "symfony/symfony": ">=2.1,<2.3-dev"
             },
             "suggest": {
                 "craue/formflow-bundle": "dev-master",
                 "jlong/sass-twitter-bootstrap": "dev-master",
                 "knplabs/knp-menu-bundle": "2.0.*",
                 "knplabs/knp-paginator-bundle": "dev-master",
-                "mopa/bootstrap-sandbox-bundle": "~2.3",
-                "twitter/bootstrap": "2.*"
+                "twitter/bootstrap": "2.0.*"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3.x-dev"
+                    "dev-master": "2.2.x-dev"
                 }
             },
             "autoload": {
@@ -1957,7 +2077,7 @@
                 "form",
                 "template"
             ],
-            "time": "2013-04-30 09:57:19"
+            "time": "2013-04-30 09:35:42"
         },
         {
             "name": "mopa/composer-bridge",
@@ -2247,12 +2367,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensio/SensioGeneratorBundle.git",
-                "reference": "77ce71d2741af3536d846791182315a42e00b89c"
+                "reference": "6ba4f096bab6d4461f9e2ed4e7f2a155b2bec3e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensio/SensioGeneratorBundle/zipball/77ce71d2741af3536d846791182315a42e00b89c",
-                "reference": "77ce71d2741af3536d846791182315a42e00b89c",
+                "url": "https://api.github.com/repos/sensio/SensioGeneratorBundle/zipball/6ba4f096bab6d4461f9e2ed4e7f2a155b2bec3e6",
+                "reference": "6ba4f096bab6d4461f9e2ed4e7f2a155b2bec3e6",
                 "shasum": ""
             },
             "require": {
@@ -2286,20 +2406,20 @@
                 }
             ],
             "description": "This bundle generates code for you",
-            "time": "2013-05-04 14:19:26"
+            "time": "2013-05-07 13:45:19"
         },
         {
             "name": "swiftmailer/swiftmailer",
-            "version": "dev-master",
+            "version": "v5.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "a64528efec37173a6dabaedb0e678beffdb446f0"
+                "reference": "v5.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/a64528efec37173a6dabaedb0e678beffdb446f0",
-                "reference": "a64528efec37173a6dabaedb0e678beffdb446f0",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/v5.0.0",
+                "reference": "v5.0.0",
                 "shasum": ""
             },
             "require": {
@@ -2335,7 +2455,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2013-04-30 17:36:15"
+            "time": "2013-04-30 17:35:30"
         },
         {
             "name": "symfony/assetic-bundle",
@@ -2519,12 +2639,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "cf35eb8ccb43557880c988ccf65d50fa47052f12"
+                "reference": "e3187590c0d3d90a01f5d92c80a7347b984ef73e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/cf35eb8ccb43557880c988ccf65d50fa47052f12",
-                "reference": "cf35eb8ccb43557880c988ccf65d50fa47052f12",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/e3187590c0d3d90a01f5d92c80a7347b984ef73e",
+                "reference": "e3187590c0d3d90a01f5d92c80a7347b984ef73e",
                 "shasum": ""
             },
             "require": {
@@ -2610,7 +2730,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2013-05-03 14:19:45"
+            "time": "2013-05-08 08:39:40"
         },
         {
             "name": "twig/extensions",
@@ -2665,12 +2785,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "7f70bbf77581c25a5b225823e2dde578b63fddb3"
+                "reference": "4d90a5008d2c2cc30f5e5c8622e979674178bf6c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/7f70bbf77581c25a5b225823e2dde578b63fddb3",
-                "reference": "7f70bbf77581c25a5b225823e2dde578b63fddb3",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/4d90a5008d2c2cc30f5e5c8622e979674178bf6c",
+                "reference": "4d90a5008d2c2cc30f5e5c8622e979674178bf6c",
                 "shasum": ""
             },
             "require": {
@@ -2706,7 +2826,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-05-01 19:03:39"
+            "time": "2013-05-07 18:59:51"
         },
         {
             "name": "twitter/bootstrap",
@@ -2947,12 +3067,14 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
+        "symfony/swiftmailer-bundle": 20,
         "mopa/bootstrap-bundle": 20,
         "fabpot/goutte": 20,
         "jms/serializer-bundle": 20,
         "doctrine/mongodb-odm-bundle": 20,
         "knplabs/knp-paginator-bundle": 20,
         "knplabs/knp-time-bundle": 20,
+        "friendsofsymfony/rest-bundle": 20,
         "mopa/bootstrap-sandbox-bundle": 20
     },
     "platform": {

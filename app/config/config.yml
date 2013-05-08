@@ -106,3 +106,25 @@ fos_user:
     db_driver: mongodb # other valid values are 'mongodb', 'couchdb' and 'propel'
     firewall_name: main
     user_class: Dizda\UserBundle\Document\User
+
+sensio_framework_extra:
+    view:    { annotations: false }
+    router:  { annotations: true }
+
+fos_rest:
+    param_fetcher_listener: true
+    view:
+        view_response_listener: 'force'
+        formats:
+            xml:  false
+            json: true
+        templating_formats:
+            html: true
+    format_listener:
+        prefer_extension: true
+    exception:
+        codes:
+            'Symfony\Component\Routing\Exception\ResourceNotFoundException': 404
+            'Doctrine\ORM\OptimisticLockException': HTTP_CONFLICT
+        messages:
+            'Symfony\Component\Routing\Exception\ResourceNotFoundException': true
