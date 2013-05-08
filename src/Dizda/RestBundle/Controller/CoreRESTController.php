@@ -24,4 +24,6 @@ class CoreRESTController extends FOSRestController
     {
         return $this->getDm()->getRepository($repository);
     }
+
+
 }

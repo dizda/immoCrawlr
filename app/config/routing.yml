@@ -1,7 +1,12 @@
-rest:
-    resource: "@RestBundle/Controller/"
-    type:     annotation
-    prefix:   /
+#rest:
+#    resource: "@RestBundle/Controller/"
+#    type:     annotation
+#    prefix:   /
+
+rest_accommodation:
+    type:     rest
+    resource: Dizda\RestBundle\Controller\AccommodationController
+    prefix:   /api
 
 fos_js_routing:
     resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"

@@ -38,6 +38,8 @@ class Accommodation
      *  @MongoDB\Id(strategy="none")
      */
     protected $id;
+    /** @JMS\Groups({"rest"}) @JMS\SerializedName("id") @JMS\Accessor(getter="getId") */
+    protected $restId;
 
     /**
      *  Remote Foreign key to Query remote WS about accomodation id
@@ -59,21 +61,29 @@ class Accommodation
      *  @JMS\Exclude
      *  @MongoDB\String */
     protected $title;
+    /** @JMS\Groups({"rest"}) @JMS\SerializedName("title") @JMS\Accessor(getter="getTitle") */
+    protected $restTitle;
 
     /**
      *  @JMS\Exclude
      *  @MongoDB\String */
     protected $title2;
+    /** @JMS\Groups({"rest"}) @JMS\SerializedName("title2") @JMS\Accessor(getter="getTitle2") */
+    protected $restTitle2;
 
     /**
      *  @JMS\Exclude
      *  @MongoDB\String */
     protected $district;
+    /** @JMS\Groups({"rest"}) @JMS\SerializedName("district") @JMS\Accessor(getter="getDistrict") */
+    protected $restDistrict;
 
     /**
      *  @JMS\Exclude
      *  @MongoDB\String */
     protected $description;
+    /** @JMS\Groups({"rest"}) @JMS\SerializedName("description") @JMS\Accessor(getter="getDescription") */
+    protected $restDescription;
 
 
 
@@ -82,11 +92,15 @@ class Accommodation
      *  @JMS\Exclude
      *  @MongoDB\Float */
     protected $price;
+    /** @JMS\Groups({"rest"}) @JMS\SerializedName("price") @JMS\Accessor(getter="getPrice") */
+    protected $restPrice;
 
     /**
      *  @JMS\Exclude
      *  @MongoDB\Float */
     protected $chargesAmount;
+    /** @JMS\Groups({"rest"}) @JMS\SerializedName("chargesAmount") @JMS\Accessor(getter="getChargesAmount") */
+    protected $restChargesAmount;
 
     /**
      *  @JMS\Exclude
@@ -140,6 +154,8 @@ class Accommodation
      *  @JMS\Exclude
      *  @MongoDB\Float */
     protected $surface;
+    /** @JMS\Groups({"rest"}) @JMS\SerializedName("surface") @JMS\Accessor(getter="getSurface") */
+    protected $restSurface;
 
     /**
      *  @JMS\Exclude
@@ -189,11 +205,15 @@ class Accommodation
      *  @JMS\Exclude
      *  @MongoDB\Collection(strategy="pushAll") */
     protected $photos = array();
+    /** @JMS\Groups({"rest"}) @JMS\SerializedName("photos") @JMS\Accessor(getter="getPhotos") */
+    protected $restPhotos;
 
     /**
      *  @JMS\Exclude
      *  @MongoDB\String */
     protected $permalink;
+    /** @JMS\Groups({"rest"}) @JMS\SerializedName("permalink") @JMS\Accessor(getter="getPermalink") */
+    protected $restPermalink;
 
     /**
      *  @JMS\Exclude

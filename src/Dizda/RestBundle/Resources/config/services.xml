@@ -17,4 +17,18 @@
         </service>
     </services>
     -->
+    <!--<services>
+
+        <service id="rest.serializerlistener" class="Dizda\RestBundle\EventListener\SerializerListener" public="true">
+            <tag name="jms_serializer.event_listener" direction="serialization" format="json"
+                 event="serializer.pre_serialize"
+                 method="onPreSerialization" />
+
+            <tag name="jms_serializer.event_listener" direction="serialization" format="json"
+                 event="serializer.post_serialize"
+                 method="onPostSerialization" />
+        </service>
+
+
+    </services>-->
 </container>

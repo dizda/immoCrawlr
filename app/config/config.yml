@@ -97,7 +97,7 @@ mopa_bootstrap:
 jms_di_extra:
     locations:
         all_bundles: false
-        bundles: [ CrawlerBundle ]
+        bundles: [ CrawlerBundle, RestBundle ]
         directories: ["%kernel.root_dir%/../src"]
 
 knp_time: ~
@@ -113,6 +113,8 @@ sensio_framework_extra:
 
 fos_rest:
     param_fetcher_listener: true
+    routing_loader:
+        default_format: json
     view:
         view_response_listener: 'force'
         formats:
@@ -121,6 +123,7 @@ fos_rest:
         templating_formats:
             html: true
     format_listener:
+        fallback_format: json
         prefer_extension: true
     exception:
         codes:
