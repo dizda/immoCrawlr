@@ -1,7 +1,7 @@
 var app = angular.module('indexApp', ['ADE', 'ngSanitize']).
     config(function($interpolateProvider) {
-        $interpolateProvider.startSymbol('<[');
-        $interpolateProvider.endSymbol('>');
+        $interpolateProvider.startSymbol('{[{');
+        $interpolateProvider.endSymbol('}]}');
     });
 
 
@@ -98,6 +98,10 @@ app.controller('ThumbnailCtrl', function($scope, $http) {
 
     });
 
+    $scope.test = function()
+    {
+        $scope.description = 'hehe...';
+    }
 
     /*
     * Sending event through ng-click : ng-click="hi($event)"

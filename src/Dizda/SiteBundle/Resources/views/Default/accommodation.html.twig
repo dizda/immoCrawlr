@@ -65,8 +65,8 @@
 
                     {% if note.user == app.user %}
                         <span ade-rich='{"className":"input-xlarge","id":"{{ a.id }}"}' ng-model="notes" ng-init="notes='{{ note.text }}'">
-                                                <[notes>
-                                            </span>
+                            {[{notes}]}
+                        </span>
                     {% else %}
                         {{ note.text }}
                     {% endif %}
@@ -77,9 +77,9 @@
             {% if not isUserCommented %}
                 <div class="comment" ng-show="isCommented" ng-init="isCommented = false">
                     <i class="icon-pencil"></i> <span class="username">{{ app.user.username }}</span> :
-                                        <span ade-rich='{"className":"input-xlarge","id":"{{ a.id }}"}' ng-model="notes" ng-init="notes='No notes for the moment...'">
-                                            <[notes>
-                                        </span>
+                    <span ade-rich='{"className":"input-xlarge","id":"{{ a.id }}"}' ng-model="notes" ng-init="notes='No notes for the moment...'">
+                        {[{notes}]}
+                    </span>
                 </div>
             {% endif %}
         </div>
