@@ -38,7 +38,7 @@ class Accommodation
      *  @MongoDB\Id(strategy="none")
      */
     protected $id;
-    /** @JMS\Groups({"rest"}) @JMS\SerializedName("id") @JMS\Accessor(getter="getId") */
+    /** @JMS\Groups({"rest"}) @JMS\SerializedName("id") @JMS\Accessor(getter="getId") @JMS\ReadOnly */
     protected $restId;
 
     /**
@@ -61,28 +61,28 @@ class Accommodation
      *  @JMS\Exclude
      *  @MongoDB\String */
     protected $title;
-    /** @JMS\Groups({"rest"}) @JMS\SerializedName("title") @JMS\Accessor(getter="getTitle") */
+    /** @JMS\Groups({"rest"}) @JMS\SerializedName("title") @JMS\Accessor(getter="getTitle") @JMS\ReadOnly */
     protected $restTitle;
 
     /**
      *  @JMS\Exclude
      *  @MongoDB\String */
     protected $title2;
-    /** @JMS\Groups({"rest"}) @JMS\SerializedName("title2") @JMS\Accessor(getter="getTitle2") */
+    /** @JMS\Groups({"rest"}) @JMS\SerializedName("title2") @JMS\Accessor(getter="getTitle2") @JMS\ReadOnly */
     protected $restTitle2;
 
     /**
      *  @JMS\Exclude
      *  @MongoDB\String */
     protected $district;
-    /** @JMS\Groups({"rest"}) @JMS\SerializedName("district") @JMS\Accessor(getter="getDistrict") */
+    /** @JMS\Groups({"rest"}) @JMS\SerializedName("district") @JMS\Accessor(getter="getDistrict") @JMS\ReadOnly */
     protected $restDistrict;
 
     /**
      *  @JMS\Exclude
      *  @MongoDB\String */
     protected $description;
-    /** @JMS\Groups({"rest"}) @JMS\SerializedName("description") @JMS\Accessor(getter="getDescription") */
+    /** @JMS\Groups({"rest"}) @JMS\SerializedName("description") @JMS\Accessor(getter="getDescription") @JMS\ReadOnly */
     protected $restDescription;
 
 
@@ -92,14 +92,14 @@ class Accommodation
      *  @JMS\Exclude
      *  @MongoDB\Float */
     protected $price;
-    /** @JMS\Groups({"rest"}) @JMS\SerializedName("price") @JMS\Accessor(getter="getPrice") */
+    /** @JMS\Groups({"rest"}) @JMS\SerializedName("price") @JMS\Accessor(getter="getPrice") @JMS\ReadOnly */
     protected $restPrice;
 
     /**
      *  @JMS\Exclude
      *  @MongoDB\Float */
     protected $chargesAmount;
-    /** @JMS\Groups({"rest"}) @JMS\SerializedName("chargesAmount") @JMS\Accessor(getter="getChargesAmount") */
+    /** @JMS\Groups({"rest"}) @JMS\SerializedName("chargesAmount") @JMS\Accessor(getter="getChargesAmount") @JMS\ReadOnly */
     protected $restChargesAmount;
 
     /**
@@ -154,7 +154,7 @@ class Accommodation
      *  @JMS\Exclude
      *  @MongoDB\Float */
     protected $surface;
-    /** @JMS\Groups({"rest"}) @JMS\SerializedName("surface") @JMS\Accessor(getter="getSurface") */
+    /** @JMS\Groups({"rest"}) @JMS\SerializedName("surface") @JMS\Accessor(getter="getSurface") @JMS\ReadOnly */
     protected $restSurface;
 
     /**
@@ -200,19 +200,21 @@ class Accommodation
      *  @JMS\Exclude
      *  @MongoDB\String */
     protected $city;
+    /** @JMS\Groups({"rest"}) @JMS\SerializedName("city") @JMS\Accessor(getter="getCity") @JMS\ReadOnly */
+    protected $restCity;
 
     /**
      *  @JMS\Exclude
      *  @MongoDB\Collection(strategy="pushAll") */
     protected $photos = array();
-    /** @JMS\Groups({"rest"}) @JMS\SerializedName("photos") @JMS\Accessor(getter="getPhotos") */
+    /** @JMS\Groups({"rest"}) @JMS\SerializedName("photos") @JMS\Accessor(getter="getPhotos") @JMS\ReadOnly */
     protected $restPhotos;
 
     /**
      *  @JMS\Exclude
      *  @MongoDB\String */
     protected $permalink;
-    /** @JMS\Groups({"rest"}) @JMS\SerializedName("permalink") @JMS\Accessor(getter="getPermalink") */
+    /** @JMS\Groups({"rest"}) @JMS\SerializedName("permalink") @JMS\Accessor(getter="getPermalink") @JMS\ReadOnly */
     protected $restPermalink;
 
     /**
@@ -314,6 +316,9 @@ class Accommodation
      * @JMS\Exclude
      * @MongoDB\ReferenceMany(targetDocument="Dizda\UserBundle\Document\User") */
     protected $favorites;
+    /** @JMS\Groups({"rest"}) @JMS\SerializedName("favorites") @JMS\Accessor(getter="getRestFavorites") @JMS\ReadOnly */
+    protected $restFavorites;
+
 
     /** @JMS\Exclude
      *  @MongoDB\EmbedMany(targetDocument="Dizda\SiteBundle\Document\Note") */
@@ -324,6 +329,8 @@ class Accommodation
      * @MongoDB\ReferenceMany(targetDocument="Dizda\CrawlerBundle\Document\Accommodation",
      *                        sort={"remoteUpdatedAt": "desc"}) */
     protected $versions;
+    /** @JMS\Groups({"rest"}) @JMS\SerializedName("versions") @JMS\Accessor(getter="getVersions") @JMS\ReadOnly */
+    protected $restVersions;
 
     /*
      * DON'T FORGET THE FOREIGN KEY TO WEBSITE AGENCY :-)
@@ -1479,6 +1486,27 @@ class Accommodation
     {
         return $this->favorites;
     }
+
+    public function getRestFavorites()
+    {
+        $favs = [];
+        foreach ($this->favorites as $favorite) {
+            /*$favs[] = ['id' => $favorite->getId(),
+                       'username' => $favorite->getUsername()];*/
+            $favs[] = $favorite->getId();
+        }
+
+        return $favs;
+    }
+
+    /*public function getIsFavorite($user)
+    {
+        if (!$this->getFavorites()->contains($user)) {
+            return false;
+        } else {
+            return true;
+        }
+    }*/
 
     /**
      * Add notes

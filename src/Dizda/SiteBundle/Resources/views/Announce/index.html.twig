@@ -1,0 +1,57 @@
+{% extends "SiteBundle::base.html.twig" %}
+
+{% block page_header %}{% endblock page_header %}
+
+{% block foot_script %}
+    {{ parent() }}
+    <script>
+        var user = '{{ app.user.id }}';
+    </script>
+{% endblock %}
+
+{% block content %}
+
+    {#<div class="span12">
+        <div class="row-fluid">
+            {% for site, nb in sites %}
+                <span class="badge badge-important">{{ site }} ({{ nb }})</span>
+            {% endfor %}
+        </div>
+    </div>#}
+
+
+
+    <div ng-app="indexApp" ng-controller="AnnouncesCtrl">
+
+
+        <div class="offset4 span6">
+            <div class="row-fluid">
+                <input class="input-xxlarge" type="text" name="search" value="" placeholder="Filtrer par..." ng-model="searchText" />
+                <br /><br />
+            </div>
+        </div>
+
+
+        <div class="span12 content">
+
+            <div class="row-fluid">
+                <ul class="thumbnails">
+
+
+                    <li ng-controller="AnnounceCtrl" ng-repeat="a in announces | filter:searchText"
+                        {#ng-init="isReaded = '{% if app.user not in a.viewed %}unreaded{% elseif app.user in a.favorites %}favorite{% endif %}'; id='{{ a.id }}'; "#}
+                        ng-hide="isHidden">
+
+                        {% include 'SiteBundle:Announce:announce.html.twig' %}
+
+                    </li>
+
+
+                </ul>
+            </div>
+
+        </div>
+
+
+    </div>
+{% endblock content %}

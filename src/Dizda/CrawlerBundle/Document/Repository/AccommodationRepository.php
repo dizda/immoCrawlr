@@ -31,6 +31,7 @@ class AccommodationRepository extends DocumentRepository
     {
         $qb = $this->createQueryBuilder('CrawlerBundle:Accommodation')
             ->field('parent')->equals(true)
+            ->field('favorites.$id')->equals(new \MongoId($user->getId()))
             ->field('hidden.$id')->notEqual(new \MongoId($user->getId()))
             ->sort('remoteUpdatedAt', 'desc')
             ->sort('localUpdatedAt', 'desc');
