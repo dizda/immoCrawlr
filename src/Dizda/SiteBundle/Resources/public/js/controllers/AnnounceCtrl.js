@@ -21,7 +21,7 @@ app.controller('AnnounceCtrl', function($scope, Accommodation) {
         $scope.starState = 'disabled';
     }
 
-    if ($scope.a.viewed.indexOf(user) != -1) {
+    if ($scope.a.viewed.indexOf(user) == -1) {
         $scope.isReaded  = 'unreaded';
     }
 

@@ -266,6 +266,9 @@ class Accommodation
      *  @MongoDB\String */
     protected $contactGeoLong;
 
+    /** @JMS\Groups({"rest"}) @JMS\SerializedName("type") @JMS\Accessor(getter="getType") @JMS\ReadOnly */
+    protected $restType;
+
 
     /**
      *  @JMS\Exclude

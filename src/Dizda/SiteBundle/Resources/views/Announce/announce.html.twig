@@ -2,13 +2,12 @@
      ng-class="isReaded">
 
     <div class="photos" ng-mousemove="movePhoto($event)">
-        {#<img data-original="{[{ photo }]}" alt="400x300" ng-repeat="photo in a.photos">#}
         <img ng-src="{[{ photo }]}" alt="400x300" ng-repeat="photo in a.photos" ng-show="$index == showPhoto">
     </div>
     <div class="caption">
         <span class="badge clearfix" ng-bind="a.city"></span>
         <span class="badge clearfix" ng-bind="a.district"></span>
-        <span class="badge badge-important">{#{{ a.type }}#}</span>
+        <span class="badge badge-important" ng-bind="a.type"></span>
         <span class="badge badge-info pull-right clearfix">{[{ a.price }]} €</span>
 
         <h3>{[{ a.title }]} {[{ a.surface }]}m²</h3>
@@ -24,7 +23,7 @@
             <div class="btn-group pull-right" ade-rich='{"className":"input-xlarge","id":"{[{ a.id }]}"}' ng-model="notes">
                 <a class="btn"><i class="icon-pencil"></i></a>
                 <button class="btn btn-warning" ng-class="starState" ng-click="favorite()" ng-init="starState = 'disabled{#{% if app.user in a.favorites %}disabled{% endif %}#}'"><i class="icon-star"></i></button>
-                <a href="http://blankreferrer.com/u/{#{{ a.permalink|replace({'http://':''}) }}#}" class="btn" target="_blank"><i class="icon-globe"></i> Visit {#{{ a.type }}#}</a>
+                <a href="http://blankreferrer.com/u/{#{{ a.permalink|replace({'http://':''}) }}#}" class="btn" target="_blank"><i class="icon-globe"></i> Visit {[{ a.type }]}</a>
                 <a class="btn btn-danger" href="javascript://" ng-click="hidden()"><i class="icon-trash"></i></a></a>
 
 
