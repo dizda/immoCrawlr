@@ -21,6 +21,10 @@ app.controller('AnnounceCtrl', function($scope, Accommodation) {
         $scope.starState = 'disabled';
     }
 
+    if ($scope.a.viewed.indexOf(user) != -1) {
+        $scope.isReaded  = 'unreaded';
+    }
+
     /**
      * Showing different photo following mouse cursor position
      *
@@ -37,9 +41,9 @@ app.controller('AnnounceCtrl', function($scope, Accommodation) {
 
     $scope.favorite = function() {
 
-        Accommodation.favorite({id:$scope.a.id}, function() {
+        Accommodation.favorite({id:$scope.a.id}, function(data) {
 
-            if ($scope.isReaded != 'favorite') {
+            if (data.favorite) {
                 $scope.isReaded  = 'favorite';
                 $scope.starState = 'disabled';
             } else {
@@ -47,6 +51,23 @@ app.controller('AnnounceCtrl', function($scope, Accommodation) {
                 $scope.starState = '';
             }
 
+        });
+
+    }
+
+    /**
+     * AJAX set thumb viewed on click, then put off the red glow
+     */
+    $scope.viewed = function() {
+        // if is already readed we dont send additional http request
+        if ($scope.isReaded != 'unreaded') {
+            return;
+        }
+
+        Accommodation.viewed({id:$scope.a.id}, function(data) {
+            if (data.success) {
+                $scope.isReaded = ''; // removing 'unreaded' css class
+            }
         });
 
     }

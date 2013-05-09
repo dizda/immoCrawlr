@@ -306,6 +306,8 @@ class Accommodation
      * @JMS\Exclude
      * @MongoDB\ReferenceMany(targetDocument="Dizda\UserBundle\Document\User") */
     protected $viewed;
+    /** @JMS\Groups({"rest"}) @JMS\SerializedName("viewed") @JMS\Accessor(getter="getRestViewed") @JMS\ReadOnly */
+    protected $restViewed;
 
     /**
      * @JMS\Exclude
@@ -1455,6 +1457,16 @@ class Accommodation
         if ($this->getViewed()) {
             $this->viewed->clear();
         }
+    }
+
+    public function getRestViewed()
+    {
+        $views = [];
+        foreach ($this->viewed as $view) {
+            $views[] = $view->getId();
+        }
+
+        return $views;
     }
 
     /**

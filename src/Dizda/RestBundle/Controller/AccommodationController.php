@@ -32,7 +32,13 @@ class AccommodationController extends CoreRESTController
         return iterator_to_array($accommodations, false);
     }
 
-
+    /**
+     * AJAX: Add or remove Favorite
+     *
+     * @param int $id Accommodation id
+     *
+     * @return array
+     */
     public function favoriteAccommodationAction($id)
     {
         $acco = $this->getRepo('CrawlerBundle:Accommodation')->find($id);
@@ -49,6 +55,27 @@ class AccommodationController extends CoreRESTController
         $this->getDm()->flush();
 
         return $result;
+    }
+
+    /**
+     * AJAX: Setting a thumbnail viewed at 'onClick' event
+     *
+     * @param int $id Accommodation id
+     *
+     * @return array
+     */
+    public function viewedAccommodationAction($id)
+    {
+        $acco = $this->getRepo('CrawlerBundle:Accommodation')->find($id);
+
+        if (!$acco->getViewed()->contains($this->getUser())) {
+            $acco->addViewed($this->getUser());
+
+            $this->getDm()->persist($acco);
+            $this->getDm()->flush();
+        }
+
+        return ['success' => true];
     }
 
 }
