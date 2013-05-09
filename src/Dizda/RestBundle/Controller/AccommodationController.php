@@ -25,10 +25,6 @@ class AccommodationController extends CoreRESTController
     {
         $accommodations = $this->getRepo('CrawlerBundle:Accommodation')->findUntrashed($this->getUser(), 5);
 
-        //$accommodations2 = $this->getRepo('CrawlerBundle:Accommodation')->findBy([], [], 3);
-        //$accommodations2 = $this->getRepo('UserBundle:User')->find('5172c3b31bc8349505000000');
-        //$accommodations3 = ;
-
         return iterator_to_array($accommodations, false);
     }
 
