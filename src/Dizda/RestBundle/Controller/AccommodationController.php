@@ -10,8 +10,8 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use FOS\RestBundle\Controller\Annotations as REST;
 
 use Dizda\RestBundle\Controller\CoreRESTController;
-
-
+use Symfony\Component\HttpFoundation\Request;
+use Dizda\SiteBundle\Document\Note;
 
 class AccommodationController extends CoreRESTController
 {
@@ -23,7 +23,7 @@ class AccommodationController extends CoreRESTController
      */
     public function getAccommodationsAction()
     {
-        $accommodations = $this->getRepo('CrawlerBundle:Accommodation')->findUntrashed($this->getUser());
+        $accommodations = $this->getRepo('CrawlerBundle:Accommodation')->findUntrashed($this->getUser(), 5);
 
         //$accommodations2 = $this->getRepo('CrawlerBundle:Accommodation')->findBy([], [], 3);
         //$accommodations2 = $this->getRepo('UserBundle:User')->find('5172c3b31bc8349505000000');
@@ -35,7 +35,7 @@ class AccommodationController extends CoreRESTController
     /**
      * AJAX: Add or remove Favorite
      *
-     * @param int $id Accommodation id
+     * @param string $id Accommodation id
      *
      * @return array
      */
@@ -60,7 +60,7 @@ class AccommodationController extends CoreRESTController
     /**
      * AJAX: Setting a thumbnail viewed at 'onClick' event
      *
-     * @param int $id Accommodation id
+     * @param string $id Accommodation id
      *
      * @return array
      */
@@ -76,6 +76,43 @@ class AccommodationController extends CoreRESTController
         }
 
         return ['success' => true];
+    }
+
+
+    /**
+     * @param string  $id      Accommodation hash
+     * @param Request $request Request container
+     *
+     * @return mixed
+     */
+    public function postAccommodationCommentAction($id, Request $request)
+    {
+        $acco = $this->getRepo('CrawlerBundle:Accommodation')->find($id);
+
+        // If current user already created a note, we just update it
+        foreach ($acco->getNotes() as $note) {
+            if ($note->getUser() == $this->getUser()) {
+                //$acco->getNotes()->removeElement($note);
+                $note->setText($request->get('text'));
+
+
+                $this->getDm()->persist($note);
+                $this->getDm()->flush();
+
+                return $acco->getNotes();
+            }
+        }
+
+        // Then is a new note
+        $note = new Note();
+        $note->setUser($this->getUser());
+        $note->setText($request->get('text'));
+        $acco->addNote($note);
+
+        $this->getDm()->persist($acco);
+        $this->getDm()->flush();
+
+        return $acco->getNotes();
     }
 
 }

@@ -3,6 +3,7 @@ namespace Dizda\SiteBundle\Document;
 
 use Doctrine\ODM\MongoDB\Mapping\Annotations as MongoDB;
 
+use JMS\Serializer\Annotation as JMS;
 
 /**
  * @MongoDB\EmbeddedDocument */
@@ -12,16 +13,24 @@ class Note
     private $id;
 
     /** La balance au moment T
+     *  @JMS\Groups({"rest"})
+     *  @JMS\ReadOnly
      *  @MongoDB\String */
     private $text;
 
     /** @MongoDB\Date */
     private $createdAt;
 
-    /** @MongoDB\Date */
+    /**
+     *  @JMS\Groups({"rest"})
+     *  @JMS\ReadOnly
+     *  @MongoDB\Date */
     private $updatedAt;
 
     /**
+     *  @JMS\Groups({"rest"})
+     *  @JMS\Accessor(getter="getRestUser")
+     *  @JMS\ReadOnly
      *  @MongoDB\ReferenceOne(targetDocument="Dizda\UserBundle\Document\User")
      */
     private $user;
@@ -135,5 +144,16 @@ class Note
     public function getUser()
     {
         return $this->user;
+    }
+
+    /**
+     * Return user infos for rest services
+     *
+     * @return array
+     */
+    public function getRestUser()
+    {
+        return ['id'       => $this->user->getId(),
+                'username' => $this->user->getUsername() ];
     }
 }

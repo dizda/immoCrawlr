@@ -22,20 +22,19 @@
 
             <div class="btn-group pull-right" ade-rich='{"className":"input-xlarge","id":"{[{ a.id }]}"}' ng-model="notes">
                 <a class="btn"><i class="icon-pencil"></i></a>
-                <button class="btn btn-warning" ng-class="starState" ng-click="favorite()" ng-init="starState = 'disabled{#{% if app.user in a.favorites %}disabled{% endif %}#}'"><i class="icon-star"></i></button>
-                <a href="http://blankreferrer.com/u/{#{{ a.permalink|replace({'http://':''}) }}#}" class="btn" target="_blank"><i class="icon-globe"></i> Visit {[{ a.type }]}</a>
+                <button class="btn btn-warning" ng-class="starState" ng-click="favorite()" ng-init="starState = 'disabled'"><i class="icon-star"></i></button>
+                <a href="http://blankreferrer.com/u/{[{ a.permalink | stripProtocol }]}" class="btn" target="_blank"><i class="icon-globe"></i> Visit {[{ a.type }]}</a>
                 <a class="btn btn-danger" href="javascript://" ng-click="hidden()"><i class="icon-trash"></i></a></a>
-
-
-
             </div>
+
+            <div class="clear"></div>
 
         </p>
         <div>
-            {#<strong>
-                {% if a.remoteUpdatedAt %}<span class="label label-info" rel="tooltip" data-placement="right" title="Remote id : {{ a.remoteId }} created at : {{ time_diff(a.remoteCreatedAt) }}"><i class="icon-refresh"></i> Remote updated {{ time_diff(a.remoteUpdatedAt) }}</span><br />{% endif %}
-                <span class="label label-inverse" rel="tooltip" data-placement="right" title="Created at {{ time_diff(a.localCreatedAt) }}"><i class="icon-hdd icon-white"></i> Local updated {{ time_diff(a.localUpdatedAt) }}</span>
-            </strong>#}
+            <strong>
+                <span class="label label-info" rel="tooltip" data-placement="right" title="Remote id : {#{{ a.remoteId }} created at : {{ time_diff(a.remoteCreatedAt) }}#}"><i class="icon-refresh"></i> Remote updated {[{ a.remoteUpdatedAt | fromNow }]}</span><br />
+                <span class="label label-inverse" rel="tooltip" data-placement="right" title="Created at {#{{ time_diff(a.localCreatedAt) }}#}"><i class="icon-hdd icon-white"></i> Local updated {[{ a.localUpdatedAt | fromNow }]}</span>
+            </strong>
             <br />
         </div>
 
@@ -66,6 +65,16 @@
                     </span>
                 </div>
             {% endif %}#}
+
+            <div class="comment" ng-repeat="note in a.notes">
+                <i class="icon-pencil"></i> <span class="username" ng-bind="note.user.username"></span> :
+
+                {#<span ade-rich='{"className":"input-xlarge","id":"{{ a.id }}"}' ng-model="notes">
+                    {[{notes}]}
+                </span>#}
+                {[{ note.text }]}
+
+            </div>
         </div>
 
         <div class="versions">
@@ -73,7 +82,7 @@
             <div class="btn-group">
                 <button class="btn disabled"><i class="icon-play-circle"></i> Last version</button>
 
-                <button class="btn" ng-repeat="version in a.versions"><i class="icon-time"></i> {[{ version.remoteUpdatedAt }]}</button>
+                <button class="btn" ng-repeat="version in a.versions"><i class="icon-time"></i> {[{ version.remoteUpdatedAt | fromNow }]}</button>
 
 
                 {#{% if a.versions|length > 2 %}

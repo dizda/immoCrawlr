@@ -69,6 +69,32 @@ app.controller('AnnounceCtrl', function($scope, Accommodation) {
                 $scope.isReaded = ''; // removing 'unreaded' css class
             }
         });
-
     }
+
+
+    /**
+     * Add/Modify comment
+     */
+    $scope.$on('ADE-finish', function(e, data) {
+
+
+        // handle event only if it was not defaultPrevented OR if concern another scope, we skip it
+        if(e.defaultPrevented || data.id != $scope.a.id) {
+            return;
+        }
+
+        if (data.oldVal == data.newVal) {
+            return;
+        }
+
+        Accommodation.comment({id:$scope.a.id, text:data.newVal}, function(data) {
+            $scope.a.notes = data;
+        });
+
+        //$scope.isCommented = true;
+
+        // mark event as "not handle in children scopes", to avoid many AJAX request as accommodations number
+        e.preventDefault();
+
+    });
 });

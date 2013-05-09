@@ -27,7 +27,7 @@ class AccommodationRepository extends DocumentRepository
      *
      * @return array|bool|\Doctrine\MongoDB\ArrayIterator|\Doctrine\MongoDB\Cursor|\Doctrine\MongoDB\EagerCursor|int|mixed|\MongoCursor|null
      */
-    public function findUntrashed($user)
+    public function findUntrashed($user, $limit = false)
     {
         $qb = $this->createQueryBuilder('CrawlerBundle:Accommodation')
             ->field('parent')->equals(true)
@@ -35,6 +35,10 @@ class AccommodationRepository extends DocumentRepository
             ->field('hidden.$id')->notEqual(new \MongoId($user->getId()))
             ->sort('remoteUpdatedAt', 'desc')
             ->sort('localUpdatedAt', 'desc');
+
+        if ($limit) {
+            $qb->limit($limit);
+        }
 
         return $qb->getQuery()->execute();
     }

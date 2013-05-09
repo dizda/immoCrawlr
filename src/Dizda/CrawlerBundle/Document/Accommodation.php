@@ -294,6 +294,8 @@ class Accommodation
      *  @JMS\Exclude
      *  @MongoDB\Date */
     protected $remoteUpdatedAt;
+    /** @JMS\Groups({"rest"}) @JMS\SerializedName("remoteUpdatedAt") @JMS\Accessor(getter="getRemoteUpdatedAt") @JMS\ReadOnly */
+    protected $restRemoteUpdatedAt;
 
     /**
      *  @JMS\Exclude
@@ -304,6 +306,8 @@ class Accommodation
      *  @JMS\Exclude
      *  @MongoDB\Date */
     protected $localUpdatedAt;
+    /** @JMS\Groups({"rest"}) @JMS\SerializedName("localUpdatedAt") @JMS\Accessor(getter="getLocalUpdatedAt") @JMS\ReadOnly */
+    protected $restLocalUpdatedAt;
 
     /**
      * @JMS\Exclude
@@ -328,6 +332,8 @@ class Accommodation
     /** @JMS\Exclude
      *  @MongoDB\EmbedMany(targetDocument="Dizda\SiteBundle\Document\Note") */
     protected $notes = array();
+    /** @JMS\Groups({"rest"}) @JMS\SerializedName("notes") @JMS\Accessor(getter="getNotes") @JMS\ReadOnly */
+    protected $restNotes;
 
     /**
      * @JMS\Exclude

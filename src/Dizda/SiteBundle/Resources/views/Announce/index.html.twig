@@ -38,8 +38,8 @@
                 <ul class="thumbnails">
 
 
-                    <li ng-controller="AnnounceCtrl" ng-repeat="a in announces | filter:searchText"
-                        {#ng-init="isReaded = '{% if app.user not in a.viewed %}unreaded{% elseif app.user in a.favorites %}favorite{% endif %}'; id='{{ a.id }}'; "#}
+                    <li ng-controller="AnnounceCtrl"
+                        ng-repeat="a in announces | filter:searchText"
                         ng-hide="isHidden"
                         ng-click="viewed()">
 
