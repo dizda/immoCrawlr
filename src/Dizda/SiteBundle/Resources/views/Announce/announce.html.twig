@@ -24,7 +24,7 @@
                 <a class="btn"><i class="icon-pencil"></i></a>
                 <button class="btn btn-warning" ng-class="starState" ng-click="favorite()" ng-init="starState = 'disabled'"><i class="icon-star"></i></button>
                 <a href="http://blankreferrer.com/u/{[{ a.permalink | stripProtocol }]}" class="btn" target="_blank"><i class="icon-globe"></i> Visit {[{ a.type }]}</a>
-                <a class="btn btn-danger" href="javascript://" ng-click="hidden()"><i class="icon-trash"></i></a></a>
+                <a class="btn btn-danger" href="javascript://" ng-click="delete($index)"><i class="icon-trash"></i></a>
             </div>
 
             <div class="clear"></div>
@@ -39,39 +39,11 @@
         </div>
 
         <div class="notes">
-            {#{% set isUserCommented = false %}
 
-            {% for note in a.notes if a.notes|length > 0 %}
-                {% if note.user == app.user %}{% set isUserCommented = true %}{% endif %}
-                <div class="comment">
-                    <i class="icon-pencil"></i> <span class="username">{{ note.user.username }}</span> :
-
-                    {% if note.user == app.user %}
-                        <span ade-rich='{"className":"input-xlarge","id":"{{ a.id }}"}' ng-model="notes" ng-init="notes='{{ note.text }}'">
-                            {[{notes}]}
-                        </span>
-                    {% else %}
-                        {{ note.text }}
-                    {% endif %}
-
-                </div>
-            {% endfor %}
-
-            {% if not isUserCommented %}
-                <div class="comment" ng-show="isCommented" ng-init="isCommented = false">
-                    <i class="icon-pencil"></i> <span class="username">{{ app.user.username }}</span> :
-                    <span ade-rich='{"className":"input-xlarge","id":"{{ a.id }}"}' ng-model="notes" ng-init="notes='No notes for the moment...'">
-                        {[{notes}]}
-                    </span>
-                </div>
-            {% endif %}#}
 
             <div class="comment" ng-repeat="note in a.notes">
                 <i class="icon-pencil"></i> <span class="username" ng-bind="note.user.username"></span> :
 
-                {#<span ade-rich='{"className":"input-xlarge","id":"{{ a.id }}"}' ng-model="notes">
-                    {[{notes}]}
-                </span>#}
                 {[{ note.text }]}
 
             </div>

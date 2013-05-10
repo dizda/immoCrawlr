@@ -71,6 +71,18 @@ app.controller('AnnounceCtrl', function($scope, Accommodation) {
         });
     }
 
+    /**
+     * Put an accommodation in trash
+     */
+    $scope.delete = function(index) {
+
+        Accommodation.delete({id:$scope.a.id}, function(data) {
+            if (data.hidden) {
+                $scope.announces.splice(index, 1); // removing item from the collection, so from the DOM too
+            }
+        });
+
+    }
 
     /**
      * Add/Modify comment

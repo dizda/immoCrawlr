@@ -111,4 +111,29 @@ class AccommodationController extends CoreRESTController
         return $acco->getNotes();
     }
 
+    /**
+     * An user can choose to hide which accommodation he don't want to see anymore
+     *
+     * @param string $id
+     *
+     * @return JsonResponse
+     */
+    public function deleteAccommodationAction($id)
+    {
+        $acco = $this->getRepo('CrawlerBundle:Accommodation')->find($id);
+
+        if (!$acco->getHidden()->contains($this->getUser())) {
+            $acco->addHidden($this->getUser());
+            $result = ['hidden' => true];
+        } else {
+            $acco->removeHidden($this->getUser());
+            $result = ['hidden' => false];
+        }
+
+        $this->getDm()->persist($acco);
+        $this->getDm()->flush();
+
+        return $result;
+    }
+
 }
