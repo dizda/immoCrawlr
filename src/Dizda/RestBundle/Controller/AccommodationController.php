@@ -13,19 +13,43 @@ use Dizda\RestBundle\Controller\CoreRESTController;
 use Symfony\Component\HttpFoundation\Request;
 use Dizda\SiteBundle\Document\Note;
 
+/**
+ * Class AccommodationController
+ *
+ * @package Dizda\RestBundle\Controller
+ * @author  Jonathan Dizdarevic <dizda@dizda.fr>
+ */
 class AccommodationController extends CoreRESTController
 {
 
     /**
+     * Fetch list of accommodations
+     *
      * @REST\View(serializerGroups={"rest"})
      *
      * @return array
      */
     public function getAccommodationsAction()
     {
-        $accommodations = $this->getRepo('CrawlerBundle:Accommodation')->findUntrashed($this->getUser(), 5);
+        $accommodations = $this->getRepo('CrawlerBundle:Accommodation')->findUntrashed($this->getUser());
 
         return iterator_to_array($accommodations, false);
+    }
+
+    /**
+     * Fetch One accommodation
+     *
+     * @param int $id Accommodation id
+     *
+     * @REST\View(serializerGroups={"rest"})
+     *
+     * @return array of one object : because Angular Resource wants to parse an array, it will not understand if we return an object
+     */
+    public function getAccommodationAction($id)
+    {
+        $accommodation = $this->getRepo('CrawlerBundle:Accommodation')->find($id);
+
+        return [ $accommodation ];
     }
 
     /**

@@ -54,7 +54,7 @@
             <div class="btn-group">
                 <button class="btn disabled"><i class="icon-play-circle"></i> Last version</button>
 
-                <button class="btn" ng-repeat="version in a.versions"><i class="icon-time"></i> {[{ version.remoteUpdatedAt | fromNow }]}</button>
+                <button class="btn" ng-repeat="version in a.versions" ng-click="getVersion(version.id)"><i class="icon-time"></i> {[{ version.remoteUpdatedAt | fromNow }]}</button>
 
 
                 {#{% if a.versions|length > 2 %}

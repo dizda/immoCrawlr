@@ -27,9 +27,10 @@ class PapCrawler extends AbstractCrawler
                          'geoobjets[2]'          => '37770;0', // Paris 3e
                          'geoobjets[3]'          => '37771;0', // Paris 4e
                          'geoobjets[4]'          => '37772;0', // Paris 5e
-                         'geoobjets[5]'          => '37776;0', // Paris 9e
-                         'geoobjets[6]'          => '37777;0', // Paris 10e
-                         'geoobjets[7]'          => '37778;0', // Paris 11e
+                         'geoobjets[5]'          => '37773;0', // Paris 6e
+                         'geoobjets[6]'          => '37776;0', // Paris 9e
+                         'geoobjets[7]'          => '37777;0', // Paris 10e
+                         'geoobjets[8]'          => '37778;0', // Paris 11e
                          'plateforme'            => 'android',
                          'type'                  => 'create',
                          'nb_resultats_par_page' => '40',

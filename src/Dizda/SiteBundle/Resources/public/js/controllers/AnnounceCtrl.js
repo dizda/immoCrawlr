@@ -109,4 +109,20 @@ app.controller('AnnounceCtrl', function($scope, Accommodation) {
         e.preventDefault();
 
     });
+
+    /**
+     * Fetch an older version of current accommodation
+     *
+     * @param id Accommodation id
+     */
+    $scope.getVersion = function(id) {
+
+        Accommodation.query({id: id}, function(data) {
+            data[0].versions = $scope.a.versions; // keep versioning buttons
+
+            $scope.a = data[0];
+        });
+
+    }
 });
+

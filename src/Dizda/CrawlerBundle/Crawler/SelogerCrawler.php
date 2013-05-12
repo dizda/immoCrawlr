@@ -21,7 +21,7 @@ class SelogerCrawler extends AbstractCrawler
     protected $currentPageNode  = '/recherche/pageCourante'; // XPath
 
     protected $params = ['idtt'             => '1',
-                         'ci'               => '750101,750102,750103,750104,750105,750109,750110,750111',
+                         'ci'               => '750101,750102,750103,750104,750105,750106,750109,750110,750111',
                          'idtypebien'       => '1,2',
                          'nb_pieces'        => '3',
                          'nb_chambres'      => '2',
