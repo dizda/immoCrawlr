@@ -21,7 +21,7 @@ use Symfony\Component\HttpFoundation\Request;
 class AnnounceController extends CoreController
 {
     /**
-     * @Route("/announces")
+     * @Route("/")
      * @Template()
      */
     public function indexAction()

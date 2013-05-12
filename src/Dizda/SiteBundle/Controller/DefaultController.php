@@ -16,6 +16,8 @@ use Symfony\Component\HttpFoundation\Request;
 /**
  * Class DefaultController
  *
+ * @Route("/old")
+ *
  * @package Dizda\SiteBundle\Controller
  */
 class DefaultController extends CoreController
