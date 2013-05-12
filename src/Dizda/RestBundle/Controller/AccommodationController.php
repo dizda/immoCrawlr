@@ -31,7 +31,7 @@ class AccommodationController extends CoreRESTController
      */
     public function getAccommodationsAction()
     {
-        $accommodations = $this->getRepo('CrawlerBundle:Accommodation')->findUntrashed($this->getUser(), 10);
+        $accommodations = $this->getRepo('CrawlerBundle:Accommodation')->findUntrashed($this->getUser());
 
         return iterator_to_array($accommodations, false);
     }

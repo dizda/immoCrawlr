@@ -14,7 +14,8 @@ app.controller('AnnouncesCtrl', function($scope, Accommodation) {
 
 app.controller('AnnounceCtrl', function($scope, Accommodation) {
 
-    $scope.showPhoto = 0;
+    $scope.showPhoto  = 0;
+    $scope.originalId = $scope.a.id;
 
     // if announce already favorited, we show the glow and disactive button
     if ($scope.a.favorites.indexOf(user) != -1) {
@@ -124,6 +125,7 @@ app.controller('AnnounceCtrl', function($scope, Accommodation) {
             $scope.a = data[0];
         });
 
+        return false;
     }
 
     /**

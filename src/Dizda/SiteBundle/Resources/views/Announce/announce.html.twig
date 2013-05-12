@@ -52,23 +52,16 @@
         <div class="versions">
 
             <div class="btn-group">
-                <button class="btn disabled"><i class="icon-play-circle"></i> Last version</button>
+                <button class="btn" ng-click="getVersion(originalId)" ng-class="{disabled: a.id == originalId}"><i class="icon-play-circle"></i> Last version</button>
                 <button class="btn" ng-click="getTimeline()"><i class="icon-time"></i> Timeline</button>
 
-                <button class="btn" ng-repeat="version in a.versions" ng-click="getVersion(version.id)"><i class="icon-time"></i> {[{ version.remoteUpdatedAt | fromNow }]}</button>
+                <button class="btn dropdown-toggle" data-toggle="dropdown" ng-show="a.versions.length > 0">(<span ng-bind="a.versions.length"></span>) <span class="caret"></span></button>
+                <ul class="dropdown-menu" ng-show="a.versions.length > 0">
 
+                    <li ng-repeat="version in a.versions"><a ng-click="getVersion(version.id)"><i class="icon-time"></i> {[{ version.remoteUpdatedAt | fromNow }]}</a></li>
 
-                {#{% if a.versions|length > 2 %}
+                </ul>
 
-                    <button class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
-                    <ul class="dropdown-menu">
-
-                        {% for version in a.versions|slice(2) %}
-                            <li><a href="#"><i class="icon-time"></i> {{ time_diff(version.remoteUpdatedAt) }}</a></li>
-                        {% endfor %}
-
-                    </ul>
-                {% endif %}#}
             </div>
         </div>
 
