@@ -22,7 +22,7 @@
 
             <div class="btn-group pull-right" ade-rich='{"className":"input-xlarge","id":"{[{ a.id }]}"}' ng-model="notes">
                 <a class="btn"><i class="icon-pencil"></i></a>
-                <button class="btn btn-warning" ng-class="starState" ng-click="favorite()" ng-init="starState = 'disabled'"><i class="icon-star"></i></button>
+                <button class="btn btn-warning" ng-class="starState" ng-click="favorite()"><i class="icon-star"></i></button>
                 <a href="http://blankreferrer.com/u/{[{ a.permalink | stripProtocol }]}" class="btn" target="_blank"><i class="icon-globe"></i> Visit {[{ a.type }]}</a>
                 <a class="btn btn-danger" href="javascript://" ng-click="delete($index)"><i class="icon-trash"></i></a>
             </div>
