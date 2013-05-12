@@ -25,7 +25,7 @@ class SelogerCrawler extends AbstractCrawler
                          'idtypebien'       => '1,2',
                          'nb_pieces'        => '3',
                          'nb_chambres'      => '2',
-                         'px_loyermin'      => '1000',
+                         'px_loyermin'      => '1200',
                          'px_loyermax'      => '1800',
                          'surfacemin'       => '55',
                          'tri'              => 'd_dt_crea',
