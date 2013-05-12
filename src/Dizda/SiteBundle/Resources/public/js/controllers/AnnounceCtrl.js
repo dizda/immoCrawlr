@@ -124,5 +124,6 @@ app.controller('AnnounceCtrl', function($scope, Accommodation) {
         });
 
     }
+
 });
 
