@@ -5,6 +5,7 @@ factory('Accommodation', function($resource){
         favorite: {method:'PATCH',  params: {id:'@id',  operation:'favorite'}},
         viewed:   {method:'PATCH',  params: {id:'@id',  operation:'viewed'}},
         comment:  {method:'POST',   params: {id:'@id',  operation:'comment'}, isArray:true},
-        delete:   {method:'DELETE', params: {id:'@id'}}
+        delete:   {method:'DELETE', params: {id:'@id'}},
+        versions: {method:'GET',    params: {id:'@id',  operation:'versions'}, isArray:true}
     });
 });

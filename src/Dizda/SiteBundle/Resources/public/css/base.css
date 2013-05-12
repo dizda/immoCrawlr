@@ -1,3 +1,7 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none;
+}
+
 .thumbnails .first {
     margin-left: 0;
     clear:both;
@@ -9,6 +13,7 @@
 
 .thumbnail {
     width: 409px;
+    background-color: #fff;
 }
 
 .thumbnail.unreaded {
@@ -71,4 +76,30 @@
 
 .versions {
     margin-top: 2px;
+}
+
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+}
+
+#timeline {
+    position: absolute;
+    top: 0;
+    left: 40%;
+}
+
+#timeline ul {
+    list-style-type: none;
+}
+
+#timeline ul li {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

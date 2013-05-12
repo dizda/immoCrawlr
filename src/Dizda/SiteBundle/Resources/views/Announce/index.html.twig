@@ -53,6 +53,9 @@
 
         </div>
 
-
+        <div id="overlay" ng-show="timeline.length > 0" class="ng-cloak" ng-click="timeline = []"></div>
+        <div id="timeline" ng-show="timeline.length > 0" class="ng-cloak">
+            {% include 'SiteBundle:Announce:timeline.html.twig' %}
+        </div>
     </div>
 {% endblock content %}

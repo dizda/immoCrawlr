@@ -7,6 +7,7 @@ var app = angular.module('indexApp', ['ADE', 'ngSanitize', 'accommodationService
 app.controller('AnnouncesCtrl', function($scope, Accommodation) {
 
     $scope.announces = Accommodation.query();
+    $scope.timeline = [];
 
 });
 
@@ -121,6 +122,17 @@ app.controller('AnnounceCtrl', function($scope, Accommodation) {
             data[0].versions = $scope.a.versions; // keep versioning buttons
 
             $scope.a = data[0];
+        });
+
+    }
+
+    /**
+     * Gettin versions showed into a timeline style
+     */
+    $scope.getTimeline = function() {
+
+        Accommodation.versions({id:$scope.a.id}, function(data) {
+            $scope.$parent.$parent.timeline = data;
         });
 
     }

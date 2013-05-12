@@ -1,0 +1,9 @@
+<button id="close" type="button" class="btn btn-info" ng-click="timeline = []">Close overlay</button>
+
+<ul>
+    <li ng-controller="AnnounceCtrl" ng-repeat="a in timeline">
+
+        {% include 'SiteBundle:Announce:announce.html.twig' %}
+
+    </li>
+</ul>

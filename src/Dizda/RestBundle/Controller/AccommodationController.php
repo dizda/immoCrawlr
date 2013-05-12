@@ -31,7 +31,7 @@ class AccommodationController extends CoreRESTController
      */
     public function getAccommodationsAction()
     {
-        $accommodations = $this->getRepo('CrawlerBundle:Accommodation')->findUntrashed($this->getUser());
+        $accommodations = $this->getRepo('CrawlerBundle:Accommodation')->findUntrashed($this->getUser(), 10);
 
         return iterator_to_array($accommodations, false);
     }
@@ -50,6 +50,22 @@ class AccommodationController extends CoreRESTController
         $accommodation = $this->getRepo('CrawlerBundle:Accommodation')->find($id);
 
         return [ $accommodation ];
+    }
+
+    /**
+     * Return older versions of supplied accommodation id
+     *
+     * @param int $id Accommodation id
+     *
+     * @REST\View(serializerGroups={"rest"})
+     *
+     * @return mixed
+     */
+    public function getAccommodationVersionsAction($id)
+    {
+        $accommodation = $this->getRepo('CrawlerBundle:Accommodation')->find($id);
+
+        return $accommodation->getVersions();
     }
 
     /**
