@@ -189,11 +189,9 @@ abstract class AbstractCrawler
 
 
         /* If following pagination is activated and if 'nextPage' link exist, we follow the link */
-        /*if ($this->followPagination && count($xml->xpath($this->nextPageNode)) > 0) {
-            $this->getAccommodationsList((string) $xml->xpath($this->nextPageNode)[0]);
-
-            return;
-        }*/
+        if ($this->followPagination && $this->getNextNode($response)) {
+            $this->getAccommodationsList($this->getNextNode($response));
+        }
 
 
         // Once each pages are scrapped, if we need additional datas, we fetch every detailed pages
@@ -257,5 +255,6 @@ abstract class AbstractCrawler
      * @return mixed
      */
     abstract protected function getPhotoNode($response);
+    abstract protected function getNextNode($response);
 
 }

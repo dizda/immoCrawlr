@@ -64,4 +64,9 @@ class PapCrawler extends AbstractCrawler
         return null;
     }
 
+    protected function getNextNode($response)
+    {
+        return false;
+    }
+
 }

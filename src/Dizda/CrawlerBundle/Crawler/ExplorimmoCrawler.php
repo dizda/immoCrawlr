@@ -56,4 +56,9 @@ class ExplorimmoCrawler extends AbstractCrawler
     {
         return $response->photos->photo;
     }
+
+    protected function getNextNode($response)
+    {
+        return false;
+    }
 }

@@ -58,4 +58,25 @@ class SelogerCrawler extends AbstractCrawler
         return $response->photos->photo;
     }
 
+    /**
+     * Detect if the next URL node is exist :
+     *
+     * public $pageSuivante =>
+     *   string(238) "http://ws.seloger.com/search.xml?ci=750101,750102,750103,750104,750105,750106,750109,750110,750111&getdtcreationmax=1&idtt=1&idtypebien=1,2&nb_chambres=2&nb_pieces=3&px_loyermax=1800&px_loyermin=1200&surfacemin=55&tri=d_dt_crea&SEARCHpg=2"
+     *
+     * If true, we try to follow the link.
+     *
+     * @param string $response XML datas
+     *
+     * @return bool|string
+     */
+    protected function getNextNode($response)
+    {
+        if (count($response->xpath($this->nextPageNode)) != 1) {
+            return false;
+        }
+
+        return (string) $response->xpath($this->nextPageNode)[0];
+    }
+
 }
