@@ -11,9 +11,12 @@ parameters:
     mailer_user:       ~
     mailer_password:   ~
 
-    locale:            en
+    locale:            fr
     secret:            ThisTokenIsNotSoSecretChangeIt
 
     mopa_remote_update_url: http://yourhost
     mopa_remote_update_user: changethis
     mopa_remote_update_password: changethat
+
+    node:       /usr/local/bin/node
+    node_path : /usr/local/share/npm/lib/node_modules
