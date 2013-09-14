@@ -370,6 +370,9 @@ class Accommodation
     /**
      * Generate custom local id to store in Mongo, with remote creation date + remote id to be sure it's unique
      * And we hash-it
+     *  ex.
+     *      explorimmo_2013071000000028310181-1
+     *      pap_197311424
      *
      * @param bool $versioning Can generate id with 'updatedDate' to store few times same documents
      *
@@ -379,28 +382,25 @@ class Accommodation
     {
         $update       = '';
         $currentClass = explode('\\', get_class($this));
+        $currentClass = strtolower(end($currentClass));
 
         if ($versioning) {
             $update = $this->getRemoteUpdatedAt()->format('YmdHis');
         }
 
-        /**
-         * BC-Break [before 04/05/2013] !! new id generation
-         */
-        if ( $this->remoteCreatedAt && ($this->remoteCreatedAt > (new \DateTime('2013-05-04'))->setTime(0, 0, 0)) ) {
-            //     seloger _ 20130504203011 2131242312 (20130504203012)    : seloger_2013050418170078218825
-            return sha1(strtolower(end($currentClass)) . '_' . $this->remoteCreatedAt->format('YmdHis') . $this->remoteId . $update);
+        // check if remoteCreatedAt is not null from the API
+        if ($this->remoteCreatedAt instanceof \DateTime) {
+            $remoteCreatedAt = $this->remoteCreatedAt->format('YmdHis');
+        } else {
+            $remoteCreatedAt = '';
         }
 
-        /**
-         * 04/05/2013
-         * BC-Break for Pap
-         */
-        if (end($currentClass) == 'Pap') {
-            return sha1('pap_' . $this->remoteId . $update);
+        // BUG with PAP : retrieved only when we get details, so its save document twice, better to put it off from the id
+        if ($currentClass === 'pap') {
+            $remoteCreatedAt = '';
         }
 
-        return sha1($this->remoteCreatedAt->format('YmdHis') . $this->remoteId . $update . $update);
+        return sha1($currentClass . '_' . $remoteCreatedAt . $this->remoteId . $update);
     }
 
 
