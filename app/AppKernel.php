@@ -20,7 +20,7 @@ class AppKernel extends Kernel
             new JMS\DiExtraBundle\JMSDiExtraBundle($this),
             new JMS\AopBundle\JMSAopBundle(),
             //new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
-            new Mopa\Bundle\BootstrapBundle\MopaBootstrapBundle(),
+            //new Mopa\Bundle\BootstrapBundle\MopaBootstrapBundle(),
 
             new Dizda\CoreBundle\CoreBundle(),
             new Dizda\CrawlerBundle\CrawlerBundle(),
@@ -41,9 +41,6 @@ class AppKernel extends Kernel
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
-            $bundles[] = new Mopa\Bundle\BootstrapSandboxBundle\MopaBootstrapSandboxBundle();
-            $bundles[] = new Liip\ThemeBundle\LiipThemeBundle();
-            $bundles[] = new Knp\Bundle\MenuBundle\KnpMenuBundle();
         }
 
         return $bundles;

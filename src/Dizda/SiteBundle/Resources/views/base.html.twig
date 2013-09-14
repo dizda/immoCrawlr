@@ -1,4 +1,4 @@
-{% from 'MopaBootstrapBundle::flash.html.twig' import session_flash %}
+{#{% from 'MopaBootstrapBundle::flash.html.twig' import session_flash %}#}
 
 <!DOCTYPE html>
 
@@ -12,8 +12,7 @@
     {% block head_style %}
     {# Override this block to add your own files! #}
     {% stylesheets
-        '@MopaBootstrapBundle/Resources/public/less/mopabootstrapbundle.less'
-        '@MopaBootstrapBundle/Resources/public/less/eyecon-bootstrap-datepicker.less'
+        '@SiteBundle/Resources/public/css/bootstrap.min.css'
         '@SiteBundle/Resources/public/css/ade.module.css'
         '@SiteBundle/Resources/public/css/base.css'
     %}
@@ -69,13 +68,13 @@
             {% endblock page_header %}
 
             {% block flashes %}
-            {% if app.session.flashbag.peekAll|length > 0 %}
+            {#{% if app.session.flashbag.peekAll|length > 0 %}
             <div class="row-fluid">
                 <div class="span12">
                 {{ session_flash() }}
                 </div>
             </div>
-            {% endif %}
+            {% endif %}#}
             {% endblock flashes %}
 
             {% block content_row %}
@@ -106,18 +105,7 @@
     {#'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'#}
     {% javascripts
         '@SiteBundle/Resources/public/js/jquery.min.js'
-        '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-transition.js'
-
-        '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-dropdown.js'
-
-        '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-tab.js'
-        '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-tooltip.js'
-        '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-popover.js'
-        '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-button.js'
-        '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-collapse.js'
-        '@MopaBootstrapBundle/Resources/bootstrap/js/bootstrap-typeahead.js'
-        '@MopaBootstrapBundle/Resources/public/js/mopabootstrap-collection.js'
-
+        '@SiteBundle/Resources/public/js/vendor/bootstrap.min.js'
 
         '@SiteBundle/Resources/public/js/jquery.lazyload.min.js'
         '@SiteBundle/Resources/public/js/base.js'
