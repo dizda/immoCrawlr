@@ -23,7 +23,7 @@ class CrawlCommand extends ContainerAwareCommand
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        //$this->getContainer()->get('crawler.seloger')->execute($this->getHelperSet()->get('progress'));
+        $this->getContainer()->get('crawler.seloger')->execute($this->getHelperSet()->get('progress'));
         $this->getContainer()->get('crawler.explorimmo')->execute($this->getHelperSet()->get('progress'));
         $this->getContainer()->get('crawler.pap')->execute($this->getHelperSet()->get('progress'));
     }
